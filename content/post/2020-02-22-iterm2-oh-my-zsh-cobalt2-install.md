@@ -138,6 +138,6 @@ cd fonts
 
 ![wp-image-518](/img/2020/02/スクリーンショット-2020-02-22-14.31.19.png)
 
-[ダウンロード](/data/setting.json)
+[下載設定檔](/data/setting.json)
 
 [1]: https://github.com/wesbos/Cobalt2-iterm/archive/master.zip
