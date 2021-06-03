@@ -24,7 +24,7 @@ tags:
 
 使用VPN（虛擬私人網路）連線到日本，Netflix就會以為你是從日本的位置觀看影片，以達到目的。
 
-如果想要更深入了解VPN的話可以<a href="https://nordvpn.com/zh-tw/what-is-a-vpn/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">點這裡</a>。
+如果想要更深入了解VPN的話可以[點這裡](https://nordvpn.com/zh-tw/what-is-a-vpn/)。
 
 雖然網路上有許多的VPN供應商，但是大部分都已經被日本Netflix給封鎖了，所以基本上也是無法觀看的。
 
@@ -42,14 +42,14 @@ Gate</a>
 ### 安裝軟體
 
 Windows10 載點： （下載你的Windows版本的Installer）\
-<a href="https://openvpn.net/community-downloads/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">https://openvpn.net/community-downloads/</a>
+[https://openvpn.net/community-downloads/](https://openvpn.net/community-downloads/)
 
-<a href="https://tw.answers.acer.com/app/answers/detail/a_id/60437/~/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2windows-%E7%B3%BB%E7%B5%B1%E7%89%88%E6%9C%AC%EF%BC%9F" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">如何查看Windows版本？﻿</a>
+[如何查看Windows版本？](https://tw.answers.acer.com/app/answers/detail/a_id/60437/~/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2windows-%E7%B3%BB%E7%B5%B1%E7%89%88%E6%9C%AC%EF%BC%9F)
 
 Mac OS 載點： （下載Stable版本）\
-<a href="https://tunnelblick.net/downloads.html" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">https://tunnelblick.net/downloads.html</a>
+[https://tunnelblick.net/downloads.html](https://tunnelblick.net/downloads.html)
 
-之後去這個<a href="https://www.vpngate.net/cn/howto_openvpn.aspx" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">連結</a>，進去以後，如果你是Windows用戶，依照Windows的指南去安裝，如果是Mac的用戶，依照Mac的指南去安裝。
+之後去這個[連結](https://www.vpngate.net/cn/howto_openvpn.aspx)，進去以後，如果你是Windows用戶，依照Windows的指南去安裝，如果是Mac的用戶，依照Mac的指南去安裝。
 
 ### 下載OpenVPN 連結配置文件（.ovpn file)
 
@@ -90,7 +90,7 @@ Gate</a>的首頁，往下拉你會發現有一整排的列表。
 
 ### 使用.ovpn檔案
 
-如果你是Mac使用者，依照剛剛安裝軟體的網址<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://www.vpngate.net/cn/howto_openvpn.aspx" target="_blank">連結</a>所說明的安裝ovpn檔案後，記得將第二個項目打勾（傳送所有流量），網路流量才會被導入VPN（如下圖）
+如果你是Mac使用者，依照剛剛安裝軟體的網址[連結](https://www.vpngate.net/cn/howto_openvpn.aspx)所說明的安裝ovpn檔案後，記得將第二個項目打勾（傳送所有流量），網路流量才會被導入VPN（如下圖）
 
 ![wp-image-54](/img/2019/04/スクリーンショット-2019-04-30-2.57.41.png)
 
@@ -100,7 +100,7 @@ Windows會自動傳送所有流量所以不用多做設定。
 
 ### 測試
 
-進入這個<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://www.ez2o.com/App/Net/IP" target="_blank">網站</a>查看IP位置
+進入這個[網站](https://www.ez2o.com/App/Net/IP)查看IP位置
 
 如果國家顯示日本，就代表成功了，還是顯示台灣的話就回去上面確認是不是少做了什麼。
 

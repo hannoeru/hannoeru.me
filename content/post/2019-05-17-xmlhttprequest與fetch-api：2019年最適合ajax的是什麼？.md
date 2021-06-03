@@ -40,7 +40,7 @@ AJAX 是不同步 JavaScript 和 XML 的標記符號。肯定是"不同步"，�
 
 ### XMLHttpRequest 的極限 {#extremexmlhttprequest}
 
-以下 JavaScript 代碼使用 `<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>` 示範了一個基本的 HTTP GET 請求到 http://domain/serviceusing
+以下 JavaScript 代碼使用 [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) 示範了一個基本的 HTTP GET 請求到 [http://domain/serviceusing](http://domain/serviceusing)
 
 ```js
 let xhr = new XMLHttpRequest();
@@ -66,7 +66,7 @@ xhr.onreadystatechange = function() {
 xhr.send();
 ```
 
-`<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>` 具有許多其他選項，事件和回應屬性。例如，可以設置和檢測超時（以毫秒為單位）：
+`[XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)` 具有許多其他選項，事件和回應屬性。例如，可以設置和檢測超時（以毫秒為單位）：
 
 ```js
 // set timeout
@@ -83,7 +83,7 @@ xhr.upload.onprogress = p => {
 }
 ```
 
-選項的數量多到可能令人困惑，早期 `XMLHttpRequest` 有一些跨瀏覽器的不一致。出於這個原因，大多數庫和框架都提供Ajax包裝函數來處理複雜性，例如 `<a href="http://api.jquery.com/jquery.ajax/">jQuery.ajax()</a>` 方法：
+選項的數量多到可能令人困惑，早期 `XMLHttpRequest` 有一些跨瀏覽器的不一致。出於這個原因，大多數庫和框架都提供Ajax包裝函數來處理複雜性，例如 `[jQuery.ajax()](http://api.jquery.com/jquery.ajax/)` 方法：
 
 ```js
 // jQuery Ajax
@@ -154,7 +154,7 @@ function fetchTimeout(url, init, timeout = 3000) {
 
 ```
 
-或者使用 `<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race">Promise.race()</a>` 當 GET 或超時先完成時，判斷哪一個先執行，例如：
+或者使用 `[Promise.race()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race)` 當 GET 或超時先完成時，判斷哪一個先執行，例如：
 
 ```js
 Promise.race([

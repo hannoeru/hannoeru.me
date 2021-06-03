@@ -57,7 +57,7 @@ echo $SHELL
 
 出現 /usr/bin/zsh 代表已經成功切換為 Zsh 了
 
-### 安裝 Oh My Zsh：
+### 安裝 Oh My Zsh
 
 這是官方提供的一鍵安裝指令
 
@@ -138,8 +138,6 @@ cd fonts
 
 ![wp-image-518](/img/2020/02/スクリーンショット-2020-02-22-14.31.19.png)
 
-<div class="wp-block-file">
-  <a href="https://blog.hanlee.co/img/2020/02/setting.json">設定檔</a><a href="https://blog.hanlee.co/img/2020/02/setting.json" class="wp-block-file__button" download>ダウンロード</a>
-</div>
+[ダウンロード](/data/setting.json)
 
 [1]: https://github.com/wesbos/Cobalt2-iterm/archive/master.zip

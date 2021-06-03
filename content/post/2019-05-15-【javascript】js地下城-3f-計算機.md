@@ -118,9 +118,9 @@ const addComma = (isAdd) => {
 
 ### 參考資料
 
-<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98" target="_blank">How to build an HTML calculator app from scratch using JavaScript</a>
+[How to build an HTML calculator app from scratch using JavaScript](https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98)
 
-<a href="https://qiita.com/raccy/items/bf590d3c10c3f1a2846b" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">JavaScript初級者のためのコーディングガイド</a>
+[JavaScript初級者のためのコーディングガイド](https://qiita.com/raccy/items/bf590d3c10c3f1a2846b)
 
  [1]: https://hannoeru.github.io/js-calculator/
  [2]: https://github.com/hannoeru/js-calculator

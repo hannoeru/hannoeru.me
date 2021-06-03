@@ -25,9 +25,9 @@ tags:
 
 ### 連結
 
-<a href="https://hannoeru.github.io/tic-tac-toe/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">Demo</a>
+[Demo](https://hannoeru.github.io/tic-tac-toe/)
 
-<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://github.com/hannoeru/tic-tac-toe" target="_blank">Code</a>
+[Code](https://github.com/hannoeru/tic-tac-toe)
 
 ### 使用語言＆框架
 

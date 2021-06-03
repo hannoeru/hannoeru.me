@@ -46,7 +46,7 @@ scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/
 
 之後在Unifi上新增你要使用的Corporate Network（有線網路）&Wireless Network（無線網路）並設定VLANID
 
-如果直接在USG上設定OpenVPN跟路由的話會因為重新啟動而覆蓋掉原本的更動，所以要在Unifi Controller中加上<a rel="noreferrer noopener" href="https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration" target="_blank">config.gateway.json</a>檔案，內容如下：
+如果直接在USG上設定OpenVPN跟路由的話會因為重新啟動而覆蓋掉原本的更動，所以要在Unifi Controller中加上[config.gateway.json](https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration)檔案，內容如下：
 
 ```json
 {
@@ -132,7 +132,7 @@ scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/
 }
 ```
 
-依照你的Unifi網路設定更改你想要使用的<VLAN's Address/Subnet>&<VLANID>，之後將<a rel="noreferrer noopener" href="https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration" target="_blank">config.gateway.json</a>複製到：/unifi/data/sites/<unifi_base>/
+依照你的Unifi網路設定更改你想要使用的<VLAN's Address/Subnet>&<VLANID>，之後將[config.gateway.json](https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration)複製到：/unifi/data/sites/<unifi_base>/
 
 ```bash
 scp /path/to/config.gateway.json user@unifi-controller:/unifi/data/sites/<unifi_base>/

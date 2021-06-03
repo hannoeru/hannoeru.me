@@ -21,7 +21,7 @@ tags:
 
 [Demo][1]
 
-<a href="https://github.com/hannoeru/kaohsiung-travel-information" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>
+[Code](https://github.com/hannoeru/kaohsiung-travel-information)
 
 ### 使用語言
 
@@ -56,9 +56,9 @@ function addToList(){
 
 ### 連結
 
-<a rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)" href="https://hannoeru.github.io/bmi-calculator/" target="_blank">Demo</a>
+[Demo](https://hannoeru.github.io/bmi-calculator/)
 
-<a href="https://github.com/hannoeru/bmi-calculator" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>
+[Code](https://github.com/hannoeru/bmi-calculator)
 
 ### 使用語言
 
@@ -85,7 +85,7 @@ var bmi = Math.round((kg/((cm/100)*(cm/100)))*100)/100;
 
 使用`:hover`與`::befor`做出刪除動畫
 
-參考資料：<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://codepen.io/bunny06/pen/KYMwVo" target="_blank">https://codepen.io/bunny06/pen/KYMwVo</a>
+參考資料：[https://codepen.io/bunny06/pen/KYMwVo](https://codepen.io/bunny06/pen/KYMwVo)
 
 ```css
 .card{

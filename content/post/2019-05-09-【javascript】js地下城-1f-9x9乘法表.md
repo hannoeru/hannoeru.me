@@ -23,9 +23,9 @@ tags:
 
 ### 連結
 
-<a href="https://hannoeru.github.io/multiplication-chart/" target="_blank" rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)">Demo</a>
+[Demo](https://hannoeru.github.io/multiplication-chart/)
 
-<a href="https://github.com/hannoeru/multiplication-chart" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>
+[Code](https://github.com/hannoeru/multiplication-chart)
 
 ### 使用語言
 
@@ -108,4 +108,4 @@ contentBlock.insertAdjacentElement('afterbegin', insetElement);
 
 ### 參考資料
 
-<a href="https://qiita.com/amamamaou/items/624c22adec32515e863b" target="_blank" rel="noreferrer noopener" aria-label="innerHTML より insertAdjacentHTML を使う (新しいタブで開く)">innerHTML より insertAdjacentHTML を使う</a>
+[innerHTML より insertAdjacentHTML を使う](https://qiita.com/amamamaou/items/624c22adec32515e863b)

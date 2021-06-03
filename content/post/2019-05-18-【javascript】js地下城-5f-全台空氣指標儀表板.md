@@ -24,9 +24,9 @@ tags:
 
 ### 連結
 
-<a href="https://hannoeru.github.io/js-aqi/" target="_blank" rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)">Demo</a>
+[Demo](https://hannoeru.github.io/js-aqi/)
 
-<a rel="noreferrer noopener" aria-label="Code (新しいタブで開く)" href="https://github.com/hannoeru/js-aqi" target="_blank">Code</a>
+[Code](https://github.com/hannoeru/js-aqi)
 
 ### 使用語言&API
 
@@ -62,7 +62,7 @@ Fetch API 照著官方文檔跟網路上找到的文章寫就沒問題了，Fetc
 
 <div class="wp-block-embed__wrapper">
   <blockquote class="wp-embedded-content" data-secret="o8tBgcpMY9">
-    <a href="https://blog.hanlee.co/xmlhttprequest%e8%88%87fetch-api%ef%bc%9a2019%e5%b9%b4%e6%9c%80%e9%81%a9%e5%90%88ajax%e7%9a%84%e6%98%af%e4%bb%80%e9%ba%bc%ef%bc%9f/">XMLHttpRequest與Fetch API：2019年最適合Ajax的是什麼？</a>
+    [XMLHttpRequest與Fetch API：2019年最適合Ajax的是什麼？](https://blog.hanlee.co/xmlhttprequest%e8%88%87fetch-api%ef%bc%9a2019%e5%b9%b4%e6%9c%80%e9%81%a9%e5%90%88ajax%e7%9a%84%e6%98%af%e4%bb%80%e9%ba%bc%ef%bc%9f/)
   </blockquote>
 </div>
 
@@ -94,11 +94,11 @@ fetch("http://example.com/movies.json")
 ```
 
 這是一個通過網絡獲取 JSON 文件並將其輸出到控制台的程式碼。`fetch()` 最簡單的方法是只使用一個參數 &#8211; 您想要獲取的資源的路徑
-&#8211;`<a href="https://developer.mozilla.org/ja/docs/Web/API/Response">Response</a>`
+&#8211;`[Response](https://developer.mozilla.org/ja/docs/Web/API/Response)`
 並返回包含響應（對象）的 Promise。
 
 這只是一個 HTTP 響應，而不是實際的 JSON。您需要使用
-`<a href="https://developer.mozilla.org/ja/docs/Web/API/Body/json">json()</a>`
+`[json()](https://developer.mozilla.org/ja/docs/Web/API/Body/json)`
 從響應對像中提取 JSON&nbsp;。
 
 #### 用變數提取陣列內容
@@ -123,7 +123,7 @@ array[list[1]]; //30
 <a rel="noreferrer noopener" aria-label="まだXMLHttpRequestを使ってるの？　fetchのすすめ (新しいタブで開く)" href="https://qiita.com/uhyo/items/91649e260165b35fecd7" target="_blank">まだXMLHttpRequestを使ってるの？
 fetchのすすめ</a>
 
-<a rel="noreferrer noopener" aria-label="何番目系の便利なCSSまとめ (新しいタブで開く)" href="https://qiita.com/ituki_b/items/62a752389385de7ba4a2" target="_blank">何番目系の便利なCSSまとめ</a>
+[何番目系の便利なCSSまとめ](https://qiita.com/ituki_b/items/62a752389385de7ba4a2)
 
 <a rel="noreferrer noopener" aria-label="圖解：CSS Flex 屬性一點也不難 (新しいタブで開く)" href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank">圖解：CSS
 Flex 屬性一點也不難</a>

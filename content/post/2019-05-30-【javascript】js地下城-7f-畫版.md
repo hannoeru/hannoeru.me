@@ -25,9 +25,9 @@ tags:
 
 ### 連結
 
-<a href="https://hannoeru.github.io/canvas-panel/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">Demo</a>
+[Demo](https://hannoeru.github.io/canvas-panel/)
 
-<a href="https://github.com/hannoeru/canvas-panel" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">Code</a>
+[Code](https://github.com/hannoeru/canvas-panel)
 
 ### 使用語言
 

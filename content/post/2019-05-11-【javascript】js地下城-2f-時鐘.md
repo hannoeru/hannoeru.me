@@ -23,9 +23,9 @@ tags:
 
 ### 連結
 
-<a href="https://hannoeru.github.io/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)">Demo</a>
+[Demo](https://hannoeru.github.io/js-clock/)
 
-<a href="https://github.com/hannoeru/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>
+[Code](https://github.com/hannoeru/js-clock/)
 
 ### 使用語言
 
@@ -103,7 +103,7 @@ setInterval(time, 1000);
 
 ### 參考資料
 
-<a rel="noreferrer noopener" aria-label="CSSのposition:absolute;とは？要素を思いのままに配置する方法 (新しいタブで開く)" href="https://www.sejuku.net/blog/53016" target="_blank">CSSのposition:absolute;とは？要素を思いのままに配置する方法</a>
+[CSSのposition:absolute;とは？要素を思いのままに配置する方法](https://www.sejuku.net/blog/53016)
 
 <a href="https://wcc723.github.io/css/2013/10/10/css-transform-origin/" target="_blank" rel="noreferrer noopener" aria-label="CSS沒有極限 - CSS transform-origin (新しいタブで開く)">CSS沒有極限
 &#8211; CSS transform-origin</a>

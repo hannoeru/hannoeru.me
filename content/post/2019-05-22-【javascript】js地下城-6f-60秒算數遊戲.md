@@ -23,9 +23,9 @@ tags:
 
 ### 連結
 
-<a href="https://hannoeru.github.io/sec-game/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">Demo</a>
+[Demo](https://hannoeru.github.io/sec-game/)
 
-<a href="https://github.com/hannoeru/sec-game" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">Code</a>
+[Code](https://github.com/hannoeru/sec-game)
 
 ### 使用語言
 
@@ -96,4 +96,4 @@ const interval = setInterval(() => {
 <a href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">圖解：CSS
 Flex 屬性一點也不難</a>
 
-<a href="https://techacademy.jp/magazine/5537" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">JavaScriptでsetIntervalを使う方法【初心者向け】</a>
+[JavaScriptでsetIntervalを使う方法【初心者向け】](https://techacademy.jp/magazine/5537)

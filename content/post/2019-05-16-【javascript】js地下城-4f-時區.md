@@ -23,9 +23,9 @@ tags:
 
 ### 連結
 
-<a rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)" href="https://hannoeru.github.io/world-clock/" target="_blank">Demo</a>
+[Demo](https://hannoeru.github.io/world-clock/)
 
-<a rel="noreferrer noopener" aria-label="Code (新しいタブで開く)" href="https://github.com/hannoeru/world-clock" target="_blank">Code</a>
+[Code](https://github.com/hannoeru/world-clock)
 
 ### 使用語言
 
