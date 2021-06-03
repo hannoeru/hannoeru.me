@@ -116,9 +116,10 @@ cd fonts
 
 ### 更改顏色
 
-到 Profiles >> Default >> Colors >> Color Presets 下拉選單<figure class="wp-block-image size-large">
+到 Profiles >> Default >> Colors >> Color Presets 下拉選單
 
-<img loading="lazy" width="1024" height="553" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png" alt="" class="wp-image-514" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-300x162.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-768x415.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1536x830.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-2048x1107.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="553" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png" alt="" class="wp-image-514" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-300x162.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-768x415.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1536x830.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-2048x1107.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 選擇 Import，到 ~/Downloads 選擇之前 Github 載下來的 cobalt2.itermcolors 這個檔案，匯入後選擇 cobalt2
 
@@ -126,15 +127,17 @@ cd fonts
 
 ### 更改字型
 
-到旁邊的 Text 下方的 Font，搜尋「powerline」選擇自己喜歡的字型就可以了<figure class="wp-block-image size-large">
+到旁邊的 Text 下方的 Font，搜尋「powerline」選擇自己喜歡的字型就可以了
 
-<img loading="lazy" width="1024" height="793" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png" alt="" class="wp-image-513" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-300x232.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-768x595.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1536x1190.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45.png 1996w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="793" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png" alt="" class="wp-image-513" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-300x232.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-768x595.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1536x1190.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45.png 1996w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ## 完成
 
-這是我目前使用的樣式<figure class="wp-block-image size-large">
+這是我目前使用的樣式
 
-<img loading="lazy" width="1024" height="841" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png" alt="" class="wp-image-518" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-300x247.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-768x631.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="841" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png" alt="" class="wp-image-518" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-300x247.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-768x631.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 <div class="wp-block-file">
   <a href="https://blog.hanlee.co/wp-content/uploads/2020/02/setting.json">設定檔</a><a href="https://blog.hanlee.co/wp-content/uploads/2020/02/setting.json" class="wp-block-file__button" download>ダウンロード</a>

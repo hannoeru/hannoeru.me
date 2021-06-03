@@ -16,9 +16,10 @@ tags:
   - JS地下城
 
 ---
-## 6F-60秒算數遊戲<figure class="wp-block-image">
+## 6F-60秒算數遊戲
 
-<img loading="lazy" width="1024" height="886" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-1024x886.png" alt="" class="wp-image-289" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-1024x886.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-300x260.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-768x665.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28.png 1106w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="886" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-1024x886.png" alt="" class="wp-image-289" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-1024x886.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-300x260.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28-768x665.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28.png 1106w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### 連結
 

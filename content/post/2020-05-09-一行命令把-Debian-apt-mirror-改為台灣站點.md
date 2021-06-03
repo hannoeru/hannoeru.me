@@ -2,7 +2,7 @@
 title: 一行命令把 Debian apt mirror 改為台灣站點
 author: hanlee
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2020-05-09T18:10:57+00:00
 excerpt: 更改APT源為台灣鏡像站點
 draft: true
 url: /一行命令把-Debian-apt-mirror-改為台灣站點/

@@ -14,7 +14,8 @@ tags:
   - QuickLook
 
 ---
-<figure class="wp-block-image"><img loading="lazy" width="1024" height="680" src="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png" alt="" class="wp-image-388" srcset="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-300x199.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-768x510.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47.png 1472w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+
+<img loading="lazy" width="1024" height="680" src="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png" alt="" class="wp-image-388" srcset="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-300x199.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-768x510.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47.png 1472w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ## 安裝
 

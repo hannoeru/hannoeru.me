@@ -2,7 +2,7 @@
 title: 使用 iPhone 透過無線傳輸當作 Webcam！！Mac、PC通用
 author: hanlee
 type: post
-date: 2020-05-09T18:10:57+00:00
+date: 2020-05-10T18:10:57+00:00
 excerpt: 現在這個時期 Webcam 都缺貨，只好來分享一套免費軟體，「NDI」是影視製播產業中第一個IP製播工作流程的開放式協定，這個協定讓影片能夠在區域網路內相互分享傳輸，運用IP即可執行完全存取與控制，讓你可以使用 iPhone 透過無線傳輸當作 Webcam！！
 url: /使用-iphone-透過無線傳輸當作-webcam！！mac、pc通用/
 image: /img/2020/05/NDIの種類.png

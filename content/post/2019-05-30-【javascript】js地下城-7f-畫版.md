@@ -18,9 +18,10 @@ tags:
   - JS地下城
 
 ---
-## 7F-畫版<figure class="wp-block-image">
+## 7F-畫版
 
-<img loading="lazy" width="1024" height="584" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-1024x584.png" alt="" class="wp-image-361" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-1024x584.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-300x171.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-768x438.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18.png 1944w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="584" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-1024x584.png" alt="" class="wp-image-361" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-1024x584.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-300x171.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18-768x438.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18.png 1944w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### 連結
 

@@ -16,9 +16,10 @@ tags:
   - JS地下城
 
 ---
-## 4F-時區<figure class="wp-block-image">
+## 4F-時區
 
-<img loading="lazy" width="1024" height="826" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-1024x826.png" alt="" class="wp-image-256" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-1024x826.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-300x242.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-768x620.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05.png 1073w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="826" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-1024x826.png" alt="" class="wp-image-256" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-1024x826.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-300x242.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05-768x620.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05.png 1073w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### 連結
 

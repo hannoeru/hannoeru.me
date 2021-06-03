@@ -19,53 +19,64 @@ tags:
 
 ## 註冊
 
-### Step 1：註冊Amazon Web Services 帳號，Amazon有開放無料試用版請點選以下連結：<figure class="wp-block-image">
+### Step 1：註冊Amazon Web Services 帳號，Amazon有開放無料試用版請點選以下連結：
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-1024x640.png" alt="" class="wp-image-98" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
 
-看不懂日文的話在第一個畫面的右上角有語言選項，註冊完成後記得到控制台的右上角將區域調為東京。<figure class="wp-block-image">
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-1024x640.png" alt="" class="wp-image-98" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.21-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-1024x640.png" alt="" class="wp-image-101" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+看不懂日文的話在第一個畫面的右上角有語言選項，註冊完成後記得到控制台的右上角將區域調為東京。
 
-### Step 2：在服務（サービス）選項中進入EC2管理介面。<figure class="wp-block-image">
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-1024x640.png" alt="" class="wp-image-99" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-1024x640.png" alt="" class="wp-image-101" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.05.39-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-### Step 3：點選（インスタンスの作成）準備建立一台虛擬機。<figure class="wp-block-image">
+### Step 2：在服務（サービス）選項中進入EC2管理介面。
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-1024x640.png" alt="" class="wp-image-100" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-1024x640.png" alt="" class="wp-image-99" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.55.58-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
+
+### Step 3：點選（インスタンスの作成）準備建立一台虛擬機。
+
+
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-1024x640.png" alt="" class="wp-image-100" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-11-23.56.10-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ## 建立虛擬機
 
-### Step 1：選擇系統映像檔（AMI），在這裡下拉找到（Ubuntu Server 16.04 LTS (HVM), SSD Volume Type）的映像檔後按（選択）<figure class="wp-block-image">
+### Step 1：選擇系統映像檔（AMI），在這裡下拉找到（Ubuntu Server 16.04 LTS (HVM), SSD Volume Type）的映像檔後按（選択）
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-1024x640.png" alt="" class="wp-image-103" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
 
-### Step 2：選擇系統配置，如果你要免費方案的話目前只有（t2.micro）可以選，其他都是要額外收費的方案。<figure class="wp-block-image">
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-1024x640.png" alt="" class="wp-image-103" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.14.05-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-1024x640.png" alt="" class="wp-image-104" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+### Step 2：選擇系統配置，如果你要免費方案的話目前只有（t2.micro）可以選，其他都是要額外收費的方案。
 
-### Step 3：在這裡我們直接跳到第六個步驟，新增防火牆規則。<figure class="wp-block-image">
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-1024x640.png" alt="" class="wp-image-105" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-1024x640.png" alt="" class="wp-image-104" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.18.24-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-接下來新增一條規則，如下圖：<figure class="wp-block-image">
+### Step 3：在這裡我們直接跳到第六個步驟，新增防火牆規則。
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-1024x640.png" alt="" class="wp-image-106" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-1024x640.png" alt="" class="wp-image-105" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.21.34-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
+
+接下來新增一條規則，如下圖：
+
+
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-1024x640.png" alt="" class="wp-image-106" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.23.32-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 之後按下右下角的（確認と作成）進入下一個步驟。
 
-### Step 4：確認後按下（作成）<figure class="wp-block-image">
+### Step 4：確認後按下（作成）
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-1024x640.png" alt="" class="wp-image-107" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-1024x640.png" alt="" class="wp-image-107" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.27.14-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 之後他就會建立一個金鑰給你下載，作為以後登入的認證。
 
 ## 連線並設定Pivpn
 
-### Step 1：選擇你要連線的虛擬機後按下（接続）<figure class="wp-block-image">
+### Step 1：選擇你要連線的虛擬機後按下（接続）
 
-<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-1024x640.png" alt="" class="wp-image-108" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> <figure class="wp-block-image"><img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-1024x640.png" alt="" class="wp-image-109" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-1024x640.png" alt="" class="wp-image-108" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.33.42-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img loading="lazy" width="1024" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-1024x640.png" alt="" class="wp-image-109" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-1024x640.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-300x188.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.37.52-768x480.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 之後他就會顯示出連結的方法：
 
@@ -83,33 +94,45 @@ tags:
 
   1. 切換到root帳戶：sudo -i
   2. 取得安裝包：curl -L https://install.pivpn.io | bash
-  3. 接下來就會進入安裝畫面了：<figure class="wp-block-image is-resized">
+  3. 接下來就會進入安裝畫面了：
 
-<img loading="lazy" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-1024x773.png" alt="" class="wp-image-111" width="580" height="437" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01.png 1602w" sizes="(max-width: 580px) 100vw, 580px" /> </figure> 
 
-這裡依照預設值一直按Enter直到跳離粉色畫面。<figure class="wp-block-image">
+<img loading="lazy" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-1024x773.png" alt="" class="wp-image-111" width="580" height="437" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.01.png 1602w" sizes="(max-width: 580px) 100vw, 580px" />
 
-<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-1024x773.png" alt="" class="wp-image-112" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> <figure class="wp-block-image"><img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-1024x773.png" alt="" class="wp-image-119" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+這裡依照預設值一直按Enter直到跳離粉色畫面。
 
-在這裡用方向鍵移動到UDP後按下空白鍵即可選擇UDP，之後按下Enter。<figure class="wp-block-image">
 
-<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-1024x773.png" alt="" class="wp-image-120" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> <figure class="wp-block-image"><img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-1024x773.png" alt="" class="wp-image-121" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-1024x773.png" alt="" class="wp-image-112" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.07.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-1024x773.png" alt="" class="wp-image-119" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.32.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-這裡依照預設值按下Enter，之後如果沒有要變更其他設定的話也是一直Enter直到跳離粉色畫面。<figure class="wp-block-image">
+在這裡用方向鍵移動到UDP後按下空白鍵即可選擇UDP，之後按下Enter。
 
-<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-1024x773.png" alt="" class="wp-image-122" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
 
-在這裡按下Enter後會生成金鑰，要稍等一下。<figure class="wp-block-image">
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-1024x773.png" alt="" class="wp-image-120" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.42.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-1024x773.png" alt="" class="wp-image-121" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.46.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-1024x773.png" alt="" class="wp-image-123" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+這裡依照預設值按下Enter，之後如果沒有要變更其他設定的話也是一直Enter直到跳離粉色畫面。
 
-這裡可以選擇要用伺服器的IP還是你要自行設定DNS，如果不知道的話請選擇預設值按下Enter。<figure class="wp-block-image">
 
-<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-1024x773.png" alt="" class="wp-image-125" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> <figure class="wp-block-image"><img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-1024x773.png" alt="" class="wp-image-126" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> <figure class="wp-block-image"><img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-1024x773.png" alt="" class="wp-image-127" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-1024x773.png" alt="" class="wp-image-122" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.50.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-這裡是問你要不要現在重新起動，請用方向鍵選擇『Yes』按下Enter。<figure class="wp-block-image">
+在這裡按下Enter後會生成金鑰，要稍等一下。
 
-<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-1024x773.png" alt="" class="wp-image-128" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> <figure class="wp-block-image alignnone"><img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-1024x773.png" alt="" class="wp-image-129" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-1024x773.png" alt="" class="wp-image-123" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-0.54.54.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+
+這裡可以選擇要用伺服器的IP還是你要自行設定DNS，如果不知道的話請選擇預設值按下Enter。
+
+
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-1024x773.png" alt="" class="wp-image-125" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.35.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-1024x773.png" alt="" class="wp-image-126" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.39.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-1024x773.png" alt="" class="wp-image-127" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.44.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+
+這裡是問你要不要現在重新起動，請用方向鍵選擇『Yes』按下Enter。
+
+
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-1024x773.png" alt="" class="wp-image-128" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.49.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img loading="lazy" width="1024" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-1024x773.png" alt="" class="wp-image-129" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-1024x773.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-300x227.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55-768x580.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2018-02-12-1.04.55.png 1602w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 按下Enter後系統就會重新啟動了，重新啟動後請重新用SSH連線一次。
 

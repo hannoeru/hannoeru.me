@@ -17,9 +17,10 @@ tags:
 ---
 來到日本留學沒有手機門號對於辦理很多東西都不方便，而且也要一直買網路卡來用，這裡就教大家如何申辦近幾年新推出的 Line Moblie！
 
-Line Mobile 在日本是屬於格安 SIM 的一種，相較於傳統電信便宜很多，綁約最多也就一年（通話機能），如果是只要使用簡訊或單純使用網路的話根本不用綁約，想解約就解約。<figure class="wp-block-image">
+Line Mobile 在日本是屬於格安 SIM 的一種，相較於傳統電信便宜很多，綁約最多也就一年（通話機能），如果是只要使用簡訊或單純使用網路的話根本不用綁約，想解約就解約。
 
-<img loading="lazy" width="648" height="1024" src="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-648x1024.png" alt="" class="wp-image-427" srcset="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-648x1024.png 648w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-190x300.png 190w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-768x1213.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04.png 1248w" sizes="(max-width: 648px) 100vw, 648px" /> </figure> 
+
+<img loading="lazy" width="648" height="1024" src="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-648x1024.png" alt="" class="wp-image-427" srcset="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-648x1024.png 648w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-190x300.png 190w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04-768x1213.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.25.04.png 1248w" sizes="(max-width: 648px) 100vw, 648px" />
 
 Line Mobile 比較特別的是有所謂的 SNS Free 的方案，顧名思義就是你使用上述的社群軟體都不會算進流量裡，社群軟體的部分吃到飽的一個方案。
 
@@ -38,24 +39,27 @@ Line Mobile 比較特別的是有所謂的 SNS Free 的方案，顧名思義就�
 
 Line Mobile 每個時期都會有不同的優惠活動，詳細可以到官網[查看][1]
 
-**注意！**要在申請頁面的一開始輸入折扣碼才會適用：<figure class="wp-block-image">
+**注意！**要在申請頁面的一開始輸入折扣碼才會適用：
 
-<img loading="lazy" width="1024" height="512" src="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-1024x512.png" alt="" class="wp-image-432" srcset="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-1024x512.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-300x150.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-768x384.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="512" src="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-1024x512.png" alt="" class="wp-image-432" srcset="https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-1024x512.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-300x150.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/07/スクリーンショット-2019-07-02-16.51.26-768x384.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ## 申請流程
 
 ### Step 1 選擇申請方法
 
-使用我的招待連結的話可以直接減免『**ウェブ登録事務手数料**』：[連結][2]<figure class="wp-block-image">
+使用我的招待連結的話可以直接減免『**ウェブ登録事務手数料**』：[連結][2]
 
-<img loading="lazy" width="1024" height="354" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-1024x354.png" alt="" class="wp-image-450" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-1024x354.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-300x104.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-768x266.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07.png 1776w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="354" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-1024x354.png" alt="" class="wp-image-450" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-1024x354.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-300x104.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07-768x266.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-09-28-2.36.07.png 1776w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 另外有以下兩種方法可以依照優惠活動自行評估哪一個比較便宜
 
   * 通常申し込み：**可以**使用優惠活動代碼。
-  * エントリーパッケージを使用して申し込み：**無法**使用優惠活動代碼，但使可以免除『**ウェブ登録事務手数料**』3,000円。<figure class="wp-block-image">
+  * エントリーパッケージを使用して申し込み：**無法**使用優惠活動代碼，但使可以免除『**ウェブ登録事務手数料**』3,000円。
 
-<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-1024x648.png" alt="" class="wp-image-449" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-1024x648.png" alt="" class="wp-image-449" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.41.55-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### Step 2 選擇網路回線&方案
 
@@ -67,23 +71,27 @@ Line Mobile 每個時期都會有不同的優惠活動，詳細可以到官網[�
 
 Line Mobile 的網路回線在契約後也可以更改，不過次數過多會產生額外費用。
 
-方案的部分也是一樣契約後隨時都可以更改，會在下一個月套用到你的方案上。<figure class="wp-block-image">
+方案的部分也是一樣契約後隨時都可以更改，會在下一個月套用到你的方案上。
 
-<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-1024x648.png" alt="" class="wp-image-448" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-1024x648.png" alt="" class="wp-image-448" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.05-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 這裡要注意到，如果你要講電話的功能的話要選擇『音声通話SIM』，沒有的話用『データSIM』就好了，在 Line Mobile『データSIM』是可以收簡訊的。
 
-在『音声通話SIM』的部分如果合約未滿1年會產生違約金9,800円（10/1開始10000円）<figure class="wp-block-image">
+在『音声通話SIM』的部分如果合約未滿1年會產生違約金9,800円（10/1開始10000円）
 
-<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-1024x648.png" alt="" class="wp-image-446" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
 
-剩餘的服務選項就看自己需求加入即可<figure class="wp-block-image">
+<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-1024x648.png" alt="" class="wp-image-446" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.20-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
-<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-1024x648.png" alt="" class="wp-image-447" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+剩餘的服務選項就看自己需求加入即可
 
-之後他會試算一次價錢給你，這個是不包含優惠活動的價錢，優惠款項會在正式帳單中扣除。<figure class="wp-block-image">
 
-<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-1024x648.png" alt="" class="wp-image-445" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-1024x648.png" alt="" class="wp-image-447" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.43-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" />
+
+之後他會試算一次價錢給你，這個是不包含優惠活動的價錢，優惠款項會在正式帳單中扣除。
+
+
+<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-1024x648.png" alt="" class="wp-image-445" srcset="https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/09/スクリーンショット-2019-07-02-15.42.46-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### Step 3 輸入個人資料＆上傳資料
 

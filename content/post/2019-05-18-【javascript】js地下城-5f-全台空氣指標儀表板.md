@@ -17,9 +17,10 @@ tags:
   - JS地下城
 
 ---
-## 5F-全台空氣指標儀表板<figure class="wp-block-image">
+## 5F-全台空氣指標儀表板
 
-<img loading="lazy" width="1024" height="762" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png" alt="" class="wp-image-281" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-300x223.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-768x572.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="762" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png" alt="" class="wp-image-281" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-300x223.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-768x572.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### 連結
 
@@ -55,13 +56,14 @@ Fetch API 照著官方文檔跟網路上找到的文章寫就沒問題了，Fetc
 
 ### 底層 XMLHttpRequest、Fetch API 的差異
 
-我翻譯了一篇寫得還不錯的文章：<figure class="wp-block-embed-wordpress wp-block-embed is-type-wp-embed is-provider-ハンのブログ">
+我翻譯了一篇寫得還不錯的文章：
+
 
 <div class="wp-block-embed__wrapper">
   <blockquote class="wp-embedded-content" data-secret="o8tBgcpMY9">
     <a href="https://blog.hanlee.co/xmlhttprequest%e8%88%87fetch-api%ef%bc%9a2019%e5%b9%b4%e6%9c%80%e9%81%a9%e5%90%88ajax%e7%9a%84%e6%98%af%e4%bb%80%e9%ba%bc%ef%bc%9f/">XMLHttpRequest與Fetch API：2019年最適合Ajax的是什麼？</a>
   </blockquote>
-</div></figure> 
+</div>
 
 ### CORS 問題解決方案
 

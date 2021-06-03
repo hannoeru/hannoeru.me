@@ -18,9 +18,10 @@ tags:
   - RWD
 
 ---
-## 8F-井字遊戲<figure class="wp-block-image">
+## 8F-井字遊戲
 
-<img loading="lazy" width="1024" height="690" src="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-1024x690.png" alt="" class="wp-image-414" srcset="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-1024x690.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-300x202.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-768x517.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55.png 1590w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<img loading="lazy" width="1024" height="690" src="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-1024x690.png" alt="" class="wp-image-414" srcset="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-1024x690.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-300x202.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55-768x517.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-18-0.12.55.png 1590w" sizes="(max-width: 1024px) 100vw, 1024px" />
 
 ### 連結
 
