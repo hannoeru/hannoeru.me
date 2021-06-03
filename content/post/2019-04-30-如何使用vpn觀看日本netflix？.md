@@ -73,12 +73,12 @@ VPN有分成很多種，OpenVPN是我們這次要使用的VPN種類，因為他�
 選好要的伺服器以後點選『OpenVPN 設定ファイル』
 
 
-<img loading="lazy" width="1024" height="451" src="https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1-1024x451.png" alt="" class="wp-image-51" srcset="https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1-1024x451.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1-300x132.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1-768x338.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1.png 1260w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-51](/img/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1-1024x451.png)
 
 點進去以後會看到兩個分類
 
 
-<img loading="lazy" width="954" height="773" src="https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.49.33-min-1.png" alt="" class="wp-image-53" srcset="https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.49.33-min-1.png 954w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.49.33-min-1-300x243.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.49.33-min-1-768x622.png 768w" sizes="(max-width: 954px) 100vw, 954px" />
+![wp-image-53](/img/2019/04/スクリーンショット-2019-04-30-2.49.33-min-1.png)
 
 一個是DDNS開頭，另一個是IP開頭，選擇DDNS下方的設定檔。
 
@@ -89,7 +89,7 @@ VPN有分成很多種，OpenVPN是我們這次要使用的VPN種類，因為他�
 如果你是Mac使用者，依照剛剛安裝軟體的網址<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://www.vpngate.net/cn/howto_openvpn.aspx" target="_blank">連結</a>所說明的安裝ovpn檔案後，記得將第二個項目打勾（傳送所有流量），網路流量才會被導入VPN（如下圖）
 
 
-<img loading="lazy" width="872" height="640" src="https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.57.41.png" alt="" class="wp-image-54" srcset="https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.57.41.png 872w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.57.41-300x220.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/04/スクリーンショット-2019-04-30-2.57.41-768x564.png 768w" sizes="(max-width: 872px) 100vw, 872px" />
+![wp-image-54](/img/2019/04/スクリーンショット-2019-04-30-2.57.41.png)
 
 Windows會自動傳送所有流量所以不用多做設定。
 

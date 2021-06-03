@@ -19,7 +19,7 @@ tags:
 ## 3F-計算機
 
 
-<img loading="lazy" width="823" height="765" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36.png" alt="" class="wp-image-242" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36.png 823w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36-300x279.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36-768x714.png 768w" sizes="(max-width: 823px) 100vw, 823px" />
+![wp-image-242](/img/2019/05/スクリーンショット-2019-05-14-23.51.36.png)
 
 ### 連結
 

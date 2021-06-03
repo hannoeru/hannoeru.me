@@ -20,7 +20,7 @@ tags:
 ## 5F-全台空氣指標儀表板
 
 
-<img loading="lazy" width="1024" height="762" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png" alt="" class="wp-image-281" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-300x223.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20-768x572.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-281](/img/2019/05/スクリーンショット-2019-05-17-23.27.20-1024x762.png)
 
 ### 連結
 

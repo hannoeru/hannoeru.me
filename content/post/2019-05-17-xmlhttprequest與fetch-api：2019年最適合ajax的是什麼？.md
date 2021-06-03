@@ -17,7 +17,7 @@ tags:
 
 ---
 
-<img loading="lazy" width="1024" height="576" src="https://blog.hanlee.co/wp-content/uploads/2019/05/0_Kj2i4zLF-jKOsiLb-1024x576.jpg" alt="" class="wp-image-272" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/0_Kj2i4zLF-jKOsiLb-1024x576.jpg 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/0_Kj2i4zLF-jKOsiLb-300x169.jpg 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/0_Kj2i4zLF-jKOsiLb-768x432.jpg 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/0_Kj2i4zLF-jKOsiLb.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-272](/img/2019/05/0_Kj2i4zLF-jKOsiLb-1024x576.jpg)
 
 XMLHTTP 最初是由微軟公司發明的，在 [Internet Explorer][1] 5.0 中用作 [ActiveX][2] 物件，可通過 JavaScript、VBScript 或其它瀏覽器支援的手稿語言存取。[Mozilla][3] 的開發人員後來在 Mozilla 1.0 中實現了一個相容的版本。之後蘋果電腦公司在 [Safari][4] 1.2中開始支援XMLHTTP，而 [Opera][5] 從 8.0 版開始也宣布支援 XMLHTTP。
 

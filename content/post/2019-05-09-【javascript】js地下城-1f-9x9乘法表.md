@@ -19,7 +19,7 @@ tags:
 ## 1F-9&#215;9乘法表
 
 
-<img loading="lazy" width="850" height="921" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-09-0.28.33.png" alt="" class="wp-image-176" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-09-0.28.33.png 850w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-09-0.28.33-277x300.png 277w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-09-0.28.33-768x832.png 768w" sizes="(max-width: 850px) 100vw, 850px" />
+![wp-image-176](/img/2019/05/スクリーンショット-2019-05-09-0.28.33.png)
 
 ### 連結
 

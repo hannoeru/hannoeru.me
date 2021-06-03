@@ -26,23 +26,23 @@ tags:
 網址：<https://developers.line.biz/>
 
 
-<img loading="lazy" width="1024" height="584" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.42.51-1024x584.png" alt="" class="wp-image-299" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.42.51-1024x584.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.42.51-300x171.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.42.51-768x438.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.42.51.png 1944w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-299](/img/2019/05/スクリーンショット-2019-05-25-0.42.51-1024x584.png)
 
 #### 申請完成後進到 Products [頁面][1]，點選 Messaging API
 
 
-<img loading="lazy" width="1024" height="515" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.36-1024x515.png" alt="" class="wp-image-313" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.36-1024x515.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.36-300x151.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.36-768x386.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.36.png 1272w" sizes="(max-width: 1024px) 100vw, 1024px" />
-<img loading="lazy" width="958" height="521" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.49.png" alt="" class="wp-image-314" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.49.png 958w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.49-300x163.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.36.49-768x418.png 768w" sizes="(max-width: 958px) 100vw, 958px" />
+![wp-image-313](/img/2019/05/スクリーンショット-2019-05-25-0.36.36-1024x515.png)
+![wp-image-314](/img/2019/05/スクリーンショット-2019-05-25-0.36.49.png)
 
 #### 設定提供者名稱（自己取名或公司名稱）
 
 
-<img loading="lazy" width="1024" height="584" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.03-1024x584.png" alt="" class="wp-image-308" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.03-1024x584.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.03-300x171.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.03-768x438.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.03.png 1944w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-308](/img/2019/05/スクリーンショット-2019-05-25-0.37.03-1024x584.png)
 
 #### 填寫APP基本資料
 
 
-<img loading="lazy" width="1024" height="584" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.12-1024x584.png" alt="" class="wp-image-316" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.12-1024x584.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.12-300x171.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.12-768x438.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.12.png 1944w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-316](/img/2019/05/スクリーンショット-2019-05-25-0.37.12-1024x584.png)
 
   * **App icon**
       * Line Bot 使用者圖像
@@ -62,12 +62,12 @@ tags:
 #### 閱讀完使用條款之後按下『同意』
 
 
-<img loading="lazy" width="876" height="937" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.54.png" alt="" class="wp-image-317" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.54.png 876w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.54-280x300.png 280w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.37.54-768x821.png 768w" sizes="(max-width: 876px) 100vw, 876px" />
+![wp-image-317](/img/2019/05/スクリーンショット-2019-05-25-0.37.54.png)
 
 #### 確認資料沒問題，勾選 帳號 與 API 的使用條款後，按下 Create 就完成 Line Bot 的初期設定了。
 
 
-<img loading="lazy" width="1024" height="584" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.09-1024x584.png" alt="" class="wp-image-310" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.09-1024x584.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.09-300x171.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.09-768x438.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.09.png 1944w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-310](/img/2019/05/スクリーンショット-2019-05-25-0.38.09-1024x584.png)
 
 ## Step .2
 
@@ -76,12 +76,12 @@ tags:
 上一步驟完成後就會看到這樣的畫面，點進去你剛建立好的 App。
 
 
-<img loading="lazy" width="906" height="660" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.29.png" alt="" class="wp-image-318" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.29.png 906w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.29-300x219.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.29-768x559.png 768w" sizes="(max-width: 906px) 100vw, 906px" />
+![wp-image-318](/img/2019/05/スクリーンショット-2019-05-25-0.38.29.png)
 
 #### 進去找到『Messaging settings』的部分
 
 
-<img loading="lazy" width="432" height="546" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.48-1.png" alt="" class="wp-image-326" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.48-1.png 432w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-0.38.48-1-237x300.png 237w" sizes="(max-width: 432px) 100vw, 432px" />
+![wp-image-326](/img/2019/05/スクリーンショット-2019-05-25-0.38.48-1.png)
 
 這裡有四個選項：
 
@@ -110,14 +110,14 @@ tags:
 #### 匯入後看起來像這樣
 
 
-<img loading="lazy" width="1024" height="191" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.54.02-1024x191.png" alt="" class="wp-image-333" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.54.02-1024x191.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.54.02-300x56.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.54.02-768x143.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.54.02.png 1300w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-333](/img/2019/05/スクリーンショット-2019-05-25-2.54.02-1024x191.png)
 
 #### 自定匯率
 
 進入到『Get JPY Currency』function 節點後
 
 
-<img loading="lazy" width="485" height="401" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.04.33.png" alt="" class="wp-image-329" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.04.33.png 485w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.04.33-300x248.png 300w" sizes="(max-width: 485px) 100vw, 485px" />
+![wp-image-329](/img/2019/05/スクリーンショット-2019-05-25-2.04.33.png)
 
 修改第一行的『currency』= 你要的匯率，結尾記得加上『;』
 
@@ -132,7 +132,7 @@ var currency = 匯率;
 之後傳送信息給 Line Bot，在 Node-RED 的 Debug視窗 就可以看到信息資訊：
 
 
-<img loading="lazy" width="344" height="374" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.37.16-2.png" alt="" class="wp-image-354" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.37.16-2.png 344w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.37.16-2-276x300.png 276w" sizes="(max-width: 344px) 100vw, 344px" />
+![wp-image-354](/img/2019/05/スクリーンショット-2019-05-25-2.37.16-2.png)
 
 這時候在event[0].source下方就可以看到 userId，使用 userId 作為『使用者ID』。
 
@@ -141,7 +141,7 @@ var currency = 匯率;
 #### 設定 Token & 使用者ID
 
 
-<img loading="lazy" width="488" height="389" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.04.57.png" alt="" class="wp-image-330" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.04.57.png 488w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-25-2.04.57-300x239.png 300w" sizes="(max-width: 488px) 100vw, 488px" />
+![wp-image-330](/img/2019/05/スクリーンショット-2019-05-25-2.04.57.png)
 
 要設定的有兩個東西：
 
@@ -155,7 +155,7 @@ var currency = 匯率;
 按下『發送測試信息』你應該會收到像這樣的測試信息：
 
 
-<img loading="lazy" width="1024" height="273" src="https://blog.hanlee.co/wp-content/uploads/2019/05/IMG_3429-1024x273.jpg" alt="" class="wp-image-334" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/IMG_3429-1024x273.jpg 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/IMG_3429-300x80.jpg 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/IMG_3429-768x205.jpg 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/IMG_3429.jpg 1125w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-334](/img/2019/05/IMG_3429-1024x273.jpg)
 
 如果收到了，恭喜你完成了！
 

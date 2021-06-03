@@ -19,7 +19,7 @@ tags:
 ## 2F-時鐘
 
 
-<img loading="lazy" width="1024" height="634" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-11-3.35.42-1024x634.png" alt="" class="wp-image-201" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-11-3.35.42-1024x634.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-11-3.35.42-300x186.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-11-3.35.42-768x475.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-11-3.35.42.png 1516w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-201](/img/2019/05/スクリーンショット-2019-05-11-3.35.42-1024x634.png)
 
 ### 連結
 

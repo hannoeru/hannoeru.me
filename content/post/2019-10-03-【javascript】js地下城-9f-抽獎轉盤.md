@@ -21,7 +21,7 @@ tags:
 ## 9F-抽獎轉盤
 
 
-<img loading="lazy" width="1024" height="648" src="https://blog.hanlee.co/wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48-1024x648.png" alt="" class="wp-image-479" srcset="https://blog.hanlee.co/wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48-1024x648.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48-300x190.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48-768x486.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48-184x117.png 184w, https://blog.hanlee.co/wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48-368x234.png 368w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-479](/img/2019/10/スクリーンショット-2019-10-02-23.46.48-1024x648.png)
 
 ### 連結
 

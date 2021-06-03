@@ -47,7 +47,7 @@ Mailu是一個簡單而功能齊全的郵件服務器，它是一組 Docker Imag
 到 Linodes 目錄，選擇 Add a Linode，設定如下：
 
 
-<img loading="lazy" width="1024" height="667" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.08.53-1024x667.png" alt="" class="wp-image-532" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.08.53-1024x667.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.08.53-300x195.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.08.53-768x500.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.08.53-1536x1000.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.08.53-2048x1333.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-532](/img/2020/03/スクリーンショット-2020-03-06-2.08.53-1024x667.png)
 
 之後記得到下方設定 root 密碼，如果有 SSH Key 可以在這裡上傳（不知道的話不用）。
 
@@ -115,20 +115,20 @@ docker-compose version 1.25.4, build 1110ad01
 選擇 Compose 點選 Next
 
 
-<img loading="lazy" width="888" height="472" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.24.47.png" alt="" class="wp-image-538" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.24.47.png 888w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.24.47-300x159.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.24.47-768x408.png 768w" sizes="(max-width: 888px) 100vw, 888px" />
-<img loading="lazy" width="573" height="1024" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.25.59-573x1024.png" alt="" class="wp-image-535" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.25.59-573x1024.png 573w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.25.59-168x300.png 168w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.25.59-768x1371.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.25.59-860x1536.png 860w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.25.59.png 942w" sizes="(max-width: 573px) 100vw, 573px" />
-<img loading="lazy" width="918" height="852" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.10.png" alt="" class="wp-image-537" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.10.png 918w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.10-300x278.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.10-768x713.png 768w" sizes="(max-width: 918px) 100vw, 918px" />
+![wp-image-538](/img/2020/03/スクリーンショット-2020-03-06-2.24.47.png)
+![wp-image-535](/img/2020/03/スクリーンショット-2020-03-06-2.25.59-573x1024.png)
+![wp-image-537](/img/2020/03/スクリーンショット-2020-03-06-2.26.10.png)
 
 替換 server-ip 為你的 Linode IP（虛擬機IP）
 
 
-<img loading="lazy" width="1024" height="1021" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-1024x1021.png" alt="" class="wp-image-536" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-1024x1021.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-300x300.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-150x150.png 150w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-768x765.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-160x160.png 160w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35-320x320.png 320w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.35.png 1192w" sizes="(max-width: 1024px) 100vw, 1024px" />
-<img loading="lazy" width="772" height="406" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.43.png" alt="" class="wp-image-534" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.43.png 772w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.43-300x158.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.26.43-768x404.png 768w" sizes="(max-width: 772px) 100vw, 772px" />
+![wp-image-536](/img/2020/03/スクリーンショット-2020-03-06-2.26.35-1024x1021.png)
+![wp-image-534](/img/2020/03/スクリーンショット-2020-03-06-2.26.43.png)
 
 最後點選 Setup Mailu 就會秀出這樣的頁面：
 
 
-<img loading="lazy" width="1024" height="689" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.34.08-1024x689.png" alt="" class="wp-image-539" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.34.08-1024x689.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.34.08-300x202.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.34.08-768x516.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.34.08-1536x1033.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.34.08-2048x1377.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-539](/img/2020/03/スクリーンショット-2020-03-06-2.34.08-1024x689.png)
 
 跟照他的指示
 
@@ -160,7 +160,7 @@ mail.domain.com.  IN  A  a.b.c.d
 進去 Mail Doamins 點選第一個 Icon
 
 
-<img loading="lazy" width="985" height="1024" src="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット_2020-03-06_2_45_03-985x1024.png" alt="" class="wp-image-540" srcset="https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット_2020-03-06_2_45_03-985x1024.png 985w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット_2020-03-06_2_45_03-289x300.png 289w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット_2020-03-06_2_45_03-768x798.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/03/スクリーンショット_2020-03-06_2_45_03.png 1222w" sizes="(max-width: 985px) 100vw, 985px" />
+![wp-image-540](/img/2020/03/スクリーンショット_2020-03-06_2_45_03-985x1024.png)
 
 裡面就會列出剩餘要設定的 DNS 紀錄了。
 

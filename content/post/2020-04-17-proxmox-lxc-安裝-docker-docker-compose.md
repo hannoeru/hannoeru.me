@@ -26,9 +26,9 @@ tags:
   * 不要在建立後自動啟動
 
 
-<img loading="lazy" width="1024" height="747" src="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.06-1024x747.png" alt="" class="wp-image-551" srcset="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.06-1024x747.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.06-300x219.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.06-768x560.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.06.png 1396w" sizes="(max-width: 1024px) 100vw, 1024px" />
-<img loading="lazy" width="752" height="352" src="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.19.png" alt="" class="wp-image-555" srcset="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.19.png 752w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.08.19-300x140.png 300w" sizes="(max-width: 752px) 100vw, 752px" />
-<img loading="lazy" width="1024" height="748" src="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.13-1024x748.png" alt="" class="wp-image-552" srcset="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.13-1024x748.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.13-300x219.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.13-768x561.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.13.png 1402w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![wp-image-551](/img/2020/04/スクリーンショット-2020-04-17-16.08.06-1024x747.png)
+![wp-image-555](/img/2020/04/スクリーンショット-2020-04-17-16.08.19.png)
+![wp-image-552](/img/2020/04/スクリーンショット-2020-04-17-16.10.13-1024x748.png)
 
 ## 設定 LXC
 
@@ -40,8 +40,8 @@ tags:
 以上兩個
 
 
-<img loading="lazy" width="932" height="828" src="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.38.png" alt="" class="wp-image-553" srcset="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.38.png 932w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.38-300x267.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.38-768x682.png 768w" sizes="(max-width: 932px) 100vw, 932px" />
-<img loading="lazy" width="602" height="482" src="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.46.png" alt="" class="wp-image-554" srcset="https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.46.png 602w, https://blog.hanlee.co/wp-content/uploads/2020/04/スクリーンショット-2020-04-17-16.10.46-300x240.png 300w" sizes="(max-width: 602px) 100vw, 602px" />
+![wp-image-553](/img/2020/04/スクリーンショット-2020-04-17-16.10.38.png)
+![wp-image-554](/img/2020/04/スクリーンショット-2020-04-17-16.10.46.png)
 
 ## 啟動 LXC & 新增使用者
 
