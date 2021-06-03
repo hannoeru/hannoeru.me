@@ -135,8 +135,8 @@ var currency = 匯率;
 
 要設定的有兩個東西：
 
-* **CHANNEL\_ACCESS\_TOKEN**：在前面設定 Messaging API 的時候有一個『**Channel access token (long-lived)**』按下『Issue』後會生成令牌（Token），請在此填入令牌。
-* **USER_ID**：『使用者ID』
+- **CHANNEL\_ACCESS\_TOKEN**：在前面設定 Messaging API 的時候有一個『**Channel access token (long-lived)**』按下『Issue』後會生成令牌（Token），請在此填入令牌。
+- **USER_ID**：『使用者ID』
 
 ## Step .4
 
