@@ -22,8 +22,8 @@ tags:
 打開终端，使用SSH連接到您的伺服器。進入 Let&#8217;s encrypt 創建與存儲 SSL 證書的目錄，並列出這些證書。
 
 ```bash
-$ cd /home/admin/conf/web
-$ ls
+cd /home/admin/conf/web
+ls
 ```
 
 你會看到以域名命名的文件
@@ -38,20 +38,20 @@ ssl.testing.com.pem
 我們需要備份舊的 VestaCP 證書，並為 Let&#8217;s encrypt 創建的證書建立鏈接。執行以下命令（將 testing.com 替換為自己的域名）：
 
 ```bash
-$ mv /usr/local/vesta/ssl/certificate.crt /usr/local/vesta/ssl/certificate.crt.bak
-$ mv /usr/local/vesta/ssl/certificate.key /usr/local/vesta/ssl/certificate.key.bak
-$ ln -s /home/admin/conf/web/ssl.testing.com.crt /usr/local/vesta/ssl/certificate.crt
-$ ln -s /home/admin/conf/web/ssl.testing.com.key /usr/local/vesta/ssl/certificate.key
+mv /usr/local/vesta/ssl/certificate.crt /usr/local/vesta/ssl/certificate.crt.bak
+mv /usr/local/vesta/ssl/certificate.key /usr/local/vesta/ssl/certificate.key.bak
+ln -s /home/admin/conf/web/ssl.testing.com.crt /usr/local/vesta/ssl/certificate.crt
+ln -s /home/admin/conf/web/ssl.testing.com.key /usr/local/vesta/ssl/certificate.key
 ```
 
 修復文件權限，在终端執行以下命令：
 
 ```bash
-$ cd /home/admin/conf/web/
-$ chgrp mail ssl.testing.com.key
-$ chmod 660 ssl.testing.com.key
-$ chgrp mail ssl.testing.com.crt
-$ chmod 660 ssl.testing.com.crt
+cd /home/admin/conf/web/
+chgrp mail ssl.testing.com.key
+chmod 660 ssl.testing.com.key
+chgrp mail ssl.testing.com.crt
+chmod 660 ssl.testing.com.crt
 ```
 
 之後，重新啟動伺服器上的 VestaCP 服務。

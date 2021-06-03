@@ -133,7 +133,7 @@ fetch(
 
 ### 錯誤不會被拒絕 {#errorsarenotrejected}
 
-令人驚訝的是，HTTP 錯誤如 `404 Page Not Found` 或 `500 Internal Server Error` 不會導致 Fetch Promise 拒絕，`.catch()` 永遠不會執行。它通常會在 `response.ok` 狀態設置為false 的情況下判斷。
+令人驚訝的是，HTTP 錯誤如 `404 Page Not Found` 或 `500 Internal Server Error` 不會導致 Fetch Promise 拒絕，`.catch()` 永遠不會執行。它通常會在 `response.ok` 狀態設置為 `false` 的情況下判斷。
 
 僅在無法完成請求（例如網絡故障）時才會發生拒絕。這可能使判斷錯誤更加複雜。
 
@@ -194,7 +194,7 @@ fetch(
 
 ### XMLHttpRequest 與 Fetch API？ {#xmlhttprequestorfetch}
 
-最終，選擇是你的&#8230;&#8230; **除非你的應用程序有 IE 客戶端要求上傳進度條。**
+最終，選擇是你的&#8230;&#8230; **除非你的應用程序有 IE 客戶端要求上傳進度條。**
 
 對於更簡單的 Ajax 調用，`XMLHttpRequest` 更低級，更複雜，並且您將需要包裝函數。不幸的是，一旦你開始考慮超時、中止進程和錯誤捕獲的複雜性，Fetch 也會變複雜。
 

@@ -34,15 +34,15 @@ VestaCP 0.9.8-24
 
 假設我們現在有兩個網域
 
-  * cat.com
-  * dog.com
+* cat.com
+* dog.com
 
 他們的憑證分別是
 
-  * cat.com.crt
-  * cat.com.key
-  * dog.com.crt
-  * dog.com.key
+* cat.com.crt
+* cat.com.key
+* dog.com.crt
+* dog.com.key
 
 將所有憑證複製到/usr/local/vesta/ssl/
 

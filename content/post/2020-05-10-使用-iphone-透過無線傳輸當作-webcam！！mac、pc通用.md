@@ -26,9 +26,9 @@ tags:
 
 ## 需求
 
-  * 穩定的無線網路環境，官方建議最好要有 5G Wifi
-  * 一台 iPhone
-  * 一台 Mac or PC
+* 穩定的無線網路環境，官方建議最好要有 5G Wifi
+* 一台 iPhone
+* 一台 Mac or PC
 
 ## 安裝 iPhone APP
 

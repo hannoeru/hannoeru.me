@@ -29,13 +29,7 @@ tags:
 
 這是一個很嚴重的事情所以請大家多多分享。
 
-由於原影像已被教授本人刪除，因此放上每日新聞轉載的影片。
-
-
-<div class="wp-block-embed__wrapper">
-</div><figcaption>每日新聞轉載的影片</figcaption>
-
-<hr class="wp-block-separator" />
+***
 
 ## 前言
 
@@ -169,4 +163,4 @@ tags:
 
 岩田健太郎。
 
-<hr class="wp-block-separator" />
+***

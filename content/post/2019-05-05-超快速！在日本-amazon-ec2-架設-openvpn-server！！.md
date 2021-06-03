@@ -20,7 +20,7 @@ tags:
 
 ## 註冊
 
-### Step 1：註冊Amazon Web Services 帳號，Amazon有開放無料試用版請點選以下連結：
+### Step 1：註冊Amazon Web Services 帳號，Amazon有開放無料試用版請點選以下連結
 
 ![wp-image-98](/img/2019/05/スクリーンショット-2018-02-11-23.55.21.png)
 
@@ -28,11 +28,11 @@ tags:
 
 ![wp-image-101](/img/2019/05/スクリーンショット-2018-02-12-0.05.39.png)
 
-### Step 2：在服務（サービス）選項中進入EC2管理介面。
+### Step 2：在服務（サービス）選項中進入EC2管理介面
 
 ![wp-image-99](/img/2019/05/スクリーンショット-2018-02-11-23.55.58.png)
 
-### Step 3：點選（インスタンスの作成）準備建立一台虛擬機。
+### Step 3：點選（インスタンスの作成）準備建立一台虛擬機
 
 ![wp-image-100](/img/2019/05/スクリーンショット-2018-02-11-23.56.10.png)
 
@@ -42,11 +42,11 @@ tags:
 
 ![wp-image-103](/img/2019/05/スクリーンショット-2018-02-12-0.14.05.png)
 
-### Step 2：選擇系統配置，如果你要免費方案的話目前只有（t2.micro）可以選，其他都是要額外收費的方案。
+### Step 2：選擇系統配置，如果你要免費方案的話目前只有（t2.micro）可以選，其他都是要額外收費的方案
 
 ![wp-image-104](/img/2019/05/スクリーンショット-2018-02-12-0.18.24.png)
 
-### Step 3：在這裡我們直接跳到第六個步驟，新增防火牆規則。
+### Step 3：在這裡我們直接跳到第六個步驟，新增防火牆規則
 
 ![wp-image-105](/img/2019/05/スクリーンショット-2018-02-12-0.21.34.png)
 
@@ -84,8 +84,8 @@ ubuntu@<你的Amazon伺服器區域名稱>.compute.amazonaws.com
 
 ### Step 2：安裝Pivpn
 
-1. 切換到root帳戶：sudo -i
-2. 取得安裝包：curl -L https://install.pivpn.io | bash
+1. 切換到root帳戶：`sudo -i`
+2. 取得安裝包：`curl -L https://install.pivpn.io | bash`
 3. 接下來就會進入安裝畫面了：
 
 ![wp-image-111](/img/2019/05/スクリーンショット-2018-02-12-0.54.01.png)
@@ -128,20 +128,28 @@ ubuntu@<你的Amazon伺服器區域名稱>.compute.amazonaws.com
 3. 輸入profile名稱：Enter a Name for the Client:<名稱>
 4. 輸入密碼：Enter the password for the client: <密碼>
 5. 重複輸入密碼：Enter the password again to verify: <密碼>
-6. 成功的話你就會看到：\
-   ========================================================\
-   Done! <profile名稱>.ovpn successfully created!\
-   <profile名稱>.ovpn was copied to:\
-   /home/ubuntu/ovpns\
-   for easy transfer. Please use this profile only on one\
-   device and create additional profiles for other devices.\
-   ========================================================
-7. 打開Terminal利用scp指令下載OpenVPN描述黨（.ovpn）：\
-   scp -i &#8220;<檔案名稱>.pem&#8221;
-   ubuntu@<你的Amazon伺服器區域名稱>.compute.amazonaws.com:/home/ubuntu/ovpns/<profile名稱>.ovpn
-   <本機位置> &nbsp;*Windows的Putty有scp請自行去搜尋教學。
+6. 成功的話你就會看到：
 
-### Part 4：連線！！！
+```bash
+========================================================
+Done! <profile名稱>.ovpn successfully created!
+<profile名稱>.ovpn was copied to:
+/home/ubuntu/ovpns
+for easy transfer. Please use this profile only on one
+device and create additional profiles for other devices.
+========================================================
+```
+
+7. 打開Terminal利用scp指令下載OpenVPN描述黨（.ovpn）：
+
+```bash
+scp -i "<檔案名稱>.pem"
+ubuntu@<你的Amazon伺服器區域名稱>.compute.amazonaws.com:/home/ubuntu/ovpns/<profile名稱>.ovpn
+```
+
+<本機位置> *Windows的Putty有scp請自行去搜尋教學。
+
+### Part 4：連線
 
 1. 到以下網頁下載客戶端：
    1. Windows：<https://openvpn.net/index.php/open-source/downloads.html>

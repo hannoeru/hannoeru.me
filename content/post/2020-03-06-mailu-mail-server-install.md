@@ -29,7 +29,7 @@ tags:
 Mailu是一個簡單而功能齊全的郵件服務器，它是一組 Docker
 Image。它是開源軟體，可以接受建議和外部貢獻。該項目旨在為人們提供易於安裝，易於維護且功能齊全的郵件服務器，不發行專有軟體或流行的軟體中經常出現的不相關功能。
 
-### 主要架構：
+### 主要架構
 
 - **標準電子郵件服務器**：IMAP 和 IMAP+、SMTP 跟 Submission。
 - **進階電子郵件功能**：別名、域別名、自定義路由。
@@ -153,7 +153,7 @@ docker-compose -p mailu exec admin flask mailu admin admin domain.com PASSWORD /
 mail.domain.com.  IN  A  a.b.c.d
 ```
 
-過一陣子後，開啟瀏覽器進去 https://mail.domain.com/admin 並登入，成功的話就代表伺服器成功啟動了。
+過一陣子後，開啟瀏覽器進去 <https://mail.domain.com/admin> 並登入，成功的話就代表伺服器成功啟動了。
 
 進去 Mail Doamins 點選第一個 Icon
 

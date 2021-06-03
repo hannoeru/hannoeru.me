@@ -16,7 +16,7 @@ tags:
   - 鏡像站點
 
 ---
-更改 source.list 
+更改 source.list
 
 ```bash
 sed -i 's/ftp.debian.org/ftp.tw.debian.org/g' /etc/apt/sources.list

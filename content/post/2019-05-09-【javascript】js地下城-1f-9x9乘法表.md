@@ -18,7 +18,6 @@ tags:
 ---
 ## 1F-9&#215;9乘法表
 
-
 ![wp-image-176](/img/2019/05/スクリーンショット-2019-05-09-0.28.33.png)
 
 ### 連結
@@ -93,7 +92,7 @@ document.getElementById('foo').textContent = '';
 
 #### 追加：如果想要插入HTML元素 `insertAdjacentElement`
 
-如果想要插入元素而不是字串的時候，也有一個東西叫`insertAdjacentElement` 
+如果想要插入元素而不是字串的時候，也有一個東西叫`insertAdjacentElement`
 
 使用方法基本上跟 `insertAdjacentHTML` 一樣。
 
