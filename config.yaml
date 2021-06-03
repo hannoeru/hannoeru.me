@@ -1,0 +1,140 @@
+baseurl: https://blog.hanlee.co
+languageCode: en-us
+theme: hugo-theme-stack
+paginate: 5
+title: Han
+description: IT＆IoT自動化&amp;プログラミング
+
+# Change it to your Disqus shortname before using
+disqusShortname: https-blog-hanlee-co
+
+# GA Tracking ID
+googleAnalytics:
+
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn, es, de, nl
+DefaultContentLanguage: en
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:
+
+    footer:
+        since: 2021
+        customText:
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        emoji: 🧑🏻‍💻
+        subtitle: |
+            Front-end Engineer 🧑🏻‍💻 
+            Focus on Vue and Vite.
+            @windicss @OVaaS team member.
+        avatar:
+            local: true
+            src: avatar.jpeg
+
+    article:
+        math: false
+        license:
+            enabled: true
+            default: Licensed under CC BY-NC-SA 4.0
+
+    comments:
+        enabled: true
+        provider: disqus
+
+        utterances:
+            repo:
+            issueTerm: pathname
+            label:
+
+        remark42:
+            host:
+            site:
+            locale:
+
+        vssue:
+            platform:
+            owner:
+            repo:
+            clientId:
+            clientSecret:
+
+    widgets:
+        enabled:
+            - search
+            - archives
+            - tag-cloud
+
+        archives:
+            limit: 10
+
+        tagCloud:
+            limit: 15
+
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site: hannoeru
+
+            # Available values: summary, summary_large_image
+            card: summary_large_image
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          pre: home
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    highlight:
+        noClasses: false
+    goldmark:
+        renderer:
+            unsafe: true

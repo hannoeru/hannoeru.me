@@ -1,0 +1,125 @@
+---
+title: 【MacOS】iTerm2 + Oh My Zsh + Cobalt2 安裝教學
+author: hanlee
+type: post
+date: 2020-02-22T06:04:40+00:00
+excerpt: iTerm2 + Oh My Zsh + Cobalt2 安裝教學，簡單快速，複製貼上就可以完成，安裝紀錄。
+url: /iterm2-oh-my-zsh-cobalt2-install/
+featured_image: /wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19.png
+categories:
+  - MacOS
+tags:
+  - Cobalt2
+  - Dev
+  - iTerm
+  - MacOS
+  - Oh My Zsh
+  - Shell
+  - Zsh
+  - 安裝教學
+
+---
+## iTerm2
+
+官網：<https://iterm2.com/>
+
+安裝檔（官方連結）：<https://iterm2.com/downloads/stable/latest>
+
+下載完解壓縮後把它放到你的應用程式資料夾（~/Applications）
+
+## Install Zsh
+
+如果是不是使用 ＭacOS Catalina 的話，要手動安裝 Zsh 到電腦上。
+
+可以先嘗試使用 **`zsh --version`** 看是不是已經安裝 Zsh 了，如果它高於**&nbsp;4.3.9** 版的話就沒問題，不過還是建議安裝 5.0 以上的版本。
+
+<pre class="wp-block-code"><code>brew install zsh</code></pre>
+
+如果要將 zsh 設為預設的話，可以執行：（**macOS High Sierra**）
+
+<pre class="wp-block-code"><code>chsh -s /bin/zsh</code></pre>
+
+## Oh My Zsh
+
+官方 Github：<https://github.com/ohmyzsh/ohmyzsh>
+
+在安裝之前，確認一下 Zsh 已經被設為預設 Shell
+
+<pre class="wp-block-code"><code>echo $SHELL</code></pre>
+
+出現 /usr/bin/zsh 代表已經成功切換為 Zsh 了
+
+### 安裝 Oh My Zsh：
+
+這是官方提供的一鍵安裝指令
+
+<pre class="wp-block-code"><code>sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></pre>
+
+## Cobalt2 主題
+
+官方 Github：<https://github.com/wesbos/Cobalt2-iterm>
+
+下載 Repo：[連結][1]
+
+下載後解壓縮
+
+或是使用 git clone
+
+<pre class="wp-block-code"><code>cd ~/Downloads
+git clone https://github.com/wesbos/Cobalt2-iterm.git
+cd Cobalt2-iterm
+cp cobalt2.zsh-theme ~/.oh-my-zsh/themes/</code></pre>
+
+修改 .zshrc 設定檔
+
+<pre class="wp-block-code"><code>nano ~/.zshrc</code></pre>
+
+更改 ZSH_THEME
+
+<pre class="wp-block-code"><code>ZSH_THEME="cobalt2"</code></pre>
+
+Ctrl + X 退出 Y 儲存
+
+套用變更
+
+<pre class="wp-block-code"><code>source ~/.zshrc</code></pre>
+
+## 安裝字型
+
+安裝完主題之後應該會有一些字顯示不出來，這裡我們就要安裝字型：
+
+<pre class="wp-block-code"><code>git clone https://github.com/powerline/fonts
+cd fonts
+./install.sh</code></pre>
+
+## 更改 iTrem 配置
+
+打開 iTrem 設定，快速鍵 cmd + ,
+
+### 更改顏色
+
+到 Profiles >> Default >> Colors >> Color Presets 下拉選單<figure class="wp-block-image size-large">
+
+<img loading="lazy" width="1024" height="553" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png" alt="" class="wp-image-514" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-300x162.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-768x415.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-1536x830.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.16.48-2048x1107.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+選擇 Import，到 ~/Downloads 選擇之前 Github 載下來的 cobalt2.itermcolors 這個檔案，匯入後選擇 cobalt2
+
+之後也可以根據自己的喜好隨意調整。
+
+### 更改字型
+
+到旁邊的 Text 下方的 Font，搜尋「powerline」選擇自己喜歡的字型就可以了<figure class="wp-block-image size-large">
+
+<img loading="lazy" width="1024" height="793" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png" alt="" class="wp-image-513" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-300x232.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-768x595.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45-1536x1190.png 1536w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.24.45.png 1996w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+## 完成
+
+這是我目前使用的樣式<figure class="wp-block-image size-large">
+
+<img loading="lazy" width="1024" height="841" src="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png" alt="" class="wp-image-518" srcset="https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png 1024w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-300x247.png 300w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19-768x631.png 768w, https://blog.hanlee.co/wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19.png 1324w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+
+<div class="wp-block-file">
+  <a href="https://blog.hanlee.co/wp-content/uploads/2020/02/setting.json">設定檔</a><a href="https://blog.hanlee.co/wp-content/uploads/2020/02/setting.json" class="wp-block-file__button" download>ダウンロード</a>
+</div>
+
+ [1]: https://github.com/wesbos/Cobalt2-iterm/archive/master.zip

@@ -1,0 +1,133 @@
+---
+title: QuickLook 插件、指令列表
+author: hanlee
+type: post
+date: 2019-06-06T10:25:36+00:00
+excerpt: 安裝 QuickLook 插件，指令列表，錯誤排除。
+url: /quicklook-plugins-command/
+featured_image: /wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47.png
+categories:
+  - MacOS
+tags:
+  - Homebrew
+  - MacOS
+  - QuickLook
+
+---
+<figure class="wp-block-image"><img loading="lazy" width="1024" height="680" src="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png" alt="" class="wp-image-388" srcset="https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png 1024w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-300x199.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47-768x510.png 768w, https://blog.hanlee.co/wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47.png 1472w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+
+## 安裝
+
+### 使用&nbsp;[Homebrew Cask][1]
+
+安裝插件：
+
+<pre class="language-bash"><code>brew cask install &lt;package></code></pre>
+
+安裝全部插件：
+
+<pre class="language-bash"><code>brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo</code></pre>
+
+## 指令
+
+顯示幫助
+
+<pre class="language-bash"><code>qlmanage -h</code></pre>
+
+指定 QuickLook 開啟檔案
+
+<pre class="language-bash"><code>qlmanage -p filename.jpg</code></pre>
+
+清除 QuickLook 快取
+
+<pre class="language-bash"><code>qlmanage -r cache</code></pre>
+
+重新載入插件
+
+<pre class="language-bash"><code>qlmanage -r</code></pre>
+
+Quick Look的故障排除，通常清除快取並重新載入插件就可以解決問題。
+
+如果無法排除，使用命令方式開啟檔案，就會看到詳細錯誤信息。
+
+在安裝新插件後要重新載入插件才會生效。
+
+## 插件
+
+### [QLColorCode][2]
+
+在預覽時幫程式碼加上顏色，幫助閱讀。
+
+<pre class="language-bash"><code>brew cask install qlcolorcode</code></pre>
+
+### [QLStephen][3]
+
+預覽沒有或具有未知副檔名的文件，以純文本顯示。例如：README，CHANGELOG，index.styl 等&#8230;
+
+<pre class="language-bash"><code>brew cask install qlstephen</code></pre>
+
+### [QLMarkdown][4]
+
+預覽 Markdown&nbsp;文件
+
+<pre class="language-bash"><code>brew cask install qlmarkdown</code></pre>
+
+### [QuickLookJSON][5]
+
+預覽 JSON 文件
+
+<pre class="language-bash"><code>brew cask install quicklook-json</code></pre>
+
+### [BetterZipQL][6]
+
+預覽壓縮檔
+
+注意：BetterZipQL 包含在 BetterZip APP 內，安裝時會一併安裝BetterZip。
+
+<pre class="language-bash"><code>brew cask install betterzip</code></pre>
+
+### [qlImageSize][7]
+
+顯示照片大小與解析度
+
+<pre class="language-bash"><code>brew cask install qlimagesize</code></pre>
+
+### [WebP][8]
+
+預覽 WebP 圖像
+
+<pre class="language-bash"><code>brew cask install webpquicklook</code></pre>
+
+### [Suspicious Package][9]
+
+預覽標準 Apple 安裝程式內容
+
+<pre class="language-bash"><code>brew cask install suspicious-package</code></pre>
+
+### [QuickLookASE][10]
+
+預覽 Adobe ASE 色表
+
+<pre class="language-bash"><code>brew cask install quicklookase</code></pre>
+
+### [QLVideo][11]
+
+預覽大多數的影像檔，會自動生成縮圖、封面跟詳細數據。
+
+<pre class="language-bash"><code>brew cask install qlvideo</code></pre>
+
+## 參考資料
+
+<https://github.com/sindresorhus/quick-look-plugins>
+
+ [1]: https://github.com/phinze/homebrew-cask
+ [2]: https://github.com/anthonygelibert/QLColorCode
+ [3]: https://github.com/whomwah/qlstephen
+ [4]: https://github.com/toland/qlmarkdown
+ [5]: http://www.sagtau.com/quicklookjson.html
+ [6]: https://macitbetter.com/downloads/
+ [7]: https://github.com/Nyx0uf/qlImageSize
+ [8]: https://github.com/dchest/webp-quicklook
+ [9]: http://www.mothersruin.com/software/SuspiciousPackage/
+ [10]: https://github.com/rsodre/QuickLookASE
+ [11]: https://github.com/Marginal/QLVideo

@@ -1,0 +1,111 @@
+---
+title: 【JavaScript】JS地下城-3F-計算機
+author: hanlee
+type: post
+date: 2019-05-14T16:40:28+00:00
+excerpt: JS地下城-3f-計算機
+url: /【javascript】js地下城-3f-計算機/
+featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36.png
+categories:
+  - JavaScript
+  - Programming
+tags:
+  - CSS
+  - HTML
+  - JavaScript
+  - JS地下城
+
+---
+## 3F-計算機<figure class="wp-block-image">
+
+<img loading="lazy" width="823" height="765" src="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36.png" alt="" class="wp-image-242" srcset="https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36.png 823w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36-300x279.png 300w, https://blog.hanlee.co/wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36-768x714.png 768w" sizes="(max-width: 823px) 100vw, 823px" /> </figure> 
+
+### 連結
+
+[Demo][1]
+
+[Code][2]
+
+### 使用語言
+
+HTML、CSS、JavaScript（ES6）
+
+### BOSS 弱點
+
+  1. 【特定技術】數字位數過多時，不能因此而破版，計算機功能皆須齊全
+  2. 【自我學習】請在此關卡中「自學一個你原本不太會的技巧」，投稿時分享你透過哪些資源學習，並寫範例程式碼講解該技巧，以及你如何應用在此關卡上。
+
+### 技巧
+
+#### 使用 `const` 宣告函式
+
+<pre><code class="language-js">const function = () =&gt; { /*.......*/ };</code></pre>
+
+#### 三元運算子
+
+使用三元運算子可以大大減少程式碼佔用的行數，也可以提高效能，寫得好可以讓程式碼更好閱讀，寫不好可能連自己都看不懂&#8230;
+
+語法：
+
+<pre class="language-js"><code>x ? i : a</code></pre>
+
+範例：
+
+<pre class="language-js"><code>//宣告
+var x = true;
+//true的話回傳i，false的話回傳a
+x ? i : a;
+//結果回傳i</code></pre>
+
+#### `eval()` 函式
+
+語法：
+
+<pre class="language-js"><code>eval( 要執行的字串 )</code></pre>
+
+範例：
+
+<pre class="language-js"><code>var str = '10+4*5'; 
+var B = eval(str);
+
+console.log(B);　// 輸出 30</code></pre>
+
+#### 依照文字寬度縮放文字
+
+從 30 開始用 for 加大文字到 56，如果中間超過計算機寬度就設定當前文字大小，為了要符合美觀再 -4，才不會太靠近邊緣。
+
+<pre class="language-js"><code>//在主函式最後一行執行resizeText()
+const resizeText = () => {
+  for (var i = 30; i &lt; 56; i++) {
+    display.style.fontSize = i + 'px';
+    if (display.scrollWidth > calculator.clientWidth) {
+        display.style.fontSize = (i-4) + 'px';
+        break;
+    }
+  }
+};</code></pre>
+
+#### 在小數點前每3格加一個逗號
+
+參考資料：<https://codepen.io/anon/pen/xBGOLy>
+
+<pre class="language-js"><code>//在主函式第一行執行addComma(false)消除逗號進入計算
+//在主函式最後一行執行addComma(true)新增逗號到輸出結果
+const addComma = (isAdd) => {
+  if (isAdd) {
+    let parts = display.textContent.split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    display.textContent = parts.join('.');
+  }else {
+    display.textContent = display.textContent.replace(/,/g, '');
+  }
+};</code></pre>
+
+### 參考資料
+
+<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98" target="_blank">How to build an HTML calculator app from scratch using JavaScript</a>
+
+<a href="https://qiita.com/raccy/items/bf590d3c10c3f1a2846b" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">JavaScript初級者のためのコーディングガイド</a>
+
+ [1]: https://hannoeru.github.io/js-calculator/
+ [2]: https://github.com/hannoeru/js-calculator
