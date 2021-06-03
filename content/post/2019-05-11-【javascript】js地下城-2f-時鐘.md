@@ -26,7 +26,6 @@ tags:
 <a href="https://hannoeru.github.io/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)">Demo</a>
 
 <a href="https://github.com/hannoeru/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>
-[]()
 
 ### 使用語言
 
