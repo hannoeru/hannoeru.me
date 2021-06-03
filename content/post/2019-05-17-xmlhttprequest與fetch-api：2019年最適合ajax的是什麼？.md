@@ -5,7 +5,7 @@ type: post
 date: 2019-05-17T14:56:13+00:00
 excerpt: XMLHTTP最初是由微軟公司發明的，在Internet Explorer 5.0中用作ActiveX物件，可通過JavaScript、VBScript或其它瀏覽器支援的手稿語言存取。Mozilla的開發人員後來在Mozilla 1.0中實現了一個相容的版本。之後蘋果電腦公司在Safari 1.2中開始支援XMLHTTP，而Opera從8.0版開始也宣布支援XMLHTTP。
 url: /xmlhttprequest與fetch-api：2019年最適合ajax的是什麼？/
-featured_image: /wp-content/uploads/2019/05/0_Kj2i4zLF-jKOsiLb.jpg
+image: /img/2019/05/0_Kj2i4zLF-jKOsiLb.jpg
 categories:
   - JavaScript
   - Programming
@@ -30,18 +30,19 @@ XMLHTTP 最初是由微軟公司發明的，在 [Internet Explorer][1] 5.0 中�
 
 ### AJAX 到 Ajax {#ajaxtoajax}
 
-AJAX 是不同步 JavaScript 和 XML 的標記符號。肯定是“不同步”，但是：
+AJAX 是不同步 JavaScript 和 XML 的標記符號。肯定是"不同步"，但是：
 
   1. 可能是 JavaScript，雖然你也可以用 VBScript 和 Flash
   2. 有效載荷不需要是 XML，雖然那當時很受歡迎。你可以使用任何數據格式，而今天，JSON 通常是首選。
 
-我們現在使用 “Ajax” 作為任何客戶端程序的通用術語，該程序從服務器獲取數據並動態更新 DOM 而無需進行整頁刷新。Ajax 是大多數 Web 應用程序和單頁面應用程序（ SPA ）的核心技術。
+我們現在使用 "Ajax" 作為任何客戶端程序的通用術語，該程序從服務器獲取數據並動態更新 DOM 而無需進行整頁刷新。Ajax 是大多數 Web 應用程序和單頁面應用程序（ SPA ）的核心技術。
 
 ### XMLHttpRequest 的極限 {#extremexmlhttprequest}
 
 以下 JavaScript 代碼使用 `<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>` 示範了一個基本的 HTTP GET 請求到 http://domain/serviceusing
 
-<pre class="language-js"><code>let xhr = new XMLHttpRequest();
+```js
+let xhr = new XMLHttpRequest();
 xhr.open('GET', 'http://domain/service');
 
 // request state change event
@@ -61,39 +62,48 @@ xhr.onreadystatechange = function() {
 };
 
 // start request
-xhr.send();</code></pre>
+xhr.send();
+```
 
 `<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>` 具有許多其他選項，事件和回應屬性。例如，可以設置和檢測超時（以毫秒為單位）：
 
-<pre class="language-js"><code>// set timeout
+```js
+// set timeout
 xhr.timeout = 3000; // 3 seconds
-xhr.ontimeout = () => console.log('timeout', xhr.responseURL);</code></pre>
+xhr.ontimeout = () => console.log('timeout', xhr.responseURL);
+```
 
 `progress` 事件可以報告長時間的文件上傳：
 
-<pre class="language-js"><code>// upload progress
+```js
+// upload progress
 xhr.upload.onprogress = p => {
   console.log( Math.round((p.loaded / p.total) * 100) + '%') ;
-}</code></pre>
+}
+```
 
 選項的數量多到可能令人困惑，早期 `XMLHttpRequest` 有一些跨瀏覽器的不一致。出於這個原因，大多數庫和框架都提供Ajax包裝函數來處理複雜性，例如 `<a href="http://api.jquery.com/jquery.ajax/">jQuery.ajax()</a>` 方法：
 
-<pre class="language-js"><code>// jQuery Ajax
+```js
+// jQuery Ajax
 $.ajax('http://domain/service')
   .done(data => console.log(data))
-  .fail((xhr, status) => console.log('error:', status));</code></pre>
+  .fail((xhr, status) => console.log('error:', status));
+```
 
 ### 進化到 Fetch
 
 Fetch API 是一個現代化的替代品。通用的 [Headers][9]，[Request][10] 和 [Response][11] 接口提供了一致性，而 Promises 允許更容易的鏈接和 async / await 而不需要回傳。上面的 XHR 示範可以轉換為更簡單的 Fetch API 程式，甚至可以解析回傳的 JSON：
 
-<pre class="language-js"><code>fetch(
+```js
+fetch(
     'http://domain/service',
     { method: 'GET' }
   )
   .then( response => response.json() )
   .then( json => console.log(json) )
-  .catch( error => console.error('error:', error) );</code></pre>
+  .catch( error => console.error('error:', error) );
+```
 
 Fetch 乾淨，優雅，易於理解，並在 [PWA服務工作者中][12] 大量使用。**為什麼不用它而去用古老的 XMLHttpRequest？**
 
@@ -109,14 +119,16 @@ Fetch API 有[相當好的支持][13]，但在所有版本的 Internet Explorer 
 
 與 `XMLHttpRequest` 不同，並非所有 Fetch 連線都會發送 cookie，因此您的應用程式的身份驗證可能會失敗。可以通過更改第二個參數中傳遞的[證書選項][14]來修復問題，例如
 
-<pre class="language-js"><code>fetch(
+```js
+fetch(
     'http://domain/service',
     {
       method: 'GET',
       credentials: 'same-origin'
     }
   )
-</code></pre>
+
+```
 
 ### 錯誤不會被拒絕 {#errorsarenotrejected}
 
@@ -128,7 +140,8 @@ Fetch API 有[相當好的支持][13]，但在所有版本的 Internet Explorer 
 
 Fetch 不支持超時，只要瀏覽器選擇，請求就會繼續。需要進一步的代碼來將 Fetch 包裝在另一個 Promise 中，例如
 
-<pre class="language-js"><code>// fetch with a timeout
+```js
+// fetch with a timeout
 function fetchTimeout(url, init, timeout = 3000) {
   return new Promise((resolve, reject) => {
     fetch(url, init)
@@ -137,16 +150,19 @@ function fetchTimeout(url, init, timeout = 3000) {
     setTimeout(reject, timeout);
   }
 }
-</code></pre>
+
+```
 
 或者使用 `<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race">Promise.race()</a>` 當 GET 或超時先完成時，判斷哪一個先執行，例如：
 
-<pre class="language-js"><code>Promise.race([
+```js
+Promise.race([
   fetch('http://url', { method: 'GET' }),
   new Promise(resolve => setTimeout(resolve, 3000))
 ])
   .then(response => console.log(response))
-</code></pre>
+
+```
 
 ### 中止獲取 {#abortingafetch}
 
@@ -154,7 +170,8 @@ function fetchTimeout(url, init, timeout = 3000) {
 
 多年來中止 Fetch 是不可能的，但現在支持在實現[AbortController API的][15]瀏覽器中。這會觸發一個可以傳遞給 Fetch 啟動對象的信號：
 
-<pre class="language-js"><code>const controller = new AbortController();
+```js
+const controller = new AbortController();
 
 fetch(
   'http://domain/service',
@@ -165,7 +182,8 @@ fetch(
   .then( response => response.json() )
   .then( json => console.log(json) )
   .catch( error => console.error('Error:', error) );
-</code></pre>
+
+```
 
 可以通過使用中止獲取 `controller.abort()`。因為 Promise 拒絕所以 `.catch()` 函數被執行。
 

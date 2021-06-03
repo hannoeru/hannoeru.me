@@ -5,7 +5,7 @@ type: post
 date: 2019-07-14T17:38:53+00:00
 excerpt: 來到日本留學沒有手機門號對於辦理很多東西都不方便，而且也要一直買網路卡來用，這裡就教大家如何申辦近幾年新推出的 Line Moblie！
 url: /日本-line-moblie-申請流程必備書類文件講解！/
-featured_image: /wp-content/uploads/2019/09/twitter.png
+image: /img/2019/09/twitter.png
 categories:
   - 日本留學
 tags:

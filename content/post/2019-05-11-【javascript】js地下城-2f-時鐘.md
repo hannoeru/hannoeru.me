@@ -5,7 +5,7 @@ type: post
 date: 2019-05-10T20:07:40+00:00
 excerpt: JS地下城-2F-時鐘
 url: /【javascript】js地下城-2f-時鐘/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-11-3.35.42.png
+image: /img/2019/05/スクリーンショット-2019-05-11-3.35.42.png
 categories:
   - JavaScript
   - Programming
@@ -38,7 +38,8 @@ HTML、CSS、JavaScript
 
 ### 技巧
 
-<pre><code class="language-css">/*父元素*/
+```css
+/*父元素*/
 .clock{
   position: relative;
 }
@@ -58,24 +59,28 @@ HTML、CSS、JavaScript
   background-image: url(../img/second-hand.svg);
   /*設定旋轉中心點*/
   transform-origin: center 0.5px;
-}</code></pre>
+}
+```
 
 #### 輔助對齊方法
 
-<pre><code class="language-css">.line{
+```css
+.line{
   height: 1px;
   width: 100%;
   transform: rotate(90deg);
   background: #ffffff;
   position: absolute;
   top:246.5px;
-}</code></pre>
+}
+```
 
 畫一條白線調整高度到時鐘中心點輔助對齊其餘指針
 
 #### JS講解
 
-<pre><code class="language-js">function time() {
+```js
+function time() {
     //取得時間
     var time = new Date();
     var hour = time.getHours();
@@ -89,7 +94,8 @@ HTML、CSS、JavaScript
 }
 //設定每秒執行
 setInterval(time, 1000);
-</code></pre>
+
+```
 
 ### 參考資料
 

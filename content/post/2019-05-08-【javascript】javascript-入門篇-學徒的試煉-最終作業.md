@@ -5,7 +5,7 @@ type: post
 date: 2019-05-08T13:17:36+00:00
 excerpt: 'JavaScript 入門篇 - 學徒的試煉 - 最終作業'
 url: /【javascript】javascript-入門篇-學徒的試煉-最終作業/
-featured_image: /wp-content/uploads/2019/05/javascript.png
+image: /img/2019/05/javascript.png
 categories:
   - JavaScript
   - Programming
@@ -31,20 +31,22 @@ HTML、CSS、JavaScript
 
 從陣列篩選出不重複的值
 
-<pre><code class="language-js">function addToList(){
+```js
+function addToList(){
   var str = '';
   var zone = [];
-  str += '&lt;option&gt;--請選擇行政區--&lt;/option&gt;';
-  for(var i = 0;i &lt; data.length; i++){
+  str += '<option>--請選擇行政區--</option>';
+  for(var i = 0;i < data.length; i++){
     //如果在zone裡面找到data[i].Zone他會回傳位置找不到的話會回傳-1
     //當它回傳-1的時候就把目前這個zone裡面沒有的區域加進去
     if(zone.indexOf(data[i].Zone) == -1){
       zone.push(data[i].Zone);
-      str += '&lt;option&gt;'+data[i].Zone+'&lt;/option&gt;';
+      str += '<option>'+data[i].Zone+'</option>';
     }
   }
   selectArea.innerHTML = str;
-}</code></pre>
+}
+```
 
 ### 花費時間
 
@@ -66,14 +68,18 @@ HTML、CSS、JavaScript
 
 取得目前日期
 
-<pre><code class="language-js">var today = new Date();
-var date = today.getFullYear() + "/" +  (today.getMonth()+1) + "/"+ today.getDate();</code></pre>
+```js
+var today = new Date();
+var date = today.getFullYear() + "/" +  (today.getMonth()+1) + "/"+ today.getDate();
+```
 
 ### 筆記
 
 BMI算法
 
-<pre><code class="language-js">var bmi = Math.round((kg/((cm/100)*(cm/100)))*100)/100;</code></pre>
+```js
+var bmi = Math.round((kg/((cm/100)*(cm/100)))*100)/100;
+```
 
 ### 技巧
 
@@ -81,7 +87,8 @@ BMI算法
 
 參考資料：<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://codepen.io/bunny06/pen/KYMwVo" target="_blank">https://codepen.io/bunny06/pen/KYMwVo</a>
 
-<pre><code class="language-css">.card{
+```css
+.card{
   width: 624px;
   height: 62px;
   background: #FFFFFF;
@@ -113,7 +120,8 @@ BMI算法
 .card:hover::before{
   /*調整為0.9半透明*/
   opacity: 0.9;
-}</code></pre>
+}
+```
 
 ### 花費時間
 

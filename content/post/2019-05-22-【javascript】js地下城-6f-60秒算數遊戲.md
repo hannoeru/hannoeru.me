@@ -5,7 +5,7 @@ type: post
 date: 2019-05-21T15:41:10+00:00
 excerpt: 6F-60秒算數遊戲
 url: /【javascript】js地下城-6f-60秒算數遊戲/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-21-21.03.28.png
+image: /img/2019/05/スクリーンショット-2019-05-21-21.03.28.png
 categories:
   - JavaScript
   - Programming
@@ -69,10 +69,11 @@ HTML、CSS、JavaScript（ES6）
 
 範例：
 
-<pre class="language-js"><code>// 指定interval變數到setInterval()
-const interval = setInterval(() =&gt; {
+```js
+// 指定interval變數到setInterval()
+const interval = setInterval(() => {
       countTime -= 1;
-      if (countTime &lt; 10) {
+      if (countTime < 10) {
         timeDOM.textContent = `00 : 0${countTime}`;
       } else {
         timeDOM.textContent = `00 : ${countTime}`;
@@ -85,7 +86,8 @@ const interval = setInterval(() =&gt; {
         clearInterval(interval);
         finalScore.textContent = score;
       }
-    }, 1000);</code></pre>
+    }, 1000);
+```
 
 ### 參考資料
 

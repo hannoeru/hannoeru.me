@@ -5,7 +5,7 @@ type: post
 date: 2020-03-05T17:56:19+00:00
 excerpt: 官方簡介Mailu是一個簡單而功能齊全的郵件服務器，它是一組 Docker Image。它是開源軟體，可以接受建議和外部貢獻。該項目旨在為人們提供易於安裝，易於維護且功能齊全的郵件服務器，不發行專有軟體或流行的軟體中經常出現的不相關功能。
 url: /mailu-mail-server-install/
-featured_image: /wp-content/uploads/2020/03/スクリーンショット-2020-03-06-2.59.20.png
+image: /img/2020/03/スクリーンショット-2020-03-06-2.59.20.png
 categories:
   - Linux
 tags:
@@ -56,36 +56,50 @@ Mailu是一個簡單而功能齊全的郵件服務器，它是一組 Docker Imag
 
 在自己的電腦，打開終端機輸入：
 
-<pre class="wp-block-code"><code>ssh root@server-ip</code></pre>
+```bash
+ssh root@server-ip
+```
 
 ### 安裝 Docker
 
 官方安裝腳本：
 
-<pre class="wp-block-code"><code>curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh</code></pre>
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
 
 ### 安裝 docker-compose
 
 下載 docker-compose
 
-<pre class="wp-block-code"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code></pre>
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
 
 更改權限：（可執行）
 
-<pre class="wp-block-code"><code>sudo chmod +x /usr/local/bin/docker-compose</code></pre>
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 連結到 /usr/local/bin/（可直接從終端執行）
 
-<pre class="wp-block-code"><code>sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose</code></pre>
+```bash
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
 
 測試安裝
 
-<pre class="wp-block-code"><code>docker-compose --version</code></pre>
+```bash
+docker-compose --version
+```
 
 如果有出現像是這樣的版本資訊就是成功了（類似）
 
-<pre class="wp-block-code"><code>docker-compose version 1.25.4, build 1110ad01</code></pre>
+```bash
+docker-compose version 1.25.4, build 1110ad01
+```
 
 ## 生成 Mailu 安裝檔案
 
@@ -113,20 +127,26 @@ sh get-docker.sh</code></pre>
 
 創建資料夾：
 
-<pre class="wp-block-code"><code>mkdir /mailu
+```bash
+mkdir /mailu
 cd /mailu
-wget 網頁顯示的網址</code></pre>
+wget 網頁顯示的網址
+```
 
 啟動伺服器：
 
-<pre class="wp-block-code"><code>docker-compose -p mailu up  -d
-docker-compose -p mailu exec admin flask mailu admin admin domain.com PASSWORD // 替換 PASSWORD => 管理員密碼</code></pre>
+```bash
+docker-compose -p mailu up  -d
+docker-compose -p mailu exec admin flask mailu admin admin domain.com PASSWORD // 替換 PASSWORD => 管理員密碼
+```
 
 ## 設定 DNS
 
 設定一筆 Ａ 紀錄指向 Linode 虛擬伺服器 IP
 
-<pre class="wp-block-code"><code>mail.domain.com.  IN  A  a.b.c.d</code></pre>
+```bash
+mail.domain.com.  IN  A  a.b.c.d
+```
 
 過一陣子後，開啟瀏覽器進去 https://mail.domain.com/admin 並登入，成功的話就代表伺服器成功啟動了。
 

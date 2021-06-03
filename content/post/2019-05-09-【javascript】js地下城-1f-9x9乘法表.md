@@ -5,7 +5,7 @@ type: post
 date: 2019-05-08T16:58:19+00:00
 excerpt: JS地下城-1F-9x9乘法表
 url: /【javascript】js地下城-1f-9x9乘法表/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-09-0.28.33.png
+image: /img/2019/05/スクリーンショット-2019-05-09-0.28.33.png
 categories:
   - JavaScript
   - Programming
@@ -38,25 +38,27 @@ HTML、CSS、JavaScript
 
 ### 技巧
 
-<pre><code class="language-js">function getNum(){
+```js
+function getNum(){
   var str = '';
   //第一個for迴圈-當前數字
-  for (var i = 2; i &lt; 10; i++) {
-    str += '&lt;div class="card">';
-    str += '&lt;ul>';
-    str += '&lt;li class="big-num">'+i+'&lt;/li>';
+  for (var i = 2; i < 10; i++) {
+    str += '<div class="card">';
+    str += '<ul>';
+    str += '<li class="big-num">'+i+'</li>';
     //第二個for迴圈-要乘上的數字
-    for (var a = 1; a &lt; 10; a++) {
-      str += '&lt;li>'+i+' x '+a+' = '+(i*a)+'&lt;/li>';
+    for (var a = 1; a < 10; a++) {
+      str += '<li>'+i+' x '+a+' = '+(i*a)+'</li>';
     }
-    str += '&lt;/ul>';
-    str += '&lt;/div>';
+    str += '</ul>';
+    str += '</div>';
   }
   //用insertAdjacentHTML插入str，
   //beforeend指定插入位置在元素結束前子元素結束後
   document.getElementById('wrap').insertAdjacentHTML('beforeend',str);
 }
-getNum();</code></pre>
+getNum();
+```
 
 #### 關於 `insertAdjacentHTML`
 
@@ -64,23 +66,29 @@ getNum();</code></pre>
 
 語法
 
-<pre><code class="language-js">element.insertAdjacentHTML(position, text)</code></pre>
+```js
+element.insertAdjacentHTML(position, text)
+```
 
 指定 position 位置
 
-<pre><code class="language-html">&lt;!-- beforebegin -->
-&lt;element>
-  &lt;!-- afterbegin -->
-  &lt;child>Text&lt;/child>
-  &lt;!-- beforeend -->
-&lt;/element>
-&lt;!-- afterend --></code></pre>
+```html
+<!-- beforebegin -->
+<element>
+  <!-- afterbegin -->
+  <child>Text</child>
+  <!-- beforeend -->
+</element>
+<!-- afterend -->
+```
 
 #### 追加：如果想要清空元素
 
 如果想要清空元素，比起 `innerHTML` ，用&nbsp;`textContent`&nbsp;的方法就效能上來說比較好。
 
-<pre><code class="language-js">document.getElementById('foo').textContent = '';</code></pre>
+```js
+document.getElementById('foo').textContent = '';
+```
 
 #### 追加：如果想要插入HTML元素 `insertAdjacentElement`
 
@@ -88,12 +96,14 @@ getNum();</code></pre>
 
 使用方法基本上跟 `insertAdjacentHTML` 一樣。
 
-<pre><code class="language-js">var contentBlock = document.getElementById('contentBlock'), 
+```js
+var contentBlock = document.getElementById('contentBlock'), 
 var insetElement = document.createElement('b');
 
 insetElement.textContent = 'Test:';
 
-contentBlock.insertAdjacentElement('afterbegin', insetElement);</code></pre>
+contentBlock.insertAdjacentElement('afterbegin', insetElement);
+```
 
 ### 參考資料
 

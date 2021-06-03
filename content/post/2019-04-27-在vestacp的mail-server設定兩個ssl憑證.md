@@ -5,7 +5,7 @@ type: post
 date: 2019-04-26T19:00:40+00:00
 excerpt: 如何在Dovecot和Exim上使用多個SSL證書？
 url: /在vestacp的mail-server設定兩個ssl憑證/
-featured_image: /wp-content/uploads/2019/04/Email.jpeg
+image: /img/2019/04/Email.jpeg
 categories:
   - VestaCP
 tags:
@@ -46,26 +46,34 @@ VestaCP 0.9.8-24
 
 將所有憑證複製到/usr/local/vesta/ssl/
 
-<pre class="wp-block-code"><code>scp /path/to/憑證/* Username@Vesta-IP:/usr/local/vesta/ssl/</code></pre>
+```bash
+scp /path/to/憑證/* Username@Vesta-IP:/usr/local/vesta/ssl/
+```
 
 切換目錄到/usr/local/vesta/ssl/後設定權限：
 
-<pre class="wp-block-code"><code>chmod 660 ./*
-chown root:mail ./*</code></pre>
+```bash
+chmod 660 ./*
+chown root:mail ./*
+```
 
 ### Exmi
 
 到Vesta控制面板，點選右上腳 Server -> exim4 -> CONFIGURE 找到下列三行：
 
-<pre class="wp-block-code"><code>tls_advertise_hosts = *
+```bash
+tls_advertise_hosts = *
 tls_certificate= /usr/local/vesta/ssl/certificate.crt  #註解或刪除
-tls_privatekey= /usr/local/vesta/ssl/certificate.key   #註解或刪除</code></pre>
+tls_privatekey= /usr/local/vesta/ssl/certificate.key   #註解或刪除
+```
 
 修改成
 
-<pre class="wp-block-code"><code>tls_advertise_hosts = *
+```bash
+tls_advertise_hosts = *
 tls_certificate = ${if exists{/usr/local/vesta/ssl/${tls_sni}.crt}{/usr/local/vesta/ssl/${tls_sni}.crt}{/usr/local/vesta/ssl/certificate.crt}}
-tls_privatekey = ${if exists{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/vesta/ssl/certificate.key}}</code></pre>
+tls_privatekey = ${if exists{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/vesta/ssl/certificate.key}}
+```
 
 勾選Restart後，按下Save儲存。
 
@@ -73,20 +81,22 @@ tls_privatekey = ${if exists{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/ves
 
 到Vesta控制面板，點選右上腳 Server -> dovecot -> CONFIGURE 找到/etc/dovecot/conf.d/10-ssl.conf修改成：
 
-<pre class="wp-block-code"><code># --------新增--------#
+```bash
+# --------新增--------#
 local_name cat.com {
-  ssl_cert = &lt;/usr/local/vesta/ssl/cat.com.crt
-  ssl_key = &lt;/usr/local/vesta/ssl/cat.com.key
+  ssl_cert = </usr/local/vesta/ssl/cat.com.crt
+  ssl_key = </usr/local/vesta/ssl/cat.com.key
 }
 
 local_name dog.com {
-  ssl_cert = &lt;/usr/local/vesta/ssl/dog.com.crt
-  ssl_key = &lt;/usr/local/vesta/ssl/dog.com.key
+  ssl_cert = </usr/local/vesta/ssl/dog.com.crt
+  ssl_key = </usr/local/vesta/ssl/dog.com.key
 }
 #--------------------#
 ssl = yes
-ssl_cert = &lt;/usr/local/vesta/ssl/certificate.crt
-ssl_key = &lt;/usr/local/vesta/ssl/certificate.key</code></pre>
+ssl_cert = </usr/local/vesta/ssl/certificate.crt
+ssl_key = </usr/local/vesta/ssl/certificate.key
+```
 
 勾選Restart後，按下Save儲存。
 
@@ -94,10 +104,12 @@ ssl_key = &lt;/usr/local/vesta/ssl/certificate.key</code></pre>
 
 完成後記得測試憑證是否有正確安裝，要測試很簡單：
 
-<pre class="wp-block-code"><code>#測試IMAP
+```bash
+#測試IMAP
 openssl s_client -showcerts -connect mail.example.com:993
 #測試SMTP
-openssl s_client -showcerts -connect mail.example.com:465</code></pre>
+openssl s_client -showcerts -connect mail.example.com:465
+```
 
 如果有憑證資訊跑出來核對一下正確就是成功了，失敗的話回去上面看一下是不是少做了什麼步驟。
 

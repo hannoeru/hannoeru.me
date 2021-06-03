@@ -5,7 +5,7 @@ type: post
 date: 2019-10-02T15:38:11+00:00
 excerpt: 這次是我第一次用Vue寫一個比較完整的東西，對Vue還沒有非常熟悉，算是邊寫邊學。
 url: /【javascript】js地下城-9f-抽獎轉盤/
-featured_image: /wp-content/uploads/2019/10/スクリーンショット-2019-10-02-23.46.48.png
+image: /img/2019/10/スクリーンショット-2019-10-02-23.46.48.png
 categories:
   - JavaScript
   - Programming
@@ -67,11 +67,13 @@ HTML、CSS、JavaScript、Axios、Vue.js
 
 假設你有很多數量一樣的禮物，你可以直接寫：
 
-<pre class="language-js"><code>{
+```js
+{
   "start": 2,
   "end": 16,
   "count": 1
-}</code></pre>
+}
+```
 
 利用 start 定義開始值，end 定義結束值。
 
@@ -81,7 +83,8 @@ HTML、CSS、JavaScript、Axios、Vue.js
 
 這次新學了 Axios 的用法：
 
-<pre class="language-js"><code>axios.get('./data.json')
+```js
+axios.get('./data.json')
   .then(function (response) {
     // handle success
     console.log(response);
@@ -89,16 +92,18 @@ HTML、CSS、JavaScript、Axios、Vue.js
   .catch(function (error) {
     // handle error
     console.log(error);
-  })</code></pre>
+  })
+```
 
 #### 機率計算
 
 我另外生成了一個陣列用來存放剩餘的獎項，這樣子就可以保持 1 / 剩餘獎項 的機率。
 
-<pre class="language-js"><code>// 生成剩餘獎項陣列
+```js
+// 生成剩餘獎項陣列
 generateIndex(data) {
   let indexArray = []
-  for (let i = 0; i &lt; data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].count !== 0) indexArray.push(i)
   }
   return indexArray
@@ -109,13 +114,15 @@ getRandomNumber(data) {
   let num = Math.floor(Math.random() * index.length)
   // 回傳 剩餘獎項陣列[隨機數字]，以得到正確的獎項。
   return index[num]
-}</code></pre>
+}
+```
 
 #### 頃斜角度計算
 
 用目前年份的禮物數量為基準去做計算
 
-<pre class="language-js"><code>transformHandler(index, location) {
+```js
+transformHandler(index, location) {
   // 禮物數量
   let len = this.dataCache[this.year].length
   // 一份禮物所佔角度
@@ -133,7 +140,8 @@ getRandomNumber(data) {
     let translate = len > 10 ? 'translate(19px, 110px)' : 'translate(70px, 45px)'
     return `skewY(${90 - rotate}deg) rotate(${rotate / 2}deg) ${translate}`
   }
-}</code></pre>
+}
+```
 
 #### 花費時間
 

@@ -5,7 +5,7 @@ type: post
 date: 2019-05-17T15:29:24+00:00
 excerpt: JS地下城-5F-全台空氣指標儀表板參考資料
 url: /【javascript】js地下城-5f-全台空氣指標儀表板/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-17-23.27.20.png
+image: /img/2019/05/スクリーンショット-2019-05-17-23.27.20.png
 categories:
   - JavaScript
   - Programming
@@ -79,13 +79,15 @@ Google搜尋：Google Apps Script CORS Proxy
 
 基本的 fetch 請求，非常簡單就寫好了。
 
-<pre class="language-js"><code>fetch('http://example.com/movies.json')
+```js
+fetch('http://example.com/movies.json')
   .then(function(response) {
     return response.json();
   })
   .then(function(myJson) {
     console.log(JSON.stringify(myJson));
-  });</code></pre>
+  });
+```
 
 這是一個通過網絡獲取 JSON 文件並將其輸出到控制台的程式碼。`fetch()` 最簡單的方法是只使用一個參數 &#8211; 您想要獲取的資源的路徑 &#8211;&nbsp;`<a href="https://developer.mozilla.org/ja/docs/Web/API/Response">Response</a>` 並返回包含響應（對象）的 Promise。
 
@@ -95,13 +97,15 @@ Google搜尋：Google Apps Script CORS Proxy
 
 原本寫法是 `array.name` 但是如果使用 [] 就可以直接帶變數進去，配合 for 回圈很好用。
 
-<pre class="language-js"><code>var array = {
+```js
+var array = {
   name: joy,
   age:30
 }
 var list = ['name','age']
 
-array[list[1]]  //30</code></pre>
+array[list[1]]  //30
+```
 
 ### 參考資料
 

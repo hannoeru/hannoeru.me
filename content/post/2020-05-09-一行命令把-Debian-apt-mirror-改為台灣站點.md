@@ -18,12 +18,18 @@ tags:
 ---
 更改 source.list 
 
-<pre class="wp-block-code"><code>sed -i 's/ftp.debian.org/ftp.tw.debian.org/g' /etc/apt/sources.list</code></pre>
+```bash
+sed -i 's/ftp.debian.org/ftp.tw.debian.org/g' /etc/apt/sources.list
+```
 
 重新取得
 
-<pre class="wp-block-code"><code>apt update</code></pre>
+```bash
+apt update
+```
 
 更新
 
-<pre class="wp-block-code"><code>apt upgrade</code></pre>
+```bash
+apt upgrade
+```

@@ -5,7 +5,7 @@ type: post
 date: 2020-04-17T08:10:44+00:00
 excerpt: '建立一個 Proxmox LXC，在 LXC 中新增使用者，安裝 Docker & Docker Compose。'
 url: /proxmox-lxc-安裝-docker-docker-compose/
-featured_image: /wp-content/uploads/2020/04/docker-in-lxc.png
+image: /img/2020/04/docker-in-lxc.png
 categories:
   - Proxmox
 tags:
@@ -42,43 +42,59 @@ tags:
 
 ### 啟動後 SSH 進 LXC
 
-<pre class="wp-block-code"><code>ssh root@server_ip_address</code></pre>
+```bash
+ssh root@server_ip_address
+```
 
 ### 安裝 sudo
 
-<pre class="wp-block-code"><code>apt update
-apt install sudo</code></pre>
+```bash
+apt update
+apt install sudo
+```
 
 ### 新增使用者
 
 自行替換 username
 
-<pre class="wp-block-code"><code>adduser username</code></pre>
+```bash
+adduser username
+```
 
 ### 把剛創建的使用者加入 sudo 群組
 
-<pre class="wp-block-code"><code>usermod -aG sudo username</code></pre>
+```bash
+usermod -aG sudo username
+```
 
 ### sudo 不需輸入密碼（可選）
 
 開啟設定檔：
 
-<pre class="wp-block-code"><code>visudo</code></pre>
+```bash
+visudo
+```
 
 更改為不需輸入密碼
 
-<pre class="wp-block-code"><code># Allow members of group sudo to execute any command
-%sudo  ALL=(ALL:ALL) NOPASSWD:ALL</code></pre>
+```bash
+# Allow members of group sudo to execute any command
+%sudo  ALL=(ALL:ALL) NOPASSWD:ALL
+```
 
 ### 切換使用者 & 測試 sudo
 
 切換使用者：
 
-<pre class="wp-block-code"><code>su - username</code></pre>
+```bash
+su - username
+```
 
 測試 sudo
 
-<pre class="wp-block-code"><code>sudo whoami</code></pre>
+```bash
+sudo whoami
+```
 
 輸出：username 的話就代表成功了！
 
@@ -90,36 +106,48 @@ apt install sudo</code></pre>
 
 更新 source
 
-<pre class="wp-block-code"><code>sudo apt update</code></pre>
+```bash
+sudo apt update
+```
 
 讓 apt 使用 HTTPS 連線
 
-<pre class="wp-block-code"><code>sudo apt install \
+```bash
+sudo apt install \
     apt-transport-https \
     ca-certificates \
     curl \
     gnupg-agent \
-    software-properties-common</code></pre>
+    software-properties-common
+```
 
 加入 Docker 官方 GPG key
 
-<pre class="wp-block-code"><code>curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -</code></pre>
+```bash
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+```
 
 加入 Docker 官方 repository
 
-<pre class="wp-block-code"><code>sudo add-apt-repository \
+```bash
+sudo add-apt-repository \
    "deb &#91;arch=amd64] https://download.docker.com/linux/debian \
    $(lsb_release -cs) \
-   stable"</code></pre>
+   stable"
+```
 
 ### 安裝 Docker
 
-<pre class="wp-block-code"><code>sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io</code></pre>
+```bash
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
 
 測試：
 
-<pre class="wp-block-code"><code>docker version</code></pre>
+```bash
+docker version
+```
 
 有跑出版本資訊就成功了
 
@@ -127,25 +155,35 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io</code></pre>
 
 可以不使用 sudo 直接執行 docker
 
-<pre class="wp-block-code"><code>sudo usermod -aG docker $USER</code></pre>
+```bash
+sudo usermod -aG docker $USER
+```
 
 ### 安裝 Docker Compose
 
 下載 Docker Compose
 
-<pre class="wp-block-code"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code></pre>
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
 
 權限可執行
 
-<pre class="wp-block-code"><code>sudo chmod +x /usr/local/bin/docker-compose</code></pre>
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 連結到 path
 
-<pre class="wp-block-code"><code>sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose</code></pre>
+```bash
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
 
 確認安裝
 
-<pre class="wp-block-code"><code>docker-compose --version</code></pre>
+```bash
+docker-compose --version
+```
 
 有跑出版本資訊就成功了
 

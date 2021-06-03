@@ -5,7 +5,7 @@ type: post
 date: 2019-05-30T10:31:06+00:00
 excerpt: 這次是我第一次使用BootStrap，之前從來都沒有用過，所以一開始查了蠻多資料了，也不知道用的方法正不正確，不過官方文檔寫得很棒所以其實上手並不難。Canvas API的部分，最基礎的畫畫功能其實很簡單，參考Google到的文章，很快就可以寫出最基本的東西，之後加上去的功能...花的時間比較多。
 url: /【javascript】js地下城-7f-畫版/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-30-17.48.18.png
+image: /img/2019/05/スクリーンショット-2019-05-30-17.48.18.png
 categories:
   - JavaScript
   - Programming
@@ -64,16 +64,20 @@ HTML、CSS、Bootstrap、JavaScript（ES6）、Canvas API
 
 生成一個 Element 把該填的資料填進去，之後再用 `click()` 觸發。
 
-<pre class="language-js"><code>const link = document.createElement('a');
+```js
+const link = document.createElement('a');
 link.href = canvas.toDataURL();
 link.download = 'cancas.png';
-link.click();</code></pre>
+link.click();
+```
 
 #### CLEAR ALL
 
 用 `clearRect()` 指定範圍清空。
 
-<pre class="language-js"><code>ctx.clearRect(0, 0, canvas.width, canvas.height);</code></pre>
+```js
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+```
 
 #### UNDO & REDO
 
@@ -85,7 +89,8 @@ link.click();</code></pre>
 
 控制 `.disable` 在沒有下一步時關閉按鈕。
 
-<pre class="language-js"><code>const STACK_MAX_SIZE = 30;
+```js
+const STACK_MAX_SIZE = 30;
 let undoDataStack = [];
 let redoDataStack = [];
 const saveDraw = () => {
@@ -98,33 +103,36 @@ const saveDraw = () => {
   document.querySelector('.nav-undo').classList.remove('disable');
 };
 const undo = () => {
-  if (undoDataStack.length &lt;= 0) return;
+  if (undoDataStack.length <= 0) return;
   redoDataStack.unshift(ctx.getImageData(0, 0, canvas.width, canvas.height));
   document.querySelector('.nav-redo').classList.remove('disable');
   const imageData = undoDataStack.shift();
   ctx.putImageData(imageData, 0, 0);
-  if (undoDataStack.length &lt;= 0) {
+  if (undoDataStack.length <= 0) {
     document.querySelector('.nav-undo').classList.add('disable');
   }
 };
 const redo = () => {
-  if (redoDataStack.length &lt;= 0) return;
+  if (redoDataStack.length <= 0) return;
   undoDataStack.unshift(ctx.getImageData(0, 0, canvas.width, canvas.height));
   document.querySelector('.nav-undo').classList.remove('disable');
   const imageData = redoDataStack.shift();
   ctx.putImageData(imageData, 0, 0);
-  if (redoDataStack.length &lt;= 0) {
+  if (redoDataStack.length <= 0) {
     document.querySelector('.nav-redo').classList.add('disable');
   }
-};</code></pre>
+};
+```
 
 #### 手機版操作
 
 觸控螢幕監聽事件
 
-<pre class="language-js"><code>canvas.addEventListener('touchstart', touchStart); // mousedown
+```js
+canvas.addEventListener('touchstart', touchStart); // mousedown
 canvas.addEventListener('touchmove', touchMove);   // mousemove
-canvas.addEventListener('touchend', touchEnd);     // mouseup</code></pre>
+canvas.addEventListener('touchend', touchEnd);     // mouseup
+```
 
 ### 參考資料
 

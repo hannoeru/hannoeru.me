@@ -5,7 +5,7 @@ type: post
 date: 2020-02-22T06:04:40+00:00
 excerpt: iTerm2 + Oh My Zsh + Cobalt2 安裝教學，簡單快速，複製貼上就可以完成，安裝紀錄。
 url: /iterm2-oh-my-zsh-cobalt2-install/
-featured_image: /wp-content/uploads/2020/02/スクリーンショット-2020-02-22-14.31.19.png
+image: /img/2020/02/スクリーンショット-2020-02-22-14.31.19.png
 categories:
   - MacOS
 tags:
@@ -33,11 +33,15 @@ tags:
 
 可以先嘗試使用 **`zsh --version`** 看是不是已經安裝 Zsh 了，如果它高於**&nbsp;4.3.9** 版的話就沒問題，不過還是建議安裝 5.0 以上的版本。
 
-<pre class="wp-block-code"><code>brew install zsh</code></pre>
+```bash
+brew install zsh
+```
 
 如果要將 zsh 設為預設的話，可以執行：（**macOS High Sierra**）
 
-<pre class="wp-block-code"><code>chsh -s /bin/zsh</code></pre>
+```bash
+chsh -s /bin/zsh
+```
 
 ## Oh My Zsh
 
@@ -45,7 +49,9 @@ tags:
 
 在安裝之前，確認一下 Zsh 已經被設為預設 Shell
 
-<pre class="wp-block-code"><code>echo $SHELL</code></pre>
+```bash
+echo $SHELL
+```
 
 出現 /usr/bin/zsh 代表已經成功切換為 Zsh 了
 
@@ -53,7 +59,9 @@ tags:
 
 這是官方提供的一鍵安裝指令
 
-<pre class="wp-block-code"><code>sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></pre>
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ## Cobalt2 主題
 
@@ -65,32 +73,42 @@ tags:
 
 或是使用 git clone
 
-<pre class="wp-block-code"><code>cd ~/Downloads
+```bash
+cd ~/Downloads
 git clone https://github.com/wesbos/Cobalt2-iterm.git
 cd Cobalt2-iterm
-cp cobalt2.zsh-theme ~/.oh-my-zsh/themes/</code></pre>
+cp cobalt2.zsh-theme ~/.oh-my-zsh/themes/
+```
 
 修改 .zshrc 設定檔
 
-<pre class="wp-block-code"><code>nano ~/.zshrc</code></pre>
+```bash
+nano ~/.zshrc
+```
 
 更改 ZSH_THEME
 
-<pre class="wp-block-code"><code>ZSH_THEME="cobalt2"</code></pre>
+```bash
+ZSH_THEME="cobalt2"
+```
 
 Ctrl + X 退出 Y 儲存
 
 套用變更
 
-<pre class="wp-block-code"><code>source ~/.zshrc</code></pre>
+```bash
+source ~/.zshrc
+```
 
 ## 安裝字型
 
 安裝完主題之後應該會有一些字顯示不出來，這裡我們就要安裝字型：
 
-<pre class="wp-block-code"><code>git clone https://github.com/powerline/fonts
+```bash
+git clone https://github.com/powerline/fonts
 cd fonts
-./install.sh</code></pre>
+./install.sh
+```
 
 ## 更改 iTrem 配置
 

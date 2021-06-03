@@ -5,7 +5,7 @@ type: post
 date: 2019-06-06T10:25:36+00:00
 excerpt: 安裝 QuickLook 插件，指令列表，錯誤排除。
 url: /quicklook-plugins-command/
-featured_image: /wp-content/uploads/2019/06/スクリーンショット-2019-06-06-18.22.47.png
+image: /img/2019/06/スクリーンショット-2019-06-06-18.22.47.png
 categories:
   - MacOS
 tags:
@@ -22,29 +22,41 @@ tags:
 
 安裝插件：
 
-<pre class="language-bash"><code>brew cask install &lt;package></code></pre>
+```bash
+brew cask install <package>
+```
 
 安裝全部插件：
 
-<pre class="language-bash"><code>brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo</code></pre>
+```bash
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+```
 
 ## 指令
 
 顯示幫助
 
-<pre class="language-bash"><code>qlmanage -h</code></pre>
+```bash
+qlmanage -h
+```
 
 指定 QuickLook 開啟檔案
 
-<pre class="language-bash"><code>qlmanage -p filename.jpg</code></pre>
+```bash
+qlmanage -p filename.jpg
+```
 
 清除 QuickLook 快取
 
-<pre class="language-bash"><code>qlmanage -r cache</code></pre>
+```bash
+qlmanage -r cache
+```
 
 重新載入插件
 
-<pre class="language-bash"><code>qlmanage -r</code></pre>
+```bash
+qlmanage -r
+```
 
 Quick Look的故障排除，通常清除快取並重新載入插件就可以解決問題。
 
@@ -58,25 +70,33 @@ Quick Look的故障排除，通常清除快取並重新載入插件就可以解�
 
 在預覽時幫程式碼加上顏色，幫助閱讀。
 
-<pre class="language-bash"><code>brew cask install qlcolorcode</code></pre>
+```bash
+brew cask install qlcolorcode
+```
 
 ### [QLStephen][3]
 
 預覽沒有或具有未知副檔名的文件，以純文本顯示。例如：README，CHANGELOG，index.styl 等&#8230;
 
-<pre class="language-bash"><code>brew cask install qlstephen</code></pre>
+```bash
+brew cask install qlstephen
+```
 
 ### [QLMarkdown][4]
 
 預覽 Markdown&nbsp;文件
 
-<pre class="language-bash"><code>brew cask install qlmarkdown</code></pre>
+```bash
+brew cask install qlmarkdown
+```
 
 ### [QuickLookJSON][5]
 
 預覽 JSON 文件
 
-<pre class="language-bash"><code>brew cask install quicklook-json</code></pre>
+```bash
+brew cask install quicklook-json
+```
 
 ### [BetterZipQL][6]
 
@@ -84,37 +104,49 @@ Quick Look的故障排除，通常清除快取並重新載入插件就可以解�
 
 注意：BetterZipQL 包含在 BetterZip APP 內，安裝時會一併安裝BetterZip。
 
-<pre class="language-bash"><code>brew cask install betterzip</code></pre>
+```bash
+brew cask install betterzip
+```
 
 ### [qlImageSize][7]
 
 顯示照片大小與解析度
 
-<pre class="language-bash"><code>brew cask install qlimagesize</code></pre>
+```bash
+brew cask install qlimagesize
+```
 
 ### [WebP][8]
 
 預覽 WebP 圖像
 
-<pre class="language-bash"><code>brew cask install webpquicklook</code></pre>
+```bash
+brew cask install webpquicklook
+```
 
 ### [Suspicious Package][9]
 
 預覽標準 Apple 安裝程式內容
 
-<pre class="language-bash"><code>brew cask install suspicious-package</code></pre>
+```bash
+brew cask install suspicious-package
+```
 
 ### [QuickLookASE][10]
 
 預覽 Adobe ASE 色表
 
-<pre class="language-bash"><code>brew cask install quicklookase</code></pre>
+```bash
+brew cask install quicklookase
+```
 
 ### [QLVideo][11]
 
 預覽大多數的影像檔，會自動生成縮圖、封面跟詳細數據。
 
-<pre class="language-bash"><code>brew cask install qlvideo</code></pre>
+```bash
+brew cask install qlvideo
+```
 
 ## 參考資料
 

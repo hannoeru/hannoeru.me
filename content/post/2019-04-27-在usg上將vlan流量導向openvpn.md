@@ -5,7 +5,7 @@ type: post
 date: 2019-04-26T17:34:14+00:00
 excerpt: 在不能使用VPN的產品上透過Wifi連到VPN，就可以解開有些服務的地區限制。
 url: /在usg上將vlan流量導向openvpn/
-featured_image: /wp-content/uploads/2019/04/1_dExpXTogMQ1mnsJKvFMOMA.png
+image: /img/2019/04/1_dExpXTogMQ1mnsJKvFMOMA.png
 categories:
   - OpenVPN
   - Unifi
@@ -30,21 +30,26 @@ Unifi USG
 
 首先先在你想要的國家架設OpenVPN伺服器，或是使用免費或付費的OpenVPN伺服器。
 
-取得ovpn檔案後用記事本或你習慣的文字編輯器開啟檔案在<ca>之前加上“route-nopull”
+取得ovpn檔案後用記事本或你習慣的文字編輯器開啟檔案在<ca>之前加上"route-nopull"
 
-<pre class="wp-block-code"><code>route-nopull #加上
-&lt;ca>
-xxxxxxxxxxxxx</code></pre>
+```bash
+route-nopull #加上
+<ca>
+xxxxxxxxxxxxx
+```
 
 接下來將ovpn檔案複製到USG，路徑：/config/openvpn/
 
-<pre class="wp-block-code"><code>scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/</code></pre>
+```bash
+scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/
+```
 
 之後在Unifi上新增你要使用的Corporate Network（有線網路）&Wireless Network（無線網路）並設定VLANID
 
 如果直接在USG上設定OpenVPN跟路由的話會因為重新啟動而覆蓋掉原本的更動，所以要在Unifi Controller中加上<a rel="noreferrer noopener" href="https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration" target="_blank">config.gateway.json</a>檔案，內容如下：
 
-<pre><code class="language-json">{
+```json
+{
  "firewall": {
   "modify": {
    "namevpn": {
@@ -56,7 +61,7 @@ xxxxxxxxxxxxx</code></pre>
        "table": "1"
       },
       "source": {
-       "address": "&lt;VLAN's Address/Subnet&gt;" 
+       "address": "<VLAN's Address/Subnet>" 
       }
      }
     }
@@ -68,7 +73,7 @@ xxxxxxxxxxxxx</code></pre>
   "ethernet": {
    "eth1": {
     "vif": {
-     "&lt;VLANID&gt;": {
+     "<VLANID>": {
       "firewall": {
        "in": {
         "modify": "namevpn"
@@ -124,17 +129,22 @@ xxxxxxxxxxxxx</code></pre>
       }
     }
   }
-}</code></pre>
+}
+```
 
-依照你的Unifi網路設定更改你想要使用的<VLAN’s Address/Subnet>&<VLANID>，之後將<a rel="noreferrer noopener" href="https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration" target="_blank">config.gateway.json</a>複製到：/unifi/data/sites/<unifi_base>/
+依照你的Unifi網路設定更改你想要使用的<VLAN's Address/Subnet>&<VLANID>，之後將<a rel="noreferrer noopener" href="https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration" target="_blank">config.gateway.json</a>複製到：/unifi/data/sites/<unifi_base>/
 
-<pre class="wp-block-code"><code>scp /path/to/config.gateway.json user@unifi-controller:/unifi/data/sites/&lt;unifi_base>/</code></pre>
+```bash
+scp /path/to/config.gateway.json user@unifi-controller:/unifi/data/sites/<unifi_base>/
+```
 
-<unifi_base>的位置因操作系統而異。你可以在瀏覽器的URL上面，控制器的網址中找到。原始站點名為“default”，如果你有一個以上的站點，Unifi將會為每個創建的站點分配一個隨機字符串。例如，當在站點的儀表板頁面面時，將在URL欄中看到：
+<unifi_base>的位置因操作系統而異。你可以在瀏覽器的URL上面，控制器的網址中找到。原始站點名為"default"，如果你有一個以上的站點，Unifi將會為每個創建的站點分配一個隨機字符串。例如，當在站點的儀表板頁面面時，將在URL欄中看到：
 
-<pre class="wp-block-code"><code>https://127.0.0.1:8443/manage/s/ceb1m27d/dashboard</code></pre>
+```bash
+https://127.0.0.1:8443/manage/s/ceb1m27d/dashboard
+```
 
-“ceb1m27d”就是<unifi_base>的位置
+"ceb1m27d"就是<unifi_base>的位置
 
 把檔案丟進去以後你可以去Devices > USG > Config > Manage Device > Force provision，強制Provision USG，就會把你的設定檔推送到USG上，這個過程可能要等待數分鐘。
 

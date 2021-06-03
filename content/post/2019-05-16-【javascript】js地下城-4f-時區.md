@@ -5,7 +5,7 @@ type: post
 date: 2019-05-15T19:08:21+00:00
 excerpt: JS地下城-4F-時區
 url: /【javascript】js地下城-4f-時區/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-16-2.51.05.png
+image: /img/2019/05/スクリーンショット-2019-05-16-2.51.05.png
 categories:
   - JavaScript
   - Programming
@@ -40,14 +40,16 @@ HTML、CSS、JavaScript（ES6）
 
 #### **`toLocaleString()`** 函式用法
 
-<pre class="language-js"><code>var time = new Date();
+```js
+var time = new Date();
 
 //第一個參數：顯示語言＆格式
 //第二個參數：option
 console.log(time.toLocaleString('en-GB', {
 timeZone: 'UTC',
 hour12: false 
-}));</code></pre>
+}));
+```
 
 這次使用到的 Option 有兩個：
 

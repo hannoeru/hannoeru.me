@@ -5,7 +5,7 @@ type: post
 date: 2019-05-14T16:40:28+00:00
 excerpt: JS地下城-3f-計算機
 url: /【javascript】js地下城-3f-計算機/
-featured_image: /wp-content/uploads/2019/05/スクリーンショット-2019-05-14-23.51.36.png
+image: /img/2019/05/スクリーンショット-2019-05-14-23.51.36.png
 categories:
   - JavaScript
   - Programming
@@ -39,7 +39,9 @@ HTML、CSS、JavaScript（ES6）
 
 #### 使用 `const` 宣告函式
 
-<pre><code class="language-js">const function = () =&gt; { /*.......*/ };</code></pre>
+```js
+const function = () => { /*.......*/ };
+```
 
 #### 三元運算子
 
@@ -47,49 +49,60 @@ HTML、CSS、JavaScript（ES6）
 
 語法：
 
-<pre class="language-js"><code>x ? i : a</code></pre>
+```js
+x ? i : a
+```
 
 範例：
 
-<pre class="language-js"><code>//宣告
+```js
+//宣告
 var x = true;
 //true的話回傳i，false的話回傳a
 x ? i : a;
-//結果回傳i</code></pre>
+//結果回傳i
+```
 
 #### `eval()` 函式
 
 語法：
 
-<pre class="language-js"><code>eval( 要執行的字串 )</code></pre>
+```js
+eval( 要執行的字串 )
+```
 
 範例：
 
-<pre class="language-js"><code>var str = '10+4*5'; 
+```js
+var str = '10+4*5'; 
 var B = eval(str);
 
-console.log(B);　// 輸出 30</code></pre>
+console.log(B);　// 輸出 30
+```
 
 #### 依照文字寬度縮放文字
 
 從 30 開始用 for 加大文字到 56，如果中間超過計算機寬度就設定當前文字大小，為了要符合美觀再 -4，才不會太靠近邊緣。
 
-<pre class="language-js"><code>//在主函式最後一行執行resizeText()
+```js
+//在主函式最後一行執行resizeText()
 const resizeText = () => {
-  for (var i = 30; i &lt; 56; i++) {
+  for (var i = 30; i < 56; i++) {
     display.style.fontSize = i + 'px';
     if (display.scrollWidth > calculator.clientWidth) {
         display.style.fontSize = (i-4) + 'px';
         break;
     }
   }
-};</code></pre>
+};
+```
 
 #### 在小數點前每3格加一個逗號
 
 參考資料：<https://codepen.io/anon/pen/xBGOLy>
 
-<pre class="language-js"><code>//在主函式第一行執行addComma(false)消除逗號進入計算
+```js
+//在主函式第一行執行addComma(false)消除逗號進入計算
 //在主函式最後一行執行addComma(true)新增逗號到輸出結果
 const addComma = (isAdd) => {
   if (isAdd) {
@@ -99,7 +112,8 @@ const addComma = (isAdd) => {
   }else {
     display.textContent = display.textContent.replace(/,/g, '');
   }
-};</code></pre>
+};
+```
 
 ### 參考資料
 
