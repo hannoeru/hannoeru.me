@@ -37,9 +37,11 @@ params:
     sidebar:
         emoji: 🧑🏻‍💻
         subtitle: |
-            Front-end Engineer 🧑🏻‍💻 
-            Focus on Vue and Vite.
-            @windicss @OVaaS team member.
+            Front-end Engineer<br>
+            Focus on Vue and Vite<br><br>
+            <a href="https://github.com/windicss">@WindiCSS</a><br>
+            <a href="https://github.com/ovaas">@OVaaS</a><br>
+            Team member.
         avatar:
             local: true
             src: avatar.jpeg
