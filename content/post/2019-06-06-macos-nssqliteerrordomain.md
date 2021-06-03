@@ -16,7 +16,7 @@ tags:
 
 ---
 
-![wp-image-383](/img/2019/06/NSSQLiteErrorDomain-1024x683.png)
+![wp-image-383](/img/2019/06/NSSQLiteErrorDomain.png)
 
 ## 原因
 

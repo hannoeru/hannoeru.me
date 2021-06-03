@@ -18,10 +18,10 @@ tags:
   - Vue
 
 ---
+
 ## 9F-抽獎轉盤
 
-
-![wp-image-479](/img/2019/10/スクリーンショット-2019-10-02-23.46.48-1024x648.png)
+![wp-image-479](/img/2019/10/スクリーンショット-2019-10-02-23.46.48.png)
 
 ### 連結
 
@@ -35,26 +35,28 @@ HTML、CSS、JavaScript、Axios、Vue.js
 
 ### BOSS 弱點
 
-  1. 【特定技術】2017 遊戲輪盤規則，樣式請參考 Adobe XD 設計稿
-      1. 輪盤只能轉 20 次，人人有獎
-          1. Flight：1份
-          2. Child：4份
-          3. Anything：5份
-          4. Wifi：5份
-          5. Wish：5份
-      2. 已經被抽到的獎項，就不可再次出現
-  2. 【特定技術】2018 遊戲輪盤規則
-      1. 編號 20：69 份
-      2. 編號 19：20 份
-      3. 編號 18：10 份
-      4. 編號 17：5 份
-      5. 編號 16~2：各編號皆 1 份
-      6. 編號 1：1 份
-      7. 請移除獎品名稱與 icon，僅單純顯示編號
-      8. 已經被抽到的獎項，就不可再次出現
-  3. 【特定技術】以上兩個遊戲轉盤，不可直接寫死樣式在網頁上，請將品項以「JSON」格式來儲存，再藉由 JS 跑迴圈依序顯示獎項在輪盤上，此舉用意為若日後輪盤會新增獎項時，只要在 JSON 格式上新增即可。
-  4. 【特定技術】點選中間的「PRESS」後，指針開始滾動，滾動到一定時間後，就會停止並指向到獎項上。
-  5. 【特定技術】請考量中獎機率，以 2018 來說，總計有 120 份獎品，所以編號 1 的獎品第一次抽中機率是 1/120，而隨著品項變少也會跟著重新計算中獎率。
+1. 【特定技術】2017 遊戲輪盤規則，樣式請參考 Adobe XD 設計稿
+   1. 輪盤只能轉 20 次，人人有獎
+      1. Flight：1份
+      2. Child：4份
+      3. Anything：5份
+      4. Wifi：5份
+      5. Wish：5份
+   2. 已經被抽到的獎項，就不可再次出現
+2. 【特定技術】2018 遊戲輪盤規則
+   1. 編號 20：69 份
+   2. 編號 19：20 份
+   3. 編號 18：10 份
+   4. 編號 17：5 份
+   5. 編號 16~2：各編號皆 1 份
+   6. 編號 1：1 份
+   7. 請移除獎品名稱與 icon，僅單純顯示編號
+   8. 已經被抽到的獎項，就不可再次出現
+3. 【特定技術】以上兩個遊戲轉盤，不可直接寫死樣式在網頁上，請將品項以「JSON」格式來儲存，再藉由 JS
+   跑迴圈依序顯示獎項在輪盤上，此舉用意為若日後輪盤會新增獎項時，只要在 JSON 格式上新增即可。
+4. 【特定技術】點選中間的「PRESS」後，指針開始滾動，滾動到一定時間後，就會停止並指向到獎項上。
+5. 【特定技術】請考量中獎機率，以 2018 來說，總計有 120 份獎品，所以編號 1 的獎品第一次抽中機率是
+   1/120，而隨著品項變少也會跟著重新計算中獎率。
 
 ### 心得
 
@@ -85,7 +87,7 @@ HTML、CSS、JavaScript、Axios、Vue.js
 這次新學了 Axios 的用法：
 
 ```js
-axios.get('./data.json')
+axios.get("./data.json")
   .then(function (response) {
     // handle success
     console.log(response);
@@ -93,7 +95,7 @@ axios.get('./data.json')
   .catch(function (error) {
     // handle error
     console.log(error);
-  })
+  });
 ```
 
 #### 機率計算
@@ -160,10 +162,10 @@ transformHandler(index, location) {
 
 [何番目系の便利なCSSまとめ][7]
 
- [1]: https://hannoeru.github.io/lucky-wheel/
- [2]: https://github.com/hannoeru/lucky-wheel
- [3]: https://github.com/axios/axios
- [4]: https://vuejs.org/v2/guide/list.html
- [5]: https://vuejs.org/v2/guide/instance.html
- [6]: https://jp.vuejs.org/v2/api/#Vue-set
- [7]: https://qiita.com/ituki_b/items/62a752389385de7ba4a2
+[1]: https://hannoeru.github.io/lucky-wheel/
+[2]: https://github.com/hannoeru/lucky-wheel
+[3]: https://github.com/axios/axios
+[4]: https://vuejs.org/v2/guide/list.html
+[5]: https://vuejs.org/v2/guide/instance.html
+[6]: https://jp.vuejs.org/v2/api/#Vue-set
+[7]: https://qiita.com/ituki_b/items/62a752389385de7ba4a2

@@ -16,16 +16,17 @@ tags:
   - JS地下城
 
 ---
+
 ## 2F-時鐘
 
-
-![wp-image-201](/img/2019/05/スクリーンショット-2019-05-11-3.35.42-1024x634.png)
+![wp-image-201](/img/2019/05/スクリーンショット-2019-05-11-3.35.42.png)
 
 ### 連結
 
 <a href="https://hannoeru.github.io/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Demo (新しいタブで開く)">Demo</a>
 
-<a href="https://github.com/hannoeru/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>[]()
+<a href="https://github.com/hannoeru/js-clock/" target="_blank" rel="noreferrer noopener" aria-label="Code (新しいタブで開く)">Code</a>
+[]()
 
 ### 使用語言
 
@@ -33,9 +34,10 @@ HTML、CSS、JavaScript
 
 ### BOSS 弱點
 
-  1. 【特定技術】需使用 JS 原生語法的 `getDate()` 撈取時間，不可用套件
-  2. 【特定技術】需使用 JS 原生語法的 `setTimeout()` 或 `setInterval()`，持續讓秒針、分針、時針能夠以台北時區移動
-  3. 【特定技術】介面請全部用 CSS2、CSS3 手寫繪製，什麼&#8230;？你說太強人所難？？那..用圖片也不是不行辣， 點選一下元素，右側控制列會有個藍色按鈕，點選 [下載] 即可。
+1. 【特定技術】需使用 JS 原生語法的`getDate()`撈取時間，不可用套件
+2. 【特定技術】需使用 JS 原生語法的`setTimeout()` 或`setInterval()`，持續讓秒針、分針、時針能夠以台北時區移動
+3. 【特定技術】介面請全部用 CSS2、CSS3 手寫繪製，什麼&#8230;？你說太強人所難？？那..用圖片也不是不行辣，
+   點選一下元素，右側控制列會有個藍色按鈕，點選 [下載] 即可。
 
 ### 技巧
 
@@ -82,24 +84,27 @@ HTML、CSS、JavaScript
 
 ```js
 function time() {
-    //取得時間
-    var time = new Date();
-    var hour = time.getHours();
-    var min = time.getMinutes();
-    var sec = time.getSeconds();
-    //將時間套用到CSS角度
-    //減去預設圖片角度，讓角度回到12點鐘位置
-    document.querySelector('.hour').style.transform = 'rotate(' + (hour*30+min/2-90) + 'deg)';
-    document.querySelector('.min').style.transform = 'rotate(' + (min*6+sec/10) + 'deg)';
-    document.querySelector('.sec').style.transform = 'rotate(' + (sec*6+180) + 'deg)';
+  //取得時間
+  var time = new Date();
+  var hour = time.getHours();
+  var min = time.getMinutes();
+  var sec = time.getSeconds();
+  //將時間套用到CSS角度
+  //減去預設圖片角度，讓角度回到12點鐘位置
+  document.querySelector(".hour").style.transform = "rotate(" +
+    (hour * 30 + min / 2 - 90) + "deg)";
+  document.querySelector(".min").style.transform = "rotate(" +
+    (min * 6 + sec / 10) + "deg)";
+  document.querySelector(".sec").style.transform = "rotate(" + (sec * 6 + 180) +
+    "deg)";
 }
 //設定每秒執行
 setInterval(time, 1000);
-
 ```
 
 ### 參考資料
 
 <a rel="noreferrer noopener" aria-label="CSSのposition:absolute;とは？要素を思いのままに配置する方法 (新しいタブで開く)" href="https://www.sejuku.net/blog/53016" target="_blank">CSSのposition:absolute;とは？要素を思いのままに配置する方法</a>
 
-<a href="https://wcc723.github.io/css/2013/10/10/css-transform-origin/" target="_blank" rel="noreferrer noopener" aria-label="CSS沒有極限 - CSS transform-origin (新しいタブで開く)">CSS沒有極限 &#8211; CSS transform-origin</a>
+<a href="https://wcc723.github.io/css/2013/10/10/css-transform-origin/" target="_blank" rel="noreferrer noopener" aria-label="CSS沒有極限 - CSS transform-origin (新しいタブで開く)">CSS沒有極限
+&#8211; CSS transform-origin</a>

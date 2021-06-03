@@ -16,10 +16,10 @@ tags:
   - JS地下城
 
 ---
+
 ## 6F-60秒算數遊戲
 
-
-![wp-image-289](/img/2019/05/スクリーンショット-2019-05-21-21.03.28-1024x886.png)
+![wp-image-289](/img/2019/05/スクリーンショット-2019-05-21-21.03.28.png)
 
 ### 連結
 
@@ -33,10 +33,11 @@ HTML、CSS、JavaScript（ES6）
 
 ### BOSS 弱點
 
-  1. 【特定技術】遊戲規則
-      1. 0~20 秒為 1位數計算 (5-3)，21~40 秒為 2 位數計算 (30*19)，41~60 秒為 3 位數計算 (332+312)，加減乘除規則請用隨機產生，不可寫死題目，60 秒內可無限次數答題。
-      2. 0~40 秒答對加一分，41~60 秒答對加五分，答錯扣一分，最多僅能扣到零分
-  2. 【特定技術】不可設計跳轉頁面，都得在同一頁內部切換頁面完成。
+1. 【特定技術】遊戲規則
+   1. 0~20 秒為 1位數計算 (5-3)，21~40 秒為 2 位數計算 (30*19)，41~60 秒為 3 位數計算
+      (332+312)，加減乘除規則請用隨機產生，不可寫死題目，60 秒內可無限次數答題。
+   2. 0~40 秒答對加一分，41~60 秒答對加五分，答錯扣一分，最多僅能扣到零分
+2. 【特定技術】不可設計跳轉頁面，都得在同一頁內部切換頁面完成。
 
 ### 心得
 
@@ -73,25 +74,26 @@ HTML、CSS、JavaScript（ES6）
 ```js
 // 指定interval變數到setInterval()
 const interval = setInterval(() => {
-      countTime -= 1;
-      if (countTime < 10) {
-        timeDOM.textContent = `00 : 0${countTime}`;
-      } else {
-        timeDOM.textContent = `00 : ${countTime}`;
-      }
-      if (countTime === 0) {
-        mainDOM.classList.add('hidden');
-        restartDOM.classList.remove('hidden');
-        gaming = false;
-        // 用clearInterval()停止interval
-        clearInterval(interval);
-        finalScore.textContent = score;
-      }
-    }, 1000);
+  countTime -= 1;
+  if (countTime < 10) {
+    timeDOM.textContent = `00 : 0${countTime}`;
+  } else {
+    timeDOM.textContent = `00 : ${countTime}`;
+  }
+  if (countTime === 0) {
+    mainDOM.classList.add("hidden");
+    restartDOM.classList.remove("hidden");
+    gaming = false;
+    // 用clearInterval()停止interval
+    clearInterval(interval);
+    finalScore.textContent = score;
+  }
+}, 1000);
 ```
 
 ### 參考資料
 
-<a href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">圖解：CSS Flex 屬性一點也不難</a>
+<a href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">圖解：CSS
+Flex 屬性一點也不難</a>
 
 <a href="https://techacademy.jp/magazine/5537" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">JavaScriptでsetIntervalを使う方法【初心者向け】</a>

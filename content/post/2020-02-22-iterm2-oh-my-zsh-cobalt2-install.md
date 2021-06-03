@@ -19,6 +19,7 @@ tags:
   - 安裝教學
 
 ---
+
 ## iTerm2
 
 官網：<https://iterm2.com/>
@@ -31,7 +32,8 @@ tags:
 
 如果是不是使用 ＭacOS Catalina 的話，要手動安裝 Zsh 到電腦上。
 
-可以先嘗試使用 **`zsh --version`** 看是不是已經安裝 Zsh 了，如果它高於**&nbsp;4.3.9** 版的話就沒問題，不過還是建議安裝 5.0 以上的版本。
+可以先嘗試使用 **`zsh --version`** 看是不是已經安裝 Zsh 了，如果它高於**&nbsp;4.3.9** 版的話就沒問題，不過還是建議安裝
+5.0 以上的版本。
 
 ```bash
 brew install zsh
@@ -118,8 +120,7 @@ cd fonts
 
 到 Profiles >> Default >> Colors >> Color Presets 下拉選單
 
-
-![wp-image-514](/img/2020/02/スクリーンショット-2020-02-22-14.16.48-1024x553.png)
+![wp-image-514](/img/2020/02/スクリーンショット-2020-02-22-14.16.48.png)
 
 選擇 Import，到 ~/Downloads 選擇之前 Github 載下來的 cobalt2.itermcolors 這個檔案，匯入後選擇 cobalt2
 
@@ -129,18 +130,16 @@ cd fonts
 
 到旁邊的 Text 下方的 Font，搜尋「powerline」選擇自己喜歡的字型就可以了
 
-
-![wp-image-513](/img/2020/02/スクリーンショット-2020-02-22-14.24.45-1024x793.png)
+![wp-image-513](/img/2020/02/スクリーンショット-2020-02-22-14.24.45.png)
 
 ## 完成
 
 這是我目前使用的樣式
 
-
-![wp-image-518](/img/2020/02/スクリーンショット-2020-02-22-14.31.19-1024x841.png)
+![wp-image-518](/img/2020/02/スクリーンショット-2020-02-22-14.31.19.png)
 
 <div class="wp-block-file">
-  <a href="https://blog.hanlee.co//img/2020/02/setting.json">設定檔</a><a href="https://blog.hanlee.co//img/2020/02/setting.json" class="wp-block-file__button" download>ダウンロード</a>
+  <a href="https://blog.hanlee.co/img/2020/02/setting.json">設定檔</a><a href="https://blog.hanlee.co/img/2020/02/setting.json" class="wp-block-file__button" download>ダウンロード</a>
 </div>
 
- [1]: https://github.com/wesbos/Cobalt2-iterm/archive/master.zip
+[1]: https://github.com/wesbos/Cobalt2-iterm/archive/master.zip

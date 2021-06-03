@@ -15,6 +15,7 @@ tags:
   - VPN
 
 ---
+
 ## 問題
 
 日本Netflix有些影片沒有開放給國外觀看，因此在台灣無法跨區看日本Netflix影集。
@@ -29,7 +30,10 @@ tags:
 
 那該怎麼辦呢？？
 
-幸好，有一個網站叫做 <a href="https://www.vpngate.net" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN Gate</a> ，這個網站上面提供了很多學術用途或是自行架設的VPN伺服器可以供大家使用。由於這個網站上面的伺服器地址大部分都是來自一般用途的網路位置，經常變動，因此日本Netflix很難去封鎖。
+幸好，有一個網站叫做
+<a href="https://www.vpngate.net" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN
+Gate</a>
+，這個網站上面提供了很多學術用途或是自行架設的VPN伺服器可以供大家使用。由於這個網站上面的伺服器地址大部分都是來自一般用途的網路位置，經常變動，因此日本Netflix很難去封鎖。
 
 在這裡還是要提醒一下，使用第三方提供的VPN都會有資料洩漏的風險，請自行評估，記得用完要斷線。
 
@@ -37,13 +41,13 @@ tags:
 
 ### 安裝軟體
 
-Windows10 載點： （下載你的Windows版本的Installer）  
-<a href="https://openvpn.net/community-downloads/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">https://openvpn.net/community-downloads/</a> 
+Windows10 載點： （下載你的Windows版本的Installer）\
+<a href="https://openvpn.net/community-downloads/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">https://openvpn.net/community-downloads/</a>
 
 <a href="https://tw.answers.acer.com/app/answers/detail/a_id/60437/~/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2windows-%E7%B3%BB%E7%B5%B1%E7%89%88%E6%9C%AC%EF%BC%9F" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">如何查看Windows版本？﻿</a>
 
-Mac OS 載點： （下載Stable版本）  
-<a href="https://tunnelblick.net/downloads.html" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">https://tunnelblick.net/downloads.html</a> 
+Mac OS 載點： （下載Stable版本）\
+<a href="https://tunnelblick.net/downloads.html" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">https://tunnelblick.net/downloads.html</a>
 
 之後去這個<a href="https://www.vpngate.net/cn/howto_openvpn.aspx" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">連結</a>，進去以後，如果你是Windows用戶，依照Windows的指南去安裝，如果是Mac的用戶，依照Mac的指南去安裝。
 
@@ -53,18 +57,20 @@ VPN有分成很多種，OpenVPN是我們這次要使用的VPN種類，因為他�
 
 #### VPN服務器列表
 
-回到<a href="https://www.vpngate.net/ja/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN Gate</a>的首頁，往下拉你會發現有一整排的列表。
+回到<a href="https://www.vpngate.net/ja/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN
+Gate</a>的首頁，往下拉你會發現有一整排的列表。
 
 這個列表有幾樣東西是我們要看的：
 
-  * 国・地域
-  * VPN 接続数
-  * 回線品質
-  * スコア
+- 国・地域
+- VPN 接続数
+- 回線品質
+- スコア
 
 首先第一個要找的就是『国・地域』，不用說當然是日本。
 
-下一個是『VPN 接続数』，下面顯示的有三行，分別是『目前使用人數、伺服器運作時間、累計使用人數』，基本上運作時間越長，累計使用人數越多，代表這個伺服器可以撐很久。
+下一個是『VPN
+接続数』，下面顯示的有三行，分別是『目前使用人數、伺服器運作時間、累計使用人數』，基本上運作時間越長，累計使用人數越多，代表這個伺服器可以撐很久。
 
 繼續看下去，『回線品質』下面顯示的是網路速度跟目前Ping值，速度越大代表網路越快，Ping越低代表反應越快，所以最好找速度快，Ping值低的伺服器。
 
@@ -72,11 +78,9 @@ VPN有分成很多種，OpenVPN是我們這次要使用的VPN種類，因為他�
 
 選好要的伺服器以後點選『OpenVPN 設定ファイル』
 
-
-![wp-image-51](/img/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1-1024x451.png)
+![wp-image-51](/img/2019/04/スクリーンショット-2019-04-30-2.45.53-min-1.png)
 
 點進去以後會看到兩個分類
-
 
 ![wp-image-53](/img/2019/04/スクリーンショット-2019-04-30-2.49.33-min-1.png)
 
@@ -87,7 +91,6 @@ VPN有分成很多種，OpenVPN是我們這次要使用的VPN種類，因為他�
 ### 使用.ovpn檔案
 
 如果你是Mac使用者，依照剛剛安裝軟體的網址<a rel="noreferrer noopener" aria-label=" (新しいタブで開く)" href="https://www.vpngate.net/cn/howto_openvpn.aspx" target="_blank">連結</a>所說明的安裝ovpn檔案後，記得將第二個項目打勾（傳送所有流量），網路流量才會被導入VPN（如下圖）
-
 
 ![wp-image-54](/img/2019/04/スクリーンショット-2019-04-30-2.57.41.png)
 

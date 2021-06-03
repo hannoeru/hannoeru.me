@@ -17,6 +17,7 @@ tags:
   - Node-Red
 
 ---
+
 使用 Node-RED 從台灣銀行網站自動抓取日幣匯率，結合 Messaging API 可以做到當日幣匯率低於一個數值時自動發送信息到你的手機。
 
 ## Step .1
@@ -25,49 +26,43 @@ tags:
 
 網址：<https://developers.line.biz/>
 
-
-![wp-image-299](/img/2019/05/スクリーンショット-2019-05-25-0.42.51-1024x584.png)
+![wp-image-299](/img/2019/05/スクリーンショット-2019-05-25-0.42.51.png)
 
 #### 申請完成後進到 Products [頁面][1]，點選 Messaging API
 
-
-![wp-image-313](/img/2019/05/スクリーンショット-2019-05-25-0.36.36-1024x515.png)
+![wp-image-313](/img/2019/05/スクリーンショット-2019-05-25-0.36.36.png)
 ![wp-image-314](/img/2019/05/スクリーンショット-2019-05-25-0.36.49.png)
 
 #### 設定提供者名稱（自己取名或公司名稱）
 
-
-![wp-image-308](/img/2019/05/スクリーンショット-2019-05-25-0.37.03-1024x584.png)
+![wp-image-308](/img/2019/05/スクリーンショット-2019-05-25-0.37.03.png)
 
 #### 填寫APP基本資料
 
+![wp-image-316](/img/2019/05/スクリーンショット-2019-05-25-0.37.12.png)
 
-![wp-image-316](/img/2019/05/スクリーンショット-2019-05-25-0.37.12-1024x584.png)
-
-  * **App icon**
-      * Line Bot 使用者圖像
-  * **App name**
-      * Line Bot 使用者名稱
-  * **App description**
-      * App 描述
-  * **Category**
-      * App 分類
-  * **Subcategory**
-      * App 子分類
-  * **Privacy Policy URL**（非必填）
-      * 隱私政策
-  * **Terms Of Use URL**（非必填）
-      * 使用條款
+- **App icon**
+  - Line Bot 使用者圖像
+- **App name**
+  - Line Bot 使用者名稱
+- **App description**
+  - App 描述
+- **Category**
+  - App 分類
+- **Subcategory**
+  - App 子分類
+- **Privacy Policy URL**（非必填）
+  - 隱私政策
+- **Terms Of Use URL**（非必填）
+  - 使用條款
 
 #### 閱讀完使用條款之後按下『同意』
-
 
 ![wp-image-317](/img/2019/05/スクリーンショット-2019-05-25-0.37.54.png)
 
 #### 確認資料沒問題，勾選 帳號 與 API 的使用條款後，按下 Create 就完成 Line Bot 的初期設定了。
 
-
-![wp-image-310](/img/2019/05/スクリーンショット-2019-05-25-0.38.09-1024x584.png)
+![wp-image-310](/img/2019/05/スクリーンショット-2019-05-25-0.38.09.png)
 
 ## Step .2
 
@@ -75,28 +70,26 @@ tags:
 
 上一步驟完成後就會看到這樣的畫面，點進去你剛建立好的 App。
 
-
 ![wp-image-318](/img/2019/05/スクリーンショット-2019-05-25-0.38.29.png)
 
 #### 進去找到『Messaging settings』的部分
-
 
 ![wp-image-326](/img/2019/05/スクリーンショット-2019-05-25-0.38.48-1.png)
 
 這裡有四個選項：
 
-  * **Channel access token (long-lived) **
-      * 生成令牌，用來存取 API，他會問你重新生成令牌後，原本的令牌要多久後才會失效，依照你個人需求填寫。
-  * **Use webhooks**
-      * 是否要使用 webhooks，他會把傳送給這個Line Bot的信息轉送到指定網址。
-      * 設定為：Enabled
-  * **Webhook URL**
-      * webhooks 網址位置，用來接收信息。
-      * 設定為：https://nodered.com/line_hook
-      * 將 noderd.com 換成你 Node-RED 的對外名稱，要有 SSL。
-  * **Allow bot to join group chats**
-      * 允許加入聊天群組，可以回復群組信息或推送信息到群組。
-      * 進去後在 Chet 的下方可以設定是否允許。
+- **Channel access token (long-lived) **
+  - 生成令牌，用來存取 API，他會問你重新生成令牌後，原本的令牌要多久後才會失效，依照你個人需求填寫。
+- **Use webhooks**
+  - 是否要使用 webhooks，他會把傳送給這個Line Bot的信息轉送到指定網址。
+  - 設定為：Enabled
+- **Webhook URL**
+  - webhooks 網址位置，用來接收信息。
+  - 設定為：https://nodered.com/line_hook
+  - 將 noderd.com 換成你 Node-RED 的對外名稱，要有 SSL。
+- **Allow bot to join group chats**
+  - 允許加入聊天群組，可以回復群組信息或推送信息到群組。
+  - 進去後在 Chet 的下方可以設定是否允許。
 
 ## Step .3
 
@@ -109,13 +102,11 @@ tags:
 
 #### 匯入後看起來像這樣
 
-
-![wp-image-333](/img/2019/05/スクリーンショット-2019-05-25-2.54.02-1024x191.png)
+![wp-image-333](/img/2019/05/スクリーンショット-2019-05-25-2.54.02.png)
 
 #### 自定匯率
 
 進入到『Get JPY Currency』function 節點後
-
 
 ![wp-image-329](/img/2019/05/スクリーンショット-2019-05-25-2.04.33.png)
 
@@ -131,7 +122,6 @@ var currency = 匯率;
 
 之後傳送信息給 Line Bot，在 Node-RED 的 Debug視窗 就可以看到信息資訊：
 
-
 ![wp-image-354](/img/2019/05/スクリーンショット-2019-05-25-2.37.16-2.png)
 
 這時候在event[0].source下方就可以看到 userId，使用 userId 作為『使用者ID』。
@@ -139,7 +129,6 @@ var currency = 匯率;
 如果你想要推送信息到群組的話，將 Line Bot 加入到聊天群組後發一則信息，就會得到 userId & groupId，使用 groupId 作為『使用者ID』。
 
 #### 設定 Token & 使用者ID
-
 
 ![wp-image-330](/img/2019/05/スクリーンショット-2019-05-25-2.04.57.png)
 
@@ -153,7 +142,6 @@ var currency = 匯率;
 ### 最終測試
 
 按下『發送測試信息』你應該會收到像這樣的測試信息：
-
 
 ![wp-image-334](/img/2019/05/IMG_3429-1024x273.jpg)
 

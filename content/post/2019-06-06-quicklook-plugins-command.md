@@ -15,11 +15,11 @@ tags:
 
 ---
 
-![wp-image-388](/img/2019/06/スクリーンショット-2019-06-06-18.22.47-1024x680.png)
+![wp-image-388](/img/2019/06/スクリーンショット-2019-06-06-18.22.47.png)
 
 ## 安裝
 
-### 使用&nbsp;[Homebrew Cask][1]
+### 使用[Homebrew Cask][1]
 
 安裝插件：
 
@@ -153,14 +153,14 @@ brew cask install qlvideo
 
 <https://github.com/sindresorhus/quick-look-plugins>
 
- [1]: https://github.com/phinze/homebrew-cask
- [2]: https://github.com/anthonygelibert/QLColorCode
- [3]: https://github.com/whomwah/qlstephen
- [4]: https://github.com/toland/qlmarkdown
- [5]: http://www.sagtau.com/quicklookjson.html
- [6]: https://macitbetter.com/downloads/
- [7]: https://github.com/Nyx0uf/qlImageSize
- [8]: https://github.com/dchest/webp-quicklook
- [9]: http://www.mothersruin.com/software/SuspiciousPackage/
- [10]: https://github.com/rsodre/QuickLookASE
- [11]: https://github.com/Marginal/QLVideo
+[1]: https://github.com/phinze/homebrew-cask
+[2]: https://github.com/anthonygelibert/QLColorCode
+[3]: https://github.com/whomwah/qlstephen
+[4]: https://github.com/toland/qlmarkdown
+[5]: http://www.sagtau.com/quicklookjson.html
+[6]: https://macitbetter.com/downloads/
+[7]: https://github.com/Nyx0uf/qlImageSize
+[8]: https://github.com/dchest/webp-quicklook
+[9]: http://www.mothersruin.com/software/SuspiciousPackage/
+[10]: https://github.com/rsodre/QuickLookASE
+[11]: https://github.com/Marginal/QLVideo
