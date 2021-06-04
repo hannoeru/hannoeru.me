@@ -122,6 +122,16 @@ menu:
           url: /
           weight: -100
           pre: home
+        - identifier: github
+          name: Github
+          url: https://github.com/hannoeru
+          weight: -50
+          pre: github
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com/hannoeru
+          weight: -40
+          pre: twitter
 
 related:
     includeNewer: true
