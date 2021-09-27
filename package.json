@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "preview": "vite preview",
+    "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite-ssg build && esno ./scripts/rss.ts && cp _dist_redirects dist/_redirects"
   },
   "dependencies": {

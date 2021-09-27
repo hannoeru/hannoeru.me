@@ -140,15 +140,6 @@ const config: UserConfig = {
     }),
     Inspect(),
   ],
-
-  build: {
-    rollupOptions: {
-      onwarn(warning, next) {
-        if (warning.code !== 'UNUSED_EXTERNAL_IMPORT')
-          next(warning)
-      },
-    },
-  },
 }
 
 export default config
