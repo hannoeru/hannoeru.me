@@ -1,7 +1,7 @@
 :root {
   --c-bg: theme("colors.true-gray.100");
-  --c-scrollbar: #eee;
-  --c-scrollbar-hover: #bbb;
+  --c-scrollbar: theme("colors.cool-gray.200");
+  --c-scrollbar-hover: theme("colors.cool-gray.300");
   --header-height: 4.5rem;
 }
 
@@ -12,13 +12,9 @@ html {
 
 html.dark {
   --c-bg: #050505;
-  --c-scrollbar: #111;
-  --c-scrollbar-hover: #222;
+  --c-scrollbar: theme("colors.dark.200");
+  --c-scrollbar-hover: theme("colors.dark.100");
   @apply text-gray-100;
-}
-
-html {
-  overflow: scroll;
 }
 
 #nprogress {
@@ -53,20 +49,33 @@ html {
 // scrollbar
 * {
   scrollbar-width: thin;
+  scrollbar-color: var(--c-scrollbar) var(--c-bg);
 }
 
 *::-webkit-scrollbar {
   @apply bg-transparent w-12px h-12px;
 }
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--c-bg);
+}
 
 *::-webkit-scrollbar-thumb {
   transition: background 0.2s ease-in-out;
   border: 3px solid transparent;
-  @apply bg-cool-gray-200 dark:bg-dark-200 rounded-full bg-clip-content;
+  background: var(--c-scrollbar);
+  @apply rounded-full bg-clip-content;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  @apply bg-cool-gray-300 dark:bg-dark-100;
+  background: var(--c-scrollbar-hover);
+  @apply bg-clip-content;
 }
 
 *::-webkit-scrollbar-corner {
