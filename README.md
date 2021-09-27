@@ -1,12 +1,8 @@
-# hannoeru.me
+**[hannoeru.me](https://hannoeru.me)**
 
-## dev
+my personal website powered by [Vite](https://vitejs.dev/)
+this is a fork from [antfu.me](https://github.com/antfu/antfu.me)
 
-```bash
-# install hugo
-brew install hugo
-# launch dev server
-hugo server
-# build static site
-hugo
-```
+<br>
+
+<samp>code is licensed under <a href='./LICENSE'>MIT</a>,<br> words and images are licensed under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a></samp>.

@@ -1,33 +1,12 @@
+[build.environment]
+  NPM_FLAGS = "--prefix=/dev/null"
+  NODE_VERSION = "14"
+
 [build]
-publish = "public"
-command = "hugo --theme=hugo-theme-stack --gc --minify"
+  publish = "dist"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
-[context.production.environment]
-HUGO_VERSION = "0.83.1"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
-
-[context.split1]
-command = "hugo --gc --minify --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.83.1"
-HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.83.1"
-
-[context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.83.1"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
-
-[[plugins]]
-    package = "netlify-plugin-hugo-cache-resources"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
