@@ -3,7 +3,7 @@ title: XMLHttpRequest 與 Fetch API：2019 年最適合 Ajax 的是什麼？
 author: hanlee
 type: post
 date: 2019-05-17T14:56:13+00:00
-excerpt: XMLHTTP最初是由微軟公司發明的，在Internet Explorer 5.0中用作ActiveX物件，可通過JavaScript、VBScript或其它瀏覽器支援的手稿語言存取。Mozilla的開發人員後來在Mozilla 1.0中實現了一個相容的版本。之後蘋果電腦公司在Safari 1.2中開始支援XMLHTTP，而Opera從8.0版開始也宣布支援XMLHTTP。
+description: XMLHTTP最初是由微軟公司發明的，在Internet Explorer 5.0中用作ActiveX物件，可通過JavaScript、VBScript或其它瀏覽器支援的手稿語言存取。Mozilla的開發人員後來在Mozilla 1.0中實現了一個相容的版本。之後蘋果電腦公司在Safari 1.2中開始支援XMLHTTP，而Opera從8.0版開始也宣布支援XMLHTTP。
 url: /xmlhttprequest與fetch-api：2019年最適合ajax的是什麼？/
 image: /images/2019/05/0_Kj2i4zLF-jKOsiLb.jpg
 categories:

@@ -3,7 +3,7 @@ title: MacOS 出現 NSSQLiteErrorDomain 錯誤的解決辦法
 author: hanlee
 type: post
 date: 2019-06-06T09:51:58+00:00
-excerpt: 這是一個文件權限錯誤，我是在用 Time Machine 回復資料後出現這個錯誤，也有可能會是其他原因導致錯誤
+description: 這是一個文件權限錯誤，我是在用 Time Machine 回復資料後出現這個錯誤，也有可能會是其他原因導致錯誤
 url: /macos-nssqliteerrordomain/
 image: /images/2019/06/NSSQLiteErrorDomain.png
 categories:

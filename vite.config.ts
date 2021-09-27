@@ -81,7 +81,6 @@ const config: UserConfig = {
 
     Markdown({
       wrapperComponent: 'Post',
-      headEnabled: true,
       markdownItOptions: {
         quotes: '""\'\'',
       },

@@ -3,7 +3,7 @@ title: QuickLook 插件、指令列表
 author: hanlee
 type: post
 date: 2019-06-06T10:25:36+00:00
-excerpt: 安裝 QuickLook 插件，指令列表，錯誤排除。
+description: 安裝 QuickLook 插件，指令列表，錯誤排除。
 url: /quicklook-plugins-command/
 image: /images/2019/06/スクリーンショット-2019-06-06-18.22.47.png
 categories:

@@ -3,7 +3,7 @@ title: 利用 Node-RED 結合 Line Bot，在匯率低於數值時自動傳送信
 author: hanlee
 type: post
 date: 2019-05-24T19:22:52+00:00
-excerpt: 使用Node-RED從台灣銀行網站自動抓取日幣匯率，結合Messaging API可以做到當日幣匯率低於一個數值時自動發送信息到你的手機。
+description: 使用Node-RED從台灣銀行網站自動抓取日幣匯率，結合Messaging API可以做到當日幣匯率低於一個數值時自動發送信息到你的手機。
 url: /node-red-line-bot-jpy-currency/
 image: /images/2019/05/スクリーンショット-2019-05-25-0.36.49-2.png
 categories:

@@ -3,7 +3,7 @@ title: 【JavaScript】JavaScript 入門篇-學徒的試煉-最終作業
 author: hanlee
 type: post
 date: 2019-05-08T13:17:36+00:00
-excerpt: 'JavaScript 入門篇 - 學徒的試煉 - 最終作業'
+description: 'JavaScript 入門篇 - 學徒的試煉 - 最終作業'
 url: /【javascript】javascript-入門篇-學徒的試煉-最終作業/
 image: /images/2019/05/javascript.png
 categories:

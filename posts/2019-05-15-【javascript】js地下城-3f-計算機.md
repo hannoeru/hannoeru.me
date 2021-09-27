@@ -3,7 +3,7 @@ title: 【JavaScript】JS地下城-3F-計算機
 author: hanlee
 type: post
 date: 2019-05-14T16:40:28+00:00
-excerpt: JS地下城-3f-計算機
+description: JS地下城-3f-計算機
 url: /【javascript】js地下城-3f-計算機/
 image: /images/2019/05/スクリーンショット-2019-05-14-23.51.36.png
 categories:

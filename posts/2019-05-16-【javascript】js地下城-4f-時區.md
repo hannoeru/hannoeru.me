@@ -3,7 +3,7 @@ title: 【JavaScript】JS地下城-4F-時區
 author: hanlee
 type: post
 date: 2019-05-15T19:08:21+00:00
-excerpt: JS地下城-4F-時區
+description: JS地下城-4F-時區
 url: /【javascript】js地下城-4f-時區/
 image: /images/2019/05/スクリーンショット-2019-05-16-2.51.05.png
 categories:

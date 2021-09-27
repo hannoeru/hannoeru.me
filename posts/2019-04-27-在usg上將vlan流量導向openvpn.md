@@ -3,7 +3,7 @@ title: 在USG上將VLAN流量導向OpenVPN
 author: hanlee
 type: post
 date: 2019-04-26T17:34:14+00:00
-excerpt: 在不能使用VPN的產品上透過Wifi連到VPN，就可以解開有些服務的地區限制。
+description: 在不能使用VPN的產品上透過Wifi連到VPN，就可以解開有些服務的地區限制。
 url: /在usg上將vlan流量導向openvpn/
 image: /images/2019/04/1_dExpXTogMQ1mnsJKvFMOMA.png
 categories:

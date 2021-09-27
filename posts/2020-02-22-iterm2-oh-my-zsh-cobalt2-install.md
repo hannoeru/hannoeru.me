@@ -3,7 +3,7 @@ title: 【MacOS】iTerm2 + Oh My Zsh + Cobalt2 安裝教學
 author: hanlee
 type: post
 date: 2020-02-22T06:04:40+00:00
-excerpt: iTerm2 + Oh My Zsh + Cobalt2 安裝教學，簡單快速，複製貼上就可以完成，安裝紀錄。
+description: iTerm2 + Oh My Zsh + Cobalt2 安裝教學，簡單快速，複製貼上就可以完成，安裝紀錄。
 url: /iterm2-oh-my-zsh-cobalt2-install/
 image: /images/2020/02/スクリーンショット-2020-02-22-14.31.19.png
 categories:

@@ -3,7 +3,7 @@ title: MacOSおすすめのアプリ「iStat Mini」
 author: hanlee
 type: post
 date: 2019-05-04T16:00:46+00:00
-excerpt: 「iStat Mini」はMacOSのシステムモニタ、とても便利でMACのCPU、メモリ、ディスクの状況を把握してる。
+description: 「iStat Mini」はMacOSのシステムモニタ、とても便利でMACのCPU、メモリ、ディスクの状況を把握してる。
 url: /macosおすすめのアプリ「istat-mini」/
 image: /images/2019/05/スクリーンショット-2018-02-11-15.32.21.png
 categories:

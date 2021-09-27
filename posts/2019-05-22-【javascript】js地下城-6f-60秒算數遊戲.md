@@ -3,7 +3,7 @@ title: 【JavaScript】JS地下城-6F-60秒算數遊戲
 author: hanlee
 type: post
 date: 2019-05-21T15:41:10+00:00
-excerpt: 6F-60秒算數遊戲
+description: 6F-60秒算數遊戲
 url: /【javascript】js地下城-6f-60秒算數遊戲/
 image: /images/2019/05/スクリーンショット-2019-05-21-21.03.28.png
 categories:

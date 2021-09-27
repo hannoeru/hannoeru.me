@@ -3,7 +3,7 @@ title: 【JavaScript】JS地下城-1F-9×9乘法表
 author: hanlee
 type: post
 date: 2019-05-08T16:58:19+00:00
-excerpt: JS地下城-1F-9x9乘法表
+description: JS地下城-1F-9x9乘法表
 url: /【javascript】js地下城-1f-9x9乘法表/
 image: /images/2019/05/スクリーンショット-2019-05-09-0.28.33.png
 categories:

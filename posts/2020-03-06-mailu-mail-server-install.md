@@ -3,7 +3,7 @@ title: 輕量簡單 Mail Server – Mailu 安裝教學
 author: hanlee
 type: post
 date: 2020-03-05T17:56:19+00:00
-excerpt: 官方簡介Mailu是一個簡單而功能齊全的郵件服務器，它是一組 Docker Image。它是開源軟體，可以接受建議和外部貢獻。該項目旨在為人們提供易於安裝，易於維護且功能齊全的郵件服務器，不發行專有軟體或流行的軟體中經常出現的不相關功能。
+description: 官方簡介Mailu是一個簡單而功能齊全的郵件服務器，它是一組 Docker Image。它是開源軟體，可以接受建議和外部貢獻。該項目旨在為人們提供易於安裝，易於維護且功能齊全的郵件服務器，不發行專有軟體或流行的軟體中經常出現的不相關功能。
 url: /mailu-mail-server-install/
 image: /images/2020/03/スクリーンショット-2020-03-06-2.59.20.png
 categories:

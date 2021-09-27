@@ -1,6 +1,9 @@
 <script setup lang='ts'>
 import { isClient } from '@vueuse/core'
 import { formatDate } from '@/logics'
+import { DOMAIN } from '@/constants'
+
+import type { HeadObject, HeadAttrs } from '@vueuse/head'
 
 const route = useRoute()
 const router = useRouter()
@@ -19,6 +22,25 @@ if (isClient) {
     })
   })
 }
+
+useHead(computed<HeadObject>(() => {
+  const head = frontmatter.value
+
+  const meta = [
+    head.title ? { property: 'og:title', content: head.title } : null,
+    head.description ? [
+      { property: 'og:description', content: head.description },
+      { name: 'description', content: head.description }
+    ] : null,
+    head.image ? { property: 'og:image', content: DOMAIN + head.image } : null,
+    { property: 'og:type', content: 'article' },
+  ].filter(Boolean) as HeadAttrs[]
+
+  return {
+    title: head.title,
+    meta,
+  }
+}))
 </script>
 
 <template>
