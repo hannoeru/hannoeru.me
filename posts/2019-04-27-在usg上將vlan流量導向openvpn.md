@@ -20,7 +20,7 @@ tags:
 ---
 ## 問題
 
-想要在不能使用VPN的產品上透過 Wifi 連到 VPN，就可以解開有些服務的地區限制，也可以以非常便利的方式快速切換 VPN。
+想要在不能使用 VPN 的產品上透過 Wifi 連到 VPN，就可以解開有些服務的地區限制，也可以以非常便利的方式快速切換 VPN。
 
 ## 環境
 
@@ -48,7 +48,7 @@ scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/
 
 如果直接在USG上設定OpenVPN跟路由的話會因為重新啟動而覆蓋掉原本的更動，所以要在 Unifi Controller 中加上 [config.gateway.json](https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration) 檔案，內容如下：
 
-```json
+```json config.gateway.json
 {
  "firewall": {
   "modify": {
@@ -132,23 +132,23 @@ scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/
 }
 ```
 
-依照你的Unifi網路設定更改你想要使用的`<VLAN's Address/Subnet>`&`<VLANID>`，之後將 [config.gateway.json](https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration)複製到：`/unifi/data/sites/<unifi_base>/`
+依照你的Unifi網路設定更改你想要使用的 `<VLAN's Address/Subnet>` & `<VLANID>`，之後將 [config.gateway.json](https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration) 複製到：`/unifi/data/sites/<unifi_base>/`
 
 ```bash
 scp /path/to/config.gateway.json user@unifi-controller:/unifi/data/sites/<unifi_base>/
 ```
 
-`<unifi_base>`的位置因操作系統而異。你可以在瀏覽器的URL上面，控制器的網址中找到。原始站點名為"default"，如果你有一個以上的站點，Unifi將會為每個創建的站點分配一個隨機字符串。例如，當在站點的儀表板頁面面時，將在URL欄中看到：
+`<unifi_base>` 的位置因操作系統而異。你可以在瀏覽器的URL上面，控制器的網址中找到。原始站點名為 `default`，如果你有一個以上的站點，Unifi 將會為每個創建的站點分配一個隨機字符串。例如，當在站點的儀表板頁面面時，將在 URL 欄中看到：
 
 ```bash
 https://127.0.0.1:8443/manage/s/ceb1m27d/dashboard
 ```
 
-"ceb1m27d"就是`<unifi_base>`的位置
+`ceb1m27d` 就是 `<unifi_base>` 的位置
 
-把檔案丟進去以後你可以去Devices > USG > Config > Manage Device > Force provision，強制Provision USG，就會把你的設定檔推送到USG上，這個過程可能要等待數分鐘。
+把檔案丟進去以後你可以去 Devices > USG > Config > Manage Device > Force provision，強制 Provision USG，就會把你的設定檔推送到 USG 上，這個過程可能要等待數分鐘。
 
-如果想要恢復的話單純刪除config.gateway.json後強制Provision USG就可以回復原狀了。
+如果想要恢復的話單純刪除 `config.gateway.json` 後強制 Provision USG 就可以回復原狀了。
 
 以上。
 

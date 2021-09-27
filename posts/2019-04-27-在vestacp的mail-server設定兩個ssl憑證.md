@@ -10,7 +10,7 @@ categories:
   - VestaCP
 tags:
   - Dovecot
-  - Exmi
+  - Exim
   - IMAP
   - Mail
   - SMTP
@@ -20,7 +20,7 @@ tags:
 ---
 ## 問題
 
-如何在Dovecot和Exim上使用多個SSL證書？
+如何在 Dovecot 和 Exim 上使用多個 SSL 證書？
 
 ## 環境
 
@@ -28,7 +28,7 @@ VestaCP 0.9.8-24
 
 ## 原因
 
-默認配置僅允許一對SSL證書。
+默認配置僅允許一對 SSL 證書。
 
 ## 解決辦法
 
@@ -44,22 +44,22 @@ VestaCP 0.9.8-24
 * dog.com.crt
 * dog.com.key
 
-將所有憑證複製到/usr/local/vesta/ssl/
+將所有憑證複製到 `/usr/local/vesta/ssl/`
 
 ```bash
 scp /path/to/憑證/* Username@Vesta-IP:/usr/local/vesta/ssl/
 ```
 
-切換目錄到/usr/local/vesta/ssl/後設定權限：
+切換目錄到 `/usr/local/vesta/ssl/` 後設定權限：
 
 ```bash
 chmod 660 ./*
 chown root:mail ./*
 ```
 
-### Exmi
+### Exim
 
-到Vesta控制面板，點選右上腳 Server -> exim4 -> CONFIGURE 找到下列三行：
+到 Vesta 控制面板，點選右上腳 Server -> Exim4 -> CONFIGURE 找到下列三行：
 
 ```bash
 tls_advertise_hosts = *
@@ -75,11 +75,11 @@ tls_certificate = ${if exists{/usr/local/vesta/ssl/${tls_sni}.crt}{/usr/local/ve
 tls_privatekey = ${if exists{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/vesta/ssl/${tls_sni}.key}{/usr/local/vesta/ssl/certificate.key}}
 ```
 
-勾選Restart後，按下Save儲存。
+勾選 Restart 後，按下 Save 儲存。
 
 ### Dovecot
 
-到Vesta控制面板，點選右上腳 Server -> dovecot -> CONFIGURE 找到/etc/dovecot/conf.d/10-ssl.conf修改成：
+到 Vesta 控制面板，點選右上腳 Server -> dovecot -> CONFIGURE 找到 `/etc/dovecot/conf.d/10-ssl.conf` 修改成：
 
 ```bash
 # --------新增--------#
@@ -98,7 +98,7 @@ ssl_cert = </usr/local/vesta/ssl/certificate.crt
 ssl_key = </usr/local/vesta/ssl/certificate.key
 ```
 
-勾選Restart後，按下Save儲存。
+勾選 Restart 後，按下 Save 儲存。
 
 ### 測試
 

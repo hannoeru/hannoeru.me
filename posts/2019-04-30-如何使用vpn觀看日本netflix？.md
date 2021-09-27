@@ -18,42 +18,42 @@ tags:
 
 ## 問題
 
-日本Netflix有些影片沒有開放給國外觀看，因此在台灣無法跨區看日本Netflix影集。
+日本 Netflix 有些影片沒有開放給國外觀看，因此在台灣無法跨區看日本 Netflix 影集。
 
 ## 解決辦法
 
-使用VPN（虛擬私人網路）連線到日本，Netflix就會以為你是從日本的位置觀看影片，以達到目的。
+使用 VPN（虛擬私人網路）連線到日本，Netflix 就會以為你是從日本的位置觀看影片，以達到目的。
 
-如果想要更深入了解VPN的話可以[點這裡](https://nordvpn.com/zh-tw/what-is-a-vpn/)。
+如果想要更深入了解 VPN 的話可以[點這裡](https://nordvpn.com/zh-tw/what-is-a-vpn/)。
 
-雖然網路上有許多的VPN供應商，但是大部分都已經被日本Netflix給封鎖了，所以基本上也是無法觀看的。
+雖然網路上有許多的 VPN 供應商，但是大部分都已經被日本 Netflix 給封鎖了，所以基本上也是無法觀看的。
 
 那該怎麼辦呢？？
 
 幸好，有一個網站叫做
 <a href="https://www.vpngate.net" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN
 Gate</a>
-，這個網站上面提供了很多學術用途或是自行架設的VPN伺服器可以供大家使用。由於這個網站上面的伺服器地址大部分都是來自一般用途的網路位置，經常變動，因此日本Netflix很難去封鎖。
+，這個網站上面提供了很多學術用途或是自行架設的 VPN 伺服器可以供大家使用。由於這個網站上面的伺服器地址大部分都是來自一般用途的網路位置，經常變動，因此日本 Netflix 很難去封鎖。
 
 在這裡還是要提醒一下，使用第三方提供的VPN都會有資料洩漏的風險，請自行評估，記得用完要斷線。
 
-說到這裡，就讓我們開始教學如何使用VPN吧！
+說到這裡，就讓我們開始教學如何使用 VPN 吧！
 
 ### 安裝軟體
 
-Windows10 載點： （下載你的Windows版本的Installer）\
+Windows10 載點： （下載對應 Windows 版本的Installer）\
 [https://openvpn.net/community-downloads/](https://openvpn.net/community-downloads/)
 
 [如何查看Windows版本？](https://tw.answers.acer.com/app/answers/detail/a_id/60437/~/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2windows-%E7%B3%BB%E7%B5%B1%E7%89%88%E6%9C%AC%EF%BC%9F)
 
-Mac OS 載點： （下載Stable版本）\
+Mac OS 載點： （下載 Stable 版本）\
 [https://tunnelblick.net/downloads.html](https://tunnelblick.net/downloads.html)
 
 之後去這個[連結](https://www.vpngate.net/cn/howto_openvpn.aspx)，進去以後，如果你是Windows用戶，依照Windows的指南去安裝，如果是Mac的用戶，依照Mac的指南去安裝。
 
-### 下載OpenVPN 連結配置文件（.ovpn file)
+### 下載 OpenVPN 連結配置文件（.ovpn file)
 
-VPN有分成很多種，OpenVPN是我們這次要使用的VPN種類，因為他的安裝方式幾乎是所有裡面最簡單的。
+VPN 有分成很多種，OpenVPN 是我們這次要使用的 VPN 種類，因為他的安裝方式幾乎是所有裡面最簡單的。
 
 #### VPN服務器列表
 

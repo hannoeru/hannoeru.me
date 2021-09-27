@@ -13,7 +13,7 @@ tags:
   - VestaCP
 
 ---
-## 使用 Let's Encrypt 申請 SSL 證書 {#75bd}
+## 使用 Let's Encrypt 申請 SSL 證書
 
 使用 您的域名:8083 登入 VestaCP，然後進入到 `WEB` 頁籤，點擊 `EDIT` 你的域名。
 
@@ -56,7 +56,7 @@ chmod 660 ssl.testing.com.crt
 
 之後，重新啟動伺服器上的 VestaCP 服務。
 
-**恭喜！**關閉現有的瀏覽器視窗並打開一個新視窗。嘗試使用 您的域名:8083 再次登入 VestaCP。您將看到應用於控制面板的 Let's encrypt 證書！
+**恭喜！** 關閉現有的瀏覽器視窗並打開一個新視窗。嘗試使用 您的域名:8083 再次登入 VestaCP。您將看到應用於控制面板的 Let's encrypt 證書！
 
 ## 參考資料
 

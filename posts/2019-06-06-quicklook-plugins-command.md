@@ -59,7 +59,7 @@ qlmanage -r cache
 qlmanage -r
 ```
 
-Quick Look的故障排除，通常清除快取並重新載入插件就可以解決問題。
+Quick Look 的故障排除，通常清除快取並重新載入插件就可以解決問題。
 
 如果無法排除，使用命令方式開啟檔案，就會看到詳細錯誤信息。
 
@@ -77,7 +77,7 @@ brew cask install qlcolorcode
 
 ### [QLStephen][3]
 
-預覽沒有或具有未知副檔名的文件，以純文本顯示。例如：README，CHANGELOG，index.styl 等&#8230;
+預覽沒有或具有未知副檔名的文件，以純文本顯示。例如：README，CHANGELOG，index.style 等...
 
 ```bash
 brew cask install qlstephen
@@ -103,7 +103,7 @@ brew cask install quicklook-json
 
 預覽壓縮檔
 
-注意：BetterZipQL 包含在 BetterZip APP 內，安裝時會一併安裝BetterZip。
+注意：BetterZipQL 包含在 BetterZip APP 內，安裝時會一併安裝 BetterZip。
 
 ```bash
 brew cask install betterzip

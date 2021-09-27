@@ -4,8 +4,8 @@
     "dev": "vite --port 3333 --open",
     "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite-ssg build && esno ./scripts/rss.ts",
-    "lint": "eslint --ext .js,.ts,.vue,.json .",
-    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json ."
+    "lint": "eslint --ext .js,.ts,.vue,.json,.md .",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json,.md ."
   },
   "dependencies": {
     "@vueuse/core": "^6.5.3",
