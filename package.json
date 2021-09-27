@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite --port 3333 --open",
     "serve": "vite preview",
-    "build": "vue-tsc --noEmit && vite-ssg build && esno ./scripts/rss.ts && cp _dist_redirects dist/_redirects"
+    "build": "vue-tsc --noEmit && vite-ssg build && esno ./scripts/rss.ts"
   },
   "dependencies": {
     "@vueuse/core": "^6.5.3",
