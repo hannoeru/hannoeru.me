@@ -3,7 +3,7 @@
     class="
       fixed top-0 inset-x-0 z-50
       h-$header-height px-6
-      bg-light-100 dark:bg-dark-900 !bg-opacity-80
+      bg-white dark:bg-dark-800 !bg-opacity-80
       backdrop-filter backdrop-blur"
   >
     <div class="max-w-screen-lg mx-auto h-full flex justify-between items-center">
@@ -42,7 +42,7 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.2rem;
 }
 
 .nav img {
@@ -56,6 +56,7 @@
   transition: opacity 0.2s ease;
   opacity: 0.7;
   outline: none;
+  padding: .5rem;
 }
 
 .nav a:hover {
