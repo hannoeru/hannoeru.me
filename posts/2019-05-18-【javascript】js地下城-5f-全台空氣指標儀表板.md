@@ -120,7 +120,7 @@ array[list[1]]; //30
 <a href="https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noreferrer noopener" aria-label="Fetch を使う (新しいタブで開く)">Fetch
 を使う</a>
 
-<a rel="noreferrer noopener" aria-label="まだXMLHttpRequestを使ってるの？　fetchのすすめ (新しいタブで開く)" href="https://qiita.com/uhyo/items/91649e260165b35fecd7" target="_blank">まだXMLHttpRequestを使ってるの？
+<a rel="noreferrer noopener" aria-label="まだXMLHttpRequestを使ってるの？ fetchのすすめ (新しいタブで開く)" href="https://qiita.com/uhyo/items/91649e260165b35fecd7" target="_blank">まだXMLHttpRequestを使ってるの？
 fetchのすすめ</a>
 
 [何番目系の便利なCSSまとめ](https://qiita.com/ituki_b/items/62a752389385de7ba4a2)

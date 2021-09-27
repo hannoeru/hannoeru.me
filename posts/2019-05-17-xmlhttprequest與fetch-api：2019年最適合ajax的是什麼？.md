@@ -19,13 +19,13 @@ tags:
 
 ![wp-image-272](/images/2019/05/0_Kj2i4zLF-jKOsiLb.jpg)
 
-XMLHTTP 最初是由微軟公司發明的，在 [Internet Explorer][1] 5.0 中用作 [ActiveX][2] 物件，可通過 JavaScript、VBScript 或其它瀏覽器支援的手稿語言存取。[Mozilla][3] 的開發人員後來在 Mozilla 1.0 中實現了一個相容的版本。之後蘋果電腦公司在 [Safari][4] 1.2中開始支援XMLHTTP，而 [Opera][5] 從 8.0 版開始也宣布支援 XMLHTTP。
+XMLHTTP 最初是由微軟公司發明的，在 [Internet Explorer][1] 5.0 中用作 [ActiveX][2] 物件，可通過 JavaScript、VBScript 或其它瀏覽器支援的手稿語言存取。[Mozilla][3] 的開發人員後來在 Mozilla 1.0 中實現了一個相容的版本。之後蘋果電腦公司在 [Safari][4] 1.2中開始支援XMLHTTP，而 [Opera][5] 從 8.0 版開始也宣布支援 XMLHTTP。
 
 大多數使用了 XMLHTTP 的設計良好的網頁，會使用簡單的 JavaScript 函式，將不同瀏覽器之間呼叫 XMLHTTP 的差異性封鎖，該函式會自動檢測瀏覽器版本並隱藏不同環境的差異。
 
-在 [DOM][6] 3（文件物件模型 Level 3 ）的讀取和儲存規範（ Load and Save Specification ）中也有類似的功能，它已經成為 [W3C][7] 推薦的方法。截止 2011 年，大多數瀏覽器已經支援。
+在 [DOM][6] 3（文件物件模型 Level 3 ）的讀取和儲存規範（ Load and Save Specification ）中也有類似的功能，它已經成為 [W3C][7] 推薦的方法。截止 2011 年，大多數瀏覽器已經支援。
 
-在此之前，有一些方法可以在沒有整頁刷新的情況下從服務器提取數據，但是他們通常依賴於諸如 `<script>` 注入或第三方插件之類的笨重技術。Microsoft `XMLHttpRequest` 為其 Outlook 電子郵件客戶端開發了基於瀏覽器的替代方案。
+在此之前，有一些方法可以在沒有整頁刷新的情況下從服務器提取數據，但是他們通常依賴於諸如 `<script>` 注入或第三方插件之類的笨重技術。Microsoft `XMLHttpRequest` 為其 Outlook 電子郵件客戶端開發了基於瀏覽器的替代方案。
 
 `XMLHttpRequest` 直到2006年才成為 Web 標準，但它已在大多數瀏覽器中實現。它在 Gmail（ 2004 ）和谷歌地圖（ 2005 ）的採用促成了 Jesse James Garrett 在2005年寫的一篇文章 [AJAX：一種新的Web應用程序方法][8]。新術語明確了開發人員的關注點。
 

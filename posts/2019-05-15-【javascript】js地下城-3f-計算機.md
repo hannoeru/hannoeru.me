@@ -74,10 +74,10 @@ eval( 要執行的字串 )
 範例：
 
 ```js
-var str = '10+4*5'; 
+var str = '10+4*5';
 var B = eval(str);
 
-console.log(B);　// 輸出 30
+console.log(B); // 輸出 30
 ```
 
 #### 依照文字寬度縮放文字

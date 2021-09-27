@@ -25,14 +25,14 @@ import {
 } from "vee-validate";
 import * as rules from "vee-validate/dist/rules";
 import tw from "vee-validate/dist/locale/zh_TW.json";
- 
+
 // 安裝所有 VeeValidate 規則
 Object.keys(rules).forEach(rule => {
   extend(rule, rules[rule]);
 });
- 
+
 localize("zh_TW", tw);
- 
+
 // 註冊全域元件
 Vue.component("ValidationObserver", ValidationObserver);
 Vue.component("ValidationProvider", ValidationProvider);
@@ -78,6 +78,6 @@ Vue.component("ValidationProvider", ValidationProvider);
 >
   <!-- form... -->
   <!-- 沒通過驗證時保持 Button disabled 狀態 -->
-  <button class="btn btn-danger" :disabled="invalid">送出訂單</button> 
+  <button class="btn btn-danger" :disabled="invalid">送出訂單</button>
 </ValidationObserver>
 ```

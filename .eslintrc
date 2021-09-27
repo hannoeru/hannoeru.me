@@ -1,3 +1,9 @@
 {
-  "extends": ["@hannoeru", "plugin:markdown/recommended"]
+  "extends": ["@hannoeru"],
+  "overrides": [
+    {
+      "files": ["**/*.md"],
+      "extends": ["plugin:mdx/recommended"]
+    }
+  ]
 }

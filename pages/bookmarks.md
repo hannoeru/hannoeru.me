@@ -16,7 +16,6 @@ subtitle: Some of my favorite websites/tools with excellent design and UX that I
 
 - [Tailwind Gradient Designer](https://tailwind-gradient-designer.csspost.com/)
 
-
 ### Dev
 
 - [Regexr](https://regexr.com/)

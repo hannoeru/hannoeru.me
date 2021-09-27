@@ -61,7 +61,7 @@ scp /path/to/filename.ovpn user@usg-ip:/config/openvpn/
        "table": "1"
       },
       "source": {
-       "address": "<VLAN's Address/Subnet>" 
+       "address": "<VLAN's Address/Subnet>"
       }
      }
     }

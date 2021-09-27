@@ -97,7 +97,7 @@ document.getElementById('foo').textContent = '';
 使用方法基本上跟 `insertAdjacentHTML` 一樣。
 
 ```js
-var contentBlock = document.getElementById('contentBlock'), 
+var contentBlock = document.getElementById('contentBlock'),
 var insetElement = document.createElement('b');
 
 insetElement.textContent = 'Test:';
