@@ -28,10 +28,12 @@ useHead(computed<HeadObject>(() => {
 
   const meta = [
     head.title ? { property: 'og:title', content: head.title } : null,
-    head.description ? [
-      { property: 'og:description', content: head.description },
-      { name: 'description', content: head.description }
-    ] : null,
+    head.description
+      ? [
+        { property: 'og:description', content: head.description },
+        { name: 'description', content: head.description },
+      ]
+      : null,
     head.image ? { property: 'og:image', content: DOMAIN + head.image } : null,
     { property: 'og:type', content: 'article' },
   ].filter(Boolean) as HeadAttrs[]

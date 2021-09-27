@@ -142,7 +142,7 @@ const config: UserConfig = {
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-  }
+  },
 }
 
 export default config

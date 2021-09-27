@@ -4,8 +4,8 @@
     "dev": "vite --port 3333 --open",
     "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite-ssg build && esno ./scripts/rss.ts",
-    "lint": "eslint --ext .js,.ts,.vue,.json,.yaml,.yml .",
-    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json,.yaml,.yml ."
+    "lint": "eslint --ext .js,.ts,.vue,.json .",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json ."
   },
   "dependencies": {
     "@vueuse/core": "^6.5.3",
@@ -59,8 +59,5 @@
     "vite-ssg": "^0.15.3",
     "vue-tsc": "^0.3.0",
     "windicss": "^3.1.8"
-  },
-  "eslintConfig": {
-    "extends": "@hannoeru"
   }
 }
