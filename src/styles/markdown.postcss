@@ -11,7 +11,7 @@
 
 html:not(.dark) {
   --prism-foreground: #393a34;
-  --prism-background: theme("colors.light.300");
+  --prism-background: theme("colors.light.100");
   --prism-comment: #a0ada0;
   --prism-string: #b56959;
   --prism-literal: #2f8a89;
@@ -150,5 +150,8 @@ pre[class*="language-"][class*="with-filename"] {
 }
 
 pre[class*="language-"] .code-block-filename {
-  @apply absolute top-0 left-0 py-1 px-2 text-xs text-cool-gray-500 dark:text-cool-gray-400 bg-gray-200 dark:bg-dark-300 rounded-br;
+  @apply absolute top-0 left-0 py-1 px-2
+    text-xs text-cool-gray-700 dark:text-cool-gray-300
+    bg-cool-gray-200 dark:bg-dark-300
+    rounded-br;
 }
