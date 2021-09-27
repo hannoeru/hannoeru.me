@@ -140,6 +140,10 @@ const config: UserConfig = {
     }),
     Inspect(),
   ],
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+  }
 }
 
 export default config
