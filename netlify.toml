@@ -1,5 +1,5 @@
 [build.environment]
-  NPM_FLAGS = "--prefix=/dev/null"
+  NPM_FLAGS = "--version" # prevent Netlify npm install
   NODE_VERSION = "14"
 
 [build]
