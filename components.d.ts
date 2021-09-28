@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     AboutMe: typeof import('./src/components/AboutMe.vue')['default']
+    'Carbon:logoTwitter': typeof import('~icons/carbon/logo-twitter')['default']
     FeatherTwitter: typeof import('~icons/feather/twitter')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
@@ -16,6 +17,7 @@ declare module 'vue' {
     RiMoonLine: typeof import('~icons/ri/moon-line')['default']
     RiSunLine: typeof import('~icons/ri/sun-line')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
+    Transform: typeof import('./src/components/Transform.vue')['default']
     Tweet: typeof import('./src/components/Tweet.vue')['default']
     UilGithubAlt: typeof import('~icons/uil/github-alt')['default']
   }

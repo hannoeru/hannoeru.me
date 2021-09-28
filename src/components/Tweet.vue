@@ -1,19 +1,54 @@
 <script setup lang="ts">
-import { isClient } from '@vueuse/core'
-import { isDark } from '../logics'
-
-if (isClient) {
-  onMounted(() => {
+import { isDark } from '@/logics'
+const props = defineProps<{
+  id: string | number
+  scale?: string | number
+  conversation?: string
+}>()
+const tweet = ref<HTMLElement | null>()
+const vm = getCurrentInstance()!
+const loaded = ref(false)
+async function create() {
+  if (!tweet.value) return
+  tweet.value.innerHTML = ''
   // @ts-ignore
-    window?.twttr.widgets.load()
-  })
+  await window.twttr.widgets.createTweet(
+    props.id.toString(),
+    tweet.value,
+    {
+      theme: isDark.value ? 'dark' : 'light',
+      conversation: props.conversation || 'none',
+    },
+  )
+  loaded.value = true
 }
+// @ts-ignore
+if (window?.twttr?.widgets) {
+  onMounted(create)
+} else {
+  useScriptTag(
+    'https://platform.twitter.com/widgets.js',
+    () => {
+      if (vm.isMounted)
+        create()
+      else
+        onMounted(create, vm)
+    },
+    { async: true },
+  )
+}
+
+watch(isDark, () => create())
 </script>
 
 <template>
-  <div class="">
-    <blockquote class="twitter-tweet" :data-theme="isDark ? 'dark': 'light'">
-      <slot />
-    </blockquote>
-  </div>
+  <Transform :scale="scale || 1">
+    <div ref="tweet">
+      <div v-if="!loaded" class="w-30 h-30 my-10px bg-gray-400 bg-opacity-10 rounded-lg flex opacity-50">
+        <div class="m-auto animate-pulse text-4xl">
+          <carbon:logo-twitter />
+        </div>
+      </div>
+    </div>
+  </Transform>
 </template>
