@@ -8,7 +8,7 @@ useHead({
     { property: 'og:image', content: 'https://hannoeru.me/avatar.png' },
     { property: 'og:type', content: 'website' },
     { name: 'description', content: 'Han\'s Portfolio' },
-    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:creator', content: '@hannoeru' },
   ],
 })
