@@ -53,6 +53,7 @@ useHead(computed<HeadObject>(() => {
     <h1 class="mb-0">
       {{ frontmatter.title }}
     </h1>
+    <ShareButtons />
   </div>
   <div v-if="frontmatter.image" class="max-w-screen-lg mx-auto py-8">
     <img class="overflow-hidden rounded-xl w-full" :src="frontmatter.image" :alt="frontmatter.title">
