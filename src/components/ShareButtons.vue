@@ -5,9 +5,10 @@ const route = useRoute()
 
 const currentPath = computed(() => `${DOMAIN}${route.path}`)
 
-const { text, copy, copied } = useClipboard()
-
-syncRef(currentPath, text)
+const { copy, copied } = useClipboard({
+  read: false,
+  source: currentPath,
+})
 </script>
 
 <template>
