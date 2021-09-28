@@ -2,6 +2,7 @@
 title: 在 VestaCP 安裝 Let's Encrypt 憑證
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-06-06T18:55:10+00:00
 description: "使用 Let's Encrypt 申請 SSL證書，同時套用到控制面板。"
 url: /vestacp-lets-encrypt/

@@ -2,6 +2,7 @@
 title: '日本 Line Moblie 申請流程 & 必備書類文件講解！'
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-07-14T17:38:53+00:00
 description: 來到日本留學沒有手機門號對於辦理很多東西都不方便，而且也要一直買網路卡來用，這裡就教大家如何申辦近幾年新推出的 Line Moblie！
 url: /日本-line-moblie-申請流程必備書類文件講解！/

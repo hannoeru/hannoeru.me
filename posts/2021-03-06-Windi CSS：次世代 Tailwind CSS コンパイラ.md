@@ -2,6 +2,7 @@
 title: Windi CSS：次世代 Tailwind CSS コンパイラ
 author: hanlee
 type: post
+lang: ja-JP
 date: 2021-03-06T18:59:14+00:00
 description: Windi CSS は Tailwind CSS 2.0 完全互換の動的生成コンパイラです。
 image: /images/2021/WindiCSS.png

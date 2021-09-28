@@ -11,6 +11,9 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:creator', content: '@hannoeru' },
   ],
+  htmlAttrs: {
+    prefix: 'og: http://ogp.me/ns#',
+  }
 })
 </script>
 

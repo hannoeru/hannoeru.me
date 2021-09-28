@@ -2,6 +2,7 @@
 title: 【JavaScript】JS地下城-8F-井字遊戲
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-06-17T17:06:22+00:00
 description: 8F-井字遊戲
 url: /【JavaScript】js地下城-8f-井字遊戲/

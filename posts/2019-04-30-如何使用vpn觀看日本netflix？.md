@@ -2,6 +2,7 @@
 title: 如何使用VPN跨區觀看日本Netflix？
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-04-29T19:17:03+00:00
 description: 日本Netflix有些影片沒有開放給國外觀看，因此在台灣無法跨區看日本Netflix影集。
 url: /如何使用vpn觀看日本netflix？/

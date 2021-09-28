@@ -2,6 +2,7 @@
 title: 【JavaScript】JS地下城-2F-時鐘
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-05-10T20:07:40+00:00
 description: JS地下城-2F-時鐘
 url: /【javascript】js地下城-2f-時鐘/

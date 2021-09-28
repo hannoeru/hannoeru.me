@@ -2,6 +2,7 @@
 title: VestaCP Mail Server設定兩個SSL憑證
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-04-26T19:00:40+00:00
 description: 如何在Dovecot和Exim上使用多個SSL證書？
 url: /在vestacp的mail-server設定兩個ssl憑證/

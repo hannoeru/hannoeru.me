@@ -2,6 +2,7 @@
 title: My macOS App List
 author: hanlee
 type: post
+lang: en-US
 date: 2021-09-28T17:56:14+00:00
 description: My macOS App List
 image: /images/2021/スクリーンショット 2021-09-28 18.42.58.png
@@ -71,4 +72,5 @@ tags:
 - [Logic Pro](https://www.apple.com/logic-pro/) DAW
 - [Serato DJ Pro](https://serato.com/dj/pro) DJ software
 
-*latest update: 2021/09/68*
+*latest uplang: zh-TW
+date: 2021/09/68*

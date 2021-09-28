@@ -2,6 +2,7 @@
 title: 【Vue.js】VeeValidate 3.0 使用方法＆導入中文語系
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-12-29T17:00:22+00:00
 description: VeeValidate 3.0 使用方法＆導入中文語系
 url: /【vue-js】veevalidate-3-0-使用方法＆導入中文語系/

@@ -41,6 +41,9 @@ useHead(computed<HeadObject>(() => {
   return {
     title: head.title,
     meta,
+    htmlAttrs: {
+      lang: head.lang || 'en'
+    }
   }
 }))
 </script>

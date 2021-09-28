@@ -2,6 +2,7 @@
 title: QuickLook 插件、指令列表
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-06-06T10:25:36+00:00
 description: 安裝 QuickLook 插件，指令列表，錯誤排除。
 url: /quicklook-plugins-command/

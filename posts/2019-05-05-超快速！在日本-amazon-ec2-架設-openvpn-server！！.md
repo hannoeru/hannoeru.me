@@ -2,6 +2,7 @@
 title: 超快速！在日本 Amazon EC2 架設 OpenVPN Server！！
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-05-04T15:42:41+00:00
 description: 本教學主要是利用Pivpn這個套件在Amazon EC2上快速架設VPN伺服器，讓你可以不用受限於日本網站的境外IP限制。
 url: /超快速！在日本-amazon-ec2-架設-openvpn-server！！/

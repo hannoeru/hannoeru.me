@@ -2,6 +2,7 @@
 title: Replace Docker Desktop with Multipass
 author: hanlee
 type: post
+lang: en-US
 date: 2021-09-28T18:59:14+00:00
 description: How to prevent Docker Desktop taken a lot resource from my Mac.
 image: /images/2021/No-Docker-Desktop.png
@@ -54,7 +55,8 @@ users:
     sudo: ALL=(ALL) NOPASSWD:ALL
     ssh-authorized-keys:
       - your-ssh-public-key
-package_update: true
+package_uplang: zh-TW
+date: true
 packages:
   - docker
   - avahi-daemon

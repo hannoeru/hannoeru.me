@@ -2,6 +2,7 @@
 title: 【中文翻譯】鑽石公主號是武漢病毒（COVID-19）製造機，進入船內一天就被趕出來的真相
 author: hanlee
 type: post
+lang: zh-TW
 date: 2020-02-20T07:12:21+00:00
 description: 此翻譯之原文為根據 2020年2月18日神戶大學教授 岩田健太郎先生 所上傳的影像內容，加以整理出來的文章。
 url: /chinese-diamond-princess-covid-19/

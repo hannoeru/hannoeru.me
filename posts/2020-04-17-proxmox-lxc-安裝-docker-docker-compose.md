@@ -2,6 +2,7 @@
 title: 'Proxmox LXC 安裝 Docker & Docker Compose'
 author: hanlee
 type: post
+lang: zh-TW
 date: 2020-04-17T08:10:44+00:00
 description: '建立一個 Proxmox LXC，在 LXC 中新增使用者，安裝 Docker & Docker Compose。'
 url: /proxmox-lxc-安裝-docker-docker-compose/

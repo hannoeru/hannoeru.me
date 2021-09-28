@@ -2,6 +2,7 @@
 title: 【JavaScript】JS地下城-9F-抽獎轉盤
 author: hanlee
 type: post
+lang: zh-TW
 date: 2019-10-02T15:38:11+00:00
 description: 這次是我第一次用Vue寫一個比較完整的東西，對Vue還沒有非常熟悉，算是邊寫邊學。
 url: /【javascript】js地下城-9f-抽獎轉盤/
