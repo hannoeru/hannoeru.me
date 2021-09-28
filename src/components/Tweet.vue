@@ -6,7 +6,6 @@ const props = defineProps<{
   conversation?: string
 }>()
 const tweet = ref<HTMLElement | null>()
-const vm = getCurrentInstance()!
 const loaded = ref(false)
 async function create() {
   if (!tweet.value) return
@@ -22,21 +21,21 @@ async function create() {
   )
   loaded.value = true
 }
-// @ts-ignore
-if (window?.twttr?.widgets) {
-  onMounted(create)
-} else {
-  useScriptTag(
-    'https://platform.twitter.com/widgets.js',
-    () => {
-      if (vm.isMounted)
+
+onMounted(() => {
+  // @ts-ignore
+  if (window?.twttr?.widgets) {
+    create()
+  } else {
+    useScriptTag(
+      'https://platform.twitter.com/widgets.js',
+      () => {
         create()
-      else
-        onMounted(create, vm)
-    },
-    { async: true },
-  )
-}
+      },
+      { async: true },
+    )
+  }
+})
 
 watch(isDark, () => create())
 </script>
