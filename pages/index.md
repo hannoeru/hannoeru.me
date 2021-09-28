@@ -1,6 +1,6 @@
 <AboutMe />
 
-Hi, I am Han, a college student, currently living in Tokyo, Japan.
+Hi, I am Han, a college student, living in Tokyo, Japan.
 
 Creator of [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)<br />
 Member of [Windi CSS](https://windicss.org/) and [OVaaS](https://github.com/OVaaS).
