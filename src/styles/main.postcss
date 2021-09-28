@@ -49,12 +49,9 @@ html.dark {
 // scrollbar
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--c-scrollbar) var(--c-bg);
+  scrollbar-color: var(--c-scrollbar) bg-transparent;
 }
 
-*::-webkit-scrollbar {
-  @apply bg-transparent w-12px h-12px;
-}
 *::-webkit-scrollbar {
   width: 12px;
 }
@@ -63,7 +60,7 @@ html.dark {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--c-bg);
+  background: bg-transparent
 }
 
 *::-webkit-scrollbar-thumb {
