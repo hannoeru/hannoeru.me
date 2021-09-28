@@ -17,7 +17,7 @@ tags:
 
 ## Why
 
-Because Docker Desktop is taken a lot resource from my Mac.
+Because Docker Desktop is taking a lot of resource from my Mac.
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ You will needs to remove Docker Desktop before started this tutorial.
 
 Multipass is a cli tools that can let you create and running Ubuntu VM in a minutes.
 
-> Require brew installed
+> Require [Homebrew](https://brew.sh/) installed
 
 ```bash
 brew install multipass docker
