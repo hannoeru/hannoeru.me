@@ -15,7 +15,7 @@ const { copy, copied } = useClipboard({
   <div v-if="route.meta.frontmatter.date" class="text-xl -mx-1 flex space-x-3">
     <a
       :href="`https://www.facebook.com/sharer/sharer.php?u=${currentPath}`"
-      class="!text-cool-gray-500 !dark:text-light-100 !hover:text-light-blue-500 block"
+      class="!text-cool-gray-500 !dark:text-cool-gray-400 !hover:text-light-blue-500 block"
       target="_blank"
       rel="noopener"
     >
@@ -23,7 +23,7 @@ const { copy, copied } = useClipboard({
     </a>
     <a
       :href="`https://twitter.com/intent/tweet?url=${currentPath}`"
-      class="!text-cool-gray-500 !dark:text-light-100 !hover:text-light-blue-500 block transform scale-130"
+      class="!text-cool-gray-500 !dark:text-cool-gray-400 !hover:text-light-blue-500 block transform scale-130"
       target="_blank"
       rel="noopener"
     >
@@ -31,14 +31,13 @@ const { copy, copied } = useClipboard({
     </a>
     <a
       :href="`mailto:?subject=I want to share this with you &amp;body=Hi there, Check out this site ${currentPath}, Thanks.`"
-      class="!text-cool-gray-500 !dark:text-light-100 !hover:text-light-blue-500 block"
+      class="!text-cool-gray-500 !dark:text-cool-gray-400 !hover:text-light-blue-500 block"
       target="_blank"
       rel="noopener"
     >
       <ic:round-mail />
     </a>
-
-    <button class="!text-cool-gray-500 !dark:text-light-100 !hover:text-light-blue-500 focus:outline-none transform scale-70" @click="copy(currentPath)">
+    <button class="!text-cool-gray-500 !dark:text-cool-gray-400 !hover:text-light-blue-500 focus:outline-none transform scale-70" @click="copy(currentPath)">
       <carbon:link v-if="!copied" />
       <carbon:checkmark v-else />
     </button>
