@@ -3,7 +3,7 @@ import { DOMAIN } from '@/constants'
 
 const route = useRoute()
 
-const currentPath = computed(() => `${DOMAIN}${route.path}`)
+const currentPath = computed(() => encodeURIComponent(`${DOMAIN}${route.path}`))
 
 const { copy, copied } = useClipboard({
   read: false,
@@ -32,11 +32,20 @@ const { copy, copied } = useClipboard({
       <carbon:logo-twitter />
     </a>
     <a
+      :href="`https://lineit.line.me/share/ui?url=${currentPath}`"
+      class="link"
+      target="_blank"
+      rel="noopener"
+      title="Share to Line"
+    >
+      <uil:line />
+    </a>
+    <a
       :href="`mailto:?subject=I want to share this with you &amp;body=Hi there, Check out this site ${currentPath}, Thanks.`"
       class="link"
       target="_blank"
       rel="noopener"
-      title="Share with Email"
+      title="Share via Email"
     >
       <ic:round-mail />
     </a>

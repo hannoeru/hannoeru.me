@@ -24,6 +24,7 @@ declare module 'vue' {
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
     Transform: typeof import('./src/components/Transform.vue')['default']
     Tweet: typeof import('./src/components/Tweet.vue')['default']
+    'Uil:line': typeof import('~icons/uil/line')['default']
     UilGithubAlt: typeof import('~icons/uil/github-alt')['default']
   }
 }
