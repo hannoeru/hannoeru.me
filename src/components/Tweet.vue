@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import { isDark } from '@/logics'
+
 const props = defineProps<{
   id: string | number
   scale?: string | number
   conversation?: string
 }>()
+
 const tweet = ref<HTMLElement | null>()
 const loaded = ref(false)
+
 async function create() {
   if (!tweet.value) return
-  tweet.value.innerHTML = ''
+  const tweets = Array.from(tweet.value.querySelectorAll(".twitter-tweet"))
+  for (const item of tweets) {
+    tweet.value.removeChild(item)
+  }
   // @ts-ignore
   await window.twttr.widgets.createTweet(
     props.id.toString(),
@@ -19,21 +25,22 @@ async function create() {
       conversation: props.conversation || 'none',
     },
   )
+
   loaded.value = true
 }
 
+useScriptTag(
+  'https://platform.twitter.com/widgets.js',
+  () => {
+    create()
+  },
+  { async: true },
+)
+
 onMounted(() => {
   // @ts-ignore
-  if (window?.twttr?.widgets) {
+  if (!loaded.value && window?.twttr?.widgets) {
     create()
-  } else {
-    useScriptTag(
-      'https://platform.twitter.com/widgets.js',
-      () => {
-        create()
-      },
-      { async: true },
-    )
   }
 })
 
