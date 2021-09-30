@@ -18,6 +18,7 @@ const { copy, copied } = useClipboard({
       class="link"
       target="_blank"
       rel="noopener"
+      title="Share to Facebook"
     >
       <carbon:logo-facebook />
     </a>
@@ -26,6 +27,7 @@ const { copy, copied } = useClipboard({
       class="link transform scale-130"
       target="_blank"
       rel="noopener"
+      title="Share to Twitter"
     >
       <carbon:logo-twitter />
     </a>
@@ -34,10 +36,11 @@ const { copy, copied } = useClipboard({
       class="link"
       target="_blank"
       rel="noopener"
+      title="Share with Email"
     >
       <ic:round-mail />
     </a>
-    <button class="link focus:outline-none transform scale-70" @click="copy(currentPath)">
+    <button class="link focus:outline-none transform scale-70" @click="copy(currentPath)" title="Copy link">
       <carbon:link v-if="!copied" />
       <carbon:checkmark v-else />
     </button>

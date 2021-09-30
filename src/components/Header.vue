@@ -15,7 +15,7 @@
         Han
       </router-link>
       <nav class="nav">
-        <router-link to="/posts">
+        <router-link to="/posts" title="Posts">
           <span class="<md:hidden">Blog</span>
           <ri-article-line class="md:hidden" />
         </router-link>
@@ -23,10 +23,10 @@
           <span class="<md:hidden">Bookmarks</span>
           <ri-bookmark-line class="md:hidden" />
         </router-link>
-        <a href="https://twitter.com/hannoeru" target="_blank" title="Twitter">
+        <a href="https://twitter.com/hannoeru" target="_blank" rel="noopener" title="Twitter">
           <feather-twitter />
         </a>
-        <a href="https://github.com/hannoeru" target="_blank" title="GitHub">
+        <a href="https://github.com/hannoeru" target="_blank" rel="noopener" title="GitHub">
           <uil-github-alt />
         </a>
         <a href="/feed.xml" target="_blank" title="RSS" class="<md:hidden">
