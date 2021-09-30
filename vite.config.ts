@@ -16,7 +16,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import anchor from 'markdown-it-anchor'
 import markdownAttr from 'markdown-it-link-attributes'
 import { slugify } from './scripts/slugify'
-import { codeBlockFilename } from './scripts/markdown'
+import { codeBlockFilename, lazyLoadImage } from './scripts/markdown'
 
 import 'prismjs/components/prism-regex'
 import 'prismjs/components/prism-javascript'
@@ -116,6 +116,7 @@ const config: UserConfig = {
           },
         })
 
+        md.use(lazyLoadImage)
         md.use(codeBlockFilename)
       },
       transforms: {

@@ -21,3 +21,11 @@ export const codeBlockFilename = (md: MarkdownIt) => {
     return finalCode
   }
 }
+
+// lazy load image
+export const lazyLoadImage = (md: MarkdownIt) => {
+  const image = md.renderer.rules.image!
+  md.renderer.rules.image = (...args) => {
+    return image(...args).replace(/src="(.*?)"/g, `v-lazy="'$1'"`)
+  }
+}
