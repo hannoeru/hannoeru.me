@@ -22,7 +22,8 @@ subtitle: Some of my favorite websites/tools with excellent design and UX that I
 
 #### CSS
 
-- [Layoutit](https://grid.layoutit.com/)
+- [Layoutit](https://grid.layoutit.com/) Grid layout tool.
+- [Smooth Shadow](https://shadows.brumm.af/) Help you make super smooth shadow.
 - [Windi CSS](https://windicss.org/) - Next generation utility-first CSS framework.
 
 ### Resources
