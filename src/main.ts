@@ -1,4 +1,5 @@
 import './styles/main.postcss'
+import './styles/load.postcss'
 import 'windi.css'
 import './styles/markdown.postcss'
 

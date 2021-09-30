@@ -8,6 +8,7 @@
     "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json,.md ."
   },
   "dependencies": {
+    "@vant/lazyload": "^1.4.0",
     "@vueuse/core": "^6.5.3",
     "@vueuse/head": "^0.6.0",
     "dayjs": "^1.10.7",

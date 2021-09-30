@@ -31,7 +31,7 @@ const posts = router.getRoutes()
           :to="route.path"
         >
           <div class="relative w-full h-50 overflow-hidden">
-            <img :src="route.meta.frontmatter.image" alt="" class="absolute w-full h-full object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)">
+            <img v-lazy="route.meta.frontmatter.image" alt="" class="absolute w-full h-full object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)">
           </div>
           <div class="px-8 py-6 flex flex-col justify-between flex-grow">
             <div>

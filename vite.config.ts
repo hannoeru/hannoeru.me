@@ -30,6 +30,13 @@ import 'prismjs/components/prism-javadoclike'
 import 'prismjs/components/prism-javadoc'
 import 'prismjs/components/prism-jsdoc'
 
+function transformCustomDirective() {
+  return {
+    props: [],
+    needRuntime: true,
+  }
+}
+
 const config: UserConfig = {
   resolve: {
     alias: [
@@ -48,6 +55,13 @@ const config: UserConfig = {
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
+      template: {
+        compilerOptions: {
+          directiveTransforms: {
+            lazy: transformCustomDirective,
+          },
+        },
+      },
     }),
 
     Pages({

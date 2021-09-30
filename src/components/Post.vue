@@ -42,8 +42,8 @@ useHead(computed<HeadObject>(() => {
     title: head.title,
     meta,
     htmlAttrs: {
-      lang: head.lang || 'en'
-    }
+      lang: head.lang || 'en',
+    },
   }
 }))
 </script>
@@ -59,7 +59,7 @@ useHead(computed<HeadObject>(() => {
     <ShareButtons />
   </div>
   <div v-if="frontmatter.image" class="max-w-screen-lg mx-auto py-8">
-    <img class="overflow-hidden rounded-xl w-full" :src="frontmatter.image" :alt="frontmatter.title">
+    <img v-lazy="frontmatter.image" class="overflow-hidden rounded-xl w-full" :alt="frontmatter.title">
   </div>
   <div :class="{ 'prose mx-auto': frontmatter.prose !== false }">
     <slot />
