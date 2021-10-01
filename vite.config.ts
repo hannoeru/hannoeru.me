@@ -17,6 +17,8 @@ import anchor from 'markdown-it-anchor'
 import markdownAttr from 'markdown-it-link-attributes'
 import { slugify } from './scripts/slugify'
 import { codeBlockFilename, lazyLoadImage } from './scripts/markdown'
+import { buildBlogRSS } from './scripts/rss'
+import { optimizeImages } from './scripts/image'
 
 import 'prismjs/components/prism-regex'
 import 'prismjs/components/prism-javascript'
@@ -158,6 +160,10 @@ const config: UserConfig = {
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
+    async onFinished() {
+      await buildBlogRSS()
+      await optimizeImages()
+    }
   },
 }
 

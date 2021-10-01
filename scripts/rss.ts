@@ -17,11 +17,7 @@ const markdown = MarkdownIt({
   linkify: true,
 })
 
-async function run() {
-  await buildBlogRSS()
-}
-
-async function buildBlogRSS() {
+export async function buildBlogRSS() {
   const files = await fg('posts/*.md')
 
   const options = {
@@ -77,5 +73,3 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   await fs.writeFile(`./dist/${name}.atom`, feed.atom1(), 'utf-8')
   await fs.writeFile(`./dist/${name}.json`, feed.json1(), 'utf-8')
 }
-
-run()
