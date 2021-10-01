@@ -101,24 +101,24 @@ Also check is docker installed on VM by running
 docker info
 ```
 
-### Setup docker context
+### Setup docker host
 
-Add a new docker context to connect to docker VM.
+Add this to your `~/.zprofile` to always use this `DOCKER_HOST`
 
 ```bash
-docker context create vm --docker "host=ssh://ubuntu@docker.local"
+export DOCKER_HOST="ssh://ubuntu@docker.local"
 ```
 
-Switch context to docker VM
+Apply changes
 
 ```bash
-docker context use vm
+source ~/.zprofile
 ```
 
-Check current docker context
+Check docker info
 
 ```bash
-docker context ls
+docker info
 ```
 
 ### Reference
