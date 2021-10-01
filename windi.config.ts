@@ -22,6 +22,7 @@ export default defineConfig({
       typography: {
         DEFAULT: {
           css: [{
+            maxWidth: 'var(--prose-max-width)',
             color: 'inherit',
             a: {
               color: '#48B0F1',
