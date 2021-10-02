@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import fs from 'fs-extra'
 import Pages from 'vite-plugin-pages'
 import PurgeIcons from 'vite-plugin-purge-icons'
@@ -39,7 +39,7 @@ function transformCustomDirective() {
   }
 }
 
-const config: UserConfig = {
+export default defineConfig({
   resolve: {
     alias: [
       { find: '@/', replacement: `${resolve(__dirname, 'src')}/` },
@@ -163,8 +163,6 @@ const config: UserConfig = {
     async onFinished() {
       await buildBlogRSS()
       await optimizeImages()
-    }
+    },
   },
-}
-
-export default config
+})
