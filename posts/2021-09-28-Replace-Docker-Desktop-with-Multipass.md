@@ -76,7 +76,7 @@ runcmd:
 Then run this command to create a Ubuntu VM
 
 ```bash
-multipass launch -c 2 -m 2G -d 4G -n docker 20.10 --cloud-init docker.yaml
+multipass launch -c 2 -m 1G -d 5G -n docker 20.10 --cloud-init docker.yaml
 ```
 
 This will take a few mins to build and start. Once it's done you can see what is running with
