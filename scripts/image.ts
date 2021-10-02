@@ -3,6 +3,7 @@ import sharp from 'sharp'
 import chalk from 'chalk'
 
 function log(text: string, color?: string, count?: number) {
+  // eslint-disable-next-line no-console
   console.log(`\n${chalk.gray('[sharp]')} ${chalk[color || 'yellow'](text)}${count ? chalk.blue(` (${count})`) : ''}`)
 }
 
@@ -20,21 +21,20 @@ export async function optimizeImages() {
       const outFile = image.replace('public', 'dist')
       let img = sharp(image)
       const meta = await img.metadata()
-      
-      if(meta.width > 1280) {
-        img = img.resize({ width: 1280 })
-      }
 
-      if(meta.format === 'png') {
+      if (meta.width > 1280)
+        img = img.resize({ width: 1280 })
+
+      if (meta.format === 'png')
         img = img.png({ palette: true })
-      }
 
       const info = await img.toFile(outFile)
 
+      // eslint-disable-next-line no-console
       console.log(
-        `${chalk.dim(`dist/`)}${chalk.cyan(image.replace('public/', '').padEnd(15, ' '))}  ${chalk.dim(getSize(info.size))}`,
+        `${chalk.dim('dist/')}${chalk.cyan(image.replace('public/', '').padEnd(15, ' '))}  ${chalk.dim(getSize(info.size))}`,
       )
-    })
+    }),
   )
   log('Images optimized', 'green')
 }

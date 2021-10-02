@@ -4,6 +4,7 @@ import fs from 'fs-extra'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
 import { Feed, FeedOptions, Item } from 'feed'
+import { codeBlockFilename } from './markdown'
 
 const DOMAIN = 'https://hannoeru.me'
 const AUTHOR = {
@@ -16,6 +17,12 @@ const markdown = MarkdownIt({
   breaks: true,
   linkify: true,
 })
+
+markdown.use(codeBlockFilename)
+
+async function run() {
+  await buildBlogRSS()
+}
 
 export async function buildBlogRSS() {
   const files = await fg('posts/*.md')
@@ -73,3 +80,5 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   await fs.writeFile(`./dist/${name}.atom`, feed.atom1(), 'utf-8')
   await fs.writeFile(`./dist/${name}.json`, feed.json1(), 'utf-8')
 }
+
+run()
