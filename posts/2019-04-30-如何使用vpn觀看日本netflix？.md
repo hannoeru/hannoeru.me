@@ -19,44 +19,43 @@ tags:
 
 ## 問題
 
-日本 Netflix 有些影片沒有開放給國外觀看，因此在台灣無法跨區看日本 Netflix 影集。
+日本 Netflix 有些影片沒有開放給國外觀看，因此在台灣無法跨區觀看日本才有的 Netflix 影集。
 
 ## 解決辦法
 
-使用 VPN（虛擬私人網路）連線到日本，Netflix 就會以為你是從日本的位置觀看影片，以達到目的。
+使用 VPN（虛擬私人網路）跨區連線到日本，Netflix 就會以為你是從日本的位置觀看影片，以達到目的。
 
-如果想要更深入了解 VPN 的話可以[點這裡](https://nordvpn.com/zh-tw/what-is-a-vpn/)。
+如果想要更深入了解 VPN 的話可以 [點這裡](https://nordvpn.com/zh-tw/what-is-a-vpn/)。
 
-雖然網路上有許多的 VPN 供應商，但是大部分都已經被日本 Netflix 給封鎖了，所以基本上也是無法觀看的。
+雖然網路上有許多的 VPN 供應商，但是大部分都已經被日本 Netflix 封鎖了，所以基本上也是無法觀看的。
 
 那該怎麼辦呢？？
 
-幸好，有一個網站叫做
-<a href="https://www.vpngate.net" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN
-Gate</a>
-，這個網站上面提供了很多學術用途或是自行架設的 VPN 伺服器可以供大家使用。由於這個網站上面的伺服器地址大部分都是來自一般用途的網路位置，經常變動，因此日本 Netflix 很難去封鎖。
+幸好，有一個網站叫做 [VPN Gate](https://www.vpngate.net)
+
+這個網站上面提供了許多學術用途或是自行架設的 VPN 伺服器可以供大家使用。由於這個網站上面的伺服器地址大部分都是來自一般用途的網路位置，經常變動，因此日本 Netflix 很難去封鎖。
 
 在這裡還是要提醒一下，使用第三方提供的VPN都會有資料洩漏的風險，請自行評估，記得用完要斷線。
 
 說到這裡，就讓我們開始教學如何使用 VPN 吧！
 
-### 安裝軟體
+## 安裝 OpenVPN 用戶端軟體
 
-Windows10 載點： （下載對應 Windows 版本的Installer）\
+Windows10 載點： （下載對應 Windows 版本的Installer）
 [https://openvpn.net/community-downloads/](https://openvpn.net/community-downloads/)
 
-[如何查看Windows版本？](https://tw.answers.acer.com/app/answers/detail/a_id/60437/~/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2windows-%E7%B3%BB%E7%B5%B1%E7%89%88%E6%9C%AC%EF%BC%9F)
+> [如何查看Windows版本？](https://support.microsoft.com/zh-tw/windows/%E6%88%91%E6%AD%A3%E5%9C%A8%E5%9F%B7%E8%A1%8C%E5%93%AA%E5%80%8B%E7%89%88%E6%9C%AC%E7%9A%84-windows-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1-628bec99-476a-2c13-5296-9dd081cdd808)
 
-Mac OS 載點： （下載 Stable 版本）\
+Mac OS 載點： （下載 Stable 版本）
 [https://tunnelblick.net/downloads.html](https://tunnelblick.net/downloads.html)
 
-之後去這個[連結](https://www.vpngate.net/cn/howto_openvpn.aspx)，進去以後，如果你是Windows用戶，依照Windows的指南去安裝，如果是Mac的用戶，依照Mac的指南去安裝。
+之後依照這個安裝教學安裝 OpenVPN 用戶端軟體：[連結](https://www.vpngate.net/cn/howto_openvpn.aspx)
 
-### 下載 OpenVPN 連結配置文件（.ovpn file)
+## 下載 OpenVPN 配置文件（.ovpn 檔案)
 
 VPN 有分成很多種，OpenVPN 是我們這次要使用的 VPN 種類，因為他的安裝方式幾乎是所有裡面最簡單的。
 
-#### VPN服務器列表
+### VPN服務器列表
 
 回到<a href="https://www.vpngate.net/ja/" target="_blank" rel="noreferrer noopener" aria-label=" (新しいタブで開く)">VPN
 Gate</a>的首頁，往下拉你會發現有一整排的列表。
@@ -70,8 +69,7 @@ Gate</a>的首頁，往下拉你會發現有一整排的列表。
 
 首先第一個要找的就是『国・地域』，不用說當然是日本。
 
-下一個是『VPN
-接続数』，下面顯示的有三行，分別是『目前使用人數、伺服器運作時間、累計使用人數』，基本上運作時間越長，累計使用人數越多，代表這個伺服器可以撐很久。
+下一個是『VPN接続数』，下面顯示的有三行，分別是『目前使用人數、伺服器運作時間、累計使用人數』，基本上運作時間越長，累計使用人數越多，代表這個伺服器可以撐很久。
 
 繼續看下去，『回線品質』下面顯示的是網路速度跟目前Ping值，速度越大代表網路越快，Ping越低代表反應越快，所以最好找速度快，Ping值低的伺服器。
 
@@ -89,19 +87,19 @@ Gate</a>的首頁，往下拉你會發現有一整排的列表。
 
 你會看到他有分成UDP跟TCP這裡可以自行選擇，不過因為每個人環境不太一樣有時候TCP會失敗，因此我比較推薦直接用UDP。
 
-### 使用.ovpn檔案
+## 使用 ovpn 配置文件
 
-如果你是Mac使用者，依照剛剛安裝軟體的網址[連結](https://www.vpngate.net/cn/howto_openvpn.aspx)所說明的安裝ovpn檔案後，記得將第二個項目打勾（傳送所有流量），網路流量才會被導入VPN（如下圖）
+如果你是 Mac 使用者，依照剛剛安裝軟體的 [網址](https://www.vpngate.net/cn/howto_openvpn.aspx) 所說明的安裝 ovpn 檔案後，記得將第二個項目打勾（傳送所有流量），網路流量才會被導入VPN（如下圖）
 
 ![wp-image-54](/images/2019/04/スクリーンショット-2019-04-30-2.57.41.png)
 
-Windows會自動傳送所有流量所以不用多做設定。
+Windows 會自動傳送所有流量所以不用多做設定。
 
 完成之後按下『連結』，就可以開始享受日本Netflix了！！
 
 ### 測試
 
-進入這個[網站](https://www.ez2o.com/App/Net/IP)查看IP位置
+進入 [這個](https://www.ez2o.com/App/Net/IP) 網站查看自己目前的 IP 位置。
 
 如果國家顯示日本，就代表成功了，還是顯示台灣的話就回去上面確認是不是少做了什麼。
 
@@ -110,7 +108,5 @@ Windows會自動傳送所有流量所以不用多做設定。
 設定檔可能很快就因為一些變動而無法使用，這時候不要覺得奇怪，趕快去找下一個設定檔吧！
 
 如果不想那麼常換設定檔的話最好當初就找『スコア』比較高、運作時間比較長的伺服器。
-
-如果有問題歡迎在下面留言！
 
 以上。

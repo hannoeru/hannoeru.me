@@ -122,5 +122,5 @@ openssl s_client -showcerts -connect mail.example.com:465
 
 [IMAP/POP3/SMTP 用に SSL が機能し、適切な証明書がインストールされていることを確認するには][2]
 
- [1]: https://help.atmail.com/hc/en-us/articles/115009208748-Multiple-SSL-certs-with-Dovecot-Exim
- [2]: https://support.plesk.com/hc/ja/articles/213961665-IMAP-POP3-SMTP-%E7%94%A8%E3%81%AB-SSL-%E3%81%8C%E6%A9%9F%E8%83%BD%E3%81%97-%E9%81%A9%E5%88%87%E3%81%AA%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF
+[1]: https://help.atmail.com/hc/en-us/articles/115009208748-Multiple-SSL-certs-with-Dovecot-Exim
+[2]: https://support.plesk.com/hc/ja/articles/213961665-IMAP-POP3-SMTP-%E7%94%A8%E3%81%AB-SSL-%E3%81%8C%E6%A9%9F%E8%83%BD%E3%81%97-%E9%81%A9%E5%88%87%E3%81%AA%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF
