@@ -72,5 +72,4 @@ tags:
 - [Logic Pro](https://www.apple.com/logic-pro/) DAW
 - [Serato DJ Pro](https://serato.com/dj/pro) DJ software
 
-*latest uplang: zh-TW
-date: 2021/09/68*
+*latest update: 2021/09/68*
