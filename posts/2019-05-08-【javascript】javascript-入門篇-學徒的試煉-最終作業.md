@@ -38,7 +38,7 @@ function addToList(){
   var zone = [];
   str += '<option>--請選擇行政區--</option>';
   for(var i = 0;i < data.length; i++){
-    //如果在zone裡面找到data[i].Zone他會回傳位置找不到的話會回傳-1
+    //如果 在zone裡面找到data[i].Zone他會回傳位置找不到的話會回傳-1
     //當它回傳-1的時候就把目前這個zone裡面沒有的區域加進去
     if(zone.indexOf(data[i].Zone) == -1){
       zone.push(data[i].Zone);

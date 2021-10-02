@@ -1,5 +1,5 @@
 ---
-title: 輕量簡單 Mail Server – Mailu 安裝教學
+title: 輕量簡單 Mail Server - Mailu 安裝教學
 author: hanlee
 type: post
 lang: zh-TW
@@ -53,7 +53,7 @@ Image。它是開源軟體，可以接受建議和外部貢獻。該項目旨在
 
 之後記得到下方設定 root 密碼，如果有 SSH Key 可以在這裡上傳（不知道的話不用）。
 
-確定金額 5USD/ 一個月 按下 Create ，開始創建虛擬機。
+確定金額 5USD &#47; 一個月 按下 Create ，開始創建虛擬機。
 
 ## 安裝 Docker && docker-compose
 
@@ -86,7 +86,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-連結到 /usr/local/bin/（可直接從終端執行）
+連結到 `/usr/local/bin/`（可直接從終端執行）
 
 ```bash
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
@@ -106,9 +106,9 @@ docker-compose version 1.25.4, build 1110ad01
 
 ## 生成 Mailu 安裝檔案
 
-網域名稱：domain.com
+網域名稱：`domain.com`
 
-主機名稱：mail.domain.com
+主機名稱：`mail.domain.com`
 
 以上兩個請替換成自己的網域和主機名稱
 
