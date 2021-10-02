@@ -12,7 +12,7 @@ const { copy, copied } = useClipboard({
 </script>
 
 <template>
-  <div v-if="route.meta.frontmatter.date" class="text-xl -mx-1 flex space-x-3">
+  <div v-if="route.meta.frontmatter.date" class="text-xl -mx-1 flex space-x-3 mt-8">
     <a
       :href="`https://www.facebook.com/sharer/sharer.php?u=${currentPath}`"
       class="link"
@@ -49,7 +49,7 @@ const { copy, copied } = useClipboard({
     >
       <ic:round-mail />
     </a>
-    <button class="link focus:outline-none transform scale-70" @click="copy(currentPath)" title="Copy link">
+    <button class="link focus:outline-none transform scale-70" title="Copy link" @click="copy(currentPath)">
       <carbon:link v-if="!copied" />
       <carbon:checkmark v-else />
     </button>

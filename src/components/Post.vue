@@ -47,6 +47,15 @@ useHead(computed<HeadObject>(() => {
     },
   }
 }))
+
+function searchTag(tag: string) {
+  router.push({
+    path: '/posts',
+    query: {
+      tags: tag,
+    },
+  })
+}
 </script>
 
 <template>
@@ -55,9 +64,12 @@ useHead(computed<HeadObject>(() => {
       <p v-if="frontmatter.date" class="opacity-50 !-mt-2">
         {{ formatDate(frontmatter.date) }}
       </p>
-      <h1 class="mb-0">
-        {{ frontmatter.title }}
-      </h1>
+      <div class="flex items-center">
+        <h1 class="!mb-0">
+          {{ frontmatter.title }}
+        </h1>
+        <TagSelectList v-if="route.path === '/posts'" />
+      </div>
       <ShareButtons />
     </div>
     <div v-if="frontmatter.image" class="max-w-screen-lg mx-auto py-8">
@@ -68,11 +80,10 @@ useHead(computed<HeadObject>(() => {
     </div>
     <div v-if="frontmatter.tags" class="prose m-auto mt-12">
       <span class="text-lg font-semibold mr-2">Tags:</span>
-      <div class="flex flex-wrap items-center text-light-blue-500">
-        <div v-for="(tag, index) in frontmatter.tags" :key="tag">
+      <div class="flex flex-wrap items-center text-light-blue-500 -mx-1">
+        <TagLabel v-for="tag in frontmatter.tags" :key="tag" class="m-1" @click="searchTag(tag)">
           <span>{{ tag }}</span>
-          <span v-if="index !== frontmatter.tags.length - 1" class="pr-2">,</span>
-        </div>
+        </TagLabel>
       </div>
     </div>
     <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8">
