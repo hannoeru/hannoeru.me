@@ -121,11 +121,6 @@ export default defineConfig({
         md.use(lazyLoadImage)
         md.use(codeBlockFilename)
       },
-      transforms: {
-        after(code) {
-          return code.replace(/src=\"(.*?)\"/g, (_, m1) => `src=\"${decodeURI(m1)}\"`)
-        },
-      },
     }),
 
     AutoImport({

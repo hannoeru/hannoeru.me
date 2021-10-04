@@ -20,10 +20,6 @@ const markdown = MarkdownIt({
 
 markdown.use(codeBlockFilename)
 
-async function run() {
-  await buildBlogRSS()
-}
-
 export async function buildBlogRSS() {
   const files = await fg('posts/*.md')
 
@@ -80,5 +76,3 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   await fs.writeFile(`./dist/${name}.atom`, feed.atom1(), 'utf-8')
   await fs.writeFile(`./dist/${name}.json`, feed.json1(), 'utf-8')
 }
-
-run()

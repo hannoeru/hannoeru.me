@@ -13,7 +13,7 @@ useHead({
   ],
   htmlAttrs: {
     prefix: 'og: http://ogp.me/ns#',
-  }
+  },
 })
 </script>
 
