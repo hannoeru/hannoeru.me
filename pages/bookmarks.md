@@ -29,6 +29,7 @@ subtitle: Some of my favorite websites/tools with excellent design and UX that I
 ### Resources
 
 - [Icônes](http://icones.js.org/)
+- [Stock](https://stock.pulpxstyle.com/) A website that collects excellent Japanese web designs.
 
 ### Diagram
 
