@@ -73,7 +73,7 @@ function searchTag(tag: string) {
       <ShareButtons />
     </div>
     <div v-if="frontmatter.image" class="max-w-screen-lg mx-auto py-8">
-      <img v-lazy="frontmatter.image" class="overflow-hidden rounded-xl w-full" :alt="frontmatter.title">
+      <img v-lazy="frontmatter.image" class="overflow-hidden rounded-lg md:rounded-xl w-full" :alt="frontmatter.title">
     </div>
     <div :class="{ 'prose mx-auto': frontmatter.prose !== false }">
       <slot />

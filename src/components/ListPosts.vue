@@ -36,7 +36,8 @@ const posts = computed(() => {
       >
         <router-link
           class="
-            block w-full h-full bg-white dark:bg-dark-900
+            block w-full h-full
+            bg-white dark:bg-dark-900
             rounded-md
             overflow-hidden
             flex flex-col
@@ -44,7 +45,7 @@ const posts = computed(() => {
           :to="post.path"
         >
           <div class="relative w-full h-50 overflow-hidden">
-            <img v-lazy="post.meta.frontmatter.image" alt="" class="absolute w-full h-full object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)">
+            <img v-lazy="post.meta.frontmatter.image" alt="" class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)">
           </div>
           <div class="px-8 py-6 flex flex-col justify-between flex-grow">
             <div>
