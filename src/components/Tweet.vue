@@ -12,10 +12,10 @@ const loaded = ref(false)
 
 async function create() {
   if (!tweet.value) return
-  const tweets = Array.from(tweet.value.querySelectorAll(".twitter-tweet"))
-  for (const item of tweets) {
+  const tweets = Array.from(tweet.value.querySelectorAll('.twitter-tweet'))
+  for (const item of tweets)
     tweet.value.removeChild(item)
-  }
+
   // @ts-ignore
   await window.twttr.widgets.createTweet(
     props.id.toString(),
@@ -39,9 +39,8 @@ useScriptTag(
 
 onMounted(() => {
   // @ts-ignore
-  if (!loaded.value && window?.twttr?.widgets) {
+  if (!loaded.value && window?.twttr?.widgets)
     create()
-  }
 })
 
 watch(isDark, () => create())
