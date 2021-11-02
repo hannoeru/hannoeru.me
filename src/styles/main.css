@@ -35,7 +35,7 @@ html.dark {
   height: 2px;
 }
 
-// scrollbar
+/* scrollbar */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--c-scrollbar) bg-transparent;
