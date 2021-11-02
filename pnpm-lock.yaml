@@ -11,6 +11,7 @@ specifiers:
   '@types/nprogress': ^0.2.0
   '@types/sharp': ^0.29.2
   '@unocss/preset-icons': ^0.4.9
+  '@unocss/reset': ^0.4.9
   '@vant/lazyload': ^1.4.0
   '@vitejs/plugin-vue': ^1.9.4
   '@vue/compiler-sfc': ^3.2.21
@@ -58,6 +59,7 @@ specifiers:
   vue-tsc: ^0.28.10
 
 dependencies:
+  '@unocss/reset': 0.4.9
   '@vant/lazyload': 1.4.0
   '@vueuse/core': 6.7.4_vue@3.2.21
   '@vueuse/head': 0.6.0_vue@3.2.21
@@ -1925,6 +1927,10 @@ packages:
     dependencies:
       '@unocss/core': 0.4.9
     dev: true
+
+  /@unocss/reset/0.4.9:
+    resolution: {integrity: sha512-FO7PtnnQpDcHfFXei96h38ttpEqrD5MxPST3o/vROa9gZtDYvYy5rYYAjxdAoXVYiRtAcIGlWbQrsikVPDgjOw==}
+    dev: false
 
   /@unocss/scope/0.4.9:
     resolution: {integrity: sha512-OnX0g9oNhguxQ9FyRRGlcGWp5b+G1munfzuPTSl70Pmziu9S3fHeQiXuRVhxd1pqS/X6TXYc5D9NJWyAZhWdyg==}
