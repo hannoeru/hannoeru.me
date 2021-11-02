@@ -11,7 +11,7 @@
 
 html:not(.dark) {
   --prism-foreground: #393a34;
-  --prism-background: theme("colors.light.100");
+  --prism-background: #fcfcfc;
   --prism-comment: #a0ada0;
   --prism-string: #b56959;
   --prism-literal: #2f8a89;
@@ -33,7 +33,7 @@ html:not(.dark) {
 
 html.dark {
   --prism-foreground: #d4cfbf;
-  --prism-background: theme("colors.dark.900");
+  --prism-background: #0f0f0f;
   --prism-comment: #758575;
   --prism-string: #d48372;
   --prism-literal: #429988;
@@ -57,45 +57,34 @@ html.dark {
   --prism-selection-background: #444444;
 }
 
-.prose hr {
-  margin: 2em auto;
-  @apply w-50px border-cool-gray-300 border-dark-100;
+:not(pre) > code:before,
+:not(pre) > code:after {
+  content: "`";
 }
 
 :not(pre) > code {
-  @apply text-violet-500 !dark:text-violet-400 !font-normal;
+  color: #8b5cf6;
+  font-size: 0.9rem;
 }
 
-.prose a:hover {
-  @apply underline;
+.markdown-body > :first-child {
+  margin-top: 0;
+}
+.markdown-body > :last-child {
+  margin-bottom: 0;
 }
 
-html.dark .prose {
-  --fg: #bbb;
-  --fg-deep: #ddd;
-  --fg-deeper: #fff;
-}
-
-a.item {
-  transition: 0.2s all ease-out;
-  text-decoration: none;
-  border-bottom: none !important;
-  opacity: 0.6;
-
-  &:hover {
-    opacity: 1;
-  }
+html.dark :not(pre) > code {
+  color: #a78bfa;
 }
 
 a.header-anchor {
   float: left;
-  margin-top: 0.125em;
   margin-left: -1.2em;
-  padding-right: 0.5em;
-  font-size: 0.85em;
+  padding-right: 0.4em;
   opacity: 0;
   text-decoration: none;
-  border: 0 !important;
+  transform: scale(0.9);
 }
 
 a.header-anchor:hover,
@@ -115,43 +104,5 @@ h5:hover .header-anchor,
 h5:focus .header-anchor,
 h6:hover .header-anchor,
 h6:focus .header-anchor {
-  opacity: 0.5;
-}
-
-.prose blockquote {
-  font-weight: normal;
-  line-height: 1.5em;
-  padding: 0.4em 1.2em;
   opacity: 0.8;
-  border-left-width: 0.2rem;
-}
-
-.prose blockquote > :first-child {
-  margin-top: 0;
-}
-.prose blockquote > :last-child {
-  margin-bottom: 0;
-}
-
-.prose blockquote p:first-of-type::before {
-  content: none;
-}
-
-.prose blockquote p:first-of-type::after {
-  content: none;
-}
-
-.prose img {
-  @apply rounded-lg md:rounded-xl w-full;
-}
-
-pre[class*="language-"][class*="with-filename"] {
-  @apply relative pt-9;
-}
-
-pre[class*="language-"] .code-block-filename {
-  @apply absolute top-0 left-0 py-1 px-2
-    text-xs text-cool-gray-700 dark:text-cool-gray-300
-    bg-cool-gray-200 dark:bg-dark-300
-    rounded-br;
 }

@@ -55,14 +55,3 @@ const { copy, copied } = useClipboard({
     </button>
   </div>
 </template>
-
-<style scoped lang="postcss">
-.link {
-  @apply
-    block
-    !text-cool-gray-500
-    !dark:text-cool-gray-400
-    !hover:text-light-blue-500
-    !dark:hover:text-light-blue-500;
-}
-</style>

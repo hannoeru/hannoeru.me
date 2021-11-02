@@ -5,7 +5,7 @@ const year = dayjs().get('year')
 
 <template>
   <footer class="py-8 px-6">
-    <div class="prose mx-auto opacity-50 flex">
+    <div class="max-w-screen-sm mx-auto opacity-50 flex">
       <span class="text-sm">
         <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color:inherit" class="!font-normal">
           CC BY-NC-SA 4.0

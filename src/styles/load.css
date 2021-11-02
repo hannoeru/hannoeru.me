@@ -9,7 +9,7 @@ img[lazy=loading], .load {
       rgba(256, 256, 256, 0.5) 50%,
       rgba(256, 256, 256, 0) 30%
     )
-    theme('colors.light.700');
+    #e9ecef;
   background-size: 200% 100%;
   background-position-x: 180%;
   animation: 2s loading ease-in-out infinite;
@@ -23,7 +23,7 @@ html.dark .load {
       rgba(60, 60, 60, 0.5) 50%,
       rgba(60, 60, 60, 0) 30%
     )
-    theme('colors.dark.800');
+    #181818;
   color: rgba(#000, 0);
   background-size: 200% 100%;
   background-position-x: 180%;

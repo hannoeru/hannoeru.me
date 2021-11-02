@@ -2,9 +2,9 @@
   <header
     class="
       fixed top-0 inset-x-0 z-50
-      h-$header-height px-6
+      h-4.5rem px-6
       bg-white dark:bg-dark-800 !bg-opacity-80
-      backdrop-filter backdrop-blur"
+      backdrop-blur"
   >
     <div class="max-w-screen-lg mx-auto h-full flex justify-between items-center">
       <router-link
@@ -16,11 +16,11 @@
       </router-link>
       <nav class="nav">
         <router-link to="/posts" title="Posts">
-          <span class="<md:hidden">Blog</span>
+          <span class="lt-md:hidden">Blog</span>
           <ri-article-line class="md:hidden" />
         </router-link>
         <router-link to="/bookmarks" title="Bookmarks">
-          <span class="<md:hidden">Bookmarks</span>
+          <span class="lt-md:hidden">Bookmarks</span>
           <ri-bookmark-line class="md:hidden" />
         </router-link>
         <a href="https://twitter.com/hannoeru" target="_blank" rel="noopener" title="Twitter">
@@ -29,7 +29,7 @@
         <a href="https://github.com/hannoeru" target="_blank" rel="noopener" title="GitHub">
           <uil-github-alt />
         </a>
-        <a href="/feed.xml" target="_blank" title="RSS" class="<md:hidden">
+        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
           <la-rss-square style="font-size:1.25rem;" />
         </a>
         <ToggleTheme />
@@ -62,5 +62,9 @@
 .nav a:hover {
   opacity: 1;
   text-decoration-color: inherit;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(8px);
 }
 </style>

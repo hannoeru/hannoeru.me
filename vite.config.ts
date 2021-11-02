@@ -2,7 +2,6 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import fs from 'fs-extra'
 import Pages from 'vite-plugin-pages'
-import PurgeIcons from 'vite-plugin-purge-icons'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
@@ -11,12 +10,14 @@ import Inspect from 'vite-plugin-inspect'
 import Vue from '@vitejs/plugin-vue'
 import Prism from 'markdown-it-prism'
 import matter from 'gray-matter'
-import WindiCSS from 'vite-plugin-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
 import anchor from 'markdown-it-anchor'
 import markdownAttr from 'markdown-it-link-attributes'
+import Unocss from 'unocss/vite'
+import { presetAttributify, presetUno } from 'unocss'
+import presetIcons from '@unocss/preset-icons'
 import { slugify } from './scripts/slugify'
-import { codeBlockFilename, lazyLoadImage } from './scripts/markdown'
+import { codeBlockFilename, lazyLoadImage, prose } from './scripts/markdown'
 import { buildBlogRSS } from './scripts/rss'
 import { optimizeImages } from './scripts/image'
 
@@ -120,6 +121,25 @@ export default defineConfig({
 
         md.use(lazyLoadImage)
         md.use(codeBlockFilename)
+        md.use(prose)
+      },
+    }),
+
+    Unocss({
+      theme: {
+        fontFamily: {
+          sans: '"Inter", Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
+        },
+      },
+      presets: [
+        presetIcons({ warn: true }),
+        presetAttributify(),
+        presetUno(),
+      ],
+      shortcuts: {
+        'link': 'block text-coolgray-500 dark:text-coolgray-400 hover:text-sky-500 dark:hover:text-sky-500',
+        'with-filename': ['relative', '!pt-9'],
+        'code-block-filename': ['absolute', 'top-0', 'left-0', 'py-1', 'px-2', 'text-xs', 'text-coolgray-700', 'dark:text-coolgray-400', 'bg-coolgray-200', 'dark:bg-dark-300', 'rounded-br'],
       },
     }),
 
@@ -130,30 +150,27 @@ export default defineConfig({
         '@vueuse/core',
         '@vueuse/head',
       ],
+      dts: 'src/auto-imports.d.ts',
     }),
 
     Components({
       extensions: ['vue', 'md'],
-      dts: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      resolvers: IconsResolver({
-        componentPrefix: '',
-      }),
+      resolvers: [
+        IconsResolver({
+          prefix: false,
+        }),
+      ],
+      dts: 'src/components.d.ts',
     }),
 
-    PurgeIcons(),
-    Icons(),
-
-    WindiCSS({
-      safelist: 'prose prose-sm m-auto'.split(' '),
-      preflight: {
-        enableAll: true,
-      },
+    Icons({
+      autoInstall: true,
     }),
+
     Inspect(),
   ],
   ssgOptions: {
-    script: 'async',
     formatting: 'minify',
     async onFinished() {
       await buildBlogRSS()

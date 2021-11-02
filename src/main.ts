@@ -1,7 +1,8 @@
-import './styles/main.postcss'
-import './styles/load.postcss'
-import 'windi.css'
-import './styles/markdown.postcss'
+import '@unocss/reset/tailwind.css'
+import './styles/main.css'
+import './styles/load.css'
+import './styles/markdown.css'
+import 'uno.css'
 
 import routes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'

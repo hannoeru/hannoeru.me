@@ -1,21 +1,21 @@
 :root {
-  --c-bg: theme("colors.true-gray.100");
-  --c-scrollbar: theme("colors.cool-gray.200");
-  --c-scrollbar-hover: theme("colors.cool-gray.300");
+  --c-bg: #f5f5f5;
+  --c-scrollbar: #e5e7eb;
+  --c-scrollbar-hover: #d1d5db;
   --header-height: 4.5rem;
   --prose-max-width: 65ch;
 }
 
 html {
+  color: #111827;
   background-color: var(--c-bg);
-  @apply text-cool-gray-900;
 }
 
 html.dark {
   --c-bg: #050505;
-  --c-scrollbar: theme("colors.dark.200");
-  --c-scrollbar-hover: theme("colors.dark.100");
-  @apply text-gray-100;
+  --c-scrollbar: #323232;
+  --c-scrollbar-hover: #3c3c3c;
+  color: #fafafa;
 }
 
 #nprogress {
@@ -23,7 +23,8 @@ html.dark {
 }
 
 #nprogress .bar {
-  @apply bg-teal-600 opacity-75;
+  background: #0d9488;
+  background-opacity: 70%;
 
   position: fixed;
   z-index: 1031;
@@ -32,19 +33,6 @@ html.dark {
 
   width: 100%;
   height: 2px;
-}
-
-.btn {
-  @apply px-4 py-1 rounded inline-block
-    bg-teal-600 text-white cursor-pointer
-    hover:bg-teal-700
-    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
-}
-
-.icon-btn {
-  @apply inline-block cursor-pointer select-none
-    opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-teal-600;
 }
 
 // scrollbar
@@ -68,14 +56,15 @@ html.dark {
   transition: background 0.2s ease-in-out;
   border: 3px solid transparent;
   background: var(--c-scrollbar);
-  @apply rounded-full bg-clip-content;
+  border-radius: 9999px;
+  background-clip: content-box;
 }
 
 *::-webkit-scrollbar-thumb:hover {
   background: var(--c-scrollbar-hover);
-  @apply bg-clip-content;
+  background-clip: content-box;
 }
 
 *::-webkit-scrollbar-corner {
-  @apply bg-transparent;
+  background: transparent;
 }
