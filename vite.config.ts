@@ -14,8 +14,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import anchor from 'markdown-it-anchor'
 import markdownAttr from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetUno } from 'unocss'
-import presetIcons from '@unocss/preset-icons'
+import { presetAttributify, presetUno, presetIcons } from 'unocss'
 import { slugify } from './scripts/slugify'
 import { codeBlockFilename, lazyLoadImage, prose } from './scripts/markdown'
 import { buildBlogRSS } from './scripts/rss'
@@ -83,7 +82,7 @@ export default defineConfig({
         }
 
         const routePath = route.path.replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-/, '')
-        const name = route.name.replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-/, '')
+        const name = route.name?.replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-/, '')
 
         return {
           ...route,
