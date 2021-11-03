@@ -15,11 +15,13 @@ useHead({
     prefix: 'og: http://ogp.me/ns#',
   },
 })
+
+// @unocss-safelist: bg-sky-400 bg-op-70 fixed z-1031 top-0 inset-x-0 h-2px
 </script>
 
 <template>
   <Header />
-  <main class="pt-4.5rem">
+  <main class="pt-[var(--header-height)]">
     <div class="px-6 py-10 md:py-16">
       <router-view />
     </div>

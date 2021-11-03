@@ -2,7 +2,7 @@
   <header
     class="
       fixed top-0 inset-x-0 z-50
-      h-4.5rem px-6
+      h-$header-height px-6
       bg-white dark:bg-dark-800 !bg-opacity-80
       backdrop-blur"
   >
