@@ -30,6 +30,7 @@ subtitle: Some of my favorite websites/tools with excellent design and UX that I
 
 - [Icônes](http://icones.js.org/)
 - [Stock](https://stock.pulpxstyle.com/) A website that collects excellent Japanese web designs.
+- [Can I use...](https://caniuse.com/) Provides up-to-date browser support tables.
 
 ### Diagram
 
