@@ -53,6 +53,8 @@ const mapping: Mapping = {
   figure: ['my-2em children:my-2em'],
 }
 
+// https://github.com/HiroshiOkada/markdown-it-class/blob/master/LICENSE.md
+
 const splitWithSpace = (s: string) => (s ? s.split(' ') : [])
 
 const parseTokens = (tokens: any[]) => {
