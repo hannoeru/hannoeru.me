@@ -56,7 +56,7 @@ chsh -s /bin/zsh
 echo $SHELL
 ```
 
-出現 /usr/bin/zsh 代表已經成功切換為 Zsh 了
+出現 `/usr/bin/zsh` 代表已經成功切換為 Zsh 了
 
 ### 安裝 Oh My Zsh
 
@@ -139,6 +139,6 @@ cd fonts
 
 ![wp-image-518](/images/2020/02/スクリーンショット-2020-02-22-14.31.19.png)
 
-[下載設定檔](/data/setting.json)
+[下載設定檔](/data/itrem2-profile.json){download}
 
 [1]: https://github.com/wesbos/Cobalt2-iterm/archive/master.zip

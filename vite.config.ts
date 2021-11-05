@@ -12,7 +12,9 @@ import Prism from 'markdown-it-prism'
 import matter from 'gray-matter'
 import AutoImport from 'unplugin-auto-import/vite'
 import anchor from 'markdown-it-anchor'
-import markdownAttr from 'markdown-it-link-attributes'
+import markdownLinkAttr from 'markdown-it-link-attributes'
+// @ts-ignore
+import markdownAttrs from 'markdown-it-attrs'
 import Unocss from 'unocss/vite'
 import { presetAttributify, presetUno, presetIcons } from 'unocss'
 import { slugify } from './scripts/slugify'
@@ -110,13 +112,15 @@ export default defineConfig({
           }),
         })
 
-        md.use(markdownAttr, {
+        md.use(markdownLinkAttr, {
           pattern: /^https?:/,
           attrs: {
             target: '_blank',
             rel: 'noopener',
           },
         })
+
+        md.use(markdownAttrs)
 
         md.use(lazyLoadImage)
         md.use(codeBlockFilename)
