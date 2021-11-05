@@ -96,9 +96,3 @@ function searchTag(tag: string) {
     </div>
   </div>
 </template>
-
-<style>
-.post-list {
-  --md-max-width: 768px;
-}
-</style>

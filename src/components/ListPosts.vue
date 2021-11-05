@@ -24,6 +24,9 @@ const posts = computed(() => {
   return postRoutes
 })
 
+onMounted(() => document.body.style.setProperty('--md-max-width', '768px'))
+onUnmounted(() => document.body.style.removeProperty('--md-max-width'))
+
 </script>
 
 <template>
