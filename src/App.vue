@@ -21,7 +21,7 @@ useHead({
 
 <template>
   <Header />
-  <main class="pt-[var(--header-height)]">
+  <main class="pt-$header-height">
     <div class="px-6 py-10 md:py-16">
       <router-view />
     </div>
