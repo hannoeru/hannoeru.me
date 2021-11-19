@@ -9,10 +9,10 @@ declare module '*.vue' {
   export default component
 }
 
-export * from 'vue-router'
-
 declare module 'vue-router' {
   interface RouteMeta {
     frontmatter: any
   }
 }
+
+export { }

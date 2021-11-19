@@ -70,9 +70,9 @@ export default defineConfig({
 
     Pages({
       extensions: ['vue', 'md'],
-      pagesDir: [
-        { dir: 'posts', baseRoute: 'posts' },
+      pages: [
         { dir: 'pages', baseRoute: '' },
+        { dir: 'posts', baseRoute: 'posts' },
       ],
       extendRoute(route) {
         const path = resolve(__dirname, route.component.slice(1))
