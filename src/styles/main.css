@@ -19,10 +19,6 @@ html {
   background-color: var(--c-bg);
 }
 
-#nprogress {
-  pointer-events: none;
-}
-
 /* scrollbar */
 * {
   scrollbar-width: thin;

@@ -70,7 +70,7 @@ export default defineConfig({
 
     Pages({
       extensions: ['vue', 'md'],
-      pages: [
+      dirs: [
         { dir: 'pages', baseRoute: '' },
         { dir: 'posts', baseRoute: 'posts' },
       ],
@@ -167,9 +167,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
 
-    Icons({
-      autoInstall: true,
-    }),
+    Icons(),
 
     Inspect(),
   ],

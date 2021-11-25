@@ -4,13 +4,14 @@ import './styles/load.css'
 import './styles/markdown.css'
 import 'uno.css'
 
-import routes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
 import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import App from './App.vue'
 
 import type { RouterScrollBehavior } from 'vue-router'
+
+import routes from '~pages'
 
 if (import.meta.env.DEV)
   // eslint-disable-next-line no-console
@@ -24,10 +25,14 @@ const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) => {
       behavior: 'smooth',
     }
   } else {
-    if (savedPosition)
-      return savedPosition
-    else
-      return { top: 0 }
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        if (savedPosition)
+          resolve(savedPosition)
+        else
+          resolve({ left: 0, top: 0 })
+      }, 300)
+    })
   }
 }
 

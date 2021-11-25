@@ -25,7 +25,11 @@ const posts = computed(() => {
 })
 
 onMounted(() => document.body.style.setProperty('--md-max-width', '768px'))
-onUnmounted(() => document.body.style.removeProperty('--md-max-width'))
+onUnmounted(() => {
+  setTimeout(() => {
+    document.body.style.removeProperty('--md-max-width')
+  }, 300)
+})
 
 </script>
 
