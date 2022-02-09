@@ -16,7 +16,7 @@ import markdownLinkAttr from 'markdown-it-link-attributes'
 // @ts-ignore
 import markdownAttrs from 'markdown-it-attrs'
 import Unocss from 'unocss/vite'
-import { presetAttributify, presetUno, presetIcons } from 'unocss'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 import { slugify } from './scripts/slugify'
 import { codeBlockFilename, lazyLoadImage, prose } from './scripts/markdown'
 import { buildBlogRSS } from './scripts/rss'
@@ -53,7 +53,6 @@ export default defineConfig({
       'vue-router',
       '@vueuse/core',
       'dayjs',
-      'dayjs/plugin/localizedFormat',
     ],
   },
   plugins: [
@@ -172,6 +171,7 @@ export default defineConfig({
     Inspect(),
   ],
   ssgOptions: {
+    format: 'cjs',
     formatting: 'minify',
     async onFinished() {
       await buildBlogRSS()

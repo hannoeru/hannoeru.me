@@ -1,5 +1,5 @@
-import MarkdownIt from 'markdown-it'
 import { toArray } from '@antfu/utils'
+import type MarkdownIt from 'markdown-it'
 
 export const codeBlockFilename = (md: MarkdownIt) => {
   const fence = md.renderer.rules.fence!

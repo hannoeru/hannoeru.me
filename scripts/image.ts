@@ -2,11 +2,11 @@ import { dirname } from 'path'
 import fs from 'fs-extra'
 import fg from 'fast-glob'
 import sharp from 'sharp'
-import chalk, { ForegroundColor } from 'chalk'
+import pc from 'picocolors'
 
-function log(text: string, color?: typeof ForegroundColor, count?: number) {
+function log(text: string, count?: number) {
   // eslint-disable-next-line no-console
-  console.log(`\n${chalk.gray('[sharp]')} ${chalk[color || 'yellow'](text)}${count ? chalk.blue(` (${count})`) : ''}`)
+  console.log(`\n${pc.gray('[sharp]')} ${text}${count ? pc.blue(` (${count})`) : ''}`)
 }
 
 function getSize(size: number) {
@@ -16,7 +16,7 @@ function getSize(size: number) {
 export async function optimizeImages() {
   const images = await fg('public/**/*.{png,jpeg,jpg,webp}')
 
-  log('Optimizing images...', undefined, images.length)
+  log(pc.yellow('Optimizing images...'), images.length)
 
   await Promise.all(
     images.map(async(image) => {
@@ -37,7 +37,7 @@ export async function optimizeImages() {
 
         // eslint-disable-next-line no-console
         console.log(
-          `${chalk.dim('dist/')}${chalk.cyan(image.replace('public/', '').padEnd(15, ' '))}  ${chalk.dim(getSize(info.size))}`,
+          `${pc.dim('dist/')}${pc.cyan(image.replace('public/', '').padEnd(15, ' '))}  ${pc.dim(getSize(info.size))}`,
         )
 
         return info
@@ -49,5 +49,5 @@ export async function optimizeImages() {
         await generateImg()
     }),
   )
-  log('Images optimized', 'green')
+  log(pc.green('Images optimized'))
 }
