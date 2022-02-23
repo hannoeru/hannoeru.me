@@ -20,7 +20,7 @@ const { copy, copied } = useClipboard({
       rel="noopener"
       title="Share to Facebook"
     >
-      <carbon:logo-facebook />
+      <div i-carbon:logo-facebook />
     </a>
     <a
       :href="`https://twitter.com/intent/tweet?url=${currentPath}`"
@@ -29,7 +29,7 @@ const { copy, copied } = useClipboard({
       rel="noopener"
       title="Share to Twitter"
     >
-      <carbon:logo-twitter />
+      <div i-carbon:logo-twitter />
     </a>
     <a
       :href="`https://lineit.line.me/share/ui?url=${currentPath}`"
@@ -38,7 +38,7 @@ const { copy, copied } = useClipboard({
       rel="noopener"
       title="Share to Line"
     >
-      <uil:line />
+      <div i-uil:line />
     </a>
     <a
       :href="`mailto:?subject=I want to share this with you &amp;body=Hi there, Check out this site ${currentPath}, Thanks.`"
@@ -47,11 +47,15 @@ const { copy, copied } = useClipboard({
       rel="noopener"
       title="Share via Email"
     >
-      <ic:round-mail />
+      <div i-ic:round-mail />
     </a>
-    <button class="link focus:outline-none transform scale-70" title="Copy link" @click="copy(currentPath)">
-      <carbon:link v-if="!copied" />
-      <carbon:checkmark v-else />
+    <button
+      class="link focus:outline-none transform scale-70"
+      title="Copy link"
+      @click="copy(currentPath)"
+    >
+      <div i-carbon:link v-if="!copied" />
+      <div i-carbon:checkmark v-else />
     </button>
   </div>
 </template>

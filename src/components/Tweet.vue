@@ -49,9 +49,12 @@ watch(isDark, () => create())
 <template>
   <Transform :scale="scale || 1">
     <div ref="tweet">
-      <div v-if="!loaded" class="w-30 h-30 my-10px bg-gray-400 bg-opacity-10 rounded-lg flex opacity-50">
+      <div
+        v-if="!loaded"
+        class="w-30 h-30 my-10px bg-gray-400 bg-opacity-10 rounded-lg flex opacity-50"
+      >
         <div class="m-auto animate-pulse text-4xl">
-          <carbon:logo-twitter />
+          <div i-carbon:logo-twitter />
         </div>
       </div>
     </div>

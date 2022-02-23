@@ -4,7 +4,7 @@ import { isDark, toggleDark } from '@/logics'
 
 <template>
   <a class="select-none" title="Toggle Color Scheme" @click="toggleDark()">
-    <ri-moon-line v-if="isDark" />
-    <ri-sun-line v-else />
+    <div i-ri-moon-line v-if="isDark" />
+    <div i-ri-sun-line v-else />
   </a>
 </template>

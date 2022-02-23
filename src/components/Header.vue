@@ -1,36 +1,26 @@
 <template>
   <header
-    class="
-      fixed top-0 inset-x-0 z-50
-      h-$header-height px-6
-      bg-white dark:bg-dark-800 !bg-opacity-80
-      backdrop-blur"
+    class="fixed top-0 inset-x-0 z-50 h-$header-height px-6 bg-white dark:bg-dark-800 !bg-opacity-80 backdrop-blur"
   >
     <div class="max-w-screen-lg mx-auto h-full flex justify-between items-center">
-      <router-link
-        class="text-2xl font-bold select-none outline-none"
-        to="/"
-        focusable="false"
-      >
-        Han
-      </router-link>
+      <router-link class="text-2xl font-bold select-none outline-none" to="/" focusable="false">Han</router-link>
       <nav class="nav">
         <router-link to="/posts" title="Posts">
           <span class="lt-md:hidden">Blog</span>
-          <ri-article-line class="md:hidden" />
+          <div i-ri-article-line class="md:hidden" />
         </router-link>
         <router-link to="/bookmarks" title="Bookmarks">
           <span class="lt-md:hidden">Bookmarks</span>
-          <ri-bookmark-line class="md:hidden" />
+          <div i-ri-bookmark-line class="md:hidden" />
         </router-link>
         <a href="https://twitter.com/hannoeru" target="_blank" rel="noopener" title="Twitter">
-          <feather-twitter />
+          <div i-feather-twitter />
         </a>
         <a href="https://github.com/hannoeru" target="_blank" rel="noopener" title="GitHub">
-          <uil-github-alt />
+          <div i-uil-github-alt />
         </a>
         <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
-          <la-rss-square style="font-size:1.25rem;" />
+          <div i-la-rss-square style="font-size:1.25rem;" />
         </a>
         <ToggleTheme />
       </nav>
@@ -56,7 +46,7 @@
   transition: opacity 0.2s ease;
   opacity: 0.7;
   outline: none;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .nav a:hover {
