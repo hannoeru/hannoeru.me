@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@vant/lazyload": "^1.4.0",
-    "@vueuse/core": "^7.7.1",
+    "@vueuse/core": "^8.2.6",
     "@vueuse/head": "^0.7.6",
     "dayjs": "^1.11.1",
     "prism-theme-vars": "^0.2.2",
