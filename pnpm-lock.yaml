@@ -34,7 +34,7 @@ specifiers:
   markdown-it-anchor: ^8.6.2
   markdown-it-attrs: ^4.1.3
   markdown-it-link-attributes: ^4.0.0
-  markdown-it-prism: ^2.2.3
+  markdown-it-prism: ^2.2.4
   markdown-it-shiki: ^0.4.0
   picocolors: ^1.0.0
   pnpm: ^6.32.8
@@ -94,7 +94,7 @@ devDependencies:
   markdown-it-anchor: 8.6.2_d643ca6eb40ae68ab966a77bead78073
   markdown-it-attrs: 4.1.3_markdown-it@12.3.2
   markdown-it-link-attributes: 4.0.0
-  markdown-it-prism: 2.2.3
+  markdown-it-prism: 2.2.4
   markdown-it-shiki: 0.4.0
   picocolors: 1.0.0
   pnpm: 6.32.8
@@ -5168,11 +5168,11 @@ packages:
     resolution: {integrity: sha512-ssjxSLlLfQBkX6BvAx1rCPrx7ZoK91llQQvS3P7KXvlbnVD34OUkfXwWecN7su/7mrI/HOW0RI5szdJOIqYC3w==}
     dev: true
 
-  /markdown-it-prism/2.2.3:
-    resolution: {integrity: sha512-vtiJ1ALGpIg2JPCSv3E8pEwx8Axr9eWu/P4BvCvyXWWM1GEXbr95a7cMuyR4FiEKkZVOXHqqGM6RJoqxra7UGQ==}
+  /markdown-it-prism/2.2.4:
+    resolution: {integrity: sha512-7oQVppKjiZqVQo7s7eLTIs3o/0hdvqAWDW8lvRel6eUCGD4iXjKbSZjvdHZFA2ZnCkQUF47kbvtWZDVQrv7zyQ==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      prismjs: 1.27.0
+      prismjs: 1.28.0
     dev: true
 
   /markdown-it-shiki/0.4.0:
@@ -5726,11 +5726,6 @@ packages:
   /prism-theme-vars/0.2.2:
     resolution: {integrity: sha512-EL9ifuU/F8tEldoCa2sspiiLWysCL54xDbf2gN/ubwdtbuJROqOGopG5kSwunapwaioT+jLUQ/Ky+7jnv62xJA==}
     dev: false
-
-  /prismjs/1.27.0:
-    resolution: {integrity: sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==}
-    engines: {node: '>=6'}
-    dev: true
 
   /prismjs/1.28.0:
     resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
