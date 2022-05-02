@@ -37,7 +37,7 @@ specifiers:
   markdown-it-prism: ^2.2.4
   markdown-it-shiki: ^0.5.1
   picocolors: ^1.0.0
-  pnpm: ^6.32.11
+  pnpm: ^7.0.0
   prism-theme-vars: ^0.2.2
   prismjs: ^1.28.0
   sharp: ^0.30.4
@@ -97,7 +97,7 @@ devDependencies:
   markdown-it-prism: 2.2.4
   markdown-it-shiki: 0.5.1
   picocolors: 1.0.0
-  pnpm: 6.32.11
+  pnpm: 7.0.0
   prismjs: 1.28.0
   sharp: 0.30.4
   typescript: 4.6.4
@@ -5684,9 +5684,9 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/6.32.11:
-    resolution: {integrity: sha512-KIb3ImAEGl03aJNy0pai7J0mWn52GJwRrUllxUZwibhLdUoeOuDjXhNSgRxxW9BH2gR91b3UadxzdAvhehmM8w==}
-    engines: {node: '>=12.17'}
+  /pnpm/7.0.0:
+    resolution: {integrity: sha512-5njVSmE/Sz6coyikS6gjwoKWaxxsJ6BY6jL1aqwvnEpNUfFednbHqid3aZ42JszOFaSOz3Qipcfp4ei22G/JEg==}
+    engines: {node: '>=14.19'}
     hasBin: true
     dev: true
 
