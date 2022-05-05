@@ -3,7 +3,7 @@ import { isClient } from '@vueuse/core'
 import { formatDate } from '@/logics'
 import { DOMAIN } from '@/constants'
 
-import type { HeadObject, HeadAttrs } from '@vueuse/head'
+import type { HeadAttrs, HeadObject } from '@vueuse/head'
 
 const route = useRoute()
 const router = useRouter()

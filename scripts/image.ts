@@ -5,7 +5,6 @@ import sharp from 'sharp'
 import pc from 'picocolors'
 
 function log(text: string, count?: number) {
-  // eslint-disable-next-line no-console
   console.log(`\n${pc.gray('[sharp]')} ${text}${count ? pc.blue(` (${count})`) : ''}`)
 }
 
@@ -35,7 +34,6 @@ export async function optimizeImages() {
 
         const info = await img.toFile(outFile)
 
-        // eslint-disable-next-line no-console
         console.log(
           `${pc.dim('dist/')}${pc.cyan(image.replace('public/', '').padEnd(15, ' '))}  ${pc.dim(getSize(info.size))}`,
         )

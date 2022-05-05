@@ -11,7 +11,7 @@ import matter from 'gray-matter'
 import AutoImport from 'unplugin-auto-import/vite'
 import anchor from 'markdown-it-anchor'
 import markdownLinkAttr from 'markdown-it-link-attributes'
-// @ts-ignore
+// @ts-expect-error types
 import markdownAttrs from 'markdown-it-attrs'
 import Unocss from 'unocss/vite'
 import { slugify } from './scripts/slugify'

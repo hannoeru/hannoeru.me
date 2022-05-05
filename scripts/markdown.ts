@@ -31,9 +31,7 @@ export const lazyLoadImage = (md: MarkdownIt) => {
   }
 }
 
-type Mapping = {
-  [key: string]: string | string[]
-}
+type Mapping = Record<string, string | string[]>
 
 const mapping: Mapping = {
   h1: ['text-4xl', 'font-extrabold', 'mb-1em', 'next:mt-0'],

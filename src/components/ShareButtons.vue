@@ -54,8 +54,8 @@ const { copy, copied } = useClipboard({
       title="Copy link"
       @click="copy(currentPath)"
     >
-      <div i-carbon:link v-if="!copied" />
-      <div i-carbon:checkmark v-else />
+      <div v-if="!copied" i-carbon:link />
+      <div v-else i-carbon:checkmark />
     </button>
   </div>
 </template>

@@ -3,8 +3,9 @@ import fg from 'fast-glob'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
-import { Feed, FeedOptions, Item } from 'feed'
+import { Feed } from 'feed'
 import { codeBlockFilename } from './markdown'
+import type { FeedOptions, Item } from 'feed'
 
 const DOMAIN = 'https://hannoeru.me'
 const AUTHOR = {

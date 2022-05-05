@@ -1,5 +1,6 @@
-import { Lazyload, LazyloadOptions } from '@vant/lazyload'
-import { UserModule } from '@/types'
+import { Lazyload } from '@vant/lazyload'
+import type { LazyloadOptions } from '@vant/lazyload'
+import type { UserModule } from '@/types'
 
 export const install: UserModule = ({ app }) => {
   app.use(Lazyload, {
