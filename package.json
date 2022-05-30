@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^0.5.2",
-    "@hannoeru/eslint-config": "^0.8.9",
+    "@hannoeru/eslint-config": "^0.8.10",
     "@iconify/json": "^2.1.53",
     "@octokit/rest": "^18.12.0",
     "@types/diacritics": "^1.3.1",
