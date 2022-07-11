@@ -24,7 +24,7 @@ specifiers:
   dayjs: ^1.11.3
   diacritics: ^1.3.0
   eslint: ^8.19.0
-  eslint-plugin-mdx: ^1.17.0
+  eslint-plugin-mdx: ^1.17.1
   esno: ^0.16.3
   fast-glob: ^3.2.11
   feed: ^4.2.2
@@ -84,7 +84,7 @@ devDependencies:
   cross-env: 7.0.3
   diacritics: 1.3.0
   eslint: 8.19.0
-  eslint-plugin-mdx: 1.17.0_eslint@8.19.0
+  eslint-plugin-mdx: 1.17.1_eslint@8.19.0
   esno: 0.16.3
   fast-glob: 3.2.11
   feed: 4.2.2
@@ -3428,8 +3428,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-mdx/1.17.0_eslint@8.19.0:
-    resolution: {integrity: sha512-O8+JRfwCzpoR2P6zUI1GDAAM/bsuzcoBS1ArvpQrgQO/E2Km0vBmM15ukiJxZ+YUh5d+qDlrqha0fZB50MojJQ==}
+  /eslint-mdx/1.17.1_eslint@8.19.0:
+    resolution: {integrity: sha512-ihkTZCYipPUpzZgTeTwRajj3ZFYQAMWUm/ajscLWjXPVA2+ZQoLRreVNETRZ1znCnE3OAGbwmA1vd0uxtSk2wg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       eslint: '>=5.0.0'
@@ -3606,14 +3606,14 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-mdx/1.17.0_eslint@8.19.0:
-    resolution: {integrity: sha512-Kicizy+fbfsB2UxTDXP92qTtFqITApu4v4DRQUfXMoPwBHeQRvZnaEtXu2S9aia51GYRYsMSqUvoPPih/5oB+g==}
+  /eslint-plugin-mdx/1.17.1_eslint@8.19.0:
+    resolution: {integrity: sha512-yOI2FmHCh+cgkMEkznxvWxfLC8AqZgco7509DjwMoCzXaxslv7YmGBKkvZyHxcbLmswnaMRBlYcd2BT7KPEnKw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       eslint: '>=5.0.0'
     dependencies:
       eslint: 8.19.0
-      eslint-mdx: 1.17.0_eslint@8.19.0
+      eslint-mdx: 1.17.1_eslint@8.19.0
       eslint-plugin-markdown: 2.2.1_eslint@8.19.0
       synckit: 0.4.1
       tslib: 2.4.0
@@ -4406,7 +4406,7 @@ packages:
     dev: true
 
   /is-alphanumeric/1.0.0:
-    resolution: {integrity: sha1-Spzvcdr0wAHB2B1j0UDPU/1oifQ=}
+    resolution: {integrity: sha512-ZmRL7++ZkcMOfDuWZuMJyIVLr2keE1o/DeNWh1EmgqGhUcV+9BIVsx0BcSBOHTZqzjs4+dISzr2KAeBEWGgXeA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -5816,7 +5816,7 @@ packages:
     dev: true
 
   /repeat-string/1.6.1:
-    resolution: {integrity: sha1-jcrkcOHIirwtYA//Sndihtp15jc=}
+    resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
     dev: true
 
@@ -6352,7 +6352,7 @@ packages:
     dev: true
 
   /trim/0.0.1:
-    resolution: {integrity: sha1-WFhUf2spB1fulczMZm+1AITEYN0=}
+    resolution: {integrity: sha512-YzQV+TZg4AxpKxaTHK3c3D+kRDCGVEE7LemdlQZoQXn0iennk10RsIoY6ikzAqJTc9Xjl9C1/waHom/J86ziAQ==}
     dev: true
 
   /trough/1.0.5:
