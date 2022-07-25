@@ -131,7 +131,7 @@ export default defineConfig({
     Inspect(),
   ],
   ssgOptions: {
-    format: 'cjs',
+    script: 'async',
     formatting: 'minify',
     async onFinished() {
       await buildBlogRSS()
