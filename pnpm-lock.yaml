@@ -24,7 +24,7 @@ specifiers:
   dayjs: ^1.11.4
   diacritics: ^1.3.0
   eslint: ^8.20.0
-  eslint-plugin-mdx: ^2.0.1
+  eslint-plugin-mdx: ^2.0.2
   esno: ^0.16.3
   fast-glob: ^3.2.11
   feed: ^4.2.2
@@ -84,7 +84,7 @@ devDependencies:
   cross-env: 7.0.3
   diacritics: 1.3.0
   eslint: 8.20.0
-  eslint-plugin-mdx: 2.0.1_eslint@8.20.0
+  eslint-plugin-mdx: 2.0.2_eslint@8.20.0
   esno: 0.16.3
   fast-glob: 3.2.11
   feed: 4.2.2
@@ -1574,9 +1574,9 @@ packages:
       '@octokit/openapi-types': 12.8.0
     dev: true
 
-  /@pkgr/utils/2.1.0:
-    resolution: {integrity: sha512-Va5LTLVoPIH8CrV170zXLSDtCJ6eG6uVXYwwsDYOOeec0MdkhvJzKaxvA+hGJRWFl5I4VBQBs5pwljaI4TG5OA==}
-    engines: {node: '>=12'}
+  /@pkgr/utils/2.3.0:
+    resolution: {integrity: sha512-7dIJ9CRVzBnqyEl7diUHPUFJf/oty2SeoVzcMocc5PeOUDK9KGzvgIBjGRRzzlRDaOjh3ADwH0WeibQvi3ls2Q==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dependencies:
       cross-spawn: 7.0.3
       is-glob: 4.0.3
@@ -1669,7 +1669,7 @@ packages:
   /@types/acorn/4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
     dependencies:
-      '@types/estree': 0.0.39
+      '@types/estree': 0.0.51
     dev: true
 
   /@types/debug/4.1.7:
@@ -1685,7 +1685,7 @@ packages:
   /@types/estree-jsx/0.0.1:
     resolution: {integrity: sha512-gcLAYiMfQklDCPjQegGn0TBAn9it05ISEsEhlKQUddIk7o2XDokOcTN7HBO8tznM0D9dGezvHEfRZBfZf6me0A==}
     dependencies:
-      '@types/estree': 0.0.39
+      '@types/estree': 0.0.51
     dev: true
 
   /@types/estree/0.0.39:
@@ -2236,12 +2236,12 @@ packages:
       acorn-walk: 7.2.0
     dev: true
 
-  /acorn-jsx/5.3.2_acorn@8.7.1:
+  /acorn-jsx/5.3.2_acorn@8.8.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.7.1
+      acorn: 8.8.0
     dev: true
 
   /acorn-walk/7.2.0:
@@ -2257,6 +2257,12 @@ packages:
 
   /acorn/8.7.1:
     resolution: {integrity: sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: true
+
+  /acorn/8.8.0:
+    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -3427,22 +3433,26 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-mdx/2.0.1_eslint@8.20.0:
-    resolution: {integrity: sha512-25qjdxWQGDX0zXxnZGfqwEbWjUuY1eCnK7CIq3fNE+5rWSAeleJ/i0nLKcgh6XrvmxKn6ZYcJ9msdeqmL4kPMQ==}
-    engines: {node: '>=12.20'}
+  /eslint-mdx/2.0.2_eslint@8.20.0:
+    resolution: {integrity: sha512-MEVpk4Up8DNvabR9chGE2sKhInmSgSdtqEW9CueYTExZB0t+qaT3KGctbDjbcD5YkDbvYhgSCYo/J72ncIPIbw==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
+      acorn: 8.8.0
+      acorn-jsx: 5.3.2_acorn@8.8.0
       cosmiconfig: 7.0.1
       eslint: 8.20.0
+      espree: 9.3.2
       estree-util-visit: 1.1.0
       remark-mdx: 2.1.2
       remark-parse: 10.0.1
       remark-stringify: 10.0.2
-      synckit: 0.7.1
+      synckit: 0.8.1
       tslib: 2.4.0
       unified: 10.1.2
       unist-util-visit: 4.1.0
+      uvu: 0.5.6
       vfile: 5.3.4
     transitivePeerDependencies:
       - supports-color
@@ -3609,15 +3619,27 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-mdx/2.0.1_eslint@8.20.0:
-    resolution: {integrity: sha512-BKPKX6+KxOkvKe+ASxZJeBGdrWemM8NtgJrzxzS30/hwxcEo86jsQi9SJmSrWLUs0P9KAAnM2/iW5ry/oRos8g==}
-    engines: {node: '>=12.20'}
+  /eslint-plugin-markdown/3.0.0_eslint@8.20.0:
+    resolution: {integrity: sha512-hRs5RUJGbeHDLfS7ELanT0e29Ocyssf/7kBM+p7KluY5AwngGkDf8Oyu4658/NZSGTTq05FZeWbkxXtbVyHPwg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint: 8.20.0
+      mdast-util-from-markdown: 0.8.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /eslint-plugin-mdx/2.0.2_eslint@8.20.0:
+    resolution: {integrity: sha512-9mHBCxfB15YaewEHRwmFZVOlnYn7CAWKA4F43oJ8UGYWERTxJjiEqZgfK3QL9wP3zOIubOWcq4gUKzNmGbolVg==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
       eslint: 8.20.0
-      eslint-mdx: 2.0.1_eslint@8.20.0
-      eslint-plugin-markdown: 2.2.1_eslint@8.20.0
+      eslint-mdx: 2.0.2_eslint@8.20.0
+      eslint-plugin-markdown: 3.0.0_eslint@8.20.0
       remark-mdx: 2.1.2
       remark-parse: 10.0.1
       remark-stringify: 10.0.2
@@ -3845,8 +3867,8 @@ packages:
     resolution: {integrity: sha512-D211tC7ZwouTIuY5x9XnS0E9sWNChB7IYKX/Xp5eQj3nFXhqmiUDB9q27y76oFl8jTg3pXcQx/bpxMfs3CIZbA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.7.1
-      acorn-jsx: 5.3.2_acorn@8.7.1
+      acorn: 8.8.0
+      acorn-jsx: 5.3.2_acorn@8.8.0
       eslint-visitor-keys: 3.3.0
     dev: true
 
@@ -4734,7 +4756,7 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.6
-      acorn: 8.7.1
+      acorn: 8.8.0
       acorn-globals: 6.0.0
       cssom: 0.5.0
       cssstyle: 2.3.0
@@ -4814,7 +4836,7 @@ packages:
     resolution: {integrity: sha512-qCRJWlbP2v6HbmKW7R3lFbeiVWHo+oMJ0j+MizwvauqnCV/EvtAeEeuCgoc/ErtsuoKgYB8U4Ih8AxJbXoE6/g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.7.1
+      acorn: 8.8.0
       eslint-visitor-keys: 3.3.0
       espree: 9.3.2
       semver: 7.3.7
@@ -5219,8 +5241,8 @@ packages:
   /micromark-extension-mdxjs/1.0.0:
     resolution: {integrity: sha512-TZZRZgeHvtgm+IhtgC2+uDMR7h8eTKF0QUX9YsgoL9+bADBpBY6SiLvWqnBlLbCEevITmTqmEuY3FoxMKVs1rQ==}
     dependencies:
-      acorn: 8.7.1
-      acorn-jsx: 5.3.2_acorn@8.7.1
+      acorn: 8.8.0
+      acorn-jsx: 5.3.2_acorn@8.8.0
       micromark-extension-mdx-expression: 1.0.3
       micromark-extension-mdx-jsx: 1.0.3
       micromark-extension-mdx-md: 1.0.0
@@ -6570,7 +6592,15 @@ packages:
     resolution: {integrity: sha512-Cvv0Nzgs4Z0V6761qp4CU2+C15HRmnHaDd+sAtisbOnzIZ5wgl3ne076k28cHo+oY6eN/w0RNzRrf7CJz8dWJg==}
     engines: {node: '>=12.20'}
     dependencies:
-      '@pkgr/utils': 2.1.0
+      '@pkgr/utils': 2.3.0
+      tslib: 2.4.0
+    dev: true
+
+  /synckit/0.8.1:
+    resolution: {integrity: sha512-rJEeygO5PNmcZICmrgnbOd2usi5zWE1ESc0Gn5tTmJlongoU8zCTwMFQtar2UgMSiR68vK9afPQ+uVs2lURSIA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@pkgr/utils': 2.3.0
       tslib: 2.4.0
     dev: true
 
@@ -6614,7 +6644,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      acorn: 8.7.1
+      acorn: 8.8.0
       commander: 2.20.3
       source-map: 0.8.0-beta.0
       source-map-support: 0.5.21
@@ -7015,7 +7045,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      acorn: 8.7.1
+      acorn: 8.8.0
       chokidar: 3.5.3
       vite: 2.9.14
       webpack-sources: 3.2.3
