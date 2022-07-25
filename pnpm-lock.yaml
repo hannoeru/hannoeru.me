@@ -14,7 +14,7 @@ specifiers:
   '@unocss/transformer-directives': ^0.44.7
   '@unocss/transformer-variant-group': ^0.44.7
   '@vant/lazyload': ^1.4.0
-  '@vitejs/plugin-vue': ^2.3.3
+  '@vitejs/plugin-vue': ^3.0.1
   '@vue/compiler-sfc': ^3.2.37
   '@vue/server-renderer': ^3.2.37
   '@vueuse/core': ^8.9.4
@@ -77,7 +77,7 @@ devDependencies:
   '@unocss/reset': 0.44.7
   '@unocss/transformer-directives': 0.44.7
   '@unocss/transformer-variant-group': 0.44.7
-  '@vitejs/plugin-vue': 2.3.3_vite@2.9.14+vue@3.2.37
+  '@vitejs/plugin-vue': 3.0.1_vite@2.9.14+vue@3.2.37
   '@vue/compiler-sfc': 3.2.37
   '@vue/server-renderer': 3.2.37_vue@3.2.37
   critters: 0.0.16
@@ -2053,11 +2053,11 @@ packages:
     resolution: {integrity: sha512-3z+nywPaV2F5BdJO7RQxWlgfzJeEOmViD2yHMb7Tg+R4NR/7iQskqW8v2Cnv9FWSJgTOSHlcr7UzeLpiTAP4HA==}
     dev: false
 
-  /@vitejs/plugin-vue/2.3.3_vite@2.9.14+vue@3.2.37:
-    resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
-    engines: {node: '>=12.0.0'}
+  /@vitejs/plugin-vue/3.0.1_vite@2.9.14+vue@3.2.37:
+    resolution: {integrity: sha512-Ll9JgxG7ONIz/XZv3dssfoMUDu9qAnlJ+km+pBA0teYSXzwPCIzS/e1bmwNYl5dcQGs677D21amgfYAnzMl17A==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^2.5.10
+      vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
       vite: 2.9.14
