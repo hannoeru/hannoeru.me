@@ -12,6 +12,7 @@ useHead({
     { name: 'twitter:creator', content: '@hannoeru' },
   ],
   htmlAttrs: {
+    // @ts-ignore - missing this html attribute in @vueuse/head
     prefix: 'og: http://ogp.me/ns#',
   },
 })
