@@ -1,6 +1,7 @@
 {
   "private": true,
   "packageManager": "pnpm@7.12.2",
+  "type": "module",
   "scripts": {
     "dev": "vite --port 3333",
     "serve": "vite preview",
