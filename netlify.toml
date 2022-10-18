@@ -9,3 +9,8 @@ command = "pnpm run build"
 from = "/*"
 to = "/index.html"
 status = 200
+
+[[headers]]
+for = "/site.webmanifest"
+[headers.values]
+Content-Type = "application/manifest+json"
