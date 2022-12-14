@@ -12,7 +12,7 @@
   "dependencies": {
     "@vant/lazyload": "^1.4.0",
     "@vueuse/core": "^9.5.0",
-    "@vueuse/head": "^0.9.8",
+    "@vueuse/head": "^1.0.22",
     "dayjs": "^1.11.6",
     "prism-theme-vars": "^0.2.4",
     "vue": "^3.2.45",
