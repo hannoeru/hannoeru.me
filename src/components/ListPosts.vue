@@ -30,7 +30,6 @@ onUnmounted(() => {
     document.body.style.removeProperty('--md-max-width')
   }, 300)
 })
-
 </script>
 
 <template>

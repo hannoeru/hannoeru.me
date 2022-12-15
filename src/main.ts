@@ -9,10 +9,10 @@ import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import App from './App.vue'
 
+import type { UserModule } from './types'
 import type { RouterScrollBehavior } from 'vue-router'
 
 import routes from '~pages'
-import { UserModule } from './types'
 
 if (import.meta.env.DEV)
   // eslint-disable-next-line no-console
