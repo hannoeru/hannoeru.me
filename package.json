@@ -1,13 +1,14 @@
 {
+  "type": "module",
   "private": true,
   "packageManager": "pnpm@7.15.0",
-  "type": "module",
   "scripts": {
     "dev": "vite --port 3333",
     "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite-ssg build",
     "lint": "eslint --ext .js,.ts,.vue,.json,.md .",
-    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json,.md ."
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json,.md .",
+    "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@vant/lazyload": "^1.4.0",

@@ -3,12 +3,11 @@ import { isClient } from '@vueuse/core'
 import { formatDate } from '@/logics'
 import { DOMAIN } from '@/constants'
 
-import type { HeadAttrs, HeadObject } from '@vueuse/head'
+import type { HeadObject } from '@vueuse/head'
 
+const props = defineProps<{ frontmatter: any }>()
 const route = useRoute()
 const router = useRouter()
-const props = defineProps<{ frontmatter: any }>()
-
 const frontmatter = computed(() => props.frontmatter)
 const isPostList = computed(() => route.path === '/posts')
 
@@ -31,13 +30,13 @@ useHead(computed<HeadObject>(() => {
     head.title ? { property: 'og:title', content: head.title } : null,
     ...(head.description
       ? [
-        { property: 'og:description', content: head.description },
-        { name: 'description', content: head.description },
-      ]
+          { property: 'og:description', content: head.description },
+          { name: 'description', content: head.description },
+        ]
       : []),
     head.image ? { property: 'og:image', content: DOMAIN + head.image } : null,
     { property: 'og:type', content: 'article' },
-  ].filter(Boolean) as HeadAttrs[]
+  ].filter(Boolean) as HeadObject['meta']
 
   return {
     title: head.title,
