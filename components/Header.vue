@@ -24,7 +24,7 @@
         <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
           <div i-la-rss-square style="font-size:1.25rem;" />
         </a>
-        <ToggleDark />
+        <ToggleTheme />
       </nav>
     </div>
   </header>
