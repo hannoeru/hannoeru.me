@@ -1,11 +1,11 @@
-import dayjs from 'dayjs'
-import { Feed } from 'feed'
-import type { FeedOptions } from 'feed'
-import type { H3Event } from 'h3'
 import { serverQueryContent } from '#content/server'
+import dayjs from 'dayjs'
+import type { FeedOptions } from 'feed'
+import { Feed } from 'feed'
+import type { H3Event } from 'h3'
 
 export const createFeed = async(event: H3Event) => {
-  const config = useRuntimeConfig()
+  const domain = useRuntimeConfig().public.domain
 
   const posts = await serverQueryContent(event)
     .where({
@@ -15,39 +15,37 @@ export const createFeed = async(event: H3Event) => {
     .sort({ _file: -1, $numeric: true })
     .find()
 
-  const DOMAIN = config.domain
-
   const feedOptions: FeedOptions = {
     title: 'Han',
     description: 'Han\'s Portfolio',
-    id: `${DOMAIN}/`,
-    link: `${DOMAIN}/`,
-    image: `${DOMAIN}/avatar.png`,
-    favicon: `${DOMAIN}/logo.png`,
+    id: `${domain}/`,
+    link: `${domain}/`,
+    image: `${domain}/avatar.png`,
+    favicon: `${domain}/logo.png`,
     copyright: `CC BY-NC-SA 4.0 ${dayjs().get('year')} © Han`,
     feedLinks: {
-      json: `${DOMAIN}/feed.json`,
-      atom: `${DOMAIN}/feed.atom`,
-      rss: `${DOMAIN}/feed.xml`,
+      json: `${domain}/feed.json`,
+      atom: `${domain}/feed.atom`,
+      rss: `${domain}/feed.xml`,
     },
     author: {
       name: 'Han',
       email: 'me@hanlee.co',
-      link: DOMAIN,
+      link: domain,
     },
   }
 
   const feed = new Feed(feedOptions)
 
   posts.forEach((post) => {
-    const postLink = new URL(post._path!, DOMAIN).toString()
+    const postLink = new URL(post._path!, domain).toString()
     feed.addItem({
       title: post.title ?? '-',
       id: postLink,
       link: postLink,
       date: new Date(post.date),
       description: post.description,
-      image: post.image.startsWith('/') ? new URL(post.image, DOMAIN).toString() : post.image,
+      image: post.image.startsWith('/') ? new URL(post.image, domain).toString() : post.image,
       author: [feedOptions.author!],
     })
   })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-const { domain } = useRuntimeConfig()
+const domain = useRuntimeConfig().public.domain
 
 const currentPath = computed(() => encodeURIComponent(`${domain}${route.path}`))
 
