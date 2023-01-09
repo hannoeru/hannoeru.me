@@ -5,7 +5,8 @@ const domain = useRuntimeConfig().public.domain
 const { page, layout } = useContent()
 // Page not found, set correct status code on SSR
 if (!page.value && process.server) {
-  setResponseStatus(404)
+  const event = useRequestEvent()
+  event.node.res.statusCode = 404
 }
 
 const router = useRouter()

@@ -58,11 +58,10 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/feed.xml', '/feed.json', 'feed.atom'],
+      routes: ['/feed.xml', '/feed.json'],
     },
     routeRules: {
       '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000'} },
-      '/**': { redirect: '/posts/:splat' }
     }
   },
   build: {
