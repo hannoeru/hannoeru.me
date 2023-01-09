@@ -62,6 +62,7 @@ export default defineNuxtConfig({
     },
     routeRules: {
       '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000'} },
+      '/_ipx/_/**': { redirect: '/:splat' },
     }
   },
   build: {
