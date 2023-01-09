@@ -46,6 +46,7 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: {
         prefix: 'og: http://ogp.me/ns#',
+        lang: 'en',
         class: 'font-sans',
       },
     },
