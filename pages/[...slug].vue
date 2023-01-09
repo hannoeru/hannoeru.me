@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { useContent, useRequestEvent } from '#imports'
+import { useContent } from '#imports';
 
-const config = useRuntimeConfig().public
+const domain = useRuntimeConfig().public.domain
 const { page, layout } = useContent()
 // Page not found, set correct status code on SSR
 if (!page.value && process.server) {
-  const event = useRequestEvent()
-  event.node.res.statusCode = 404
+  setResponseStatus(404)
 }
 
 const router = useRouter()
@@ -21,16 +20,16 @@ function searchTag(tag: string) {
 }
 
 useHead({
-  title: page.value.title || 'Han',
+  title: page.value?.title || 'Han',
   meta: [
-    { property: 'og:title', content: page.value.title || 'Han' },
-    ...(page.value.description
+    { property: 'og:title', content: page.value?.title || 'Han' },
+    ...(page.value?.description
       ? [
           { property: 'og:description', content: page.value.description },
           { name: 'description', content: page.value.description },
         ]
       : []),
-    ...(page.value.image ? [{ property: 'og:image', content: new URL(page.value.image, config.domain).toString() }] : []),
+    ...(page.value?.image ? [{ property: 'og:image', content: new URL(page.value.image, domain).toString() }] : []),
     { property: 'og:type', content: 'article' },
   ],
 })
