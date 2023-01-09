@@ -68,6 +68,9 @@ export default defineNuxtConfig({
     transpile: ['mdast-util-to-string', 'mdast-util-from-markdown'],
   },
   css: ['@/assets/styles/main.css'],
+  image: {
+    provider: "ipx"
+  },
   colorMode: {
     classSuffix: '',
   },
