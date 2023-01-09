@@ -1,6 +1,4 @@
 ---
-title: Han
-description: Han's Portfolio
 layout: default
 ---
 

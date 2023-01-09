@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useContent } from '#imports';
+import { useContent } from '#imports'
 
 const domain = useRuntimeConfig().public.domain
 const { page, layout } = useContent()
@@ -53,7 +53,7 @@ useHead({
           <ShareButtons />
         </div>
         <div v-if="page.image" class="max-w-screen-lg mx-auto py-8">
-          <NuxtImg :src="page.image" loading="lazy" class="overflow-hidden rounded-lg md:rounded-xl w-full" :alt="page.title" />
+          <img :src="page.image" class="overflow-hidden rounded-lg md:rounded-xl w-full" :alt="page.title">
         </div>
         <div class="max-w-screen-md mx-auto">
           <ContentRenderer :key="page._id" :value="page">

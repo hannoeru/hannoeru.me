@@ -13,7 +13,6 @@
     "@hannoeru/eslint-config": "^0.9.4",
     "@iconify/json": "^2.2.2",
     "@nuxt/content-edge": "2.3.0-27871967.30c26e3",
-    "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
     "@unocss/nuxt": "^0.48.0",
     "@unocss/transformer-directives": "^0.48.0",

@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
     '@nuxt/content-edge',
-    '@nuxt/image-edge',
     '@unocss/nuxt',
     '@vueuse/nuxt',
   ],
@@ -61,17 +60,13 @@ export default defineNuxtConfig({
       routes: ['/feed.xml', '/feed.json'],
     },
     routeRules: {
-      '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000'} },
+      '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000' } },
       '/_ipx/_/**': { redirect: '/:splat' },
-    }
+    },
   },
-  build: {
-    transpile: ['mdast-util-to-string', 'mdast-util-from-markdown'],
-  },
-  css: ['@/assets/styles/main.css'],
-  image: {
-    provider: "ipx"
-  },
+  css: [
+    '@/assets/styles/main.css',
+  ],
   colorMode: {
     classSuffix: '',
   },
