@@ -9,9 +9,9 @@ const toggle = () => {
 </script>
 
 <template>
-  <a @click="toggle()">
+  <button @click="toggle()">
     <div v-if="$colorMode.preference === 'system'" i-ri-macbook-line />
     <div v-else-if="$colorMode.preference === 'dark'" i-ri-moon-line />
     <div v-else i-ri-sun-line />
-  </a>
+  </button>
 </template>

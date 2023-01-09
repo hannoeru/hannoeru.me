@@ -41,7 +41,7 @@
   margin-bottom: 0;
 }
 
-.nav a {
+.nav a, .nav button {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -51,7 +51,7 @@
   padding: 0.5rem;
 }
 
-.nav a:hover {
+.nav a:hover, .nav button:hover {
   opacity: 1;
   text-decoration-color: inherit;
 }
