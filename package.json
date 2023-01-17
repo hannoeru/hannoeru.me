@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.23.0",
+  "packageManager": "pnpm@7.25.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -11,13 +11,13 @@
   "devDependencies": {
     "@antfu/utils": "^0.7.2",
     "@hannoeru/eslint-config": "^0.9.4",
-    "@iconify/json": "^2.2.2",
-    "@nuxt/content-edge": "2.3.0-27871967.30c26e3",
+    "@iconify/json": "^2.2.8",
+    "@nuxt/content-edge": "2.3.0-27899094.b4750ed",
     "@nuxtjs/color-mode": "^3.2.0",
-    "@unocss/nuxt": "^0.48.0",
-    "@unocss/transformer-directives": "^0.48.0",
-    "@unocss/transformer-variant-group": "^0.48.0",
-    "@vueuse/nuxt": "^9.10.0",
+    "@unocss/nuxt": "^0.48.4",
+    "@unocss/transformer-directives": "^0.48.4",
+    "@unocss/transformer-variant-group": "^0.48.4",
+    "@vueuse/nuxt": "^9.11.0",
     "dayjs": "^1.11.7",
     "eslint": "^8.32.0",
     "feed": "^4.2.2",
