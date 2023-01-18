@@ -1,29 +1,7 @@
 diff --git a/dist/runtime/server/storage.mjs b/dist/runtime/server/storage.mjs
-index 698bfc82cdc0bd668a74364eae2b1c382db34084..412aca5c42a8cfae517f57f87b71155eb33070fd 100644
+index 698bfc82cdc0bd668a74364eae2b1c382db34084..d68569cd5326868077ad1e1e5b602cb4ed7f67a8 100644
 --- a/dist/runtime/server/storage.mjs
 +++ b/dist/runtime/server/storage.mjs
-@@ -1,14 +1,14 @@
--import { prefixStorage } from "unstorage";
--import { joinURL, withLeadingSlash, withoutTrailingSlash } from "ufo";
--import { hash as ohash } from "ohash";
-+import { transformers as customTransformers } from "#content/virtual/transformers";
-+import { useNitroApp, useRuntimeConfig, useStorage } from "#imports";
- import defu from "defu";
--import { createQuery } from "../query/query.mjs";
-+import { hash as ohash } from "ohash";
-+import { joinURL, withLeadingSlash, withoutTrailingSlash } from "ufo";
-+import { prefixStorage } from "unstorage";
- import { createPipelineFetcher } from "../query/match/pipeline.mjs";
-+import { createQuery } from "../query/query.mjs";
- import { transformContent } from "../transformers/index.mjs";
--import { getPreview, isPreview } from "./preview.mjs";
- import { getIndexedContentsList } from "./content-index.mjs";
--import { useNitroApp, useRuntimeConfig, useStorage } from "#imports";
--import { transformers as customTransformers } from "#content/virtual/transformers";
-+import { getPreview, isPreview } from "./preview.mjs";
- export const sourceStorage = prefixStorage(useStorage(), "content:source");
- export const cacheStorage = prefixStorage(useStorage(), "cache:content");
- export const cacheParsedStorage = prefixStorage(useStorage(), "cache:content:parsed");
 @@ -149,6 +149,14 @@ export function serverQueryContent(event, query, ...pathParts) {
          params.where.push({ _locale: contentConfig.defaultLocale });
        }

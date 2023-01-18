@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 patchedDependencies:
   '@nuxt/content-edge@2.3.0-27871967.30c26e3':
-    hash: e5rnjywu4vgwnmwugx5nwbkw3u
+    hash: neoodtulyeyizrce4iacpol4ui
     path: patches/@nuxt__content-edge@2.3.0-27871967.30c26e3.patch
 
 specifiers:
@@ -26,7 +26,7 @@ devDependencies:
   '@antfu/utils': 0.7.2
   '@hannoeru/eslint-config': 0.9.4_7uibuqfxkfaozanbtbziikiqje
   '@iconify/json': 2.2.2
-  '@nuxt/content-edge': 2.3.0-27871967.30c26e3_e5rnjywu4vgwnmwugx5nwbkw3u_rollup@2.79.1
+  '@nuxt/content-edge': 2.3.0-27871967.30c26e3_neoodtulyeyizrce4iacpol4ui_rollup@2.79.1
   '@nuxtjs/color-mode': 3.2.0_rollup@2.79.1
   '@unocss/nuxt': 0.48.0_zov6skww2zctybyxe3e6vzrifa
   '@unocss/transformer-directives': 0.48.0
@@ -623,7 +623,7 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@nuxt/content-edge/2.3.0-27871967.30c26e3_e5rnjywu4vgwnmwugx5nwbkw3u_rollup@2.79.1:
+  /@nuxt/content-edge/2.3.0-27871967.30c26e3_neoodtulyeyizrce4iacpol4ui_rollup@2.79.1:
     resolution: {integrity: sha512-ruW9CXrTdCAb2QmmAhRqFlSIEdskPyvd3MBel0H/HDYQgYqPuF4l/3muuxwZOqujUSyLoTSnwEjMAjFUsN9Ozg==}
     dependencies:
       '@nuxt/kit': 3.0.0_rollup@2.79.1
