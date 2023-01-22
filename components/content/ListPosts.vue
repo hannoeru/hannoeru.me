@@ -47,7 +47,7 @@ watch(
           <NuxtLink
             class="
             block w-full h-full
-            bg-white dark:bg-dark-900
+            bg-white dark:bg-dark-800
             rounded-md
             overflow-hidden
             flex flex-col

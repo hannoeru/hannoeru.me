@@ -9,7 +9,7 @@ const toggle = () => {
 </script>
 
 <template>
-  <button aria-label="Toggle Theme" @click="toggle()">
+  <button aria-label="Toggle Theme" class="p-1 flex justify-center items-center" @click="toggle()">
     <div v-if="$colorMode.preference === 'system'" i-ri-macbook-line />
     <div v-else-if="$colorMode.preference === 'dark'" i-ri-moon-line />
     <div v-else i-ri-sun-line />

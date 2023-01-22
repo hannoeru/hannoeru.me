@@ -4,10 +4,10 @@ import { useContent } from '#imports'
 const domain = useRuntimeConfig().public.domain
 const { page, layout } = useContent()
 // Page not found, set correct status code on SSR
-if (!page.value && process.server) {
-  const event = useRequestEvent()
-  event.node.res.statusCode = 404
-}
+// if (!page.value && process.server) {
+//   const event = useRequestEvent()
+//   event.node.res.statusCode = 404
+// }
 
 const router = useRouter()
 
@@ -39,7 +39,7 @@ useHead({
 <template>
   <div class="document-driven-page">
     <NuxtLayout :name="layout || 'default'">
-      <div v-if="page" class="px-6 py-10 md:py-16 max-w-screen-xl mx-auto">
+      <div v-if="page">
         <div v-if="page.title" class="max-w-screen-md m-auto mb-8">
           <p v-if="page.date" class="opacity-50 -mt-2 mb-5">
             {{ formatDate(page.date) }}
