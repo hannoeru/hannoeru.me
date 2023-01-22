@@ -20,7 +20,7 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: 'Type check & Test build'
+    name: Type check & Test build
     timeout-minutes: 10
     steps:
       - name: Checkout
@@ -32,11 +32,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --ignore-scripts
+
+      - name: Prepare Nuxt.js
+        run: pnpm prepare
 
       - name: Type check
         run: pnpm type-check
@@ -46,7 +49,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
-    name: 'Lint'
+    name: Lint
     timeout-minutes: 10
     steps:
       - name: Checkout
@@ -58,11 +61,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --ignore-scripts
+
+      - name: Prepare Nuxt.js
+        run: pnpm prepare
 
       - name: Lint
         run: pnpm lint

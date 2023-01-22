@@ -2,6 +2,7 @@
   "private": true,
   "packageManager": "pnpm@7.23.0",
   "scripts": {
+    "prepare": "nuxt prepare",
     "build": "nuxt build",
     "dev": "nuxt dev -o",
     "generate": "nuxt generate",
