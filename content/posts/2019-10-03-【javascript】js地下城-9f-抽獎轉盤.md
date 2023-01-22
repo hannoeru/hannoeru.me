@@ -71,7 +71,7 @@ HTML、CSS、JavaScript、Axios、Vue.js
 
 假設你有很多數量一樣的禮物，你可以直接寫：
 
-```js
+```json
 {
   "start": 2,
   "end": 16,
@@ -105,17 +105,17 @@ axios.get('./data.json')
 
 ```js
 // 生成剩餘獎項陣列
-generateIndex(data) {
-  let indexArray = []
-  for (let i = 0; i < data.length; i++) {
+function generateIndex(data) {
+  const indexArray = []
+  for (let i = 0; i < data.length; i++)
     if (data[i].count !== 0) indexArray.push(i)
-  }
+
   return indexArray
-},
+}
 // 從陣列長度中取得隨機數字
-getRandomNumber(data) {
+function getRandomNumber(data) {
   const index = this.generateIndex(data)
-  let num = Math.floor(Math.random() * index.length)
+  const num = Math.floor(Math.random() * index.length)
   // 回傳 剩餘獎項陣列[隨機數字]，以得到正確的獎項。
   return index[num]
 }
@@ -126,22 +126,22 @@ getRandomNumber(data) {
 用目前年份的禮物數量為基準去做計算
 
 ```js
-transformHandler(index, location) {
+function transformHandler(index, location) {
   // 禮物數量
-  let len = this.dataCache[this.year].length
+  const len = this.dataCache[this.year].length
   // 一份禮物所佔角度
-  let rotate = 360 / len
+  const rotate = 360 / len
   // 開始角度
-  let rotateFrom = -rotate / 2
+  const rotateFrom = -rotate / 2
   // 變形角度
-  let skewY = rotate - 90
+  const skewY = rotate - 90
   // 依照禮物的位置回傳數值
-  if (location === 'prize') {
+  if (location === 'prize')
     return `rotate(${rotateFrom + index * rotate}deg) skewY(${skewY}deg)`
-  }
+
   // 回傳禮物內容數值
   if (location === 'content') {
-    let translate = len > 10 ? 'translate(19px, 110px)' : 'translate(70px, 45px)'
+    const translate = len > 10 ? 'translate(19px, 110px)' : 'translate(70px, 45px)'
     return `skewY(${90 - rotate}deg) rotate(${rotate / 2}deg) ${translate}`
   }
 }

@@ -98,12 +98,12 @@ document.getElementById('foo').textContent = ''
 使用方法基本上跟 `insertAdjacentHTML` 一樣。
 
 ```js
-var contentBlock = document.getElementById('contentBlock'),
-var insetElement = document.createElement('b');
+const contentBlock = document.getElementById('contentBlock')
+const insetElement = document.createElement('b')
 
-insetElement.textContent = 'Test:';
+insetElement.textContent = 'Test:'
 
-contentBlock.insertAdjacentElement('afterbegin', insetElement);
+contentBlock.insertAdjacentElement('afterbegin', insetElement)
 ```
 
 ### 參考資料

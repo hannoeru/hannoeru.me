@@ -131,7 +131,7 @@ function checkWin() {
 
 只有手機版的部分要適應不同大小，因此把部分CSS改用 vw 。
 
-```js
+```css
 @media screen and (max-width : 600px) {
     /* Main Size */
     .start-ox, .game, .x-win, .o-win, .draw, .x-win .cross{

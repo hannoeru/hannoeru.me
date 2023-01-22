@@ -146,11 +146,10 @@ function fetchTimeout(url, init, timeout = 3000) {
   return new Promise((resolve, reject) => {
     fetch(url, init)
       .then(resolve)
-      .catch(reject);
-    setTimeout(reject, timeout);
-  }
+      .catch(reject)
+    setTimeout(reject, timeout)
+  })
 }
-
 ```
 
 或者使用 `[Promise.race()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race)` 當 GET 或超時先完成時，判斷哪一個先執行，例如：
@@ -170,18 +169,17 @@ Promise.race([
 多年來中止 Fetch 是不可能的，但現在支持在實現[AbortController API的][15]瀏覽器中。這會觸發一個可以傳遞給 Fetch 啟動對象的信號：
 
 ```js
-const controller = new AbortController();
+const controller = new AbortController()
 
 fetch(
   'http://domain/service',
   {
-    method: 'GET'
-    signal: controller.signal
+    method: 'GET',
+    signal: controller.signal,
   })
-  .then( response => response.json() )
-  .then( json => console.log(json) )
-  .catch( error => console.error('Error:', error) );
-
+  .then(response => response.json())
+  .then(json => console.log(json))
+  .catch(error => console.error('Error:', error))
 ```
 
 可以通過使用中止獲取 `controller.abort()`。因為 Promise 拒絕所以 `.catch()` 函數被執行。

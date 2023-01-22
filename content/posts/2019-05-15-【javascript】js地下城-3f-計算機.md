@@ -41,7 +41,9 @@ HTML、CSS、JavaScript（ES6）
 #### 使用 `const` 宣告函式
 
 ```js
-const function = () => { /*.......*/ };
+const func = () => {
+  // do something
+}
 ```
 
 #### 三元運算子
@@ -69,6 +71,7 @@ x ? i : a
 語法：
 
 ```js
+// eslint-disable-next-line no-eval
 eval(要執行的字串)
 ```
 
@@ -76,6 +79,7 @@ eval(要執行的字串)
 
 ```js
 const str = '10+4*5'
+// eslint-disable-next-line no-eval
 const B = eval(str)
 
 console.log(B) // 輸出 30
