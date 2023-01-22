@@ -1,0 +1,68 @@
+name: CI
+
+env:
+  NODE_OPTIONS: --max-old-space-size=6144
+
+on:
+  push:
+    branches:
+      - next
+      - main
+  pull_request:
+    branches:
+      - next
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: 'Type check & Test build'
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: Type check
+        run: pnpm type-check
+
+      - name: Test build
+        run: pnpm build
+
+  lint:
+    runs-on: ubuntu-latest
+    name: 'Lint'
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: Lint
+        run: pnpm lint

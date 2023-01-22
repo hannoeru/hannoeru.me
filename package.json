@@ -6,7 +6,10 @@
     "dev": "nuxt dev -o",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@antfu/utils": "^0.7.2",
