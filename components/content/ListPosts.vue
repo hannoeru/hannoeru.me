@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { toArray } from '@antfu/utils'
-import { QueryBuilderParams } from '@nuxt/content-edge/dist/runtime/types'
+import { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 const route = useRoute()
 

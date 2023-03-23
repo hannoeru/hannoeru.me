@@ -5,7 +5,7 @@ import transformerVariantGroup from '@unocss/transformer-variant-group'
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
-    '@nuxt/content-edge',
+    '@nuxt/content',
     '@unocss/nuxt',
     '@vueuse/nuxt',
   ],
