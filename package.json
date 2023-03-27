@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.30.1",
+  "packageManager": "pnpm@7.30.3",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@antfu/utils": "^0.7.2",
     "@hannoeru/eslint-config": "^0.9.4",
-    "@iconify/json": "^2.2.38",
+    "@iconify/json": "^2.2.39",
     "@nuxt/content": "^2.5.2",
     "@nuxtjs/color-mode": "^3.2.0",
     "@unocss/nuxt": "^0.50.6",
@@ -25,7 +25,7 @@
     "dayjs": "^1.11.7",
     "eslint": "^8.36.0",
     "feed": "^4.2.2",
-    "nuxt": "^3.3.1",
+    "nuxt": "^3.3.2",
     "remark-breaks": "^3.0.2",
     "typescript": "^5.0.2",
     "vue-tsc": "^1.2.0"
