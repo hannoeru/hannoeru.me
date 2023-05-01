@@ -87,6 +87,7 @@ export default defineNuxtConfig({
     experimental: {
       clientDB: false,
       stripQueryParameters: true,
+      advancedIgnoresPattern: false,
     },
   },
   unocss: {
