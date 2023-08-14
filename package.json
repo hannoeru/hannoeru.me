@@ -23,7 +23,7 @@
     "@unocss/transformer-variant-group": "^0.53.1",
     "@vueuse/nuxt": "^10.1.2",
     "dayjs": "^1.11.8",
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "feed": "^4.2.2",
     "nuxt": "^3.5.3",
     "remark-breaks": "^3.0.3",
