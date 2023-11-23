@@ -100,8 +100,7 @@ let redoDataStack = []
 const saveDraw = () => {
   redoDataStack = []
   document.querySelector('.nav-redo').classList.add('disable')
-  if (undoDataStack.length >= STACK_MAX_SIZE)
-    undoDataStack.pop()
+  if (undoDataStack.length >= STACK_MAX_SIZE) { undoDataStack.pop() }
 
   undoDataStack.unshift(ctx.getImageData(0, 0, canvas.width, canvas.height))
   document.querySelector('.nav-undo').classList.remove('disable')
@@ -112,8 +111,7 @@ const undo = () => {
   document.querySelector('.nav-redo').classList.remove('disable')
   const imageData = undoDataStack.shift()
   ctx.putImageData(imageData, 0, 0)
-  if (undoDataStack.length <= 0)
-    document.querySelector('.nav-undo').classList.add('disable')
+  if (undoDataStack.length <= 0) { document.querySelector('.nav-undo').classList.add('disable') }
 
 }
 const redo = () => {
@@ -122,8 +120,7 @@ const redo = () => {
   document.querySelector('.nav-undo').classList.remove('disable')
   const imageData = redoDataStack.shift()
   ctx.putImageData(imageData, 0, 0)
-  if (redoDataStack.length <= 0)
-    document.querySelector('.nav-redo').classList.add('disable')
+  if (redoDataStack.length <= 0) { document.querySelector('.nav-redo').classList.add('disable') }
 
 }
 ```

@@ -107,8 +107,7 @@ axios.get('./data.json')
 // 生成剩餘獎項陣列
 function generateIndex(data) {
   const indexArray = []
-  for (let i = 0; i < data.length; i++)
-    if (data[i].count !== 0) indexArray.push(i)
+  for (let i = 0; i < data.length; i++) { if (data[i].count !== 0) indexArray.push(i) }
 
   return indexArray
 }
@@ -136,8 +135,7 @@ function transformHandler(index, location) {
   // 變形角度
   const skewY = rotate - 90
   // 依照禮物的位置回傳數值
-  if (location === 'prize')
-    return `rotate(${rotateFrom + index * rotate}deg) skewY(${skewY}deg)`
+  if (location === 'prize') { return `rotate(${rotateFrom + index * rotate}deg) skewY(${skewY}deg)` }
 
   // 回傳禮物內容數值
   if (location === 'content') {

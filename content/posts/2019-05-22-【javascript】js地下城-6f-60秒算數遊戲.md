@@ -76,10 +76,7 @@ JS 的部分，原本想要用 Vue 做的，但是因為我才剛開始看教學
 // 指定interval變數到setInterval()
 const interval = setInterval(() => {
   countTime -= 1
-  if (countTime < 10)
-    timeDOM.textContent = `00 : 0${countTime}`
-  else
-    timeDOM.textContent = `00 : ${countTime}`
+  if (countTime < 10) { timeDOM.textContent = `00 : 0${countTime}` } else { timeDOM.textContent = `00 : ${countTime}` }
 
   if (countTime === 0) {
     mainDOM.classList.add('hidden')

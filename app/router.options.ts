@@ -11,10 +11,7 @@ export default <RouterConfig> {
     } else {
       return new Promise((resolve) => {
         setTimeout(() => {
-          if (savedPosition)
-            resolve(savedPosition)
-          else
-            resolve({ left: 0, top: 0 })
+          if (savedPosition) { resolve(savedPosition) } else { resolve({ left: 0, top: 0 }) }
         }, 300)
       })
     }

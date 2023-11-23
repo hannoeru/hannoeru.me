@@ -11,8 +11,7 @@ const loaded = ref(false)
 async function create() {
   if (!tweet.value) return
   const tweets = Array.from(tweet.value.querySelectorAll('.twitter-tweet'))
-  for (const item of tweets)
-    tweet.value.removeChild(item)
+  for (const item of tweets) { tweet.value.removeChild(item) }
 
   // @ts-ignore
   await window.twttr.widgets.createTweet(
@@ -37,8 +36,7 @@ useScriptTag(
 
 onMounted(() => {
   // @ts-ignore
-  if (!loaded.value && window?.twttr?.widgets)
-    create()
+  if (!loaded.value && window?.twttr?.widgets) { create() }
 })
 
 watch(isDark, () => create())

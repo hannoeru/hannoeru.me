@@ -48,8 +48,7 @@ function getNum() {
     str += '<ul>'
     str += `<li class="big-num">${i}</li>`
     // 第二個for迴圈-要乘上的數字
-    for (let a = 1; a < 10; a++)
-      str += `<li>${i} x ${a} = ${i * a}</li>`
+    for (let a = 1; a < 10; a++) { str += `<li>${i} x ${a} = ${i * a}</li>` }
 
     str += '</ul>'
     str += '</div>'
