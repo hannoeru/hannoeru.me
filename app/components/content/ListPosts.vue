@@ -55,7 +55,7 @@ watch(
             :to="post._path"
           >
             <div v-if="post.image" class="relative w-full h-50 overflow-hidden">
-              <img :src="post.image" :alt="post.title" class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)" loading="lazy">
+              <NuxtImg :src="post.image" :alt="post.title" class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)" loading="lazy" />
             </div>
             <div class="px-8 py-6 flex flex-col justify-between flex-grow">
               <div>

@@ -46,7 +46,7 @@ useHead({
           <ShareButtons />
         </div>
         <div v-if="page.image" class="max-w-screen-lg mx-auto py-8">
-          <img :src="page.image" class="overflow-hidden rounded-lg md:rounded-xl w-full" :alt="page.title">
+          <NuxtImg :src="page.image" class="overflow-hidden rounded-lg md:rounded-xl w-full" :alt="page.title" />
         </div>
         <div class="max-w-screen-md mx-auto">
           <ContentRenderer :value="page">
