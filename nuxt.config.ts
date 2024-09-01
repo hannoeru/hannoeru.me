@@ -75,7 +75,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/feed.xml', '/feed.json'],
+      crawlLinks: true,
     },
     routeRules: {
       '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000' } },
