@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { toArray } from '@antfu/utils'
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+import { toArray } from '@antfu/utils';
+import type { QueryBuilderParams } from '@nuxt/content';
 
 const route = useRoute()
 
@@ -15,7 +15,7 @@ watch(
   () => {
     if (route.query.tags) {
       query.value.where = {
-        // @ts-expect-error
+        // @ts-expect-error missing type
         type: 'post',
         tags: {
           $in: toArray(route.query.tags),
@@ -23,7 +23,7 @@ watch(
       }
     } else {
       query.value.where = {
-        // @ts-expect-error
+        // @ts-expect-error missing type
         type: 'post',
       }
     }
@@ -44,6 +44,7 @@ watch(
           :key="post._path"
           class="before:hidden !pl-0"
         >
+        {{ post }}
           <NuxtLink
             class="
             block w-full h-full

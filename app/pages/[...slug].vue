@@ -1,13 +1,6 @@
 <script setup lang="ts">
-import { useContent } from '#imports'
-
 const domain = useRuntimeConfig().public.domain
 const { page, layout } = useContent()
-// Page not found, set correct status code on SSR
-// if (!page.value && process.server) {
-//   const event = useRequestEvent()
-//   event.node.res.statusCode = 404
-// }
 
 const router = useRouter()
 
@@ -56,7 +49,7 @@ useHead({
           <img :src="page.image" class="overflow-hidden rounded-lg md:rounded-xl w-full" :alt="page.title">
         </div>
         <div class="max-w-screen-md mx-auto">
-          <ContentRenderer :key="page._id" :value="page">
+          <ContentRenderer :value="page">
             <template #empty="{ value }">
               <DocumentDrivenEmpty :value="value" />
             </template>

@@ -1,9 +1,8 @@
 node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
-.netlify
-.env
+*.log
 dist
+.output
+.nuxt
+.env
+.idea/
+.data
