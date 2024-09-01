@@ -1,6 +1,7 @@
 <template>
   <NuxtImg
     format="webp"
+    placeholder
     :src="src"
     :alt="alt"
     :width="width"

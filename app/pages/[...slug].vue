@@ -48,6 +48,7 @@ useHead({
         <div v-if="page.image" class="max-w-screen-lg mx-auto py-8">
           <NuxtImg
             format="webp"
+            placeholder
             :src="page.image"
             class="overflow-hidden rounded-lg md:rounded-xl w-full"
             :alt="page.title"

@@ -3,6 +3,7 @@
     <div class="relative w-45 h-45 rounded-full overflow-hidden flex-shrink-0 md:mr-10 lt-md:mb-10">
       <NuxtImg
         format="webp"
+        placeholder
         src="/avatar.png"
         alt="Han"
         class="absolute w-full h-full object-cover !m-0 z-10"

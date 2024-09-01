@@ -58,6 +58,7 @@ watch(
             <div v-if="post.image" class="relative w-full h-50 overflow-hidden">
               <NuxtImg
                 format="webp"
+                placeholder
                 :src="post.image"
                 :alt="post.title"
                 class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)"
