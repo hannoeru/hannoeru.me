@@ -11,9 +11,11 @@ const loaded = ref(false)
 async function create() {
   if (!tweet.value) return
   const tweets = Array.from(tweet.value.querySelectorAll('.twitter-tweet'))
-  for (const item of tweets) { tweet.value.removeChild(item) }
+  for (const item of tweets) {
+    tweet.value.removeChild(item)
+  }
 
-  // @ts-ignore
+  // @ts-expect-error missing type
   await window.twttr.widgets.createTweet(
     props.id.toString(),
     tweet.value,
@@ -35,15 +37,17 @@ useScriptTag(
 )
 
 onMounted(() => {
-  // @ts-ignore
-  if (!loaded.value && window?.twttr?.widgets) { create() }
+  // @ts-expect-error missing type
+  if (!loaded.value && window?.twttr?.widgets) {
+    create()
+  }
 })
 
 watch(isDark, () => create())
 </script>
 
 <template>
-  <Transform :scale="scale || 1">
+  <AppTransform :scale="scale || 1">
     <div ref="tweet">
       <div
         v-if="!loaded"
@@ -54,5 +58,5 @@ watch(isDark, () => create())
         </div>
       </div>
     </div>
-  </Transform>
+  </AppTransform>
 </template>

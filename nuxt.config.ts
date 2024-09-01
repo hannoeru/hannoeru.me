@@ -5,7 +5,6 @@ import transformerVariantGroup from '@unocss/transformer-variant-group'
 export default defineNuxtConfig({
   compatibilityDate: '2024-07-30',
 
-
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
 
@@ -47,7 +46,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
         {
-          rel: 'alternate', type: 'application/rss+xml', title: "Han's Blog", href: '/feed.xml',
+          rel: 'alternate', type: 'application/rss+xml', title: 'Han\'s Blog', href: '/feed.xml',
         },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@200;400;600&display=swap' },
@@ -55,7 +54,7 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@200;400;600&display=swap',
           rel: 'stylesheet',
           media: 'print',
-          onload: "this.media='all'",
+          onload: 'this.media=\'all\'',
         },
       ],
       noscript: [

@@ -5,7 +5,9 @@ const props = defineProps<{
 }>()
 const style = computed(() => {
   const transforms = []
-  if (props.scale != null) { transforms.push(`scale(${props.scale || 1})`) }
+  if (props.scale != null) {
+    transforms.push(`scale(${props.scale || 1})`)
+  }
   return {
     'transform': transforms.join(' '),
     'transform-origin': props.origin || 'top left',

@@ -9,6 +9,7 @@
 
 <script setup lang="ts">
 import { useRuntimeConfig } from '#imports'
+
 defineProps<{ id: string }>()
 const heading = 1
 const { anchorLinks } = useRuntimeConfig().public.content

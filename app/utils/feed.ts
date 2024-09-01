@@ -4,7 +4,7 @@ import type { FeedOptions } from 'feed'
 import type { H3Event } from 'h3'
 import { serverQueryContent } from '#content/server'
 
-export const createFeed = async(event: H3Event) => {
+export const createFeed = async (event: H3Event) => {
   const domain = useRuntimeConfig().public.domain
 
   const posts = await serverQueryContent(event)

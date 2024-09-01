@@ -8,10 +8,14 @@ export default <RouterConfig> {
         top: 120,
         behavior: 'smooth',
       }
-    } else {
+    }
+    else {
       return new Promise((resolve) => {
         setTimeout(() => {
-          if (savedPosition) { resolve(savedPosition) } else { resolve({ left: 0, top: 0 }) }
+          if (savedPosition) {
+            resolve(savedPosition)
+          }
+          else { resolve({ left: 0, top: 0 }) }
         }, 300)
       })
     }

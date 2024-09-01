@@ -10,7 +10,8 @@ function removeTag(tag: string) {
         tags: tags.value,
       },
     })
-  } else {
+  }
+  else {
     router.push({
       query: {},
     })
