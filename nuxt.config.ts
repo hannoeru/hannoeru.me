@@ -78,6 +78,8 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
     routeRules: {
+      '/': { static: true },
+      '/posts/**': { static: true },
       '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000' } },
       '/_ipx/_/**': { redirect: '/:splat' },
     },

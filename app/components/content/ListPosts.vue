@@ -44,7 +44,6 @@ watch(
           :key="post._path"
           class="before:hidden !pl-0"
         >
-        {{ post }}
           <NuxtLink
             class="
             block w-full h-full
