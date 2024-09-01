@@ -12,6 +12,7 @@ import { useRuntimeConfig } from '#imports'
 
 defineProps<{ id: string }>()
 const heading = 4
+// @ts-expect-error missing type
 const { anchorLinks } = useRuntimeConfig().public.content
 const generate = anchorLinks?.depth >= heading && !anchorLinks?.exclude.includes(heading)
 </script>

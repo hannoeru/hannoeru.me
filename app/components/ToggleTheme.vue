@@ -4,7 +4,7 @@ const colorMode = useColorMode()
 const modes = ['system', 'dark', 'light']
 
 const toggle = () => {
-  colorMode.preference = modes[(modes.indexOf(colorMode.preference) + 1) % modes.length]
+  colorMode.preference = modes[(modes.indexOf(colorMode.preference) + 1) % modes.length] || 'system'
 }
 </script>
 
