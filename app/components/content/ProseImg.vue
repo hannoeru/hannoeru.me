@@ -1,12 +1,12 @@
 <template>
-  <img
+  <NuxtImg
     :src="src"
     :alt="alt"
     :width="width"
     :height="height"
     class="w-full my-2em rounded-lg md:rounded-xl"
     loading="lazy"
-  >
+  />
 </template>
 
 <script setup lang="ts">
