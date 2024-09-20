@@ -31,10 +31,5 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^5.5.4",
     "vue-tsc": "^2.1.4"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@nuxt/content": "patches/@nuxt__content.patch"
-    }
   }
 }

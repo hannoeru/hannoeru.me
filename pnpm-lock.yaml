@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@nuxt/content':
-    hash: vy3ill2osstb2lffjvf5wwzwxy
-    path: patches/@nuxt__content.patch
-
 importers:
 
   .:
@@ -21,7 +16,7 @@ importers:
         version: 2.2.245
       '@nuxt/content':
         specifier: ^2.13.2
-        version: 2.13.2(patch_hash=vy3ill2osstb2lffjvf5wwzwxy)(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.13.1(@parcel/watcher@2.4.1)(@types/node@22.5.1)(eslint@9.10.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.1)(terser@5.31.6))(vue-tsc@2.1.6(typescript@5.5.4)))(rollup@4.21.2)(vue@3.5.0(typescript@5.5.4))
+        version: 2.13.2(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.13.1(@parcel/watcher@2.4.1)(@types/node@22.5.1)(eslint@9.10.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.1)(terser@5.31.6))(vue-tsc@2.1.6(typescript@5.5.4)))(rollup@4.21.2)(vue@3.5.0(typescript@5.5.4))
       '@nuxt/eslint':
         specifier: ^0.5.4
         version: 0.5.6(eslint@9.10.0(jiti@1.21.6))(magicast@0.3.5)(rollup@4.21.2)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.1)(terser@5.31.6))
@@ -5528,7 +5523,7 @@ snapshots:
       '@nodelib/fs.scandir': 3.0.0
       fastq: 1.17.1
 
-  '@nuxt/content@2.13.2(patch_hash=vy3ill2osstb2lffjvf5wwzwxy)(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.13.1(@parcel/watcher@2.4.1)(@types/node@22.5.1)(eslint@9.10.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.1)(terser@5.31.6))(vue-tsc@2.1.6(typescript@5.5.4)))(rollup@4.21.2)(vue@3.5.0(typescript@5.5.4))':
+  '@nuxt/content@2.13.2(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.13.1(@parcel/watcher@2.4.1)(@types/node@22.5.1)(eslint@9.10.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.1)(terser@5.31.6))(vue-tsc@2.1.6(typescript@5.5.4)))(rollup@4.21.2)(vue@3.5.0(typescript@5.5.4))':
     dependencies:
       '@nuxt/kit': 3.13.1(magicast@0.3.5)(rollup@4.21.2)
       '@nuxtjs/mdc': 0.8.3(magicast@0.3.5)(rollup@4.21.2)
