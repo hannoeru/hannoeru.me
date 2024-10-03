@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.12.0",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -14,12 +14,12 @@
   },
   "devDependencies": {
     "@antfu/utils": "^0.7.10",
-    "@iconify/json": "^2.2.242",
+    "@iconify/json": "^2.2.256",
     "@nuxt/content": "^2.13.2",
-    "@nuxt/eslint": "^0.5.4",
-    "@nuxt/image": "^1.8.0",
-    "@nuxthub/core": "^0.7.8",
-    "@nuxtjs/color-mode": "^3.4.4",
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/image": "^1.8.1",
+    "@nuxthub/core": "^0.7.23",
+    "@nuxtjs/color-mode": "^3.5.1",
     "@unocss/nuxt": "^0.62.3",
     "@unocss/transformer-directives": "^0.62.3",
     "@unocss/transformer-variant-group": "^0.62.3",
@@ -29,7 +29,7 @@
     "feed": "^4.2.2",
     "nuxt": "^3.13.1",
     "remark-breaks": "^4.0.0",
-    "typescript": "^5.5.4",
-    "vue-tsc": "^2.1.4"
+    "typescript": "^5.6.2",
+    "vue-tsc": "^2.1.6"
   }
 }
