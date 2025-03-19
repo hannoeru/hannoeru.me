@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@9.12.0",
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -23,7 +23,7 @@
     "@unocss/nuxt": "^0.63.6",
     "@unocss/transformer-directives": "^0.63.6",
     "@unocss/transformer-variant-group": "^0.63.6",
-    "@vueuse/nuxt": "^13.0.0",
+    "@vueuse/nuxt": "^11.1.0",
     "dayjs": "^1.11.13",
     "eslint": "^9.13.0",
     "feed": "^4.2.2",
