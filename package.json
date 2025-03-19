@@ -13,7 +13,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/utils": "^0.7.10",
+    "@antfu/utils": "^9.1.0",
     "@iconify/json": "^2.2.256",
     "@nuxt/content": "^2.13.2",
     "@nuxt/eslint": "^0.5.7",
