@@ -14,12 +14,12 @@
   },
   "devDependencies": {
     "@antfu/utils": "^0.7.10",
-    "@iconify/json": "^2.2.256",
-    "@nuxt/content": "^2.13.2",
-    "@nuxt/eslint": "^0.5.7",
-    "@nuxt/image": "^1.8.1",
-    "@nuxthub/core": "^0.7.23",
-    "@nuxtjs/color-mode": "^3.5.1",
+    "@iconify/json": "^2.2.319",
+    "@nuxt/content": "^2.13.4",
+    "@nuxt/eslint": "^0.7.6",
+    "@nuxt/image": "^1.10.0",
+    "@nuxthub/core": "^0.8.18",
+    "@nuxtjs/color-mode": "^3.5.2",
     "@unocss/nuxt": "^0.63.6",
     "@unocss/transformer-directives": "^0.63.6",
     "@unocss/transformer-variant-group": "^0.63.6",
@@ -29,7 +29,7 @@
     "feed": "^4.2.2",
     "nuxt": "^3.13.2",
     "remark-breaks": "^4.0.0",
-    "typescript": "^5.6.2",
-    "vue-tsc": "^2.1.6"
+    "typescript": "^5.8.2",
+    "vue-tsc": "^2.2.8"
   }
 }
