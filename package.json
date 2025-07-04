@@ -13,9 +13,9 @@
     "type-check": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/utils": "^9.2.0",
+    "@antfu/utils": "^0.7.10",
     "@iconify/json": "^2.2.256",
-    "@nuxt/content": "^2.13.2",
+    "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "^0.5.7",
     "@nuxt/image": "^1.8.1",
     "@nuxthub/core": "^0.7.23",
