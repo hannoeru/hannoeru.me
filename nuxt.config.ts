@@ -30,25 +30,9 @@ const redirects: NonNullable<NuxtConfig['nitro']>['routeRules'] = {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-07-30',
-
-  // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
-  future: { compatibilityVersion: 4 },
 
   // https://nuxt.com/modules
   modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image'],
-
-  // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {},
-
-  // https://eslint.nuxt.com
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
-      },
-    },
-  },
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -94,23 +78,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  runtimeConfig: {
-    public: {
-      domain: 'https://hannoeru.me',
-    },
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-    routeRules: {
-      '/': { static: true },
-      '/posts/**': { static: true },
-      '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000' } },
-      '/_ipx/_/**': { redirect: '/:splat' },
-      ...Object.fromEntries(Object.entries(redirects).map(([key, value]) => [encodeURI(key), value])),
-    },
-  },
   css: [
     '@/assets/styles/main.css',
   ],
@@ -131,6 +98,36 @@ export default defineNuxtConfig({
             default: 'vitesse-light',
           },
         },
+      },
+    },
+  },
+  runtimeConfig: {
+    public: {
+      domain: 'https://hannoeru.me',
+    },
+  },
+  compatibilityDate: '2024-07-30',
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+    routeRules: {
+      '/': { static: true },
+      '/posts/**': { static: true },
+      '/images/**': { headers: { 'cache-control': 'immutable, max-age=31536000' } },
+      '/_ipx/_/**': { redirect: '/:splat' },
+      ...Object.fromEntries(Object.entries(redirects).map(([key, value]) => [encodeURI(key), value])),
+    },
+  },
+
+  // https://hub.nuxt.com/docs/getting-started/installation#options
+  hub: {},
+
+  // https://eslint.nuxt.com
+  eslint: {
+    config: {
+      stylistic: {
+        quotes: 'single',
       },
     },
   },
