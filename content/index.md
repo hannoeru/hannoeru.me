@@ -4,17 +4,12 @@ layout: default
 
 :AboutMe
 
-Hi, I'm Han, a college student living in Tokyo, Japan.
+Hi, I'm Han, Software Engineer based in Tokyo, Japan.
 
-Creator of [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages).
-Member of [Windi CSS](https://windicss.org/) and [OVaaS](https://github.com/OVaaS).
+I'm the creator of [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages), and core member of [UnoCSS](https://unocss.dev/). My journey in programming began in high school, and today I focus on maintaining and contributing to projects related to the Vite and Vue ecosystem.
 
-I started programming two years ago and now I'm focused on maintaining packages that related to the Vite ecosystem.
-
-I have a wide range of interests, such as Linux, VM, Networking, Smart Home, IoT, playing guitar, listening to Japanese music, watching anime, mountain climbing, rock climbing, and recently started playing 3D printing.
-
-Check out my [Instagram](https://www.instagram.com/hanlee_noeru/), there are some pictures of my life in Japan.
+My interests span a wide range of topics, including Kubernetes, Linux, virtualization, networking, smart home automation, IoT, playing guitar, Japanese music, anime, mountain climbing, rock climbing, and most recently, 3D printing.
 
 ***
 
-Find me on [GitHub](https://github.com/hannoeru), [Twitter](https://www.twitter.com/hannoeru), mail me at [me@hanlee.co](mailto:me@hanlee.co).
+Connect with me on [GitHub](https://github.com/hannoeru) or [Twitter](https://www.twitter.com/hannoeru).
