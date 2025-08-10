@@ -1,19 +1,15 @@
 import dayjs from 'dayjs'
-import { Feed } from 'feed'
 import type { FeedOptions } from 'feed'
+import { Feed } from 'feed'
 import type { H3Event } from 'h3'
-import { serverQueryContent } from '#content/server'
 
 export const createFeed = async (event: H3Event) => {
   const domain = useRuntimeConfig().public.domain
 
-  const posts = await serverQueryContent(event)
-    .where({
-      type: 'post',
-      _partial: false,
-    })
-    .sort({ _file: -1, $numeric: true })
-    .find()
+  const posts = await queryCollection(event, 'content')
+    .where('type', '=', 'post')
+    .order('date', 'DESC')
+    .all()
 
   const feedOptions: FeedOptions = {
     title: 'Han',
@@ -38,14 +34,14 @@ export const createFeed = async (event: H3Event) => {
   const feed = new Feed(feedOptions)
 
   posts.forEach((post) => {
-    const postLink = new URL(post._path!, domain).toString()
+    const postLink = new URL(post.path!, domain).toString()
     feed.addItem({
       title: post.title ?? '-',
       id: postLink,
       link: postLink,
-      date: new Date(post.date),
+      date: new Date(post.date || ''),
       description: post.description,
-      image: post.image.startsWith('/') ? new URL(post.image, domain).toString() : post.image,
+      image: post.image?.startsWith('/') ? new URL(post.image, domain).toString() : post.image,
       author: [feedOptions.author!],
     })
   })

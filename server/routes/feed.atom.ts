@@ -1,4 +1,4 @@
-import { createFeed } from '@/utils/feed'
+import { createFeed } from '../utils/feed'
 
 export default defineEventHandler(async (event) => {
   const feed = await createFeed(event)

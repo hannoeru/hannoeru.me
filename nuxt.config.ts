@@ -84,9 +84,9 @@ export default defineNuxtConfig({
           onload: 'this.media=\'all\'',
         },
       ],
-      noscript: [
-        { children: 'Javascript is required' },
-      ],
+      // noscript: [
+      //   { children: 'Javascript is required' },
+      // ],
       htmlAttrs: {
         prefix: 'og: http://ogp.me/ns#',
         lang: 'en',
@@ -118,25 +118,23 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   content: {
-    documentDriven: true,
-    highlight: {
-      preload: ['vue', 'ts'],
-      theme: {
-        dark: 'vitesse-dark',
-        light: 'vitesse-light',
-        default: 'vitesse-light',
+    build: {
+      markdown: {
+        remarkPlugins: {
+          'remark-breaks': {},
+        },
+        highlight: {
+          preload: ['vue', 'ts'],
+          theme: {
+            dark: 'vitesse-dark',
+            light: 'vitesse-light',
+            default: 'vitesse-light',
+          },
+        },
       },
-    },
-    markdown: {
-      remarkPlugins: ['remark-breaks'],
-    },
-    experimental: {
-      clientDB: false,
-      stripQueryParameters: true,
     },
   },
   unocss: {
-    uno: true,
     icons: {
       scale: 1.2,
       warn: true,

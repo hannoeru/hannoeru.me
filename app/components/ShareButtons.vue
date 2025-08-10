@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import type { ContentCollectionItem } from '@nuxt/content'
+
+defineProps<{
+  page: ContentCollectionItem
+}>()
+
 const route = useRoute()
 const domain = useRuntimeConfig().public.domain
 
@@ -8,7 +14,6 @@ const { copy, copied } = useClipboard({
   read: false,
   source: currentPath,
 })
-const { page } = useContent()
 </script>
 
 <template>
