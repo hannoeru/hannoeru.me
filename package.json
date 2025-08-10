@@ -10,7 +10,7 @@
     "start": "nuxt start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "type-check": "vue-tsc --noEmit"
+    "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
     "@antfu/utils": "^9.2.0",
