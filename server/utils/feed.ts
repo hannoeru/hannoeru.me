@@ -4,7 +4,7 @@ import { Feed } from 'feed'
 import type { H3Event } from 'h3'
 
 export const createFeed = async (event: H3Event) => {
-  const domain = useRuntimeConfig().public.domain
+  const domain = useRuntimeConfig(event).public.domain
 
   const posts = await queryCollection(event, 'content')
     .where('type', '=', 'post')
