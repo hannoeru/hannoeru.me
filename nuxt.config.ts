@@ -91,7 +91,6 @@ export default defineNuxtConfig({
           'remark-breaks': {},
         },
         highlight: {
-          preload: ['vue', 'ts'],
           theme: {
             dark: 'vitesse-dark',
             light: 'vitesse-light',

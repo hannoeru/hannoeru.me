@@ -33,7 +33,7 @@ const { data: posts } = await useAsyncData('posts', async () => {
         <NuxtLink
           class="
             block w-full h-full
-            bg-white dark:bg-dark-800
+            bg-light-3 dark:bg-dark-800
             rounded-md
             overflow-hidden
             flex flex-col
