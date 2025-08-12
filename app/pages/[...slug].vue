@@ -51,12 +51,14 @@ if (!page.value) {
       <ShareButtons :page="page" />
     </header>
     <div v-if="page.image">
-      <NuxtImg
+      <NuxtPicture
         format="webp"
         placeholder
         :src="page.image"
-        class="overflow-hidden rounded-lg md:rounded-xl w-full"
         :alt="page.title"
+        :img-attrs="{
+          class: 'overflow-hidden rounded-lg md:rounded-xl w-full',
+        }"
       />
     </div>
     <ContentRenderer :value="page" />

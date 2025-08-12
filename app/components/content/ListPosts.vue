@@ -40,7 +40,7 @@ const { data: posts } = await useAsyncData('posts', async () => {
         :to="post.path"
       >
         <div v-if="post.image" class="relative w-full h-50 overflow-hidden">
-          <NuxtImg
+          <NuxtPicture
             format="webp"
             placeholder
             :src="post.image"

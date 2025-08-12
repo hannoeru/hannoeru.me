@@ -1,12 +1,14 @@
 <template>
-  <NuxtImg
+  <NuxtPicture
     format="webp"
     placeholder
     :src="src"
     :alt="alt"
     :width="width"
     :height="height"
-    class="w-full my-2em rounded-lg md:rounded-xl"
+    :img-attrs="{
+      class: 'w-full h-full object-cover rounded-lg',
+    }"
     loading="lazy"
   />
 </template>
