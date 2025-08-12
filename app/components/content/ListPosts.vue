@@ -23,7 +23,7 @@ const { data: posts } = await useAsyncData('posts', async () => {
 </script>
 
 <template>
-  <ul class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  <ul class="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-2">
     <li
       v-for="post in posts"
       :key="post.path"

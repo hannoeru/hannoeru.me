@@ -37,7 +37,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <article v-if="page" class="pt-30 md:p-10 md:pt-16 bg-white dark:bg-dark-900 p-6 md:rounded-2xl max-w-full overflow-hidden">
+  <article v-if="page" class="md:p-10 bg-white dark:bg-dark-900 p-6 md:rounded-2xl max-w-full overflow-hidden">
     <header v-if="page.title" class="mb-8">
       <p v-if="page.date" class="opacity-50 mb-2">
         {{ page.date ? formatDate(page.date) : '-' }}
