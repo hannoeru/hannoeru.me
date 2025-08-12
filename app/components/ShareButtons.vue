@@ -17,7 +17,7 @@ const { copy, copied } = useClipboard({
 </script>
 
 <template>
-  <div v-if="page.type === 'post'" class="text-xl -mx-1 flex space-x-3 mt-8">
+  <div v-if="page.type === 'post'" class="text-xl flex space-x-3">
     <a
       :href="`https://www.facebook.com/sharer/sharer.php?u=${currentPath}`"
       class="icon-link"

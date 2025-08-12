@@ -65,3 +65,21 @@ html {
 *::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+/* Content overflow handling */
+article {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+article pre,
+article code {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+article img,
+article video {
+  max-width: 100%;
+  height: auto;
+}

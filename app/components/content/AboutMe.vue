@@ -1,21 +1,18 @@
 <template>
-  <div class="flex flex-col md:flex-row items-center pt-4 mb-12">
-    <div class="relative w-45 h-45 rounded-full overflow-hidden flex-shrink-0 md:mr-10 lt-md:mb-10">
-      <NuxtImg
-        format="webp"
-        placeholder
-        src="/avatar.png"
-        alt="Han"
-        class="absolute w-full h-full object-cover !m-0 z-10"
-      />
-    </div>
-    <div>
-      <h1 class="text-4xl font-extrabold mb-4">
+  <div class="flex items-center pt-4 mb-12 gap-8 px-2">
+    <NuxtImg
+      format="webp"
+      placeholder
+      src="/avatar.png"
+      alt="Han"
+      class="size-30 md:(size-35) rounded-full object-cover !m-0 z-10"
+    />
+    <div class="grid gap-2">
+      <h1 class="text-4xl font-extrabold">
         Han（ハン）
       </h1>
-      <p class="leading-[1.75]">
-        Front-end Engineer 🧑🏻‍💻 Focus on Vue and Vite.
-        <br>@WindiCSS @OVaaS team member.
+      <p>
+        Software Engineer
       </p>
     </div>
   </div>
