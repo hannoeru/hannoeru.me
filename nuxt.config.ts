@@ -128,6 +128,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  image: {
+    dir: 'assets/images',
+  },
   unocss: {
     icons: {
       scale: 1.2,
