@@ -113,6 +113,7 @@ export default defineNuxtConfig({
     routeRules: {
       '/': { prerender: true },
       '/posts/**': { prerender: true },
+      '/feed.*': { prerender: true },
       ...Object.fromEntries(Object.entries(redirects).map(([key, value]) => [encodeURI(key), value])),
     },
   },
