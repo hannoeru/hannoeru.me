@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.2.0",
-    "@iconify/json": "^2.2.380",
+    "@iconify/json": "^2.2.381",
     "@nuxt/content": "https://pkg.pr.new/@nuxt/content@aa486d1",
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/image": "^1.11.0",
@@ -24,16 +24,14 @@
     "@unocss/transformer-directives": "^66.5.0",
     "@unocss/transformer-variant-group": "^66.5.0",
     "@vueuse/nuxt": "^13.9.0",
+    "better-sqlite3": "^12.2.0",
     "dayjs": "^1.11.18",
-    "eslint": "^9.34.0",
+    "eslint": "^9.35.0",
     "feed": "^5.1.0",
-    "nuxt": "^4.0.3",
+    "nuxt": "^4.1.1",
     "remark-breaks": "^4.0.0",
     "typescript": "^5.9.2",
     "vue-tsc": "^3.0.6",
-    "wrangler": "^4.33.1"
-  },
-  "dependencies": {
-    "better-sqlite3": "^12.2.0"
+    "wrangler": "^4.34.0"
   }
 }
