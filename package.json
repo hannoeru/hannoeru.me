@@ -26,7 +26,7 @@
     "@vueuse/nuxt": "^13.9.0",
     "better-sqlite3": "^12.2.0",
     "dayjs": "^1.11.18",
-    "eslint": "^9.37.0",
+    "eslint": "^9.35.0",
     "feed": "^5.1.0",
     "nuxt": "^4.1.1",
     "remark-breaks": "^4.0.0",
