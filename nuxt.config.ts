@@ -106,8 +106,13 @@ export default defineNuxtConfig({
       domain: 'https://hannoeru.me',
     },
   },
-  compatibilityDate: '2024-07-30',
+  compatibilityDate: '2025-12-21',
   nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
     prerender: {
       crawlLinks: true,
     },
