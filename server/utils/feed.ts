@@ -1,4 +1,4 @@
-import { queryCollection } from '@nuxt/content/nitro'
+import { queryCollection } from '@nuxt/content/server'
 import dayjs from 'dayjs'
 import type { FeedOptions } from 'feed'
 import { Feed } from 'feed'
