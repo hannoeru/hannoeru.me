@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.26.1",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -13,25 +13,24 @@
     "typecheck": "nuxt prepare && vue-tsc -b --noEmit"
   },
   "devDependencies": {
-    "@antfu/utils": "^9.2.0",
-    "@iconify/json": "^2.2.382",
-    "@nuxt/content": "v3.6.3",
-    "@nuxt/eslint": "^1.9.0",
-    "@nuxt/image": "^1.11.0",
-    "@nuxthub/core": "^0.9.0",
-    "@nuxtjs/color-mode": "^3.5.2",
-    "@unocss/nuxt": "^66.5.1",
-    "@unocss/transformer-directives": "^66.5.1",
-    "@unocss/transformer-variant-group": "^66.5.1",
-    "@vueuse/nuxt": "^13.9.0",
-    "better-sqlite3": "^12.2.0",
-    "dayjs": "^1.11.18",
-    "eslint": "^9.35.0",
+    "@antfu/utils": "^9.3.0",
+    "@iconify/json": "^2.2.420",
+    "@nuxt/content": "v3.9.0",
+    "@nuxt/eslint": "^1.12.1",
+    "@nuxt/image": "^2.0.0",
+    "@nuxthub/core": "^0.10.3",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@unocss/nuxt": "^66.5.10",
+    "@unocss/transformer-directives": "^66.5.10",
+    "@unocss/transformer-variant-group": "^66.5.10",
+    "@vueuse/nuxt": "^14.1.0",
+    "dayjs": "^1.11.19",
+    "eslint": "^9.39.2",
     "feed": "^5.1.0",
-    "nuxt": "^4.1.1",
+    "nuxt": "^4.2.2",
     "remark-breaks": "^4.0.0",
-    "typescript": "^5.9.2",
-    "vue-tsc": "^3.0.6",
-    "wrangler": "^4.35.0"
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.2.0",
+    "wrangler": "^4.56.0"
   }
 }
