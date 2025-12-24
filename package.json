@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.26.1",
+  "packageManager": "pnpm@10.26.2",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -14,11 +14,11 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.420",
+    "@iconify/json": "^2.2.421",
     "@nuxt/content": "v3.9.0",
     "@nuxt/eslint": "^1.12.1",
     "@nuxt/image": "^2.0.0",
-    "@nuxthub/core": "^0.10.3",
+    "@nuxthub/core": "^0.10.4",
     "@nuxtjs/color-mode": "^4.0.0",
     "@unocss/nuxt": "^66.5.10",
     "@unocss/transformer-directives": "^66.5.10",
