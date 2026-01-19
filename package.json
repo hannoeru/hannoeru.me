@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.429",
+    "@iconify/json": "^2.2.430",
     "@nuxt/content": "3.11.0",
     "@nuxt/eslint": "^1.12.1",
     "@nuxt/image": "^2.0.0",
