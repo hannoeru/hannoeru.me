@@ -31,6 +31,6 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.2",
-    "wrangler": "^4.59.2"
+    "wrangler": "^4.59.3"
   }
 }
