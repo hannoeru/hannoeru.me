@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.434",
+    "@iconify/json": "^2.2.435",
     "@nuxt/content": "3.11.0",
     "@nuxt/eslint": "^1.13.0",
     "@nuxt/image": "^2.0.0",
@@ -31,6 +31,6 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.4",
-    "wrangler": "^4.61.1"
+    "wrangler": "^4.62.0"
   }
 }
