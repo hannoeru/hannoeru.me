@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "pnpm@10.30.0",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.439",
+    "@iconify/json": "^2.2.440",
     "@nuxt/content": "3.11.2",
     "@nuxt/eslint": "^1.15.1",
     "@nuxt/image": "^2.0.0",
@@ -31,6 +31,6 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.4",
-    "wrangler": "^4.65.0"
+    "wrangler": "^4.66.0"
   }
 }
