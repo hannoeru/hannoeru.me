@@ -25,7 +25,7 @@
     "@unocss/transformer-variant-group": "^66.6.0",
     "@vueuse/nuxt": "^14.2.1",
     "dayjs": "^1.11.19",
-    "eslint": "^10.0.0",
+    "eslint": "^10.0.1",
     "feed": "^5.2.0",
     "nuxt": "^4.3.1",
     "remark-breaks": "^4.0.0",
