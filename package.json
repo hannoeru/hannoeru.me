@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.30.1",
+  "packageManager": "pnpm@10.30.2",
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",
@@ -16,7 +16,7 @@
     "@antfu/utils": "^9.3.0",
     "@iconify/json": "^2.2.442",
     "@nuxt/content": "3.11.2",
-    "@nuxt/eslint": "^1.15.1",
+    "@nuxt/eslint": "^1.15.2",
     "@nuxt/image": "^2.0.0",
     "@nuxthub/core": "^0.10.6",
     "@nuxtjs/color-mode": "^4.0.0",
@@ -31,6 +31,6 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.5",
-    "wrangler": "^4.67.0"
+    "wrangler": "^4.68.1"
   }
 }
