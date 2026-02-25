@@ -12,7 +12,7 @@ importers:
         specifier: ^9.3.0
         version: 9.3.0
       '@iconify/json':
-        specifier: ^2.2.442
+        specifier: ^2.2.443
         version: 2.2.443
       '@nuxt/content':
         specifier: 3.11.2
