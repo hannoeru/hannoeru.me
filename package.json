@@ -15,7 +15,7 @@
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
     "@iconify/json": "^2.2.443",
-    "@nuxt/content": "3.11.2",
+    "@nuxt/content": "3.12.0",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/image": "^2.0.0",
     "@nuxthub/core": "^0.10.6",
