@@ -25,7 +25,7 @@ importers:
         version: 2.0.0(db0@0.3.4)(ioredis@5.10.0)(magicast@0.5.2)
       '@nuxthub/core':
         specifier: ^0.10.6
-        version: 0.10.6(db0@0.3.4)(ioredis@5.10.0)(magicast@0.5.2)(typescript@5.9.3)(vue-tsc@3.2.5(typescript@5.9.3))
+        version: 0.10.7(db0@0.3.4)(ioredis@5.10.0)(magicast@0.5.2)(typescript@5.9.3)(vue-tsc@3.2.5(typescript@5.9.3))
       '@nuxtjs/color-mode':
         specifier: ^4.0.0
         version: 4.0.0(magicast@0.5.2)
@@ -864,8 +864,8 @@ packages:
       rolldown:
         optional: true
 
-  '@nuxthub/core@0.10.6':
-    resolution: {integrity: sha512-RkUR58YYip0a8kDwmVR3i2px6qJxRfo/FoCw2eANTNt+1oNMtxlAtvI98/fpVPB2/e/xXGX4uiZEnybWjqAO7g==}
+  '@nuxthub/core@0.10.7':
+    resolution: {integrity: sha512-L8GNzGE081udFIPyy3v8xlr8Cv6fijkEkvguB+Cg+0bMQiJSlzyay8FQyPDggXmn2ZcZLLCN3Z+VbTa9Vt93eQ==}
     hasBin: true
 
   '@nuxtjs/color-mode@4.0.0':
@@ -6949,14 +6949,14 @@ snapshots:
       - vue-tsc
       - yaml
 
-  '@nuxthub/core@0.10.6(db0@0.3.4)(ioredis@5.10.0)(magicast@0.5.2)(typescript@5.9.3)(vue-tsc@3.2.5(typescript@5.9.3))':
+  '@nuxthub/core@0.10.7(db0@0.3.4)(ioredis@5.10.0)(magicast@0.5.2)(typescript@5.9.3)(vue-tsc@3.2.5(typescript@5.9.3))':
     dependencies:
       '@cloudflare/workers-types': 4.20260301.1
       '@nuxt/kit': 4.3.1(magicast@0.5.2)
       '@uploadthing/mime-types': 0.3.6
       c12: 3.3.3(magicast@0.5.2)
       chokidar: 5.0.0
-      citty: 0.1.6
+      citty: 0.2.1
       consola: 3.4.2
       defu: 6.1.4
       execa: 9.6.1
