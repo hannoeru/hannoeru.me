@@ -30,14 +30,14 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(magicast@0.5.2)
       '@unocss/nuxt':
-        specifier: ^66.6.2
-        version: 66.6.2(magicast@0.5.2)(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))(webpack@5.105.3(esbuild@0.27.3))
+        specifier: ^66.6.4
+        version: 66.6.4(magicast@0.5.2)(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))(webpack@5.105.3(esbuild@0.27.3))
       '@unocss/transformer-directives':
-        specifier: ^66.6.2
-        version: 66.6.2
+        specifier: ^66.6.4
+        version: 66.6.4
       '@unocss/transformer-variant-group':
-        specifier: ^66.6.2
-        version: 66.6.2
+        specifier: ^66.6.4
+        version: 66.6.4
       '@vueuse/nuxt':
         specifier: ^14.2.1
         version: 14.2.1(magicast@0.5.2)(nuxt@4.3.1(@parcel/watcher@2.5.6)(@types/node@25.3.3)(@vue/compiler-sfc@3.5.29)(cac@6.7.14)(db0@0.3.4)(eslint@10.0.2(jiti@2.6.1))(ioredis@5.10.0)(magicast@0.5.2)(optionator@0.9.4)(rolldown@1.0.0-beta.57)(rollup@4.59.0)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))(vue-tsc@3.2.5(typescript@5.9.3))(yaml@2.8.2))(vue@3.5.29(typescript@5.9.3))
@@ -166,11 +166,6 @@ packages:
     resolution: {integrity: sha512-xOBvwq86HHdB7WUDTfKfT/Vuxh7gElQ+Sfti2Cy6yIWNW05P8iUslOVcZ4/sKbE+/jQaukQAdz/gf3724kYdqw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.27.7':
-    resolution: {integrity: sha512-qnzXzDXdr/po3bOTbTIQZ7+TxNKxpkN5IifVLXS+r7qwynkZfPyjZfE7hCXbo7IoO9TNcSyibgONsf2HauUd3Q==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-
   '@babel/parser@7.29.0':
     resolution: {integrity: sha512-IyDgFV5GeDUVX4YdF/3CPULtVGSXXMLh1xVIgdCgxApktqnQV0r7/8Nqthg+8YLGaAtdyIlo2qIdZrbCv4+7ww==}
     engines: {node: '>=6.0.0'}
@@ -196,10 +191,6 @@ packages:
 
   '@babel/template@7.28.6':
     resolution: {integrity: sha512-YA6Ma2KsCdGb+WC6UpBVFJGXL58MDA6oyONbjyF/+5sBgxY/dwkhLogbMT2GXXyU84/IhRw/2D1Os1B/giz+BQ==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/traverse@7.27.7':
-    resolution: {integrity: sha512-X6ZlfR/O/s5EQ/SnUSLzr+6kGnkg8HXGMzpgsMsrJVcfDtH1vIp6ctCN4eZ1LS5c0+te5Cb6Y514fASjMRJ1nw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/traverse@7.29.0':
@@ -1016,8 +1007,20 @@ packages:
     cpu: [arm]
     os: [android]
 
+  '@oxc-parser/binding-android-arm-eabi@0.115.0':
+    resolution: {integrity: sha512-VoB2rhgoqgYf64d6Qs5emONQW8ASiTc0xp+aUE4JUhxjX+0pE3gblTYDO0upcN5vt9UlBNmUhAwfSifkfre7nw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm]
+    os: [android]
+
   '@oxc-parser/binding-android-arm64@0.112.0':
     resolution: {integrity: sha512-pRkbBRbuIIsufUWpOJ+JHWfJFNupkidy4sbjfcm37e6xwYrn9LSKMLubPHvNaL1Zf92ZRhGiwaYkEcmaFg2VcA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [android]
+
+  '@oxc-parser/binding-android-arm64@0.115.0':
+    resolution: {integrity: sha512-lWRX75u+gqfB4TF3pWCHuvhaeneAmRl2b2qNBcl4S6yJ0HtnT4VXOMEZrq747i4Zby1ZTxj6mtOe678Bg8gRLw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
@@ -1028,8 +1031,20 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
+  '@oxc-parser/binding-darwin-arm64@0.115.0':
+    resolution: {integrity: sha512-ii/oOZjfGY1aszXTy29Z5DRyCEnBOrAXDVCvfdfXFQsOZlbbOa7NMHD7D+06YFe5qdxfmbWAYv4yn6QJi/0d2g==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [darwin]
+
   '@oxc-parser/binding-darwin-x64@0.112.0':
     resolution: {integrity: sha512-vUBOOY1E30vlu/DoTGDoT1UbLlwu5Yv9tqeBabAwRzwNDz8Skho16VKhsBDUiyqddtpsR3//v6vNk38w4c+6IA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [darwin]
+
+  '@oxc-parser/binding-darwin-x64@0.115.0':
+    resolution: {integrity: sha512-R/sW/p8l77wglbjpMcF+h/3rWbp9zk1mRP3U14mxTYIC2k3m+aLBpXXgk2zksqf9qKk5mcc4GIYsuCn9l8TgDg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
@@ -1040,8 +1055,20 @@ packages:
     cpu: [x64]
     os: [freebsd]
 
+  '@oxc-parser/binding-freebsd-x64@0.115.0':
+    resolution: {integrity: sha512-CSJ5ldNm9wIGGkhaIJeGmxRMZbgxThRN+X1ufYQQUNi5jZDV/U3C2QDMywpP93fczNBj961hXtcUPO/oVGq4Pw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [freebsd]
+
   '@oxc-parser/binding-linux-arm-gnueabihf@0.112.0':
     resolution: {integrity: sha512-WxJrUz3pcIc2hp4lvJbvt/sTL33oX9NPvkD3vDDybE6tc0V++rS+hNOJxwXdD2FDIFPkHs/IEn5asEZFVH+VKw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm]
+    os: [linux]
+
+  '@oxc-parser/binding-linux-arm-gnueabihf@0.115.0':
+    resolution: {integrity: sha512-uWFwssE5dHfQ8lH+ktrsD9JA49+Qa0gtxZHUs62z1e91NgGz6O7jefHGI6aygNyKNS45pnnBSDSP/zV977MsOQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
@@ -1052,8 +1079,21 @@ packages:
     cpu: [arm]
     os: [linux]
 
+  '@oxc-parser/binding-linux-arm-musleabihf@0.115.0':
+    resolution: {integrity: sha512-fZbqt8y/sKQ+v6bBCuv/mYYFoC0+fZI3mGDDEemmDOhT78+aUs2+4ZMdbd2btlXmnLaScl37r8IRbhnok5Ka9w==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm]
+    os: [linux]
+
   '@oxc-parser/binding-linux-arm64-gnu@0.112.0':
     resolution: {integrity: sha512-G2F8H6FcAExVK5vvhpSh61tqWx5QoaXXUnSsj5FyuDiFT/K7AMMVSQVqnZREDc+YxhrjB0vnKjCcuobXK63kIw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@oxc-parser/binding-linux-arm64-gnu@0.115.0':
+    resolution: {integrity: sha512-1ej/MjuTY9tJEunU/hUPIFmgH5PqgMQoRjNOvOkibtJ3Zqlw/+Lc+HGHDNET8sjbgIkWzdhX+p4J96A5CPdbag==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
@@ -1066,8 +1106,22 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@oxc-parser/binding-linux-arm64-musl@0.115.0':
+    resolution: {integrity: sha512-HjsZbJPH9mMd4swJRywVMsDZsJX0hyKb1iNHo5ijRl5yhtbO3lj7ImSrrL1oZ1VEg0te4iKmDGGz/6YPLd1G8w==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
   '@oxc-parser/binding-linux-ppc64-gnu@0.112.0':
     resolution: {integrity: sha512-lAQf8PQxfgy7h0bmcfSVE3hg3qMueshPYULFsCrHM+8KefGZ9W+ZMvRyU33gLrB4w1O3Fz1orR0hmKMCRxXNrQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@oxc-parser/binding-linux-ppc64-gnu@0.115.0':
+    resolution: {integrity: sha512-zhhePoBrd7kQx3oClX/W6NldsuCbuMqaN9rRsY+6/WoorAb4j490PG/FjqgAXscWp2uSW2WV9L+ksn0wHrvsrg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
@@ -1080,8 +1134,22 @@ packages:
     os: [linux]
     libc: [glibc]
 
+  '@oxc-parser/binding-linux-riscv64-gnu@0.115.0':
+    resolution: {integrity: sha512-t/IRojvUE9XrKu+/H1b8YINug+7Q6FLls5rsm2lxB5mnS8GN/eYAYrPgHkcg9/1SueRDSzGpDYu3lGWTObk1zw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
   '@oxc-parser/binding-linux-riscv64-musl@0.112.0':
     resolution: {integrity: sha512-v06iu0osHszgqJ1dLQRb6leWFU1sjG/UQk4MoVBtE6ZPewgfTkby6G9II1SpEAf2onnAuQceVYxQH9iuU3NJqw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [musl]
+
+  '@oxc-parser/binding-linux-riscv64-musl@0.115.0':
+    resolution: {integrity: sha512-79jBHSSh/YpQRAmvYoaCfpyToRbJ/HBrdB7hxK2ku2JMehjopTVo+xMJss/RV7/ZYqeezgjvKDQzapJbgcjVZA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
@@ -1094,8 +1162,22 @@ packages:
     os: [linux]
     libc: [glibc]
 
+  '@oxc-parser/binding-linux-s390x-gnu@0.115.0':
+    resolution: {integrity: sha512-nA1TpxkhNTIOMMyiSSsa7XIVJVoOU/SsVrHIz3gHvWweB5PHCQfO7w+Lb2EP0lBWokv7HtA/KbF7aLDoXzmuMw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
   '@oxc-parser/binding-linux-x64-gnu@0.112.0':
     resolution: {integrity: sha512-jKwO7ZLNkjxwg7FoCLw+fJszooL9yXRZsDN0AQ1AQUTWq1l8GH/2e44k68N3fcP19jl8O8jGpqLAZcQTYk6skA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@oxc-parser/binding-linux-x64-gnu@0.115.0':
+    resolution: {integrity: sha512-9iVX789DoC3SaOOG+X6NcF/tVChgLp2vcHffzOC2/Z1JTPlz6bMG2ogvcW6/9s0BG2qvhNQImd+gbWYeQbOwVw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
@@ -1108,8 +1190,21 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@oxc-parser/binding-linux-x64-musl@0.115.0':
+    resolution: {integrity: sha512-RmQmk+mjCB0nMNfEYhaCxwofLo1Z95ebHw1AGvRiWGCd4zhCNOyskgCbMogIcQzSB3SuEKWgkssyaiQYVAA4hQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
   '@oxc-parser/binding-openharmony-arm64@0.112.0':
     resolution: {integrity: sha512-ZhrVmWFifVEFQX4XPwLoVFDHw9tAWH9p9vHsHFH+5uCKdfVR+jje4WxVo6YrokWCboGckoOzHq5KKMOcPZfkRg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [openharmony]
+
+  '@oxc-parser/binding-openharmony-arm64@0.115.0':
+    resolution: {integrity: sha512-viigraWWQhhDvX5aGq+wrQq58k00Xq3MHz/0R4AFMxGlZ8ogNonpEfNc73Q5Ly87Z6sU9BvxEdG0dnYTfVnmew==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
@@ -1119,8 +1214,19 @@ packages:
     engines: {node: '>=14.0.0'}
     cpu: [wasm32]
 
+  '@oxc-parser/binding-wasm32-wasi@0.115.0':
+    resolution: {integrity: sha512-IzGCrMwXhpb4kTXy/8lnqqqwjI7eOvy+r9AhVw+hsr8t1ecBBEHprcNy0aKatFHN6hsX7UMHHQmBAQjVvL/p1A==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+
   '@oxc-parser/binding-win32-arm64-msvc@0.112.0':
     resolution: {integrity: sha512-t5CDLbU70Ea88bGRhvU/dLJTc/Wcrtf2Jp534E8P3cgjAvHDjdKsfDDqBZrhybJ8Jv9v9vW5ngE40EK51BluDA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [win32]
+
+  '@oxc-parser/binding-win32-arm64-msvc@0.115.0':
+    resolution: {integrity: sha512-/ym+Absk/TLFvbhh3se9XYuI1D7BrUVHw4RaG/2dmWKgBenrZHaJsgnRb7NJtaOyjEOLIPtULx1wDdVL0SX2eg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
@@ -1131,8 +1237,20 @@ packages:
     cpu: [ia32]
     os: [win32]
 
+  '@oxc-parser/binding-win32-ia32-msvc@0.115.0':
+    resolution: {integrity: sha512-AQSZjIR+b+Te7uaO/hGTMjT8/oxlYrvKrOTi4KTHF/O6osjHEatUQ3y6ZW2+8+lJxy20zIcGz6iQFmFq/qDKkg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [ia32]
+    os: [win32]
+
   '@oxc-parser/binding-win32-x64-msvc@0.112.0':
     resolution: {integrity: sha512-oGHluohzmVFAuQrkEnl1OXAxMz2aYmimxUqIgKXpBgbr7PvFv0doELB273sX+5V3fKeggohKg1A2Qq21W9Z9cQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [win32]
+
+  '@oxc-parser/binding-win32-x64-msvc@0.115.0':
+    resolution: {integrity: sha512-oxUl82N+fIO9jIaXPph8SPPHQXrA08BHokBBJW8ct9F/x6o6bZE6eUAhUtWajbtvFhL8UYcCWRMba+kww6MBlA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -1145,6 +1263,9 @@ packages:
 
   '@oxc-project/types@0.114.0':
     resolution: {integrity: sha512-//nBfbzHQHvJs8oFIjv6coZ6uxQ4alLfiPe6D5vit6c4pmxATHHlVwgB1k+Hv4yoAMyncdxgRBF5K4BYWUCzvA==}
+
+  '@oxc-project/types@0.115.0':
+    resolution: {integrity: sha512-4n91DKnebUS4yjUHl2g3/b2T+IUdCfmoZGhmwsovZCDaJSs+QkVAM+0AqqTxHSsHfeiMuueT75cZaZcT/m0pSw==}
 
   '@oxc-transform/binding-android-arm-eabi@0.112.0':
     resolution: {integrity: sha512-r4LuBaPnOAi0eUOBNi880Fm2tO2omH7N1FRrL6+nyz/AjQ+QPPLtoyZJva0O+sKi1buyN/7IzM5p9m+5ANSDbg==}
@@ -1982,83 +2103,83 @@ packages:
     peerDependencies:
       vue: '>=3.5.18'
 
-  '@unocss/cli@66.6.2':
-    resolution: {integrity: sha512-N7nKnOJ/36FRs3PE7+CFbzg7UBhIsucYYAK5xjJScX0H2q8O6rODaNM5uvc77Qh4q+y1S/Bt5ArOwIewzdpP4w==}
+  '@unocss/cli@66.6.4':
+    resolution: {integrity: sha512-jSeGL9a7tchoKvGQAsEdtjmvEu1axdikK5fdvmQnDOnLSM5Vo5wCthGYtsIIpQvb9HFBe0NupAJNwpjRBGiCaQ==}
     engines: {node: '>=14'}
     hasBin: true
 
-  '@unocss/config@66.6.2':
-    resolution: {integrity: sha512-qny2bRW1OA+MZbWShVZdBg6fJundm1LqQwCxJnIpeK3McpPHS3pnHBiwD1wfZHY2z5Pe+XgZOZkozNmG/eyyqg==}
+  '@unocss/config@66.6.4':
+    resolution: {integrity: sha512-iwHl5FG81cOAMalqigjw21Z2tMa0xjN0doQxnGOLx8KP+BllruXSjBj8CRk3m6Ny9fDxfpFY0ruYbIBA5AGwDQ==}
     engines: {node: '>=14'}
 
-  '@unocss/core@66.6.2':
-    resolution: {integrity: sha512-IOvN1BLRP0VTjjS5afSxmXhvKRDko2Shisp8spU+A9qiH1tXEFP3phyVevm/SuGwBHO1lC+SJ451/4oFkCAwJA==}
+  '@unocss/core@66.6.4':
+    resolution: {integrity: sha512-Fii3lhVJVFrKUz6hMGAkq3sXBfNnXB2G8bldNHuBHJpDAoP1F0oO/SU/oSqSjCYvtcD5RtOn8qwzcHuuN3B/mg==}
 
-  '@unocss/extractor-arbitrary-variants@66.6.2':
-    resolution: {integrity: sha512-D2tK/8QClrVViSuoH5eLjXwlVOK1UgXx7ukz/D260+R6vhCmjv97RXPouZkq40sxGzfxzaQZUyPEjXLjtnO3bw==}
+  '@unocss/extractor-arbitrary-variants@66.6.4':
+    resolution: {integrity: sha512-l827c/UdE2FUBiaXDde5f/IjW41TflhtnjgQr3tJoCw7v9VuokDJFl+iOTyaH6AwMKpMeSBB+DU5Ippj4IOs9w==}
 
-  '@unocss/inspector@66.6.2':
-    resolution: {integrity: sha512-q0kktb01dXeeXyNnNwYM1SkSHxrEOQhCZ/YQ5aCdC7BWNGF4yZMK0YrJXmGUTEHN4RhEPLN/rAIsDBsKcoFaAQ==}
+  '@unocss/inspector@66.6.4':
+    resolution: {integrity: sha512-q5oplYKCyO6YHN1MFQadkjs4fTTOKgsw0tXoSft6RLXowo8Utv6nBmED4yWb6Y6iYFmFU5RZ8VavxZvfghOlmg==}
 
-  '@unocss/nuxt@66.6.2':
-    resolution: {integrity: sha512-apTqMCbRFAibaDhzpNGoyppKD2l4tKupWxZmMSmiWzYytA8U3Cyt5gwTxQlsxvfRlkFqx9LIMXtjy3nfHhQg7Q==}
+  '@unocss/nuxt@66.6.4':
+    resolution: {integrity: sha512-D2JVnFCEzopqgSiFhb7CHQpt+l9lZzRfAbmE1EepcCcYZT6YuknIFD/+m0rHX18aEL4Fg/rIw2mQW3/7G+Ztxw==}
 
-  '@unocss/preset-attributify@66.6.2':
-    resolution: {integrity: sha512-pRry38qO1kJvj5/cekbDk0QLosty+UFQ3fhNiph88D//jkT5tsUCn77nB/RTSe7oTqw/FqNwxPgbGz/wfNWqZg==}
+  '@unocss/preset-attributify@66.6.4':
+    resolution: {integrity: sha512-pksrugV/GqfgyUonHycxDvxUPVI3H9LiRcOEf1mZweD2qAqT6lH9qE1AHHddiZpWAcics4CkUkDpgXRwgt+wJQ==}
 
-  '@unocss/preset-icons@66.6.2':
-    resolution: {integrity: sha512-FjhxvYX+21HefYdMIxJCq8C9v/K7fSlO1DMqDQgtrCp0/WvHyFncHILLOwp064M7m3AqzOVJx7Vw/zCvKy0Jrg==}
+  '@unocss/preset-icons@66.6.4':
+    resolution: {integrity: sha512-Xz8EQdPkANHlHUmWDw5/ehWTcn4tJeNltB4OnxI5vsi0hiqpLJxxKUE/vLUVH1I4GnVFCF4bBg7fmHanEcL0/A==}
 
-  '@unocss/preset-mini@66.6.2':
-    resolution: {integrity: sha512-mybpiAq9htF7PWPH1Mnb4y7hrxVwpsBg8VfbjSglY3SfLca8RrJtvBT+DVh7YUDRiYsZGfihRWkfD0AN68gkcA==}
+  '@unocss/preset-mini@66.6.4':
+    resolution: {integrity: sha512-8xUXf/Bbi1/h98ldL56OxOnWUgWy0el0/xCGDLKYtBRUYGvZgrV+ys9UxY1/z+w7q+T+PZi+3qhc0O06nJ8wUw==}
 
-  '@unocss/preset-tagify@66.6.2':
-    resolution: {integrity: sha512-ybb45So2x87P3bssLRp1uIS+VHAeNSecwkHqiv93PnuBDJ38/9XlqWF98uga2MEfNM3zvMj9plX9MauidxiPrw==}
+  '@unocss/preset-tagify@66.6.4':
+    resolution: {integrity: sha512-eWu9fH6c6gZH1FswMVPaX0kMS8Jw6dqDvlVLbjZgWraAHTon53lOnB2365bXgsl5zXYg30JGMzP/k171FJQWig==}
 
-  '@unocss/preset-typography@66.6.2':
-    resolution: {integrity: sha512-1f/ZfeuLQOnO48mRz1+6UdoJxa13ZYcamaLz7ft96n7D1eWvkOUAC/AUUke/kbHh3vvqwRVimC9OpdXxdGFQAQ==}
+  '@unocss/preset-typography@66.6.4':
+    resolution: {integrity: sha512-APtMRFUPA4e5S1Yyc3LWTqiy+XMq/SEMStkcGM6Rroy8Rzx+ItfqV/UrOWdg8gFYFPK8tVOvNG+40qlZy5Keww==}
 
-  '@unocss/preset-uno@66.6.2':
-    resolution: {integrity: sha512-Wy3V25ZF29OmVHJk5ghP6HCCRNBJXm0t+bKLKJJknOjD+/D51DZbUsDqZBtTpVtgi/SOPDbw7cX3lY2oqt4Hnw==}
+  '@unocss/preset-uno@66.6.4':
+    resolution: {integrity: sha512-9BAprWrx6/leMaRBzH91vGYl4mEgIX/BP1h8ucEJ3aAo6dFrfmpC56HG7wOHNGMr4/uxm4aD7uI2SUpN+CBEEg==}
 
-  '@unocss/preset-web-fonts@66.6.2':
-    resolution: {integrity: sha512-0ckqiE8HkhETeghhxCXVGf96sNPhgBsB5q32iAuMM0HFR4x+ANiLqyfKrm/iqxKUw6rVO4+ItTV0RUWKcZvkXg==}
+  '@unocss/preset-web-fonts@66.6.4':
+    resolution: {integrity: sha512-N2qqeKf0W1mDXDBlXBdN32Dm6pLEbTFQsRe6WpX9SH5pCrEvuJG8cnIBPPpATLC+Qf2EWOepg1fIX+iWoF4Cyw==}
 
-  '@unocss/preset-wind3@66.6.2':
-    resolution: {integrity: sha512-UqdU2Obx3wXid9xeBHGY1MWxedXa43MGuP5Z2FA9modcXptReux4Zhy764SeQwx6acOUEql2/CTvOBwelZzheQ==}
+  '@unocss/preset-wind3@66.6.4':
+    resolution: {integrity: sha512-RxPR5czvE3RJ+eJoMM2AkPews7z4vSOeqTX8OIILzvEUFG1fRUvxMLaHGb4qstGPtHBJKrwNmvYjMozoiU2EgA==}
 
-  '@unocss/preset-wind4@66.6.2':
-    resolution: {integrity: sha512-XU+4NN9QIMefawDB9FqOeKONXeGDUJQuQgOeBcpbV/jwOYtyqRrHiqQg++fy1hRbluM+S+KqwRHYjvje8zCTow==}
+  '@unocss/preset-wind4@66.6.4':
+    resolution: {integrity: sha512-MvI3bxoOafEADiFJSHr7WB8nT01ZQvjsfWEuRNtNeRSTBVZ2QuJW8imL2sr9fk1qHoHmzN/3HefpTQoxiQWVcA==}
 
-  '@unocss/preset-wind@66.6.2':
-    resolution: {integrity: sha512-G0H4baUizmTByEowqGuYbKpU2TTisDhZ9W7hrIpYFbRkFv0i1kN2mIxCwj/FLmdY/6x8iSRJ7rO8Nez63YYhnw==}
+  '@unocss/preset-wind@66.6.4':
+    resolution: {integrity: sha512-OGeLXvcGQROuFrFmu/WOY8sbBvNBzAyi0firMY5AZhSkGmX/q4aBEJGGs3eiuMwg6JIhPg4QXzLjL7uWZJ0ZgQ==}
 
-  '@unocss/reset@66.6.2':
-    resolution: {integrity: sha512-hBmXE8pJUybUYwFKVZsVy8XyIv3W7htz2ejYuJVpZAQnO4PWPUBb95UcLwBvHWhzZxXRNtvsTtSOsreUvm6mJw==}
+  '@unocss/reset@66.6.4':
+    resolution: {integrity: sha512-p455LSW3SximmUMkHFb0k2mr11zpGjzR4N6mWWkHgyehPAmXZdOuYVVfz/clCjl3LI9Y+m76J455hPSvKJDG/A==}
 
-  '@unocss/rule-utils@66.6.2':
-    resolution: {integrity: sha512-cygfCtkeMrqMM6si1cnyOF16sS7M2gCAqgmZybAhGV7tmH7V8Izn52JZiZIrxVRNMz9dWMVWerHEI9nLbFdbrg==}
+  '@unocss/rule-utils@66.6.4':
+    resolution: {integrity: sha512-n/vCodRuzKtRBpZqd4OLVujDEJlPl11Iw5AtxB4GYsRT4AED/JY//XHLb5ubdLa1j3m84OAfnkT9Gr9sMWcwig==}
     engines: {node: '>=14'}
 
-  '@unocss/transformer-attributify-jsx@66.6.2':
-    resolution: {integrity: sha512-WiAEdEowGjQWu1ayhkGGBNGyw3mZLzZ+V5o3zx5U2GPuqvP67YIUfvY+/gTkCnd4+A8unkb+a1VeVgr4cHUkQw==}
+  '@unocss/transformer-attributify-jsx@66.6.4':
+    resolution: {integrity: sha512-Rw9g3Ed/Et1W68znIuCod4OTLlOmuPpt2/6ZsylzNPEgGdJCHGYOdNs6Ai5IlbjrlOE4XfwK0O0iJQdk01V6FA==}
 
-  '@unocss/transformer-compile-class@66.6.2':
-    resolution: {integrity: sha512-L0yaQAmvWkm6LVLXMviqhHIi4c7WQpZFBgJF8jfsALyHihh8K9U9OrRJ81zfLH3Ltw5ZbGzoDE8m/2bB6aRhyw==}
+  '@unocss/transformer-compile-class@66.6.4':
+    resolution: {integrity: sha512-sZrPIp28xPnroT+BTX6onHfIXwjBkuPDyO3oKyciuCRZxGgTkV6GXV6lSGSu2EHFRjCmzzuCWgo33gU55TtklA==}
 
-  '@unocss/transformer-directives@66.6.2':
-    resolution: {integrity: sha512-gjLDLItTUJ4CV8K2AA0cw381a7rJ3U4kCHQmZmN3+956o2R7cEHSLyEczmMy04Mg2JBomrjIZjo+L66z5rvblQ==}
+  '@unocss/transformer-directives@66.6.4':
+    resolution: {integrity: sha512-IIczs0NZeEOIa/X28gkJevT6FtCWoMT3OmnMFDRi9plu3d7BYuQuBkBUYVyT7lIspn+iENCaXFl3e1l60e/xpw==}
 
-  '@unocss/transformer-variant-group@66.6.2':
-    resolution: {integrity: sha512-Uoo6xthOHJ36NdN4b7s/Y7R3fZOf4JYgKzuldHEyHAo0LL204Ss+Ah0+TEt4v72aq+Z86vrLJPyYCeGNKdr8cA==}
+  '@unocss/transformer-variant-group@66.6.4':
+    resolution: {integrity: sha512-evAbg2fKuhJ0en71Y8iHJYbuED0SSiqg7BIajSbk0BQvy8N70wbu19Ljpjfc7JfcWV/vSWgNIklOr/TsYJhU6g==}
 
-  '@unocss/vite@66.6.2':
-    resolution: {integrity: sha512-HLmzDvde3BJ2C6iromHVE21lmNm4SmGSMlbSbFuLPOmWV11XhhHBkAOzytSxPBRG0dbuo+InSGUM14Ek2d6UDg==}
+  '@unocss/vite@66.6.4':
+    resolution: {integrity: sha512-qLSfJ2a0iDMhM/d3zpg9RQ7RW22tnP5hXARo430m9UK7bK1SmAbMAS70Wv2/FuRScBGLeMfluIuePghtuzgOLQ==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0 || ^8.0.0-0
 
-  '@unocss/webpack@66.6.2':
-    resolution: {integrity: sha512-gxouNP9mcdu1JeaQtdrvj1xfuB5hWhL13/DUfyeRcJ5zKvR2UvDvQgq5EoVE/1zXRqCC5F+CnYaAgM2t+Fynmw==}
+  '@unocss/webpack@66.6.4':
+    resolution: {integrity: sha512-eT9pW3V/PAK1gs4pOPhYJZJJLhsEm0APvDQa8tvJaIbm0+ROlVPkuv4TGaDuE7B6zyRxPXpjVTVtDUcaAtujIw==}
     peerDependencies:
       webpack: ^4 || ^5
 
@@ -3422,10 +3543,6 @@ packages:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
     engines: {node: '>=18'}
 
-  globals@11.12.0:
-    resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
-    engines: {node: '>=4'}
-
   globals@16.5.0:
     resolution: {integrity: sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==}
     engines: {node: '>=18'}
@@ -4296,6 +4413,10 @@ packages:
 
   oxc-parser@0.112.0:
     resolution: {integrity: sha512-7rQ3QdJwobMQLMZwQaPuPYMEF2fDRZwf51lZ//V+bA37nejjKW5ifMHbbCwvA889Y4RLhT+/wLJpPRhAoBaZYw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+
+  oxc-parser@0.115.0:
+    resolution: {integrity: sha512-2w7Xn3CbS/zwzSY82S5WLemrRu3CT57uF7Lx8llrE/2bul6iMTcJE4Rbls7GDNbLn3ttATI68PfOz2Pt3KZ2cQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
   oxc-transform@0.112.0:
@@ -5314,13 +5435,13 @@ packages:
   unist-util-visit@5.1.0:
     resolution: {integrity: sha512-m+vIdyeCOpdr/QeQCu2EzxX/ohgS8KbnPDgFni4dQsfSCtpz8UqDyY5GjRru8PDKuYn7Fq19j1CQ+nJSsGKOzg==}
 
-  unocss@66.6.2:
-    resolution: {integrity: sha512-ulkfFBFm++/yTdgDn/clpxtm3GxynZi57F4KETQkMQWRXUI7FwqPKGn0xooscvbtldlX67pkovwj/mzkwExitQ==}
+  unocss@66.6.4:
+    resolution: {integrity: sha512-W7BfUX2pw4cvUB8kq5CZro/TWM0LcXTjgwwmjowK5B/KVs0Sgc8vTaCr5wuyqNcDLLGAe/9oNPGsVgVBJQN6kQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      '@unocss/astro': 66.6.2
-      '@unocss/postcss': 66.6.2
-      '@unocss/webpack': 66.6.2
+      '@unocss/astro': 66.6.4
+      '@unocss/postcss': 66.6.4
+      '@unocss/webpack': 66.6.4
     peerDependenciesMeta:
       '@unocss/astro':
         optional: true
@@ -5948,10 +6069,6 @@ snapshots:
       '@babel/template': 7.28.6
       '@babel/types': 7.29.0
 
-  '@babel/parser@7.27.7':
-    dependencies:
-      '@babel/types': 7.29.0
-
   '@babel/parser@7.29.0':
     dependencies:
       '@babel/types': 7.29.0
@@ -5982,18 +6099,6 @@ snapshots:
       '@babel/code-frame': 7.29.0
       '@babel/parser': 7.29.0
       '@babel/types': 7.29.0
-
-  '@babel/traverse@7.27.7':
-    dependencies:
-      '@babel/code-frame': 7.29.0
-      '@babel/generator': 7.29.1
-      '@babel/parser': 7.29.0
-      '@babel/template': 7.28.6
-      '@babel/types': 7.29.0
-      debug: 4.4.3
-      globals: 11.12.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@babel/traverse@7.29.0':
     dependencies:
@@ -7055,49 +7160,97 @@ snapshots:
   '@oxc-parser/binding-android-arm-eabi@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-android-arm-eabi@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-android-arm64@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-android-arm64@0.115.0':
     optional: true
 
   '@oxc-parser/binding-darwin-arm64@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-darwin-arm64@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-darwin-x64@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-darwin-x64@0.115.0':
     optional: true
 
   '@oxc-parser/binding-freebsd-x64@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-freebsd-x64@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-linux-arm-gnueabihf@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-linux-arm-gnueabihf@0.115.0':
     optional: true
 
   '@oxc-parser/binding-linux-arm-musleabihf@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-linux-arm-musleabihf@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-linux-arm64-gnu@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-linux-arm64-gnu@0.115.0':
     optional: true
 
   '@oxc-parser/binding-linux-arm64-musl@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-linux-arm64-musl@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-linux-ppc64-gnu@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-linux-ppc64-gnu@0.115.0':
     optional: true
 
   '@oxc-parser/binding-linux-riscv64-gnu@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-linux-riscv64-gnu@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-linux-riscv64-musl@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-linux-riscv64-musl@0.115.0':
     optional: true
 
   '@oxc-parser/binding-linux-s390x-gnu@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-linux-s390x-gnu@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-linux-x64-gnu@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-linux-x64-gnu@0.115.0':
     optional: true
 
   '@oxc-parser/binding-linux-x64-musl@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-linux-x64-musl@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-openharmony-arm64@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-openharmony-arm64@0.115.0':
     optional: true
 
   '@oxc-parser/binding-wasm32-wasi@0.112.0':
@@ -7105,13 +7258,27 @@ snapshots:
       '@napi-rs/wasm-runtime': 1.1.1
     optional: true
 
+  '@oxc-parser/binding-wasm32-wasi@0.115.0':
+    dependencies:
+      '@napi-rs/wasm-runtime': 1.1.1
+    optional: true
+
   '@oxc-parser/binding-win32-arm64-msvc@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-win32-arm64-msvc@0.115.0':
     optional: true
 
   '@oxc-parser/binding-win32-ia32-msvc@0.112.0':
     optional: true
 
+  '@oxc-parser/binding-win32-ia32-msvc@0.115.0':
+    optional: true
+
   '@oxc-parser/binding-win32-x64-msvc@0.112.0':
+    optional: true
+
+  '@oxc-parser/binding-win32-x64-msvc@0.115.0':
     optional: true
 
   '@oxc-project/types@0.103.0': {}
@@ -7119,6 +7286,8 @@ snapshots:
   '@oxc-project/types@0.112.0': {}
 
   '@oxc-project/types@0.114.0': {}
+
+  '@oxc-project/types@0.115.0': {}
 
   '@oxc-transform/binding-android-arm-eabi@0.112.0':
     optional: true
@@ -7758,14 +7927,14 @@ snapshots:
       unhead: 2.1.9
       vue: 3.5.29(typescript@5.9.3)
 
-  '@unocss/cli@66.6.2':
+  '@unocss/cli@66.6.4':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      '@unocss/config': 66.6.2
-      '@unocss/core': 66.6.2
-      '@unocss/preset-wind3': 66.6.2
-      '@unocss/preset-wind4': 66.6.2
-      '@unocss/transformer-directives': 66.6.2
+      '@unocss/config': 66.6.4
+      '@unocss/core': 66.6.4
+      '@unocss/preset-wind3': 66.6.4
+      '@unocss/preset-wind4': 66.6.4
+      '@unocss/transformer-directives': 66.6.4
       cac: 6.7.14
       chokidar: 5.0.0
       colorette: 2.0.20
@@ -7776,138 +7945,135 @@ snapshots:
       tinyglobby: 0.2.15
       unplugin-utils: 0.3.1
 
-  '@unocss/config@66.6.2':
+  '@unocss/config@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
       colorette: 2.0.20
       consola: 3.4.2
       unconfig: 7.5.0
 
-  '@unocss/core@66.6.2': {}
+  '@unocss/core@66.6.4': {}
 
-  '@unocss/extractor-arbitrary-variants@66.6.2':
+  '@unocss/extractor-arbitrary-variants@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
 
-  '@unocss/inspector@66.6.2':
+  '@unocss/inspector@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/rule-utils': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/rule-utils': 66.6.4
       colorette: 2.0.20
       gzip-size: 6.0.0
       sirv: 3.0.2
 
-  '@unocss/nuxt@66.6.2(magicast@0.5.2)(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))(webpack@5.105.3(esbuild@0.27.3))':
+  '@unocss/nuxt@66.6.4(magicast@0.5.2)(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))(webpack@5.105.3(esbuild@0.27.3))':
     dependencies:
       '@nuxt/kit': 4.3.1(magicast@0.5.2)
-      '@unocss/config': 66.6.2
-      '@unocss/core': 66.6.2
-      '@unocss/preset-attributify': 66.6.2
-      '@unocss/preset-icons': 66.6.2
-      '@unocss/preset-tagify': 66.6.2
-      '@unocss/preset-typography': 66.6.2
-      '@unocss/preset-web-fonts': 66.6.2
-      '@unocss/preset-wind3': 66.6.2
-      '@unocss/preset-wind4': 66.6.2
-      '@unocss/reset': 66.6.2
-      '@unocss/vite': 66.6.2(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))
-      '@unocss/webpack': 66.6.2(webpack@5.105.3(esbuild@0.27.3))
-      unocss: 66.6.2(@unocss/webpack@66.6.2(webpack@5.105.3(esbuild@0.27.3)))(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))
+      '@unocss/config': 66.6.4
+      '@unocss/core': 66.6.4
+      '@unocss/preset-attributify': 66.6.4
+      '@unocss/preset-icons': 66.6.4
+      '@unocss/preset-tagify': 66.6.4
+      '@unocss/preset-typography': 66.6.4
+      '@unocss/preset-web-fonts': 66.6.4
+      '@unocss/preset-wind3': 66.6.4
+      '@unocss/preset-wind4': 66.6.4
+      '@unocss/reset': 66.6.4
+      '@unocss/vite': 66.6.4(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))
+      '@unocss/webpack': 66.6.4(webpack@5.105.3(esbuild@0.27.3))
+      unocss: 66.6.4(@unocss/webpack@66.6.4(webpack@5.105.3(esbuild@0.27.3)))(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))
     transitivePeerDependencies:
       - '@unocss/astro'
       - '@unocss/postcss'
       - magicast
-      - supports-color
       - vite
       - webpack
 
-  '@unocss/preset-attributify@66.6.2':
+  '@unocss/preset-attributify@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
 
-  '@unocss/preset-icons@66.6.2':
+  '@unocss/preset-icons@66.6.4':
     dependencies:
       '@iconify/utils': 3.1.0
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
       ofetch: 1.5.1
 
-  '@unocss/preset-mini@66.6.2':
+  '@unocss/preset-mini@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/extractor-arbitrary-variants': 66.6.2
-      '@unocss/rule-utils': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/extractor-arbitrary-variants': 66.6.4
+      '@unocss/rule-utils': 66.6.4
 
-  '@unocss/preset-tagify@66.6.2':
+  '@unocss/preset-tagify@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
 
-  '@unocss/preset-typography@66.6.2':
+  '@unocss/preset-typography@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/rule-utils': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/rule-utils': 66.6.4
 
-  '@unocss/preset-uno@66.6.2':
+  '@unocss/preset-uno@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/preset-wind3': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/preset-wind3': 66.6.4
 
-  '@unocss/preset-web-fonts@66.6.2':
+  '@unocss/preset-web-fonts@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
       ofetch: 1.5.1
 
-  '@unocss/preset-wind3@66.6.2':
+  '@unocss/preset-wind3@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/preset-mini': 66.6.2
-      '@unocss/rule-utils': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/preset-mini': 66.6.4
+      '@unocss/rule-utils': 66.6.4
 
-  '@unocss/preset-wind4@66.6.2':
+  '@unocss/preset-wind4@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/extractor-arbitrary-variants': 66.6.2
-      '@unocss/rule-utils': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/extractor-arbitrary-variants': 66.6.4
+      '@unocss/rule-utils': 66.6.4
 
-  '@unocss/preset-wind@66.6.2':
+  '@unocss/preset-wind@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/preset-wind3': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/preset-wind3': 66.6.4
 
-  '@unocss/reset@66.6.2': {}
+  '@unocss/reset@66.6.4': {}
 
-  '@unocss/rule-utils@66.6.2':
+  '@unocss/rule-utils@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
       magic-string: 0.30.21
 
-  '@unocss/transformer-attributify-jsx@66.6.2':
+  '@unocss/transformer-attributify-jsx@66.6.4':
     dependencies:
-      '@babel/parser': 7.27.7
-      '@babel/traverse': 7.27.7
-      '@unocss/core': 66.6.2
-    transitivePeerDependencies:
-      - supports-color
+      '@unocss/core': 66.6.4
+      oxc-parser: 0.115.0
+      oxc-walker: 0.7.0(oxc-parser@0.115.0)
 
-  '@unocss/transformer-compile-class@66.6.2':
+  '@unocss/transformer-compile-class@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
 
-  '@unocss/transformer-directives@66.6.2':
+  '@unocss/transformer-directives@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
-      '@unocss/rule-utils': 66.6.2
+      '@unocss/core': 66.6.4
+      '@unocss/rule-utils': 66.6.4
       css-tree: 3.1.0
 
-  '@unocss/transformer-variant-group@66.6.2':
+  '@unocss/transformer-variant-group@66.6.4':
     dependencies:
-      '@unocss/core': 66.6.2
+      '@unocss/core': 66.6.4
 
-  '@unocss/vite@66.6.2(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))':
+  '@unocss/vite@66.6.4(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      '@unocss/config': 66.6.2
-      '@unocss/core': 66.6.2
-      '@unocss/inspector': 66.6.2
+      '@unocss/config': 66.6.4
+      '@unocss/core': 66.6.4
+      '@unocss/inspector': 66.6.4
       chokidar: 5.0.0
       magic-string: 0.30.21
       pathe: 2.0.3
@@ -7915,11 +8081,11 @@ snapshots:
       unplugin-utils: 0.3.1
       vite: 7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2)
 
-  '@unocss/webpack@66.6.2(webpack@5.105.3(esbuild@0.27.3))':
+  '@unocss/webpack@66.6.4(webpack@5.105.3(esbuild@0.27.3))':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      '@unocss/config': 66.6.2
-      '@unocss/core': 66.6.2
+      '@unocss/config': 66.6.4
+      '@unocss/core': 66.6.4
       chokidar: 5.0.0
       magic-string: 0.30.21
       pathe: 2.0.3
@@ -9363,8 +9529,6 @@ snapshots:
     dependencies:
       ini: 4.1.1
 
-  globals@11.12.0: {}
-
   globals@16.5.0: {}
 
   globals@17.3.0: {}
@@ -10757,6 +10921,31 @@ snapshots:
       '@oxc-parser/binding-win32-ia32-msvc': 0.112.0
       '@oxc-parser/binding-win32-x64-msvc': 0.112.0
 
+  oxc-parser@0.115.0:
+    dependencies:
+      '@oxc-project/types': 0.115.0
+    optionalDependencies:
+      '@oxc-parser/binding-android-arm-eabi': 0.115.0
+      '@oxc-parser/binding-android-arm64': 0.115.0
+      '@oxc-parser/binding-darwin-arm64': 0.115.0
+      '@oxc-parser/binding-darwin-x64': 0.115.0
+      '@oxc-parser/binding-freebsd-x64': 0.115.0
+      '@oxc-parser/binding-linux-arm-gnueabihf': 0.115.0
+      '@oxc-parser/binding-linux-arm-musleabihf': 0.115.0
+      '@oxc-parser/binding-linux-arm64-gnu': 0.115.0
+      '@oxc-parser/binding-linux-arm64-musl': 0.115.0
+      '@oxc-parser/binding-linux-ppc64-gnu': 0.115.0
+      '@oxc-parser/binding-linux-riscv64-gnu': 0.115.0
+      '@oxc-parser/binding-linux-riscv64-musl': 0.115.0
+      '@oxc-parser/binding-linux-s390x-gnu': 0.115.0
+      '@oxc-parser/binding-linux-x64-gnu': 0.115.0
+      '@oxc-parser/binding-linux-x64-musl': 0.115.0
+      '@oxc-parser/binding-openharmony-arm64': 0.115.0
+      '@oxc-parser/binding-wasm32-wasi': 0.115.0
+      '@oxc-parser/binding-win32-arm64-msvc': 0.115.0
+      '@oxc-parser/binding-win32-ia32-msvc': 0.115.0
+      '@oxc-parser/binding-win32-x64-msvc': 0.115.0
+
   oxc-transform@0.112.0:
     optionalDependencies:
       '@oxc-transform/binding-android-arm-eabi': 0.112.0
@@ -10784,6 +10973,11 @@ snapshots:
     dependencies:
       magic-regexp: 0.10.0
       oxc-parser: 0.112.0
+
+  oxc-walker@0.7.0(oxc-parser@0.115.0):
+    dependencies:
+      magic-regexp: 0.10.0
+      oxc-parser: 0.115.0
 
   p-limit@3.1.0:
     dependencies:
@@ -11960,29 +12154,28 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  unocss@66.6.2(@unocss/webpack@66.6.2(webpack@5.105.3(esbuild@0.27.3)))(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2)):
+  unocss@66.6.4(@unocss/webpack@66.6.4(webpack@5.105.3(esbuild@0.27.3)))(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2)):
     dependencies:
-      '@unocss/cli': 66.6.2
-      '@unocss/core': 66.6.2
-      '@unocss/preset-attributify': 66.6.2
-      '@unocss/preset-icons': 66.6.2
-      '@unocss/preset-mini': 66.6.2
-      '@unocss/preset-tagify': 66.6.2
-      '@unocss/preset-typography': 66.6.2
-      '@unocss/preset-uno': 66.6.2
-      '@unocss/preset-web-fonts': 66.6.2
-      '@unocss/preset-wind': 66.6.2
-      '@unocss/preset-wind3': 66.6.2
-      '@unocss/preset-wind4': 66.6.2
-      '@unocss/transformer-attributify-jsx': 66.6.2
-      '@unocss/transformer-compile-class': 66.6.2
-      '@unocss/transformer-directives': 66.6.2
-      '@unocss/transformer-variant-group': 66.6.2
-      '@unocss/vite': 66.6.2(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))
+      '@unocss/cli': 66.6.4
+      '@unocss/core': 66.6.4
+      '@unocss/preset-attributify': 66.6.4
+      '@unocss/preset-icons': 66.6.4
+      '@unocss/preset-mini': 66.6.4
+      '@unocss/preset-tagify': 66.6.4
+      '@unocss/preset-typography': 66.6.4
+      '@unocss/preset-uno': 66.6.4
+      '@unocss/preset-web-fonts': 66.6.4
+      '@unocss/preset-wind': 66.6.4
+      '@unocss/preset-wind3': 66.6.4
+      '@unocss/preset-wind4': 66.6.4
+      '@unocss/transformer-attributify-jsx': 66.6.4
+      '@unocss/transformer-compile-class': 66.6.4
+      '@unocss/transformer-directives': 66.6.4
+      '@unocss/transformer-variant-group': 66.6.4
+      '@unocss/vite': 66.6.4(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(terser@5.46.0)(yaml@2.8.2))
     optionalDependencies:
-      '@unocss/webpack': 66.6.2(webpack@5.105.3(esbuild@0.27.3))
+      '@unocss/webpack': 66.6.4(webpack@5.105.3(esbuild@0.27.3))
     transitivePeerDependencies:
-      - supports-color
       - vite
 
   unplugin-utils@0.2.5:
