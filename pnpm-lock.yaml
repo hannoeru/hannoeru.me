@@ -12,8 +12,8 @@ importers:
         specifier: ^9.3.0
         version: 9.3.0
       '@iconify/json':
-        specifier: ^2.2.446
-        version: 2.2.446
+        specifier: ^2.2.447
+        version: 2.2.447
       '@nuxt/content':
         specifier: 3.12.0
         version: 3.12.0(magicast@0.5.2)
@@ -519,8 +519,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify/json@2.2.446':
-    resolution: {integrity: sha512-FrZToC6ONvIVmOkFhcNMGJYvIKJ4UPzdKE5hgAUkQijYz+ZWx74OZBHExp8osCLMEmyxrUPTFg2oynlpGWLsTw==}
+  '@iconify/json@2.2.447':
+    resolution: {integrity: sha512-hRPz6U6eN0C959BrYb0rE+I6f7BjDIPfgt8C9Ln5FxZ1Hw3aJQ+su/qbWy/+yJU74lLlXuwaS0ZfE8Kam6NkeA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -6324,7 +6324,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify/json@2.2.446':
+  '@iconify/json@2.2.447':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
