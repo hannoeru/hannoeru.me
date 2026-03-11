@@ -63,7 +63,7 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5(typescript@5.9.3)
       wrangler:
-        specifier: ^4.71.0
+        specifier: ^4.72.0
         version: 4.72.0(@cloudflare/workers-types@4.20260310.1)
 
 packages:
