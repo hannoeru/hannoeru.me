@@ -64,7 +64,7 @@ importers:
         version: 3.2.5(typescript@5.9.3)
       wrangler:
         specifier: ^4.72.0
-        version: 4.72.0(@cloudflare/workers-types@4.20260310.1)
+        version: 4.72.0(@cloudflare/workers-types@4.20260312.1)
 
 packages:
 
@@ -265,8 +265,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20260310.1':
-    resolution: {integrity: sha512-Cg4gyGDtfimNMgBr2h06aGR5Bt8puUbblyzPNZN55mBfVYCTWwQiUd9PrbkcoddKrWHlsy0ACH/16dAeGf5BQg==}
+  '@cloudflare/workers-types@4.20260312.1':
+    resolution: {integrity: sha512-ySoTKc2ZKpwHll4H6byPWkxI/vmCc86B4h+hKo077zSTmBqIcxvbFozmOcEY7dhudMMDBnCgwZ9FknRrJxyqiQ==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -2744,8 +2744,8 @@ packages:
   caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
 
-  caniuse-lite@1.0.30001777:
-    resolution: {integrity: sha512-tmN+fJxroPndC74efCdp12j+0rk0RHwV5Jwa1zWaFVyw2ZxAuPeG8ZgWC3Wz7uSjT3qMRQ5XHZ4COgQmsCMJAQ==}
+  caniuse-lite@1.0.30001778:
+    resolution: {integrity: sha512-PN7uxFL+ExFJO61aVmP1aIEG4i9whQd4eoSCebav62UwDyp5OHh06zN4jqKSMePVgxHifCw1QJxdRkA1Pisekg==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -3236,8 +3236,8 @@ packages:
       eslint-import-resolver-node:
         optional: true
 
-  eslint-plugin-jsdoc@62.7.1:
-    resolution: {integrity: sha512-4Zvx99Q7d1uggYBUX/AIjvoyqXhluGbbKrRmG8SQTLprPFg6fa293tVJH1o1GQwNe3lUydd8ZHzn37OaSncgSQ==}
+  eslint-plugin-jsdoc@62.8.0:
+    resolution: {integrity: sha512-hu3r9/6JBmPG6wTcqtYzgZAnjEG2eqRUATfkFscokESg1VDxZM21ZaMire0KjeMwfj+SXvgB4Rvh5LBuesj92w==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -6132,7 +6132,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20260310.1':
     optional: true
 
-  '@cloudflare/workers-types@4.20260310.1': {}
+  '@cloudflare/workers-types@4.20260312.1': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -6695,7 +6695,7 @@ snapshots:
       eslint-merge-processors: 2.0.0(eslint@10.0.3(jiti@2.6.1))
       eslint-plugin-import-lite: 0.5.2(eslint@10.0.3(jiti@2.6.1))
       eslint-plugin-import-x: 4.16.2(@typescript-eslint/utils@8.57.0(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(eslint@10.0.3(jiti@2.6.1))
-      eslint-plugin-jsdoc: 62.7.1(eslint@10.0.3(jiti@2.6.1))
+      eslint-plugin-jsdoc: 62.8.0(eslint@10.0.3(jiti@2.6.1))
       eslint-plugin-regexp: 3.1.0(eslint@10.0.3(jiti@2.6.1))
       eslint-plugin-unicorn: 63.0.0(eslint@10.0.3(jiti@2.6.1))
       eslint-plugin-vue: 10.8.0(@stylistic/eslint-plugin@5.10.0(eslint@10.0.3(jiti@2.6.1)))(@typescript-eslint/parser@8.57.0(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(eslint@10.0.3(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.0.3(jiti@2.6.1)))
@@ -6954,7 +6954,7 @@ snapshots:
 
   '@nuxthub/core@0.10.7(db0@0.3.4)(ioredis@5.10.0)(magicast@0.5.2)(typescript@5.9.3)(vue-tsc@3.2.5(typescript@5.9.3))':
     dependencies:
-      '@cloudflare/workers-types': 4.20260310.1
+      '@cloudflare/workers-types': 4.20260312.1
       '@nuxt/kit': 4.3.1(magicast@0.5.2)
       '@uploadthing/mime-types': 0.3.6
       c12: 3.3.3(magicast@0.5.2)
@@ -8522,7 +8522,7 @@ snapshots:
   autoprefixer@10.4.27(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
-      caniuse-lite: 1.0.30001777
+      caniuse-lite: 1.0.30001778
       fraction.js: 5.3.4
       picocolors: 1.1.1
       postcss: 8.5.8
@@ -8604,7 +8604,7 @@ snapshots:
   browserslist@4.28.1:
     dependencies:
       baseline-browser-mapping: 2.10.0
-      caniuse-lite: 1.0.30001777
+      caniuse-lite: 1.0.30001778
       electron-to-chromium: 1.5.307
       node-releases: 2.0.36
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
@@ -8670,11 +8670,11 @@ snapshots:
   caniuse-api@3.0.0:
     dependencies:
       browserslist: 4.28.1
-      caniuse-lite: 1.0.30001777
+      caniuse-lite: 1.0.30001778
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
-  caniuse-lite@1.0.30001777: {}
+  caniuse-lite@1.0.30001778: {}
 
   ccount@2.0.1: {}
 
@@ -9112,7 +9112,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-jsdoc@62.7.1(eslint@10.0.3(jiti@2.6.1)):
+  eslint-plugin-jsdoc@62.8.0(eslint@10.0.3(jiti@2.6.1)):
     dependencies:
       '@es-joy/jsdoccomment': 0.84.0
       '@es-joy/resolve.exports': 1.2.0
@@ -12478,7 +12478,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20260310.1
       '@cloudflare/workerd-windows-64': 1.20260310.1
 
-  wrangler@4.72.0(@cloudflare/workers-types@4.20260310.1):
+  wrangler@4.72.0(@cloudflare/workers-types@4.20260312.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.2
       '@cloudflare/unenv-preset': 2.15.0(unenv@2.0.0-rc.24)(workerd@1.20260310.1)
@@ -12489,7 +12489,7 @@ snapshots:
       unenv: 2.0.0-rc.24
       workerd: 1.20260310.1
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20260310.1
+      '@cloudflare/workers-types': 4.20260312.1
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
