@@ -3839,6 +3839,9 @@ packages:
   hookable@6.0.1:
     resolution: {integrity: sha512-uKGyY8BuzN/a5gvzvA+3FVWo0+wUjgtfSdnmjtrOVwQCZPHpHDH2WRO3VZSOeluYrHoDCiXFffZXs8Dj1ULWtw==}
 
+  hookable@6.1.0:
+    resolution: {integrity: sha512-ZoKZSJgu8voGK2geJS+6YtYjvIzu9AOM/KZXsBxr83uhLL++e9pEv/dlgwgy3dvHg06kTz6JOh1hk3C8Ceiymw==}
+
   html-entities@2.6.0:
     resolution: {integrity: sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==}
 
@@ -4563,8 +4566,8 @@ packages:
   oniguruma-parser@0.12.1:
     resolution: {integrity: sha512-8Unqkvk1RYc6yq2WBYRj4hdnsAxVze8i7iPfQr8e4uSP3tRv0rpZcbGUDvxfQQcdwHt/e9PrMvGCsa8OqG9X3w==}
 
-  oniguruma-to-es@4.3.4:
-    resolution: {integrity: sha512-3VhUGN3w2eYxnTzHn+ikMI+fp/96KoRSVK9/kMTcFqj1NRDh2IhQCKvYxDnWePKRXY/AqH+Fuiyb7VHSzBjHfA==}
+  oniguruma-to-es@4.3.5:
+    resolution: {integrity: sha512-Zjygswjpsewa0NLTsiizVuMQZbp0MDyM6lIt66OxsF21npUDlzpHi1Mgb/qhQdkb+dWFTzJmFbEWdvZgRho8eQ==}
 
   open@10.2.0:
     resolution: {integrity: sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==}
@@ -6921,7 +6924,7 @@ snapshots:
       execa: 8.0.1
       fast-npm-meta: 1.4.2
       get-port-please: 3.2.0
-      hookable: 6.0.1
+      hookable: 6.1.0
       image-meta: 0.2.2
       is-installed-globally: 1.0.0
       launch-editor: 2.13.1
@@ -7944,13 +7947,13 @@ snapshots:
     dependencies:
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
-      oniguruma-to-es: 4.3.4
+      oniguruma-to-es: 4.3.5
 
   '@shikijs/engine-javascript@4.0.2':
     dependencies:
       '@shikijs/types': 4.0.2
       '@shikijs/vscode-textmate': 10.0.2
-      oniguruma-to-es: 4.3.4
+      oniguruma-to-es: 4.3.5
 
   '@shikijs/engine-oniguruma@3.23.0':
     dependencies:
@@ -8175,7 +8178,7 @@ snapshots:
 
   '@unhead/vue@2.1.12(vue@3.5.30(typescript@5.9.3))':
     dependencies:
-      hookable: 6.0.1
+      hookable: 6.1.0
       unhead: 2.1.12
       vue: 3.5.30(typescript@5.9.3)
 
@@ -9995,6 +9998,8 @@ snapshots:
 
   hookable@6.0.1: {}
 
+  hookable@6.1.0: {}
+
   html-entities@2.6.0: {}
 
   html-void-elements@3.0.0: {}
@@ -10964,7 +10969,7 @@ snapshots:
       errx: 0.1.0
       escape-string-regexp: 5.0.0
       exsolve: 1.0.8
-      hookable: 6.0.1
+      hookable: 6.1.0
       ignore: 7.0.5
       impound: 1.1.5
       jiti: 2.6.1
@@ -11108,7 +11113,7 @@ snapshots:
 
   oniguruma-parser@0.12.1: {}
 
-  oniguruma-to-es@4.3.4:
+  oniguruma-to-es@4.3.5:
     dependencies:
       oniguruma-parser: 0.12.1
       regex: 6.1.0
@@ -12267,7 +12272,7 @@ snapshots:
       cac: 6.7.14
       defu: 6.1.4
       empathic: 2.0.0
-      hookable: 6.0.1
+      hookable: 6.1.0
       import-without-cache: 0.2.5
       obug: 2.1.1
       picomatch: 4.0.3
@@ -12345,7 +12350,7 @@ snapshots:
 
   unhead@2.1.12:
     dependencies:
-      hookable: 6.0.1
+      hookable: 6.1.0
 
   unicode-emoji-modifier-base@1.0.0: {}
 
