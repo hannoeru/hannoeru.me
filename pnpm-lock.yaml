@@ -45,7 +45,7 @@ importers:
         specifier: ^1.11.20
         version: 1.11.20
       eslint:
-        specifier: ^10.0.3
+        specifier: ^10.1.0
         version: 10.1.0(jiti@2.6.1)
       feed:
         specifier: ^5.2.0
