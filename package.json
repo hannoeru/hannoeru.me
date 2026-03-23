@@ -29,7 +29,7 @@
     "feed": "^5.2.0",
     "nuxt": "^4.4.2",
     "remark-breaks": "^4.0.0",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6",
     "wrangler": "^4.76.0"
   }
