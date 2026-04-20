@@ -26,7 +26,7 @@
     "@vueuse/nuxt": "^14.2.1",
     "dayjs": "^1.11.20",
     "eslint": "^10.2.1",
-    "feed": "^5.2.0",
+    "feed": "^5.2.1",
     "nuxt": "^4.4.2",
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
