@@ -64,7 +64,7 @@ importers:
         version: 3.2.8(typescript@6.0.3)
       wrangler:
         specifier: ^4.90.0
-        version: 4.90.0(@cloudflare/workers-types@4.20260508.1)
+        version: 4.90.0(@cloudflare/workers-types@4.20260509.1)
 
 packages:
 
@@ -267,8 +267,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20260508.1':
-    resolution: {integrity: sha512-0KNR+UkrYJYmtyQ5tOjUT/wt/U34FuE4Y8FLSbPMwFrGQQpmvR9wKghwRkL4d28y5t9jI9cvGqeAoo/cerTnCQ==}
+  '@cloudflare/workers-types@4.20260509.1':
+    resolution: {integrity: sha512-jFlTTD+0MK/01TdL5sHIsQ8RqzfmvBsGl4hSp87INv2+JIs/JF6EL9J8enuCz6z3fNdfOKISNbGCIrzZRXVrcw==}
 
   '@colordx/core@5.4.3':
     resolution: {integrity: sha512-kIxYSfA5T8HXjav55UaaH/o/cKivF6jCCGIb8eqtcsfI46wsvlSiT8jMDyrl779qLec3c2c2oHBZo4oAhvbjrQ==}
@@ -3441,8 +3441,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.352:
-    resolution: {integrity: sha512-9wHk8x6dyuimoe18EdiDPWKExNdxYqo4fn4FwOVVper6RxT3cmpBwBkWWfSOCYJjQdIco/nPhJhNLmn4Ufg1Yg==}
+  electron-to-chromium@1.5.353:
+    resolution: {integrity: sha512-kOrWphBi8TOZyiJZqsgqIle0lw+tzmnQK83pV9dZUd01Nm2POECSyFQMAuarzZdYqQW7FH9RaYOuaRo3h+bQ3w==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -6527,7 +6527,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20260507.1':
     optional: true
 
-  '@cloudflare/workers-types@4.20260508.1': {}
+  '@cloudflare/workers-types@4.20260509.1': {}
 
   '@colordx/core@5.4.3': {}
 
@@ -7518,7 +7518,7 @@ snapshots:
 
   '@nuxthub/core@0.10.7(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(db0@0.3.4)(ioredis@5.10.1)(magicast@0.5.2)(typescript@6.0.3)(vue-tsc@3.2.8(typescript@6.0.3))':
     dependencies:
-      '@cloudflare/workers-types': 4.20260508.1
+      '@cloudflare/workers-types': 4.20260509.1
       '@nuxt/kit': 4.4.4(magicast@0.5.2)
       '@uploadthing/mime-types': 0.3.6
       c12: 3.3.4(magicast@0.5.2)
@@ -9169,7 +9169,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.10.28
       caniuse-lite: 1.0.30001792
-      electron-to-chromium: 1.5.352
+      electron-to-chromium: 1.5.353
       node-releases: 2.0.38
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -9537,7 +9537,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.352: {}
+  electron-to-chromium@1.5.353: {}
 
   emoji-regex@10.6.0: {}
 
@@ -13129,7 +13129,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20260507.1
       '@cloudflare/workerd-windows-64': 1.20260507.1
 
-  wrangler@4.90.0(@cloudflare/workers-types@4.20260508.1):
+  wrangler@4.90.0(@cloudflare/workers-types@4.20260509.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.0
       '@cloudflare/unenv-preset': 2.16.1(unenv@2.0.0-rc.24)(workerd@1.20260507.1)
@@ -13140,7 +13140,7 @@ snapshots:
       unenv: 2.0.0-rc.24
       workerd: 1.20260507.1
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20260508.1
+      '@cloudflare/workers-types': 4.20260509.1
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
