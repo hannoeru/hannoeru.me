@@ -30,7 +30,7 @@
     "nuxt": "^4.4.5",
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.2.8",
+    "vue-tsc": "^3.2.9",
     "wrangler": "^4.90.1"
   }
 }
