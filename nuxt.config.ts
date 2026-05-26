@@ -106,7 +106,7 @@ export default defineNuxtConfig({
       domain: 'https://hannoeru.me',
     },
   },
-  compatibilityDate: '2025-12-21',
+  compatibilityDate: '2026-05-26',
   nitro: {
     preset: 'cloudflare_module',
     cloudflare: {
