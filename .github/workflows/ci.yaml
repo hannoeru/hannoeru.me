@@ -36,10 +36,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --ignore-scripts
-
-      - name: Prepare Nuxt.js
-        run: pnpm prepare
+        run: pnpm install
 
       - name: Type check
         run: pnpm typecheck
@@ -65,7 +62,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --ignore-scripts
+        run: pnpm install --frozen-lockfile
 
       - name: Prepare Nuxt.js
         run: pnpm prepare

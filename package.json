@@ -1,6 +1,9 @@
 {
   "private": true,
   "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=24.16.0"
+  },
   "scripts": {
     "prepare": "nuxt prepare",
     "build": "nuxt build",

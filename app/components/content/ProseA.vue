@@ -1,27 +1,28 @@
 <script setup lang="ts">
-defineProps({
-  href: {
-    type: String,
-    default: '',
-  },
-  blank: {
-    type: Boolean,
-    default: false,
-  },
+const props = withDefaults(defineProps<{
+  href?: string
+  blank?: boolean
+}>(), {
+  href: '',
+  blank: false,
 })
+
+const isHttpExternal = computed(() => /^(?:https?:)?\/\//i.test(props.href))
+const hasNonHttpProtocol = computed(() => /^[a-z][a-z\d+.-]*:/i.test(props.href) && !/^https?:/i.test(props.href))
+const opensInNewTab = computed(() => props.blank || isHttpExternal.value)
 </script>
 
 <template>
   <a
-    v-if="href.startsWith('https://')"
+    v-if="isHttpExternal || hasNonHttpProtocol || blank"
     :href="href"
-    target="_blank"
-    rel="noopener noreferrer"
+    :target="opensInNewTab ? '_blank' : undefined"
+    :rel="opensInNewTab ? 'noopener noreferrer' : undefined"
     class="text-sky-500 dark:text-sky-400 font-medium hover:underline"
   >
     <slot />
   </a>
-  <NuxtLink v-else :href="href" class="text-sky-500 dark:text-sky-400 font-medium hover:underline">
+  <NuxtLink v-else :to="href" class="text-sky-500 dark:text-sky-400 font-medium hover:underline">
     <slot />
   </NuxtLink>
 </template>

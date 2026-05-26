@@ -1,24 +1,24 @@
 <script setup lang="ts">
-import { toArray } from '@antfu/utils'
-
 const route = useRoute()
 
+const selectedTags = computed(() => {
+  const tags = route.query.tags
+  return (Array.isArray(tags) ? tags : [tags]).filter((tag): tag is string => Boolean(tag))
+})
+
 const { data: posts } = await useAsyncData('posts', async () => {
-  if (route.query.tags) {
-    return queryCollection('content')
-      .where('type', '=', 'post')
-      .where('tags', '=', toArray(route.query.tags))
-      .order('date', 'DESC')
-      .select('path', 'title', 'description', 'image', 'categories', 'date')
-      .all()
-  }
-  else {
-    return queryCollection('content')
-      .where('type', '=', 'post')
-      .order('date', 'DESC')
-      .select('path', 'title', 'description', 'image', 'categories', 'date')
-      .all()
-  }
+  const posts = await queryCollection('content')
+    .where('type', '=', 'post')
+    .order('date', 'DESC')
+    .select('path', 'title', 'description', 'image', 'categories', 'date', 'tags')
+    .all()
+
+  if (!selectedTags.value.length)
+    return posts
+
+  return posts.filter(post => selectedTags.value.every(tag => post.tags?.includes(tag)))
+}, {
+  watch: [selectedTags],
 })
 </script>
 
@@ -42,7 +42,6 @@ const { data: posts } = await useAsyncData('posts', async () => {
         <div v-if="post.image" class="relative w-full h-50 overflow-hidden">
           <NuxtPicture
             format="webp"
-            placeholder
             :src="post.image"
             :alt="post.title"
             class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)"

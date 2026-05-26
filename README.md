@@ -1,6 +1,6 @@
 **[hannoeru.me](https://hannoeru.me)**
 
-my personal website powered by [Nuxt v3](https://nuxt.com/)
+my personal website powered by [Nuxt v4](https://nuxt.com/)
 
 <br>
 

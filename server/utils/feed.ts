@@ -18,7 +18,7 @@ export const createFeed = async (event: H3Event) => {
     id: `${domain}/`,
     link: `${domain}/`,
     image: `${domain}/avatar.png`,
-    favicon: `${domain}/logo.png`,
+    favicon: `${domain}/favicon.ico`,
     copyright: `CC BY-NC-SA 4.0 ${dayjs().get('year')} © Han`,
     feedLinks: {
       json: `${domain}/feed.json`,

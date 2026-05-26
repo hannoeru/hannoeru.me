@@ -8,18 +8,23 @@ defineProps<{
 const route = useRoute()
 const domain = useRuntimeConfig().public.domain
 
-const currentPath = computed(() => encodeURIComponent(`${domain}${route.path}`))
+const canonicalUrl = computed(() => new URL(route.path, domain).toString())
+const encodedUrl = computed(() => encodeURIComponent(canonicalUrl.value))
+const mailtoUrl = computed(() => `mailto:?${new URLSearchParams({
+  subject: 'I want to share this with you',
+  body: `Hi there, Check out this site ${canonicalUrl.value}, Thanks.`,
+})}`)
 
 const { copy, copied } = useClipboard({
   read: false,
-  source: currentPath,
+  source: canonicalUrl,
 })
 </script>
 
 <template>
   <div v-if="page.type === 'post'" class="text-xl flex space-x-3">
     <a
-      :href="`https://www.facebook.com/sharer/sharer.php?u=${currentPath}`"
+      :href="`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`"
       class="icon-link"
       target="_blank"
       rel="noopener"
@@ -28,7 +33,7 @@ const { copy, copied } = useClipboard({
       <div i-carbon:logo-facebook />
     </a>
     <a
-      :href="`https://twitter.com/intent/tweet?url=${currentPath}`"
+      :href="`https://twitter.com/intent/tweet?url=${encodedUrl}`"
       class="icon-link transform scale-130"
       target="_blank"
       rel="noopener"
@@ -37,7 +42,7 @@ const { copy, copied } = useClipboard({
       <div i-carbon:logo-twitter />
     </a>
     <a
-      :href="`https://lineit.line.me/share/ui?url=${currentPath}`"
+      :href="`https://lineit.line.me/share/ui?url=${encodedUrl}`"
       class="icon-link"
       target="_blank"
       rel="noopener"
@@ -46,7 +51,7 @@ const { copy, copied } = useClipboard({
       <div i-uil:line />
     </a>
     <a
-      :href="`mailto:?subject=I want to share this with you &amp;body=Hi there, Check out this site ${currentPath}, Thanks.`"
+      :href="mailtoUrl"
       class="icon-link"
       target="_blank"
       rel="noopener"
@@ -57,7 +62,7 @@ const { copy, copied } = useClipboard({
     <button
       class="icon-link focus:outline-none transform scale-70"
       title="Copy link"
-      @click="copy(currentPath)"
+      @click="copy()"
     >
       <div v-if="!copied" i-carbon:link />
       <div v-else i-carbon:checkmark />

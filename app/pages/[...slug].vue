@@ -53,7 +53,6 @@ if (!page.value) {
     <div v-if="page.image">
       <NuxtPicture
         format="webp"
-        placeholder
         :src="page.image"
         :alt="page.title"
         :img-attrs="{

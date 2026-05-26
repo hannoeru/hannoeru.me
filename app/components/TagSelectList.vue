@@ -4,18 +4,14 @@ const route = useRoute()
 const tags = computed(() => (Array.isArray(route.query.tags) ? route.query.tags : [route.query.tags].filter(Boolean)) as string[])
 function removeTag(tag: string) {
   const tagList = tags.value.filter(i => i !== tag)
-  if (tagList.length) {
-    router.push({
-      query: {
-        tags: tags.value,
-      },
-    })
-  }
-  else {
-    router.push({
-      query: {},
-    })
-  }
+  const query = { ...route.query }
+
+  if (tagList.length)
+    query.tags = tagList
+  else
+    delete query.tags
+
+  router.push({ query })
 }
 </script>
 
