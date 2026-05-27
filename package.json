@@ -28,6 +28,7 @@
     "@unocss/transformer-variant-group": "^66.7.0",
     "@vueuse/nuxt": "^14.3.0",
     "dayjs": "^1.11.20",
+    "drizzle-orm": "^0.45.2",
     "eslint": "^10.4.0",
     "feed": "^5.2.1",
     "nuxt": "^4.4.6",
