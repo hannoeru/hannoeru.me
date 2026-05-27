@@ -130,7 +130,7 @@ export default defineNuxtConfig({
     db: {
       dialect: 'sqlite',
       driver: 'd1',
-      connection: { databaseId: 'hannoeru-me' },
+      connection: { databaseId: '8c2fe075-480f-4c81-9e51-d21e250ba731' },
     },
   },
 
