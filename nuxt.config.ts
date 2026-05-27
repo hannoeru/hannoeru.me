@@ -125,7 +125,14 @@ export default defineNuxtConfig({
   },
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {},
+  hub: {
+    // D1 database
+    db: {
+      dialect: 'sqlite',
+      driver: 'd1',
+      connection: { databaseId: 'hannoeru-me' },
+    },
+  },
 
   // https://eslint.nuxt.com
   eslint: {
