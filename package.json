@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@11.3.0",
+  "packageManager": "pnpm@11.4.0",
   "engines": {
     "node": ">=24.16.0"
   },
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.478",
+    "@iconify/json": "^2.2.479",
     "@nuxt/content": "3.14.0",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/image": "^2.0.0",
@@ -27,7 +27,7 @@
     "@unocss/transformer-directives": "^66.7.0",
     "@unocss/transformer-variant-group": "^66.7.0",
     "@vueuse/nuxt": "^14.3.0",
-    "dayjs": "^1.11.20",
+    "dayjs": "^1.11.21",
     "drizzle-orm": "^0.45.2",
     "eslint": "^10.4.0",
     "feed": "^5.2.1",
@@ -35,6 +35,6 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.2",
-    "wrangler": "^4.94.0"
+    "wrangler": "^4.95.0"
   }
 }
