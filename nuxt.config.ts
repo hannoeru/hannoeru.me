@@ -157,7 +157,12 @@ export default defineNuxtConfig({
     },
   },
   image: {
-    dir: '../public',
+    provider: import.meta.env.PROD ? 'cloudflare' : 'ipx',
+    quality: 76,
+    format: ['avif', 'webp'],
+    cloudflare: {
+      baseURL: 'https://hoyudesign.com',
+    },
   },
   unocss: {
     icons: {
