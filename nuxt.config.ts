@@ -112,6 +112,20 @@ export default defineNuxtConfig({
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
+      wrangler: {
+        observability: {
+          enabled: true,
+          head_sampling_rate: 1,
+          logs: {
+            enabled: true,
+            head_sampling_rate: 1,
+            invocation_logs: true,
+          },
+        },
+        placement: {
+          mode: 'smart',
+        },
+      },
     },
     prerender: {
       crawlLinks: true,
