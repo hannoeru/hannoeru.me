@@ -1,15 +1,30 @@
 <script setup lang="ts">
 const isOpen = ref(false)
+const isMounted = useMounted()
+const isMobile = useMediaQuery('(max-width: 767px)')
+const isNavigationHidden = computed(() => isMounted.value && isMobile.value && !isOpen.value)
 const toggle = useToggle(isOpen)
 </script>
 
 <template>
   <header class="md:hidden fixed top-0 left-0 z-30">
-    <button class="p-6 text-xl" @click="toggle()">
+    <button
+      class="p-6 text-xl"
+      :aria-expanded="isOpen"
+      aria-controls="site-navigation"
+      :aria-label="isOpen ? 'Close navigation' : 'Open navigation'"
+      @click="toggle()"
+    >
       <div i-ri-menu-2-fill />
     </button>
   </header>
-  <aside class="h-[calc(100vh-96px)] flex flex-col bg-$c-bg md:(sticky top-12) lt-md:(fixed pt-10 px-3 w-full h-full z-20 transition-transform duration-150 ease-in-out)" :class="{ 'lt-md:translate-x-[-100%]': !isOpen }">
+  <aside
+    id="site-navigation"
+    class="h-[calc(100vh-96px)] flex flex-col bg-$c-bg md:(sticky top-12) lt-md:(fixed pt-10 px-3 w-full h-full z-20 transition-transform duration-150 ease-in-out)"
+    :class="{ 'lt-md:translate-x-[-100%]': !isOpen }"
+    :aria-hidden="isNavigationHidden ? 'true' : undefined"
+    :inert="isNavigationHidden"
+  >
     <nav class="nav grid dark:text-gray-200 mt-6">
       <NavLink to="/" title="Home" @click="isOpen = false">
         <div i-ri-home-5-line />
