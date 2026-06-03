@@ -27,6 +27,7 @@
     "@unocss/transformer-directives": "^66.7.0",
     "@unocss/transformer-variant-group": "^66.7.0",
     "@vueuse/nuxt": "^14.3.0",
+    "reka-ui": "^2.9.8",
     "dayjs": "^1.11.21",
     "drizzle-orm": "^0.45.2",
     "eslint": "^10.4.0",
