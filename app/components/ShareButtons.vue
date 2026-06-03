@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ContentCollectionItem } from '@nuxt/content'
+import { TooltipContent, TooltipPortal, TooltipRoot, TooltipTrigger } from 'reka-ui'
 
 defineProps<{
   page: ContentCollectionItem
@@ -23,49 +24,52 @@ const { copy, copied } = useClipboard({
 
 <template>
   <div v-if="page.type === 'post'" class="text-xl flex space-x-3">
-    <a
+    <IconLink
       :href="`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`"
-      class="icon-link"
-      target="_blank"
-      rel="noopener"
       title="Share to Facebook"
     >
       <div i-carbon:logo-facebook />
-    </a>
-    <a
+    </IconLink>
+    <IconLink
       :href="`https://twitter.com/intent/tweet?url=${encodedUrl}`"
-      class="icon-link transform scale-130"
-      target="_blank"
-      rel="noopener"
       title="Share to Twitter"
+      class="transform scale-130"
     >
       <div i-carbon:logo-twitter />
-    </a>
-    <a
+    </IconLink>
+    <IconLink
       :href="`https://lineit.line.me/share/ui?url=${encodedUrl}`"
-      class="icon-link"
-      target="_blank"
-      rel="noopener"
       title="Share to Line"
     >
       <div i-uil:line />
-    </a>
-    <a
+    </IconLink>
+    <IconLink
       :href="mailtoUrl"
-      class="icon-link"
-      target="_blank"
-      rel="noopener"
       title="Share via Email"
     >
       <div i-ic:round-mail />
-    </a>
-    <button
-      class="icon-link focus:outline-none transform scale-70"
-      title="Copy link"
-      @click="copy()"
-    >
-      <div v-if="!copied" i-carbon:link />
-      <div v-else i-carbon:checkmark />
-    </button>
+    </IconLink>
+    <TooltipRoot>
+      <TooltipTrigger as-child>
+        <button
+          type="button"
+          class="icon-link focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 transform scale-70"
+          :aria-label="copied ? 'Copied link' : 'Copy link'"
+          @click="copy()"
+        >
+          <div v-if="!copied" i-carbon:link />
+          <div v-else i-carbon:checkmark />
+        </button>
+      </TooltipTrigger>
+      <TooltipPortal>
+        <TooltipContent
+          side="top"
+          :side-offset="6"
+          class="z-50 rounded bg-dark-900 px-2 py-1 text-xs text-white shadow dark:bg-white dark:text-dark-900"
+        >
+          {{ copied ? 'Copied' : 'Copy link' }}
+        </TooltipContent>
+      </TooltipPortal>
+    </TooltipRoot>
   </div>
 </template>
