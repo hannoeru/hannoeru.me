@@ -6,26 +6,24 @@ const selectedTags = computed(() => {
   return (Array.isArray(tags) ? tags : [tags]).filter((tag): tag is string => Boolean(tag))
 })
 
-const { data: posts } = await useAsyncData('posts', async () => {
-  const posts = await queryCollection('content')
-    .where('type', '=', 'post')
-    .order('date', 'DESC')
-    .select('path', 'title', 'description', 'image', 'categories', 'date', 'tags')
-    .all()
+const { data: posts } = await useAsyncData('posts', () => queryCollection('content')
+  .where('type', '=', 'post')
+  .order('date', 'DESC')
+  .select('path', 'title', 'description', 'image', 'categories', 'date', 'tags')
+  .all())
 
+const filteredPosts = computed(() => {
   if (!selectedTags.value.length)
-    return posts
+    return posts.value
 
-  return posts.filter(post => selectedTags.value.every(tag => post.tags?.includes(tag)))
-}, {
-  watch: [selectedTags],
+  return posts.value?.filter(post => selectedTags.value.every(tag => post.tags?.includes(tag)))
 })
 </script>
 
 <template>
   <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-2">
     <li
-      v-for="post in posts"
+      v-for="post in filteredPosts"
       :key="post.path"
       class="before:hidden !pl-0"
     >
