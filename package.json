@@ -30,7 +30,7 @@
     "reka-ui": "^2.9.8",
     "dayjs": "^1.11.21",
     "drizzle-orm": "^0.45.2",
-    "eslint": "^10.4.0",
+    "eslint": "^10.4.1",
     "feed": "^5.2.1",
     "nuxt": "^4.4.6",
     "remark-breaks": "^4.0.0",
