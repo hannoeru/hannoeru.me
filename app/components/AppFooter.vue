@@ -5,7 +5,7 @@ const year = dayjs().get('year')
 </script>
 
 <template>
-  <footer>
+  <footer class="space-y-2 pt-4">
     <NuxtLink
       v-if="$route.path !== '/'"
       :to="$route.path.split('/').slice(0, -1).join('/') || '/'"
