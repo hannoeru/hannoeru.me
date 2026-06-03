@@ -43,7 +43,7 @@ const { data: posts } = await useAsyncData('posts', async () => {
           <NuxtPicture
             format="webp"
             :src="post.image"
-            :alt="post.title"
+            alt=""
             class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)"
             loading="lazy"
           />
@@ -56,6 +56,9 @@ const { data: posts } = await useAsyncData('posts', async () => {
             <div class="text-xl font-semibold">
               {{ post.title }}
             </div>
+            <p v-if="post.description" class="mt-3 text-sm leading-6 opacity-70 line-clamp-3">
+              {{ post.description }}
+            </p>
           </div>
           <div class="opacity-50 text-sm mt-4">
             {{ post.date ? formatDate(post.date) : '-' }}
