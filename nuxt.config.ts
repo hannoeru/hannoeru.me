@@ -32,7 +32,7 @@ const redirects: NonNullable<NuxtConfig['nitro']>['routeRules'] = {
 export default defineNuxtConfig({
 
   // https://nuxt.com/modules
-  modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image'],
+  modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/seo'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },

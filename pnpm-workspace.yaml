@@ -6,3 +6,7 @@ allowBuilds:
   unrs-resolver: true
   vue-demi: true
   workerd: true
+minimumReleaseAgeExclude:
+  - '@nuxtjs/seo@5.1.4'
+  - nuxt-schema-org@6.1.2
+  - nuxtseo-shared@5.1.4
