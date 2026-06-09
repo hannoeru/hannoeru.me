@@ -41,6 +41,11 @@ export default defineNuxtConfig({
     trailingSlash: false,
   },
 
+  // https://nuxtseo.com/docs/sitemap/getting-started/installation
+  sitemap: {
+    discoverNestedPages: true,
+  },
+
   // https://devtools.nuxt.com
   devtools: { enabled: true },
   app: {
