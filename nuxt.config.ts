@@ -34,12 +34,18 @@ export default defineNuxtConfig({
   // https://nuxt.com/modules
   modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/seo'],
 
+  // https://nuxtseo.com/docs/nuxt-seo/getting-started/installation
+  site: {
+    url: 'https://hannoeru.me',
+    name: 'Han',
+    trailingSlash: false,
+  },
+
   // https://devtools.nuxt.com
   devtools: { enabled: true },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: 'Han',
       meta: [
         { property: 'og:title', content: 'Han' },
         { property: 'og:image', content: 'https://hannoeru.me/avatar.png' },

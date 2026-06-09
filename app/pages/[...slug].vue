@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const domain = useRuntimeConfig().public.domain
 const router = useRouter()
+const route = useRoute()
 const { page } = await useContent()
+
+const isHome = computed(() => route.path === '/')
 
 function searchTag(tag: string) {
   router.push({
@@ -23,7 +26,7 @@ useHead({
         ]
       : []),
     ...(page.value?.image ? [{ property: 'og:image', content: new URL(page.value.image, domain).toString() }] : []),
-    { property: 'og:type', content: 'article' },
+    { property: 'og:type', content: isHome.value ? 'website' : 'article' },
   ],
 })
 
