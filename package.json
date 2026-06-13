@@ -37,7 +37,7 @@
     "reka-ui": "^2.9.8",
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.3.3",
+    "vue-tsc": "^3.3.5",
     "wrangler": "^4.95.0"
   }
 }
