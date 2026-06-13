@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@11.4.0",
+  "packageManager": "pnpm@11.6.0",
   "engines": {
     "node": ">=24.16.0"
   },
@@ -17,14 +17,14 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.480",
+    "@iconify/json": "^2.2.486",
     "@nuxt/content": "3.14.0",
-    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/eslint": "^1.16.0",
     "@nuxt/image": "^2.0.0",
     "@nuxthub/core": "^0.10.7",
-    "@nuxtjs/color-mode": "^4.0.0",
-    "@nuxtjs/seo": "5.1.4",
-    "@takumi-rs/wasm": "^1.7.0",
+    "@nuxtjs/color-mode": "^4.0.1",
+    "@nuxtjs/seo": "5.3.0",
+    "@takumi-rs/wasm": "^1.8.5",
     "@unocss/nuxt": "^66.7.0",
     "@unocss/transformer-directives": "^66.7.0",
     "@unocss/transformer-variant-group": "^66.7.0",
@@ -34,10 +34,10 @@
     "eslint": "^10.4.1",
     "feed": "^5.2.1",
     "nuxt": "^4.4.7",
-    "reka-ui": "^2.9.8",
+    "reka-ui": "^2.9.10",
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.3",
-    "wrangler": "^4.95.0"
+    "wrangler": "^4.100.0"
   }
 }
