@@ -1,5 +1,3 @@
-import transformerDirectives from '@unocss/transformer-directives'
-import transformerVariantGroup from '@unocss/transformer-variant-group'
 import type { NuxtConfig } from 'nuxt/schema'
 
 const redirects: NonNullable<NuxtConfig['nitro']>['routeRules'] = {
@@ -33,18 +31,6 @@ export default defineNuxtConfig({
 
   // https://nuxt.com/modules
   modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/seo'],
-
-  // https://nuxtseo.com/docs/nuxt-seo/getting-started/installation
-  site: {
-    url: 'https://hannoeru.me',
-    name: 'Han',
-    trailingSlash: false,
-  },
-
-  // https://nuxtseo.com/docs/sitemap/getting-started/installation
-  sitemap: {
-    discoverNestedPages: true,
-  },
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -92,6 +78,13 @@ export default defineNuxtConfig({
   css: [
     '@/assets/styles/main.css',
   ],
+
+  // https://nuxtseo.com/docs/nuxt-seo/getting-started/installation
+  site: {
+    url: 'https://hannoeru.me',
+    name: 'Han',
+    trailingSlash: false,
+  },
   colorMode: {
     classSuffix: '',
   },
@@ -117,6 +110,12 @@ export default defineNuxtConfig({
       domain: 'https://hannoeru.me',
     },
   },
+  routeRules: {
+    '/': { prerender: true },
+    '/posts/**': { prerender: true },
+    '/feed.*': { prerender: true },
+    ...Object.fromEntries(Object.entries(redirects).map(([key, value]) => [encodeURI(key), value])),
+  },
   compatibilityDate: '2026-05-26',
   nitro: {
     preset: 'cloudflare_module',
@@ -140,12 +139,6 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: true,
-    },
-    routeRules: {
-      '/': { prerender: true },
-      '/posts/**': { prerender: true },
-      '/feed.*': { prerender: true },
-      ...Object.fromEntries(Object.entries(redirects).map(([key, value]) => [encodeURI(key), value])),
     },
   },
 
@@ -175,27 +168,9 @@ export default defineNuxtConfig({
       baseURL: 'https://hoyudesign.com',
     },
   },
-  unocss: {
-    icons: {
-      scale: 1.2,
-      warn: true,
-    },
-    attributify: {
-      strict: true,
-    },
-    preflight: true,
-    theme: {
-      fontFamily: {
-        sans: '"Inter", Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
-      },
-    },
-    transformers: [
-      transformerVariantGroup(),
-      transformerDirectives(),
-    ],
-    shortcuts: {
-      'icon-link': 'block text-coolgray-500 dark:text-coolgray-400 hover:text-sky-500 dark:hover:text-sky-500',
-    },
-    rules: [],
+
+  // https://nuxtseo.com/docs/sitemap/getting-started/installation
+  sitemap: {
+    zeroRuntime: true,
   },
 })
