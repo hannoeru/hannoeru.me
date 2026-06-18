@@ -12,13 +12,13 @@ importers:
         specifier: ^9.3.0
         version: 9.3.0
       '@iconify/json':
-        specifier: ^2.2.480
+        specifier: ^2.2.487
         version: 2.2.487
       '@nuxt/content':
         specifier: 3.14.0
         version: 3.14.0(@valibot/to-json-schema@1.7.1(valibot@1.4.1(typescript@6.0.3)))(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1))(magicast@0.5.3)(valibot@1.4.1(typescript@6.0.3))
       '@nuxt/eslint':
-        specifier: ^1.15.2
+        specifier: ^1.16.0
         version: 1.16.0(@typescript-eslint/utils@8.61.1(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3))(@vue/compiler-sfc@3.5.38)(crossws@0.4.6(srvx@0.11.16))(eslint@10.5.0(jiti@2.7.0))(magicast@0.5.3)(oxc-parser@0.133.0)(rolldown@1.0.0-beta.57(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1))(typescript@6.0.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(tsx@4.22.4)(yaml@2.9.0))
       '@nuxt/image':
         specifier: ^2.0.0
@@ -27,14 +27,14 @@ importers:
         specifier: ^0.10.7
         version: 0.10.7(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1)(db0@0.3.4(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1)))(ioredis@5.11.1)(magicast@0.5.3)(typescript@6.0.3)(vue-tsc@3.3.5(typescript@6.0.3))
       '@nuxtjs/color-mode':
-        specifier: ^4.0.0
+        specifier: ^4.0.1
         version: 4.0.1(magicast@0.5.3)
       '@nuxtjs/seo':
         specifier: 5.3.0
-        version: 5.3.0(e741992ca39bd6655f3ad162627787c9)
+        version: 5.3.0(01676f5eed714307b0f5cd16902fdac6)
       '@takumi-rs/wasm':
-        specifier: ^1.7.0
-        version: 1.8.5
+        specifier: ^1.8.6
+        version: 1.8.6
       '@unocss/nuxt':
         specifier: ^66.7.2
         version: 66.7.2(magicast@0.5.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(tsx@4.22.4)(yaml@2.9.0))(webpack@5.107.2(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.15))
@@ -66,7 +66,7 @@ importers:
         specifier: ^4.4.8
         version: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@types/node@25.9.3)(@vue/compiler-sfc@3.5.38)(cac@6.7.14)(db0@0.3.4(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1)))(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1))(eslint@10.5.0(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.32.0)(magicast@0.5.3)(optionator@0.9.4)(rolldown@1.0.0-beta.57(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1))(rollup-plugin-visualizer@7.0.1(rolldown@1.0.0-beta.57(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1))(rollup@4.62.0))(rollup@4.62.0)(srvx@0.11.16)(terser@5.48.0)(tsx@4.22.4)(typescript@6.0.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(tsx@4.22.4)(yaml@2.9.0))(vue-tsc@3.3.5(typescript@6.0.3))(yaml@2.9.0)
       reka-ui:
-        specifier: ^2.9.8
+        specifier: ^2.9.10
         version: 2.9.10(vue@3.5.38(typescript@6.0.3))
       remark-breaks:
         specifier: ^4.0.0
@@ -78,7 +78,7 @@ importers:
         specifier: ^3.3.5
         version: 3.3.5(typescript@6.0.3)
       wrangler:
-        specifier: ^4.95.0
+        specifier: ^4.101.0
         version: 4.101.0(@cloudflare/workers-types@4.20260616.1)
 
 packages:
@@ -3322,8 +3322,8 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-  '@takumi-rs/helpers@1.8.5':
-    resolution: {integrity: sha512-kzmQAq5oAE7DzWe+gFsuEQDe+bOtOMwzguEbEixDjWkiVrmXt+7lzsgfAyh6elbAJgROjfBezZaXCVY0noB70A==}
+  '@takumi-rs/helpers@1.8.6':
+    resolution: {integrity: sha512-P/Vr26/FwPNuLxPGB5MfO2hxPh0hluqw7A8px6OG9gvku6H18gpR/CeqLGWiBvlU3HQFqoUKhQKKS7kcG8Fp8g==}
     peerDependencies:
       react: ^19.2.5
       react-dom: ^18.0.0 || ^19.0.0
@@ -3333,8 +3333,8 @@ packages:
       react-dom:
         optional: true
 
-  '@takumi-rs/wasm@1.8.5':
-    resolution: {integrity: sha512-yPWm5oktc+AWNb48oJPd2eJ3Ac4rFFhJaGF1IzvO6jOe6Sj2VoZqNRLI6IO8OxUKkF14e3t1Ibo2R31cjfoZtA==}
+  '@takumi-rs/wasm@1.8.6':
+    resolution: {integrity: sha512-E64ffSjAcEGHbPcHa7oI0J/FZQH6nvZxBLr/+Lohm0+o9ZRFnYqOwLQd+8d/pXh366ISkXYsRtSibPEiEWxEgg==}
 
   '@tanstack/table-core@8.21.3':
     resolution: {integrity: sha512-ldZXEhOBb8Is7xLs01fR3YEc3DERiz5silj8tnGkFZytt1abEvl/GhUmCE0PMLaMPTa3Jk4HbKmRlHmu+gCftg==}
@@ -10226,14 +10226,14 @@ snapshots:
       - yjs
       - yup
 
-  '@nuxtjs/seo@5.3.0(e741992ca39bd6655f3ad162627787c9)':
+  '@nuxtjs/seo@5.3.0(01676f5eed714307b0f5cd16902fdac6)':
     dependencies:
       '@nuxt/kit': 4.4.8(magicast@0.5.3)
       '@nuxtjs/robots': 6.1.1(bd45100acea4758156f0a4064c8a5d7d)
       '@nuxtjs/sitemap': 8.2.1(bd45100acea4758156f0a4064c8a5d7d)
       nuxt: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@types/node@25.9.3)(@vue/compiler-sfc@3.5.38)(cac@6.7.14)(db0@0.3.4(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1)))(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1))(eslint@10.5.0(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.32.0)(magicast@0.5.3)(optionator@0.9.4)(rolldown@1.0.0-beta.57(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1))(rollup-plugin-visualizer@7.0.1(rolldown@1.0.0-beta.57(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1))(rollup@4.62.0))(rollup@4.62.0)(srvx@0.11.16)(terser@5.48.0)(tsx@4.22.4)(typescript@6.0.3)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(tsx@4.22.4)(yaml@2.9.0))(vue-tsc@3.3.5(typescript@6.0.3))(yaml@2.9.0)
       nuxt-link-checker: 5.1.0(bc31735205931353d8f9b6e09672dc73)
-      nuxt-og-image: 6.6.0(bf04aa849d4f605128bed38d3bfccda0)
+      nuxt-og-image: 6.6.0(3b2733c44439a6688be2f881a6daf278)
       nuxt-schema-org: 6.2.1(a9afb396f767ca60fd05962b05ad0d69)
       nuxt-seo-utils: 8.3.1(7f64145d28be98e9026a5700d217ecf6)
       nuxt-site-config: 4.1.0(bd45100acea4758156f0a4064c8a5d7d)
@@ -11282,11 +11282,11 @@ snapshots:
       tailwindcss: 4.3.1
       vite: 7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(tsx@4.22.4)(yaml@2.9.0)
 
-  '@takumi-rs/helpers@1.8.5': {}
+  '@takumi-rs/helpers@1.8.6': {}
 
-  '@takumi-rs/wasm@1.8.5':
+  '@takumi-rs/wasm@1.8.6':
     dependencies:
-      '@takumi-rs/helpers': 1.8.5
+      '@takumi-rs/helpers': 1.8.6
     transitivePeerDependencies:
       - react
       - react-dom
@@ -14927,7 +14927,7 @@ snapshots:
       - yup
       - zod
 
-  nuxt-og-image@6.6.0(bf04aa849d4f605128bed38d3bfccda0):
+  nuxt-og-image@6.6.0(3b2733c44439a6688be2f881a6daf278):
     dependencies:
       '@clack/prompts': 1.5.1
       '@nuxt/kit': 4.4.8(magicast@0.5.3)
@@ -14964,7 +14964,7 @@ snapshots:
       unplugin: 3.0.0
       unstorage: 1.17.5(db0@0.3.4(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1)))(ioredis@5.11.1)
     optionalDependencies:
-      '@takumi-rs/wasm': 1.8.5
+      '@takumi-rs/wasm': 1.8.6
       fontless: 0.2.1(db0@0.3.4(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1)))(ioredis@5.11.1)(vite@7.3.5(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(tsx@4.22.4)(yaml@2.9.0))
       nitropack: 2.13.4(drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260616.1))(oxc-parser@0.133.0)(rolldown@1.0.0-beta.57(@emnapi/core@1.10.0)(@emnapi/runtime@1.11.1))(srvx@0.11.16)
       sharp: 0.34.5
