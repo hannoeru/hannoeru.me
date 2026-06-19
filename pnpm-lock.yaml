@@ -4234,8 +4234,8 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  anynum@1.0.0:
-    resolution: {integrity: sha512-xjR9/zBVnUOP6ztMIIgShjsxui80nQUQH+5xJnvrYLs+90bF25/KJqaAi8mk+B4RDtX1Nspi6fmp4YTEts8SfA==}
+  anynum@1.0.1:
+    resolution: {integrity: sha512-N6//FLET/tXYNM/F6ABca1oH6fWB+KlTt909Le28WMDBk8oaT4vY17DCrwg2MvmuqUKt3Ni4N5dGJ/EoBgcO6A==}
 
   archiver-utils@5.0.2:
     resolution: {integrity: sha512-wuLJMmIBQYCsGZgYLTy5FIB2pF6Lfb6cXMSF8Qywwk3t20zWnAi7zLcQFdKQmIB8wyZpY5ER38x08GbwtR2cLA==}
@@ -6323,8 +6323,8 @@ packages:
   node-mock-http@1.0.4:
     resolution: {integrity: sha512-8DY+kFsDkNXy1sJglUfuODx1/opAGJGyrTuFqEoN90oRc2Vk0ZbD4K2qmKXBBEhZQzdKHIVfEJpDU8Ak2NJEvQ==}
 
-  node-releases@2.0.47:
-    resolution: {integrity: sha512-Uzmd6LXpouKo8EUK68IjH4+E01w/hXyV3R3g/geCJo+rXLNfh1xucB+LOzYEOQPSiUK3h/xZf0cQGcSsmyL2Og==}
+  node-releases@2.0.48:
+    resolution: {integrity: sha512-1uz8041X6LoI6ZSdZacM9lVY28vuzDlSKitnpbSNK0RfKoIJkX29NBPVEFXhnuSuEOA9Ww0xnPJ+ILWbGAv8DA==}
     engines: {node: '>=18'}
 
   nopt@8.1.0:
@@ -7182,8 +7182,8 @@ packages:
     resolution: {integrity: sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==}
     engines: {node: '>= 18'}
 
-  serialize-javascript@7.0.5:
-    resolution: {integrity: sha512-F4LcB0UqUl1zErq+1nYEEzSHJnIwb3AF2XWB94b+afhrekOUijwooAYqFyRbjYkm2PAKBabx6oYv/xDxNi8IBw==}
+  serialize-javascript@7.0.6:
+    resolution: {integrity: sha512-ATTK5Q4gFVg0YDp1my2vqygyvhcklD/UV5GIlYHooGTn/NogJqIzpetkD6E5kmuVULqz/S9inUL25XcAgDRJQg==}
     engines: {node: '>=20.0.0'}
 
   seroval@1.5.4:
@@ -7381,8 +7381,8 @@ packages:
   strip-literal@3.1.0:
     resolution: {integrity: sha512-8r3mkIM/2+PpjHoOtiAW8Rg3jJLHaV7xPwG+YRGrv6FP0wwk/toTpATxWYOW0BKdWwl82VT2tFYi5DlROa0Mxg==}
 
-  strnum@2.4.0:
-    resolution: {integrity: sha512-sHrVyWWdq28RbhjuJdZsA1SnGRJV6NiXbk6AXBxDOsgAcA+lmpUZCYjOdLBxkXMwis6RRe7dlZt4VlIWFVzkmg==}
+  strnum@2.4.1:
+    resolution: {integrity: sha512-M9eUSMT2dCB2cTNPG7UYj6KuK7RJR2SN2+yCV/fTW3xzTCS6EaGZ5pSMgDIjB7r8zSfTGk+dvvn9rTjpVS9Mwg==}
 
   structured-clone-es@2.0.0:
     resolution: {integrity: sha512-5UuAHmBLXYPCl22xWJrFuGmIhBKQzxISPVz6E7nmTmTcAOpUzlbjKJsRrCE4vADmMQ0dzeCnlWn9XufnAGf76Q==}
@@ -11044,7 +11044,7 @@ snapshots:
 
   '@rollup/plugin-terser@1.0.0(rollup@4.62.0)':
     dependencies:
-      serialize-javascript: 7.0.5
+      serialize-javascript: 7.0.6
       smob: 1.6.2
       terser: 5.48.0
     optionalDependencies:
@@ -12338,7 +12338,7 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.2
 
-  anynum@1.0.0: {}
+  anynum@1.0.1: {}
 
   archiver-utils@5.0.2:
     dependencies:
@@ -12476,7 +12476,7 @@ snapshots:
       baseline-browser-mapping: 2.10.38
       caniuse-lite: 1.0.30001799
       electron-to-chromium: 1.5.375
-      node-releases: 2.0.47
+      node-releases: 2.0.48
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
   buffer-crc32@1.0.0: {}
@@ -13407,7 +13407,7 @@ snapshots:
       fast-xml-builder: 1.2.0
       is-unsafe: 1.0.1
       path-expression-matcher: 1.5.0
-      strnum: 2.4.0
+      strnum: 2.4.1
       xml-naming: 0.1.0
 
   fastq@1.20.1:
@@ -14808,7 +14808,7 @@ snapshots:
 
   node-mock-http@1.0.4: {}
 
-  node-releases@2.0.47: {}
+  node-releases@2.0.48: {}
 
   nopt@8.1.0:
     dependencies:
@@ -16556,7 +16556,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  serialize-javascript@7.0.5: {}
+  serialize-javascript@7.0.6: {}
 
   seroval@1.5.4: {}
 
@@ -16828,9 +16828,9 @@ snapshots:
     dependencies:
       js-tokens: 9.0.1
 
-  strnum@2.4.0:
+  strnum@2.4.1:
     dependencies:
-      anynum: 1.0.0
+      anynum: 1.0.1
 
   structured-clone-es@2.0.0: {}
 
