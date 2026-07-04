@@ -1,8 +1,8 @@
 {
   "private": true,
-  "packageManager": "pnpm@11.7.0",
+  "packageManager": "pnpm@11.10.0",
   "engines": {
-    "node": ">=24.17.0"
+    "node": ">=24.18.0"
   },
   "scripts": {
     "prepare": "nuxt prepare",
@@ -17,14 +17,14 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.487",
-    "@nuxt/content": "3.14.0",
+    "@iconify/json": "^2.2.495",
+    "@nuxt/content": "3.15.0",
     "@nuxt/eslint": "^1.16.0",
     "@nuxt/image": "^2.0.0",
     "@nuxthub/core": "^0.10.7",
     "@nuxtjs/color-mode": "^4.0.1",
-    "@nuxtjs/seo": "5.3.0",
-    "@takumi-rs/wasm": "^1.8.6",
+    "@nuxtjs/seo": "5.3.2",
+    "@takumi-rs/wasm": "^1.8.7",
     "@unocss/nuxt": "^66.7.2",
     "@unocss/transformer-directives": "^66.7.2",
     "@unocss/transformer-variant-group": "^66.7.2",
@@ -35,10 +35,10 @@
     "eslint": "^10.5.0",
     "feed": "^5.2.1",
     "nuxt": "^4.4.8",
-    "reka-ui": "^2.9.10",
+    "reka-ui": "^2.10.1",
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.5",
-    "wrangler": "^4.101.0"
+    "wrangler": "^4.107.0"
   }
 }
