@@ -33,7 +33,7 @@
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.2",
     "eslint": "^10.6.0",
-    "feed": "^5.2.1",
+    "feed": "^6.0.0",
     "nuxt": "^4.4.8",
     "reka-ui": "^2.10.1",
     "remark-breaks": "^4.0.0",
