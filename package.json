@@ -34,7 +34,7 @@
     "drizzle-orm": "^0.45.2",
     "eslint": "^10.7.0",
     "feed": "^6.0.0",
-    "nuxt": "^4.4.8",
+    "nuxt": "^4.5.0",
     "reka-ui": "^2.10.1",
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
