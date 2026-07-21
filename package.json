@@ -37,7 +37,7 @@
     "nuxt": "^4.5.0",
     "reka-ui": "^2.10.1",
     "remark-breaks": "^4.0.0",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "vue-tsc": "^3.3.7",
     "wrangler": "^4.110.0"
   }
