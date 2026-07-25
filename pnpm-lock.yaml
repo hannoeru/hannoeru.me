@@ -31,10 +31,10 @@ importers:
         version: 4.0.1(magic-string@1.0.0)(magicast@0.5.3)(oxc-parser@0.131.0)(rolldown@1.2.0)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20)))
       '@nuxtjs/seo':
         specifier: 5.3.2
-        version: 5.3.2(0c050c6c899f9e96d71afe220008c682)
+        version: 5.3.2(b9f7f16163f50b924dfa4c86ade9598c)
       '@takumi-rs/wasm':
-        specifier: ^1.8.7
-        version: 1.8.7
+        specifier: ^2.4.2
+        version: 2.4.2(csstype@3.2.3)
       '@unocss/nuxt':
         specifier: ^66.7.5
         version: 66.7.5(esbuild@0.28.1)(magic-string@1.0.0)(magicast@0.5.3)(oxc-parser@0.131.0)(rolldown@1.2.0)(rollup@4.62.2)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20)))(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20))
@@ -2572,19 +2572,26 @@ packages:
   '@swc/helpers@0.5.23':
     resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
 
-  '@takumi-rs/helpers@1.8.7':
-    resolution: {integrity: sha512-5dSR9W8msQ7Asp4TCvUUB9Bt8yLgIc2ASjWtEG4Jn9xSuAVJLWFZ21Xl8HShW5GE6SV5aCCM9BL0NA9YuBWIJw==}
+  '@takumi-rs/helpers@2.4.2':
+    resolution: {integrity: sha512-ScoYBNY7n9z5RdjW2PvpA+6zyihmvliJbGARnA3Nc7wTcYGLvqM8KrJwiJQciF8fpDwJoev6yqmalr+oWC0nqQ==}
+    engines: {node: '>=18'}
     peerDependencies:
-      react: ^19.2.5
-      react-dom: ^18.0.0 || ^19.0.0
+      preact: ^10.0.0
+      react: ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
+      preact:
+        optional: true
       react:
         optional: true
-      react-dom:
-        optional: true
 
-  '@takumi-rs/wasm@1.8.7':
-    resolution: {integrity: sha512-LVBBMcYdvA0a+w1DRCwjYhFPTFVWd+oYW7kY8jMeBYEX+l0HF8PHbjWCOMDbW8iA80489UGx4fG2frLE+MKcMg==}
+  '@takumi-rs/wasm@2.4.2':
+    resolution: {integrity: sha512-LVj7R5kuFC8NpzrHM/AbUyFI3CvldSI32eN3VRK8C40PPEXy3boilI5CivUf9aOXmQuPqDWn6UcZnfnIIzVJZw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      csstype: '*'
+    peerDependenciesMeta:
+      csstype:
+        optional: true
 
   '@tanstack/virtual-core@3.17.5':
     resolution: {integrity: sha512-AXfBC3sq6PuYSwyxYORqqgHCNjPGAvKJvZuBBJ1klhztWBB5cgqgwsq8+fNfaQJG7/K4xYBja9S90QFn2zmQAg==}
@@ -8805,14 +8812,14 @@ snapshots:
       - vite
       - vue
 
-  '@nuxtjs/seo@5.3.2(0c050c6c899f9e96d71afe220008c682)':
+  '@nuxtjs/seo@5.3.2(b9f7f16163f50b924dfa4c86ade9598c)':
     dependencies:
       '@nuxt/kit': 4.5.0(magic-string@1.0.0)(magicast@0.5.3)(oxc-parser@0.131.0)(rolldown@1.2.0)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20)))
       '@nuxtjs/robots': 6.1.3(dbe119b5feab0152dc07cbc5ef52ad32)
       '@nuxtjs/sitemap': 8.2.3(dbe119b5feab0152dc07cbc5ef52ad32)
       nuxt: 4.5.0(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(cac@6.7.14)(crossws@0.4.10(srvx@0.11.22))(db0@0.3.4(drizzle-orm@0.45.2))(drizzle-orm@0.45.2)(esbuild@0.28.1)(eslint@10.7.0(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.33.0)(magicast@0.5.3)(optionator@0.9.4)(oxc-parser@0.131.0)(rollup-plugin-visualizer@7.0.1(rolldown@1.2.0)(rollup@4.62.2))(rollup@4.62.2)(srvx@0.11.22)(terser@5.49.0)(tsx@4.23.1)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(vue-tsc@3.3.8(typescript@6.0.3))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20))(yaml@2.9.0)
       nuxt-link-checker: 5.1.3(743e77156df5bfdce8bd9830061a7b70)
-      nuxt-og-image: 6.7.3(f0fe80b09f91e41eb0aa3bc4fcc5ed6a)
+      nuxt-og-image: 6.7.3(81a190487f8804c29eb99922f9d24782)
       nuxt-schema-org: 6.2.7(cde067dbe5abab719f9d422449b6c943)
       nuxt-seo-utils: 8.3.2(7b9b98b8d6e1991b206d7817622c45cc)
       nuxt-site-config: 4.1.2(dbe119b5feab0152dc07cbc5ef52ad32)
@@ -9558,14 +9565,16 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@takumi-rs/helpers@1.8.7': {}
+  '@takumi-rs/helpers@2.4.2': {}
 
-  '@takumi-rs/wasm@1.8.7':
+  '@takumi-rs/wasm@2.4.2(csstype@3.2.3)':
     dependencies:
-      '@takumi-rs/helpers': 1.8.7
+      '@takumi-rs/helpers': 2.4.2
+    optionalDependencies:
+      csstype: 3.2.3
     transitivePeerDependencies:
+      - preact
       - react
-      - react-dom
 
   '@tanstack/virtual-core@3.17.5': {}
 
@@ -12852,7 +12861,7 @@ snapshots:
       - vue
       - zod
 
-  nuxt-og-image@6.7.3(f0fe80b09f91e41eb0aa3bc4fcc5ed6a):
+  nuxt-og-image@6.7.3(81a190487f8804c29eb99922f9d24782):
     dependencies:
       '@clack/prompts': 1.7.0
       '@nuxt/kit': 4.5.0(magic-string@1.0.0)(magicast@0.5.3)(oxc-parser@0.140.0)(rolldown@1.2.0)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20)))
@@ -12891,7 +12900,7 @@ snapshots:
       unplugin: 3.3.0(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20))
       unstorage: 1.17.5(db0@0.3.4(drizzle-orm@0.45.2))(ioredis@5.11.1)
     optionalDependencies:
-      '@takumi-rs/wasm': 1.8.7
+      '@takumi-rs/wasm': 2.4.2(csstype@3.2.3)
       nitropack: 2.13.4(drizzle-orm@0.45.2)(oxc-parser@0.131.0)(rolldown@1.2.0)(srvx@0.11.22)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)(yaml@2.9.0))(webpack@5.108.4(esbuild@0.28.1)(lightningcss@1.33.0)(postcss@8.5.20))
       sharp: 0.34.5
       zod: 3.25.76
