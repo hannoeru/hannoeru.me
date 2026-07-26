@@ -57,7 +57,7 @@ importers:
         specifier: ^0.45.2
         version: 0.45.2
       eslint:
-        specifier: ^10.7.0
+        specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)(supports-color@10.2.2)
       feed:
         specifier: ^6.0.0
