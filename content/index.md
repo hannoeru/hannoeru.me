@@ -16,4 +16,4 @@ Outside of work, I like building and self-hosting things. My interests include K
 
 ***
 
-Connect with me on [GitHub](https://github.com/hannoeru) or [Twitter](https://www.twitter.com/hannoeru).
+Connect with me on [GitHub](https://github.com/hannoeru) or [X](https://x.com/hannoeru).

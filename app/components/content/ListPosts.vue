@@ -48,7 +48,7 @@ const filteredPosts = computed(() => {
         </div>
         <div class="p-6 flex flex-col justify-between flex-grow">
           <div>
-            <div v-if="post.categories?.length" class="text-sm mb-2 text-cool-gray-500 font-bold">
+            <div v-if="post.categories?.length" class="text-sm mb-2 text-gray-500 font-bold">
               {{ post.categories[0] }}
             </div>
             <div class="text-xl font-semibold">

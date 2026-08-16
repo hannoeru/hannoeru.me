@@ -55,8 +55,8 @@ const isOpen = ref(false)
           </NavLink>
         </nav>
         <div class="flex gap-4 p-4 mt-auto">
-          <IconLink href="https://twitter.com/hannoeru" title="Twitter">
-            <div i-feather-twitter />
+          <IconLink href="https://x.com/hannoeru" title="X">
+            <div i-simple-icons-x />
           </IconLink>
           <IconLink href="https://github.com/hannoeru" title="GitHub">
             <div i-uil-github-alt />
@@ -85,8 +85,8 @@ const isOpen = ref(false)
       </NavLink>
     </nav>
     <div class="flex gap-4 p-4 mt-auto">
-      <IconLink href="https://twitter.com/hannoeru" title="Twitter">
-        <div i-feather-twitter />
+      <IconLink href="https://x.com/hannoeru" title="X">
+        <div i-simple-icons-x />
       </IconLink>
       <IconLink href="https://github.com/hannoeru" title="GitHub">
         <div i-uil-github-alt />

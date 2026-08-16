@@ -32,10 +32,9 @@ const { copy, copied } = useClipboard({
     </IconLink>
     <IconLink
       :href="`https://twitter.com/intent/tweet?url=${encodedUrl}`"
-      title="Share to Twitter"
-      class="transform scale-130"
+      title="Share to X"
     >
-      <div i-carbon:logo-twitter />
+      <div class="scale-80" i-simple-icons-x />
     </IconLink>
     <IconLink
       :href="`https://lineit.line.me/share/ui?url=${encodedUrl}`"

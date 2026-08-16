@@ -26,6 +26,7 @@
     "@nuxtjs/seo": "5.3.6",
     "@takumi-rs/wasm": "^2.4.2",
     "@unocss/nuxt": "^66.7.5",
+    "@unocss/preset-icons": "^66.7.5",
     "@unocss/transformer-directives": "^66.7.5",
     "@unocss/transformer-variant-group": "^66.7.5",
     "@vueuse/nuxt": "^14.4.0",

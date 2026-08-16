@@ -15,7 +15,7 @@ defineEmits<{
   <NuxtLink
     :to="to"
     :title="title"
-    class="flex items-center gap-3 px-4 py-3 hover:bg-white dark:hover:bg-dark-900 rounded-xl transition"
+    class="flex items-center gap-3 px-4 py-3 rounded-xl transition hover:bg-gray-100 dark:hover:bg-dark-700"
     @click="$emit('click')"
   >
     <slot />
