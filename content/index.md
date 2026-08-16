@@ -4,11 +4,15 @@ layout: default
 
 :AboutMe
 
-Hi, I'm Han, Software Engineer based in Tokyo, Japan.
+Hi, I'm Han, a Software Engineer based in Tokyo, Japan.
 
-I'm the creator of [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages), and core member of [UnoCSS](https://unocss.dev/). My journey in programming began in high school, and today I focus on maintaining and contributing to projects related to the Vite and Vue ecosystem.
+I build software across the stack, with a focus on developer tooling, web platforms, cloud infrastructure, and applied AI. I enjoy working on problems that sit between application development and infrastructure, from TypeScript and modern web frameworks to Kubernetes, distributed systems, APIs, and developer experience.
 
-My interests span a wide range of topics, including Kubernetes, Linux, virtualization, networking, smart home automation, IoT, playing guitar, Japanese music, anime, mountain climbing, rock climbing, and most recently, 3D printing.
+I'm active in open source and have contributed to the JavaScript and TypeScript ecosystem for years. I'm the creator of [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) and a core member of [UnoCSS](https://unocss.dev/).
+
+Recently, I've been exploring how LLMs and agentic systems can work with large, complex codebases, including code analysis, context retrieval, code-to-spec workflows, and developer tools built around AI.
+
+Outside of work, I like building and self-hosting things. My interests include Kubernetes, Linux, networking, virtualization, smart home automation, IoT, 3D printing, diving, snowboarding, climbing, and music.
 
 ***
 
