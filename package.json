@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@12.9.1",
+  "packageManager": "pnpm@12.10.1",
   "engines": {
     "node": ">=24.21.0"
   },
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.539",
+    "@iconify/json": "^2.2.541",
     "@nuxt/content": "3.16.1",
     "@nuxt/eslint": "^1.17.0",
     "@nuxt/image": "^2.1.0",
@@ -32,7 +32,7 @@
     "@vueuse/nuxt": "^14.4.0",
     "dayjs": "^1.11.23",
     "drizzle-kit": "^0.31.11",
-    "drizzle-orm": "^0.45.3",
+    "drizzle-orm": "^0.45.4",
     "eslint": "^10.12.0",
     "feed": "^6.0.0",
     "nuxt": "^4.5.2",
@@ -40,6 +40,6 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.12",
-    "wrangler": "^4.147.0"
+    "wrangler": "^4.149.0"
   }
 }
