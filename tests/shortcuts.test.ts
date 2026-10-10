@@ -49,6 +49,23 @@ test('browser modifiers, composition, repeats, and handled events remain untouch
   assert.equal(matchesShortcut({ ...keyEvent, key: '?', shiftKey: true, ctrlKey: true }, '?'), false)
 })
 
+test('metadata search matches ASCII case under the Turkish default locale', (t) => {
+  const nativeToLocaleLowerCase = String.prototype.toLocaleLowerCase
+  assert.equal(nativeToLocaleLowerCase.call('LINUX', 'tr-TR'), 'lınux')
+  t.mock.method(String.prototype, 'toLocaleLowerCase', function (this: string) {
+    return nativeToLocaleLowerCase.call(this, 'tr-TR')
+  })
+
+  assert.deepEqual([
+    matchesPost({ title: 'LINUX tools' }, 'linux'),
+    matchesPost({ description: 'Installing LINUX tools' }, 'linux'),
+    matchesPost({ tags: ['LINUX'] }, 'linux'),
+    matchesPost({ title: 'linux tools' }, 'LINUX'),
+    matchesPost({ description: 'Installing linux tools' }, 'LINUX'),
+    matchesPost({ tags: ['linux'] }, 'LINUX'),
+  ], [true, true, true, true, true, true])
+})
+
 test('metadata search matches titles, descriptions, and tags without changing content', () => {
   const post = { title: '在 USG 上設定 VPN', description: 'OpenVPN on Linux', tags: ['Networking', '日本'] }
   assert.equal(matchesPost(post, 'usg'), true)
