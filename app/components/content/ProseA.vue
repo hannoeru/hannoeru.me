@@ -18,11 +18,11 @@ const opensInNewTab = computed(() => props.blank || isHttpExternal.value)
     :href="href"
     :target="opensInNewTab ? '_blank' : undefined"
     :rel="opensInNewTab ? 'noopener noreferrer' : undefined"
-    class="text-sky-500 dark:text-sky-400 font-medium hover:underline"
+    class="prose-link"
   >
     <slot />
   </a>
-  <NuxtLink v-else :to="href" class="text-sky-500 dark:text-sky-400 font-medium hover:underline">
+  <NuxtLink v-else :to="href" class="prose-link">
     <slot />
   </NuxtLink>
 </template>

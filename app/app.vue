@@ -4,6 +4,7 @@ import { TooltipProvider } from 'reka-ui'
 
 <template>
   <TooltipProvider>
+    <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

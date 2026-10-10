@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const router = useRouter()
 const route = useRoute()
-const tags = computed(() => (Array.isArray(route.query.tags) ? route.query.tags : [route.query.tags].filter(Boolean)) as string[])
+const tags = computed(() => {
+  const value = route.query.tags
+  return (Array.isArray(value) ? value : [value]).filter((tag): tag is string => Boolean(tag))
+})
 function removeTag(tag: string) {
   const tagList = tags.value.filter(i => i !== tag)
   const query = { ...route.query }
@@ -16,7 +19,7 @@ function removeTag(tag: string) {
 </script>
 
 <template>
-  <div v-if="tags.length" class="mb-6 inline-flex !mb-0 ml-4">
+  <div v-if="tags.length" class="inline-flex flex-wrap gap-2">
     <TagLabel
       v-for="tag in tags"
       :key="tag"

@@ -30,7 +30,7 @@ export default defineConfig({
     transformerDirectives(),
   ],
   shortcuts: {
-    'icon-link': 'block text-gray-500 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-500',
+    'icon-link': 'block text-gray-500 dark:text-gray-400 hover:text-[var(--c-accent)]',
   },
   rules: [],
 })

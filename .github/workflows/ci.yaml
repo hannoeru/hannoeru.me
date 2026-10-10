@@ -41,6 +41,9 @@ jobs:
       - name: Type check
         run: pnpm typecheck
 
+      - name: Test shortcuts and search
+        run: pnpm test
+
       - name: Test build
         run: pnpm build
 

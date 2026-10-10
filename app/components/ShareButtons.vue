@@ -52,7 +52,7 @@ const { copy, copied } = useClipboard({
       <TooltipTrigger as-child>
         <button
           type="button"
-          class="icon-link focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 transform scale-70"
+          class="icon-link focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--c-accent)] transform scale-70"
           :aria-label="copied ? 'Copied link' : 'Copy link'"
           @click="copy()"
         >
