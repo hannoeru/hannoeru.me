@@ -40,13 +40,13 @@ if (!page.value) {
 </script>
 
 <template>
-  <article v-if="page" class="md:p-10 p-6 pt-0 md:rounded-2xl max-w-full overflow-hidden">
-    <header v-if="page.title" class="mb-8">
-      <p v-if="page.date" class="opacity-50 mb-2">
-        {{ page.date ? formatDate(page.date) : '-' }}
-      </p>
-      <div class="flex items-center mb-6">
-        <h1 class="text-4xl font-extrabold">
+  <article v-if="page" class="page-content">
+    <header v-if="page.title" class="page-heading">
+      <time v-if="page.date" class="page-date" :datetime="new Date(page.date).toISOString()">
+        {{ formatDate(page.date) }}
+      </time>
+      <div class="page-title-row">
+        <h1 class="page-title">
           {{ page.title }}
         </h1>
         <TagSelectList v-if="$route.path === '/posts'" />
@@ -76,6 +76,5 @@ if (!page.value) {
         </TagLabel>
       </div>
     </div>
-    <AppFooter />
   </article>
 </template>

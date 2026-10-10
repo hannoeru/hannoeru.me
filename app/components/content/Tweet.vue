@@ -5,22 +5,33 @@ const props = defineProps<{
   conversation?: string
 }>()
 
+type TwitterWidgets = {
+  createTweet: (id: string, element: HTMLElement, options: { theme: 'dark' | 'light', conversation: string }) => Promise<HTMLElement | undefined>
+}
+
+declare global {
+  interface Window {
+    twttr?: { widgets?: TwitterWidgets }
+  }
+}
+
+const colorMode = useColorMode()
 const tweet = ref<HTMLElement | null>()
 const loaded = ref(false)
 
 async function create() {
-  if (!tweet.value) return
+  const widgets = window.twttr?.widgets
+  if (!tweet.value || !widgets) return
   const tweets = Array.from(tweet.value.querySelectorAll('.twitter-tweet'))
   for (const item of tweets) {
     tweet.value.removeChild(item)
   }
 
-  // @ts-expect-error missing type
-  await window.twttr.widgets.createTweet(
+  await widgets.createTweet(
     props.id.toString(),
     tweet.value,
     {
-      theme: isDark.value ? 'dark' : 'light',
+      theme: colorMode.value === 'dark' ? 'dark' : 'light',
       conversation: props.conversation || 'none',
     },
   )
@@ -37,13 +48,12 @@ useScriptTag(
 )
 
 onMounted(() => {
-  // @ts-expect-error missing type
-  if (!loaded.value && window?.twttr?.widgets) {
+  if (!loaded.value) {
     create()
   }
 })
 
-watch(isDark, () => create())
+watch(() => colorMode.value, () => create())
 </script>
 
 <template>

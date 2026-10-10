@@ -35,7 +35,6 @@ export default defineNuxtConfig({
   // https://devtools.nuxt.com
   devtools: { enabled: true },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       meta: [
         { property: 'og:title', content: 'Han' },
@@ -71,14 +70,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         prefix: 'og: http://ogp.me/ns#',
         lang: 'en',
-        class: 'font-sans',
       },
     },
   },
-  css: [
-    '@/assets/styles/main.css',
-  ],
-
   // https://nuxtseo.com/docs/nuxt-seo/getting-started/installation
   site: {
     url: 'https://hannoeru.me',
@@ -97,9 +91,9 @@ export default defineNuxtConfig({
         },
         highlight: {
           theme: {
-            dark: 'vitesse-dark',
-            light: 'vitesse-light',
-            default: 'vitesse-light',
+            dark: 'github-dark-default',
+            light: 'github-light',
+            default: 'github-light',
           },
         },
       },

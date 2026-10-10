@@ -18,51 +18,59 @@ const filteredPosts = computed(() => {
 
   return posts.value?.filter(post => selectedTags.value.every(tag => post.tags?.includes(tag)))
 })
+
+const postGroups = computed(() => {
+  const groups = new Map<string, NonNullable<typeof posts.value>>()
+  for (const post of filteredPosts.value ?? []) {
+    const year = post.date ? String(new Date(post.date).getFullYear()) : 'Undated'
+    const group = groups.get(year) ?? []
+    group.push(post)
+    groups.set(year, group)
+  }
+  return Array.from(groups, ([year, entries]) => ({ year, entries }))
+})
 </script>
 
 <template>
-  <ul class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-2">
-    <li
-      v-for="post in filteredPosts"
-      :key="post.path"
-      class="before:hidden !pl-0"
+  <div class="post-archive">
+    <section
+      v-for="group in postGroups"
+      :key="group.year"
+      :aria-label="`Posts from ${group.year}`"
+      class="post-year"
     >
-      <NuxtLink
-        class="
-            block w-full h-full
-            bg-light-3 dark:bg-dark-800
-            rounded-md
-            overflow-hidden
-            flex flex-col
-            group"
-        :to="post.path"
-      >
-        <div v-if="post.image" class="relative w-full h-50 overflow-hidden">
-          <NuxtPicture
-            format="webp"
-            :src="post.image"
-            alt=""
-            class="absolute w-full h-full rounded-t-md object-cover transition duration-500 transform filter group-hover:(scale-105 brightness-75)"
-            loading="lazy"
-          />
-        </div>
-        <div class="p-6 flex flex-col justify-between flex-grow">
-          <div>
-            <div v-if="post.categories?.length" class="text-sm mb-2 text-gray-500 font-bold">
-              {{ post.categories[0] }}
+      <h2 class="font-mono text-[.875rem] font-400 muted mb-4">
+        {{ group.year }}
+      </h2>
+      <ul class="list-none p-0">
+        <li v-for="post in group.entries" :key="post.path" class="my-[1.1rem]">
+          <NuxtLink :to="post.path" class="post-row group">
+            <NuxtPicture
+              v-if="post.image"
+              :src="post.image"
+              format="webp"
+              alt=""
+              width="112"
+              height="72"
+              sizes="80px sm:112px"
+              loading="lazy"
+              class="post-thumbnail"
+            />
+            <div class="post-row-content">
+              <div class="post-row-heading">
+                <span class="post-row-title">{{ post.title }}</span>
+                <time v-if="post.date" class="post-time" :datetime="new Date(post.date).toISOString()">{{ formatDate(post.date) }}</time>
+              </div>
+              <p v-if="post.description" class="post-description">
+                {{ post.description }}
+              </p>
             </div>
-            <div class="text-xl font-semibold">
-              {{ post.title }}
-            </div>
-            <p v-if="post.description" class="mt-3 text-sm leading-6 opacity-70 line-clamp-3">
-              {{ post.description }}
-            </p>
-          </div>
-          <div class="opacity-50 text-sm mt-4">
-            {{ post.date ? formatDate(post.date) : '-' }}
-          </div>
-        </div>
-      </NuxtLink>
-    </li>
-  </ul>
+          </NuxtLink>
+        </li>
+      </ul>
+    </section>
+    <p v-if="!filteredPosts?.length" class="muted">
+      No posts match these tags. Remove a tag to see more posts.
+    </p>
+  </div>
 </template>
