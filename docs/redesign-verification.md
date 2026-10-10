@@ -11,7 +11,7 @@ Use the Node version in `.nvmrc` and the installed project dependencies. Stop th
 5. Start the local site with `pnpm dev --port 3020`.
 6. Run `node --test scripts/check-redesign.mjs scripts/check-article-render.mjs`.
 
-`pnpm test` includes four behavior tests and six real UnoCSS generation tests. The style tests cover extraction from Vue scripts, neutral theme tokens, root dark-mode selectors, portal surfaces, media specificity, code descendants, focus, scrollbars, and reduced motion. They use the installed UnoCSS generator, not a mocked stylesheet.
+`pnpm test` includes five behavior tests and six real UnoCSS generation tests. The search regression forces native Turkish casing through a test-scoped mock. It checks uppercase metadata against a lowercase query and the reverse for titles, descriptions, and tags. It does not assume that `LANG` changes Node's default string casing. The style tests cover extraction from Vue scripts, neutral theme tokens, root dark-mode selectors, portal surfaces, media specificity, code descendants, focus, scrollbars, and reduced motion. They use the installed UnoCSS generator, not a mocked stylesheet.
 
 The artifact check reads the production HTML and sitemap from `.output/public`. It checks feed endpoints on the running local site. Set `BLOG_URL` if the server uses another address.
 

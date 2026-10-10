@@ -130,7 +130,7 @@ Reka exposes focus hooks for custom open and close behavior. Override defaults o
 
 Prefer a visible Search button before adding shortcut bindings. If a printable search shortcut such as `/` is shipped, provide a visible way to disable character shortcuts. [WCAG 2.1.4](https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html) also applies to `?` and multi-character sequences. Ignoring text inputs alone does not satisfy that requirement.
 
-For the first version, use at most `/` to open the combined dialog. Explain the supported keys inside that dialog. Avoid a separate `?` overlay and multi-key navigation sequences.
+The shipped registry uses `h` for Home, `p` for Posts, `b` for Bookmarks, `/` for post search, `?` for shortcut help, and `t` to toggle the theme. Escape closes the active dialog unless text composition is in progress. Search and help are exclusive views in one shared modal, not separate overlays. Both views show a checkbox to disable single-key shortcuts. Its setting persists across visits, and the visible buttons remain available when shortcuts are disabled. There are no multi-key navigation sequences.
 
 The global listener must ignore an event when:
 
