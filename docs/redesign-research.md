@@ -2,7 +2,7 @@
 
 ## Decision
 
-Use a small top navigation, a narrow text column, and chronological post rows. Keep Han's identity and existing Nuxt Content routes. The implementation uses one Reka modal with exclusive search and shortcut-help views. Search shows posts only. This avoids command and post-result ambiguity without a second modal or focus trap.
+Use a small top navigation, a narrow text column, and chronological post rows with compact optional thumbnails. Keep Han's identity and existing Nuxt Content routes. The implementation uses one Reka modal with exclusive search and shortcut-help views. Search shows posts only. This avoids command and post-result ambiguity without a second modal or focus trap.
 
 Reject generic scroll storytelling, a pink editorial palette, large marketing sections, and image-card grids. These choices do not match the inspected reference. Keyboard controls are a requested addition for this blog, not a verified antfu site navigation pattern.
 
@@ -27,7 +27,7 @@ The live snapshots did not expose a search or shortcut-help control on the home 
 | --- | --- | --- |
 | A small logo sits at the upper left. Compact navigation sits at the upper right. There is no desktop sidebar. | [Live home](https://antfu.me/), supplied screenshot, [NavBar.vue](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/components/NavBar.vue) | Replace the wide sidebar with top navigation. Keep Home, Posts, and Bookmarks visible. Add a named Search button. |
 | The home page starts with a name and personal prose. Inline project links support the biography instead of a large promotional hero. | [Live home](https://antfu.me/), [home source](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/pages/index.md) | Keep Han's Tokyo introduction and open-source work. Do not copy Anthony's biography, project badges, signature, or images. |
-| The posts page is a single list. Titles, dates, duration, and language labels form the rows. The inspected main region contained zero images. Large faint year numerals separate groups. | [Live posts](https://antfu.me/posts), [ListPosts.vue](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/components/ListPosts.vue) | Replace thumbnail cards with title-led rows and year groups. Prefer small, readable year headings over oversized decorative numerals. Show dates and existing tags. Do not invent reading times. |
+| The posts page is a single list. Titles, dates, duration, and language labels form the rows. The inspected main region contained zero images. Large faint year numerals separate groups. | [Live posts](https://antfu.me/posts), [ListPosts.vue](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/components/ListPosts.vue) | Use title-led rows and year groups, with compact thumbnails for Han's archive. Prefer small, readable year headings over oversized decorative numerals. Show dates and existing tags. Do not invent reading times. |
 | The prose CSS sets a maximum width of `65ch`, a `1rem` font size, and a `1.75` line height. Live posts prose containers measured about 656 CSS pixels at the inspected desktop viewport. | [prose.css](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/styles/prose.css), live computed styles | Use a similar reading measure and line height. Test Chinese text separately because `ch` does not measure Chinese glyph width. Allow code and tables to scroll horizontally. |
 | The reference uses neutral light and dark backgrounds. The home screenshot has a faint dot field. The posts screenshot has faint branch-like decoration. | [main.css](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/styles/main.css), [ArtDots.vue](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/components/ArtDots.vue), [posts frontmatter](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/pages/posts/index.md) | Use neutral colors with one restrained link and focus accent. Start without decorative canvas code. If texture is needed, use a static, low-contrast CSS treatment. |
 | Navigation and post rows use reduced opacity. Navigation source also removes outlines. | [NavBar.vue](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/components/NavBar.vue), [markdown.css](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/styles/markdown.css) | Adopt the quiet hierarchy, not its exact opacity values or outline removal. Keep visible `:focus-visible` indicators and check text contrast in both themes. |
@@ -146,10 +146,22 @@ Do not register Ctrl+K or Meta+K by default while claiming to preserve browser s
 
 Keep post rows and navigation as real links. Do not turn them into click-only containers. Modified clicks, middle-clicks, and link context menus must continue to work. Anthony's [WrapperPost.vue](https://github.com/antfu/antfu.me/blob/e3ff0442327a24b1f389982a19ec8aca704d9245/src/components/WrapperPost.vue) checks mouse button, modifiers, target, download, and origin before intercepting links. The simpler choice here is to keep normal NuxtLink behavior.
 
+## Style ownership
+
+UnoCSS Wind4 owns the site styles. Semantic light and dark color tokens and shared shortcuts live in `uno.config.ts`. One-off details use utilities in the Vue templates. There is no handwritten stylesheet or custom CSS preflight.
+
+Dark surfaces use neutral grays: `#0d0d0d` for the page, `#171717` for code, and `#1c1c1c` for headers and hover states. Text and borders are neutral. Green is limited to links, focus, selection, and code-line highlights. The existing Inter and Fira Code fonts remain.
+
+Archive thumbnails reserve 112 by 72 pixels on desktop and 80 by 52 pixels on mobile. They load lazily and share the native post link with the title. A missing image leaves a text-only row, not a placeholder.
+
+Code panels show a filename or language, a copy control, and a keyboard-focusable scroll body. Nuxt Content supplies the code, metadata, highlighted slot, and Shiki classes. UnoCSS descendant variants style generated lines without changing token spans. Inline-code styling does not apply to fenced blocks. Syntax highlighting uses `github-light` and `github-dark-default`.
+
+Copy uses the supplied code string through the existing VueUse `useClipboardItems` helper with clipboard reading disabled. Browser constructors run only during activation. The local state is `idle`, `pending`, or `error`; VueUse supplies copied feedback. A rejected write produces a visible alert, not a false success. Unsupported browsers can select the code manually.
+
 ## Handoff choices
 
 1. Use top navigation and a reading-width column. Keep the current content routes and URL tag filters.
-2. Use chronological text rows with dates and small year headings. Keep images inside posts where they explain the subject.
+2. Use chronological text rows with dates, small year headings, and optional post thumbnails. Keep full-size images inside posts where they explain the subject.
 3. Use neutral light and dark colors, clear focus indicators, and no decorative runtime canvas.
 4. Use one Reka modal with exclusive post-search and shortcut-help views. Do not create stacked overlays.
 5. Keep keyboard controls optional, input-safe, composition-safe, and modifier-safe. Do not attribute these additions to antfu.

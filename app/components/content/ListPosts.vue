@@ -39,16 +39,33 @@ const postGroups = computed(() => {
       :aria-label="`Posts from ${group.year}`"
       class="post-year"
     >
-      <h2>{{ group.year }}</h2>
-      <ul>
-        <li v-for="post in group.entries" :key="post.path">
-          <NuxtLink :to="post.path" class="post-row">
-            <span class="post-row-title">{{ post.title }}</span>
-            <time v-if="post.date" :datetime="new Date(post.date).toISOString()">{{ formatDate(post.date) }}</time>
+      <h2 class="font-mono text-[.875rem] font-400 muted mb-4">
+        {{ group.year }}
+      </h2>
+      <ul class="list-none p-0">
+        <li v-for="post in group.entries" :key="post.path" class="my-[1.1rem]">
+          <NuxtLink :to="post.path" class="post-row group">
+            <NuxtPicture
+              v-if="post.image"
+              :src="post.image"
+              format="webp"
+              alt=""
+              width="112"
+              height="72"
+              sizes="80px sm:112px"
+              loading="lazy"
+              class="post-thumbnail"
+            />
+            <div class="post-row-content">
+              <div class="post-row-heading">
+                <span class="post-row-title">{{ post.title }}</span>
+                <time v-if="post.date" class="post-time" :datetime="new Date(post.date).toISOString()">{{ formatDate(post.date) }}</time>
+              </div>
+              <p v-if="post.description" class="post-description">
+                {{ post.description }}
+              </p>
+            </div>
           </NuxtLink>
-          <p v-if="post.description" class="post-description">
-            {{ post.description }}
-          </p>
         </li>
       </ul>
     </section>

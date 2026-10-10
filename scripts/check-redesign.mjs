@@ -39,16 +39,42 @@ test('built archive links to every feed post and retains article metadata', asyn
   const feed = JSON.parse(await readRoute('/feed.json'))
   assert.equal(feed.title, 'Han')
   assert.equal(feed.items.length, 35)
-  assert.match(archive, /class="post-row"/)
+  const rows = [...archive.matchAll(/<a[^>]*href="([^"]+)"[^>]*class="(?:[^"]*\s)?post-row(?:\s[^"]*)?"[^>]*>([\s\S]*?)<\/a>/g)]
+  assert.equal(rows.length, feed.items.length)
   assert.doesNotMatch(archive, /grid-cols-2|group-hover/)
   for (const post of feed.items) {
     const path = new URL(post.url).pathname
-    assert.ok(archive.includes(`href="${path}"`), `archive contains ${path}`)
+    const row = rows.find(match => match[1] === path)?.[2]
+    assert.ok(row, `archive contains ${path}`)
+    if (post.image) {
+      assert.match(row, /class="post-thumbnail"/)
+      assert.match(row, /<img[^>]*width="112"[^>]*height="72"[^>]* alt(?:=""|\s)[^>]*loading="lazy"/)
+    }
+    else {
+      assert.doesNotMatch(row, /post-thumbnail|<img/)
+    }
+    assert.match(row, /class="post-row-title"/)
+    assert.match(row, /<time/)
     const html = await readOutput(`${path.slice(1)}.html`)
     assert.match(html, /property="og:type" content="article"/)
     assert.ok(html.includes(`href="${post.url}"`), `canonical for ${path}`)
     assert.match(html, /<h1/)
   }
+})
+
+test('built code panels preserve headers and highlighted slots', async () => {
+  const shell = await readOutput('posts/install-cloudflared-opnsense.html')
+  assert.match(shell, /class="code-panel"/)
+  assert.match(shell, /class="code-label">bash<\/span>/)
+  assert.match(shell, /class="code-copy" aria-label="Copy bash code"/)
+  assert.match(shell, /<pre class="code-body language-bash shiki[^"]*" tabindex="0"/)
+  assert.match(shell, /class="line" line="1"/)
+  assert.match(shell, /<span class="s[\w-]+">/)
+  const typescript = await readOutput('posts/windi-css-next-generation-tailwind-css-compiler.html')
+  assert.match(typescript, /class="code-label">vite.config.ts<\/span>/)
+  assert.match(typescript, /class="code-label">src\/main.ts<\/span>/)
+  const gateway = await readOutput('posts/unifi-usg-vlan-openvpn.html')
+  assert.match(gateway, /class="code-label">config.gateway.json<\/span>/)
 })
 
 test('built bookmarks and all feeds remain available', async () => {

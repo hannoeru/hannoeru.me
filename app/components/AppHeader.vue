@@ -125,6 +125,7 @@ async function selectPost(path: string) {
         <NuxtLink
           v-if="command.action.kind === 'navigate'"
           :to="command.action.path"
+          class="nav-link"
           :aria-current="route.path === command.action.path || (command.action.path === '/posts' && route.path.startsWith('/posts/')) ? 'page' : undefined"
         >
           {{ command.label }}
@@ -189,21 +190,21 @@ async function selectPost(path: string) {
           {{ navigationError }}
         </p>
         <dl v-if="dialog === 'shortcuts'" class="shortcut-list">
-          <div v-for="command in siteCommands" :key="command.key">
+          <div v-for="command in siteCommands" :key="command.key" class="shortcut-row">
             <dt>{{ command.label }}</dt>
-            <dd><kbd>{{ command.key }}</kbd></dd>
+            <dd><kbd class="shortcut-key">{{ command.key }}</kbd></dd>
           </div>
-          <div>
+          <div class="shortcut-row">
             <dt>Close dialog</dt>
-            <dd><kbd>Esc</kbd></dd>
+            <dd><kbd class="shortcut-key">Esc</kbd></dd>
           </div>
         </dl>
         <label class="shortcut-setting">
-          <input v-model="shortcutsEnabled" type="checkbox">
+          <input v-model="shortcutsEnabled" type="checkbox" class="accent-accent-light dark:accent-accent-dark">
           Enable single-key shortcuts
         </label>
         <p class="dialog-note">
-          <kbd>Esc</kbd> to close
+          <kbd class="shortcut-key">Esc</kbd> to close
         </p>
       </DialogContent>
     </DialogPortal>

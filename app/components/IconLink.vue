@@ -21,7 +21,7 @@ const label = computed(() => props.title)
         :target="isNewTab ? '_blank' : undefined"
         :rel="isNewTab ? 'noopener' : undefined"
         :aria-label="label"
-        class="flex items-center justify-center p-1"
+        class="icon-link flex items-center justify-center p-1"
       >
         <slot />
       </a>
@@ -30,7 +30,7 @@ const label = computed(() => props.title)
       <TooltipContent
         side="top"
         :side-offset="6"
-        class="z-50 rounded bg-dark-900 px-2 py-1 text-xs text-white shadow dark:bg-white dark:text-dark-900"
+        class="tooltip-panel"
       >
         {{ label }}
       </TooltipContent>
@@ -42,7 +42,7 @@ const label = computed(() => props.title)
     :href="href"
     :target="isNewTab ? '_blank' : undefined"
     :rel="isNewTab ? 'noopener' : undefined"
-    class="flex items-center justify-center p-1"
+    class="icon-link flex items-center justify-center p-1"
   >
     <slot />
   </a>

@@ -28,6 +28,7 @@ const results = computed(() => {
     <input
       id="post-search"
       v-model="query"
+      class="search-input"
       type="search"
       placeholder="Search posts…"
       autocomplete="off"
@@ -58,11 +59,11 @@ const results = computed(() => {
     >
       Try again
     </button>
-    <ul class="search-results">
+    <ul class="search-results list-none p-0">
       <li v-for="post in results" :key="post.path">
-        <NuxtLink :to="post.path" @click="event => selectResult(event, post.path)">
+        <NuxtLink :to="post.path" class="search-result" @click="event => selectResult(event, post.path)">
           <span>{{ post.title }}</span>
-          <time v-if="post.date" :datetime="new Date(post.date).toISOString()">{{ formatDate(post.date) }}</time>
+          <time v-if="post.date" class="post-time" :datetime="new Date(post.date).toISOString()">{{ formatDate(post.date) }}</time>
         </NuxtLink>
       </li>
     </ul>
