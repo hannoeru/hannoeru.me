@@ -6,3 +6,38 @@ allowBuilds:
   unrs-resolver: true
   vue-demi: true
   workerd: true
+# These releases are younger than pnpm's 24-hour minimumReleaseAge.
+minimumReleaseAgeExclude:
+  - "@nuxtjs/robots@7.0.2"
+  - "@nuxtjs/seo@6.0.1"
+  - "@nuxtjs/sitemap@9.1.0"
+  - "@takumi-rs/helpers@2.15.2"
+  - "@takumi-rs/wasm@2.15.2"
+  - miniflare@5.20261006.2-beta
+  - nuxt-ai-ready@3.4.0
+  - nuxt-link-checker@6.0.1
+  - nuxt-og-image@7.0.6
+  - nuxt-schema-org@7.0.1
+  - nuxt-seo-utils@9.0.1
+  - nuxt-site-config@5.0.3
+  - nuxt-skew-protection@2.0.2
+  - nuxtseo-shared@6.0.3
+  - wrangler@4.150.0
+  - zod@4.6.7
+  - "@mdream/js@2.0.3"
+  - "@mdream/rust-android-arm-eabi@2.0.3"
+  - "@mdream/rust-android-arm64@2.0.3"
+  - "@mdream/rust-darwin-arm64@2.0.3"
+  - "@mdream/rust-darwin-x64@2.0.3"
+  - "@mdream/rust-freebsd-x64@2.0.3"
+  - "@mdream/rust-linux-arm-gnueabihf@2.0.3"
+  - "@mdream/rust-linux-arm64-gnu@2.0.3"
+  - "@mdream/rust-linux-arm64-musl@2.0.3"
+  - "@mdream/rust-linux-x64-gnu@2.0.3"
+  - "@mdream/rust-linux-x64-musl@2.0.3"
+  - "@mdream/rust-wasm32-wasi@2.0.3"
+  - "@mdream/rust-win32-arm64-msvc@2.0.3"
+  - "@mdream/rust-win32-x64-msvc@2.0.3"
+  - mdream@2.0.3
+  - nuxt-site-config-kit@5.0.3
+  - site-config-stack@5.0.3
