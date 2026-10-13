@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://json.schemastore.org/dependabot-2.0.json
+# pnpm is not its own package-ecosystem. Dependabot's npm ecosystem
+# covers npm, pnpm, and Yarn, and selects pnpm from pnpm-lock.yaml.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    # Private app: bump the range in package.json (Renovate used rangeStrategy: bump).
+    versioning-strategy: increase
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: chore(deps)
+    groups:
+      # Every direct dependency in this repo is a devDependency today.
+      # Minor and patch updates share one pull request. Majors stay
+      # separate so a breaking upgrade can be reviewed on its own.
+      # Security updates are not part of these groups.
+      dev-minor-patch:
+        applies-to: version-updates
+        dependency-type: development
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+      prod-minor-patch:
+        applies-to: version-updates
+        dependency-type: production
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: chore(deps)
+    groups:
+      actions-minor-patch:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
