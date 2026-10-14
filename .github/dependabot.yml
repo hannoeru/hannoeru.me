@@ -13,16 +13,24 @@ updates:
     open-pull-requests-limit: 10
     commit-message:
       prefix: chore(deps)
+    # TS 7 breaks `nuxt prepare` and vue-tsc, so major updates stay closed.
+    ignore:
+      - dependency-name: typescript
+        update-types:
+          - version-update:semver-major
     groups:
       # Every direct dependency in this repo is a devDependency today.
       # Minor and patch updates share one pull request. Majors stay
       # separate so a breaking upgrade can be reviewed on its own.
       # Security updates are not part of these groups.
+      # typescript is excluded from the wildcard groups and grouped on its own.
       dev-minor-patch:
         applies-to: version-updates
         dependency-type: development
         patterns:
           - "*"
+        exclude-patterns:
+          - typescript
         update-types:
           - minor
           - patch
@@ -31,6 +39,15 @@ updates:
         dependency-type: production
         patterns:
           - "*"
+        exclude-patterns:
+          - typescript
+        update-types:
+          - minor
+          - patch
+      typescript:
+        applies-to: version-updates
+        patterns:
+          - typescript
         update-types:
           - minor
           - patch
