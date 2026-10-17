@@ -15,6 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "node --test tests/*.test.ts",
+    "test:seo": "node scripts/check-seo.mjs",
     "typecheck": "nuxt prepare && vue-tsc -b --noEmit"
   },
   "devDependencies": {
