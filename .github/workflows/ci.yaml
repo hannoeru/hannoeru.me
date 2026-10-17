@@ -47,6 +47,9 @@ jobs:
       - name: Test build
         run: pnpm build
 
+      - name: Check sitemap, canonicals, and Worker redirects
+        run: pnpm test:seo
+
   lint:
     runs-on: ubuntu-latest
     name: Lint
