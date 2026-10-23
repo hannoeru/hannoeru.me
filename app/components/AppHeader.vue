@@ -139,6 +139,7 @@ async function selectPost(path: string) {
         :key="command.key"
         type="button"
         class="tool-button"
+        :class="{ 'max-sm:hidden': command.key === '?' }"
         :aria-label="command.label"
         :title="`${command.label} (${command.key})`"
         @click="execute(command)"

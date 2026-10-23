@@ -23,7 +23,7 @@ const { copy, copied } = useClipboard({
 </script>
 
 <template>
-  <div v-if="page.type === 'post'" class="text-xl flex space-x-3">
+  <div v-if="page.type === 'post'" class="text-xl flex space-x-3 max-sm:[&_.icon-link]:size-10">
     <IconLink
       :href="`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`"
       title="Share to Facebook"
@@ -52,12 +52,12 @@ const { copy, copied } = useClipboard({
       <TooltipTrigger as-child>
         <button
           type="button"
-          class="icon-link transform scale-70"
+          class="icon-link flex items-center justify-center size-8"
           :aria-label="copied ? 'Copied link' : 'Copy link'"
           @click="copy()"
         >
-          <div v-if="!copied" i-carbon:link />
-          <div v-else i-carbon:checkmark />
+          <div v-if="!copied" class="scale-70" i-carbon:link />
+          <div v-else class="scale-70" i-carbon:checkmark />
         </button>
       </TooltipTrigger>
       <TooltipPortal>
