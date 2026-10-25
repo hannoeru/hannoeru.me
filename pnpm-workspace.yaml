@@ -49,6 +49,8 @@ overrides:
   '@nuxt/devtools-nightly@4.0.0-beta.7-29878936.6ea436d>@nuxt/devtools-assets': 4.0.0-beta.7
 
 permissions:
+  '@nuxtjs/seo':
+    skills: true
   nuxt-skills@https://codeload.github.com/onmax/nuxt-skills/tar.gz/e504c9b90abd3c41ab1b10470363f6cd50b7a6f8:
     skills: true
 

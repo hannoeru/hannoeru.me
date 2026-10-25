@@ -1,7 +1,7 @@
 # AGENTS.md
 
 This is a single-package Nuxt site. `AGENTS.md` is the project instruction file.
-The project includes config for pi. Other agents can use the setup prompt in `README.md`.
+The project includes config for pi.
 Before you change Nuxt code, read the matching page in `node_modules/@nuxt/docs/`.
 For error codes, read `node_modules/@nuxt/docs/errors/`.
 
