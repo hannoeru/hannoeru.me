@@ -1,4 +1,6 @@
 import type { NuxtConfig } from 'nuxt/schema'
+import { writeFile } from 'node:fs/promises'
+import { join } from 'node:path'
 import { legacyRedirects } from './shared/legacy-redirects'
 
 // Do not emit static HTML for old URLs: Cloudflare assets can otherwise
@@ -14,7 +16,7 @@ const legacyRouteRules = Object.fromEntries(
 export default defineNuxtConfig({
 
   // https://nuxt.com/modules
-  modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxthub/core', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/seo'],
+  modules: ['@nuxtjs/color-mode', '@nuxt/content', '@unocss/nuxt', '@vueuse/nuxt', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/seo'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -101,37 +103,23 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2026-05-26',
   nitro: {
-    preset: 'cloudflare_module',
-    cloudflare: {
-      deployConfig: true,
-      nodeCompat: true,
-      wrangler: {
-        observability: {
-          enabled: true,
-          head_sampling_rate: 1,
-          logs: {
-            enabled: true,
-            head_sampling_rate: 1,
-            invocation_logs: true,
-          },
-        },
-        placement: {
-          mode: 'smart',
-        },
-      },
-    },
+    preset: 'static',
     prerender: {
       crawlLinks: true,
+      autoSubfolderIndex: false,
+      routes: ['/feed.xml', '/feed.atom', '/feed.json', '/sitemap.xml', '/robots.txt'],
     },
-  },
-
-  // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {
-    // D1 database
-    db: {
-      dialect: 'sqlite',
-      driver: 'd1',
-      connection: { databaseId: '8c2fe075-480f-4c81-9e51-d21e250ba731' },
+    hooks: {
+      async compiled(nitro) {
+        const redirects = Object.entries(legacyRedirects)
+          .flatMap(([path, to]) => {
+            const encoded = encodeURI(path)
+            return [...new Set([encoded, encoded.replace(/%[\dA-F]{2}/g, escape => escape.toLowerCase())])]
+              .map(source => `${source} ${to} 301`)
+          })
+          .join('\n')
+        await writeFile(join(nitro.options.output.publicDir, '_redirects'), `${redirects}\n`)
+      },
     },
   },
 
