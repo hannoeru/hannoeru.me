@@ -15,6 +15,45 @@ await once(listener, 'listening')
 const port = listener.address().port
 await new Promise((resolve, reject) => listener.close(error => error ? reject(error) : resolve()))
 const baseUrl = process.env.SEO_BASE_URL || `http://127.0.0.1:${port}`
+const files = await readdir(output, { recursive: true })
+for (const file of ['index.html', '404.html', 'feed.xml', 'feed.atom', 'feed.json', 'robots.txt', 'sitemap.xml', '_redirects']) {
+  const contents = await readFile(resolve(output, file), 'utf8')
+  assert.ok(contents.trim(), `nonempty static artifact: ${file}`)
+}
+await assert.rejects(access(resolve('.output/server')), { code: 'ENOENT' }, 'no server bundle')
+assert.ok(!files.some(file => /(^|[/\\])_worker\.js([/\\]|$)/.test(file)), 'no Worker bundle in static assets')
+
+const rss = await readFile(resolve(output, 'feed.xml'), 'utf8')
+assert.match(rss, /<rss\b/)
+assert.match(rss, /<item\b/)
+const atom = await readFile(resolve(output, 'feed.atom'), 'utf8')
+assert.match(atom, /<feed\b/)
+assert.match(atom, /<entry\b/)
+const feed = JSON.parse(await readFile(resolve(output, 'feed.json'), 'utf8'))
+assert.ok(feed.version.startsWith('https://jsonfeed.org/version/'))
+assert.ok(feed.items.length > 0, 'JSON feed contains posts')
+const robots = await readFile(resolve(output, 'robots.txt'), 'utf8')
+assert.match(robots, /^User-agent:\s*\*/im)
+assert.match(robots, /^Sitemap:\s*https:\/\/hannoeru\.me\/sitemap\.xml\s*$/im)
+
+const redirectLines = (await readFile(resolve(output, '_redirects'), 'utf8'))
+  .split(/\r?\n/)
+  .map(line => line.trim())
+  .filter(line => line && !line.startsWith('#'))
+assert.ok(redirectLines.length <= 2000, 'within Cloudflare static redirect limit')
+for (const line of redirectLines)
+  assert.ok(line.length <= 1000, 'within Cloudflare redirect line limit')
+const redirectRules = redirectLines.map(line => line.split(/\s+/))
+
+function redirectVariants(path) {
+  const encoded = encodeURI(path)
+  return new Set([path, encoded, encoded.replace(/%[\dA-F]{2}/g, escape => escape.toLowerCase())])
+}
+
+for (const [path, target] of Object.entries(legacyRedirects)) {
+  assert.ok(redirectRules.some(([source, destination, status]) => redirectVariants(path).has(source) && destination === target && status === '301'), `static permanent redirect for ${path}`)
+}
+
 const xml = await readFile(resolve(output, 'sitemap.xml'), 'utf8')
 // Read only page locations, not image:loc entries.
 const locations = [...xml.matchAll(/<url>\s*<loc>([^<]+)<\/loc>/g)].map(match => match[1])
@@ -32,15 +71,22 @@ function assertCanonical(html, url) {
   assert.ok(links[0].includes(`href="${url}"`), `canonical points to ${url}`)
 }
 
+assert.ok(expected.includes('/'), 'home page is included')
+assert.ok(expected.some(path => path.startsWith('/posts/')), 'post pages are included')
 for (const path of expected) {
   const file = path === '/' ? 'index.html' : `${path.slice(1)}.html`
   const html = await readFile(resolve(output, file), 'utf8')
   assertCanonical(html, `${origin}${path}`)
   assert.match(html, /<h1\b/, `content heading for ${path}`)
+  for (const [, image] of html.matchAll(/<meta property="og:image" content="([^"]+)"/g)) {
+    const url = new URL(image, origin)
+    if (url.origin === origin)
+      await access(resolve(output, url.pathname.slice(1)))
+  }
 }
 
 for (const path of Object.keys(legacyRedirects)) {
-  for (const variant of new Set([path, encodeURI(path)])) {
+  for (const variant of redirectVariants(path)) {
     for (const suffix of ['.html', '/index.html']) {
       const file = resolve(output, `${variant.slice(1)}${suffix}`)
       await assert.rejects(access(file), { code: 'ENOENT' }, `no legacy HTML: ${file}`)
@@ -48,16 +94,17 @@ for (const path of Object.keys(legacyRedirects)) {
   }
 }
 
-// Exercise the generated Worker and its static assets together, as in production.
 let logs = ''
-const worker = process.env.SEO_BASE_URL
+let startupError
+const server = process.env.SEO_BASE_URL
   ? undefined
-  : spawn(process.execPath, [resolve('node_modules/wrangler/bin/wrangler.js'), 'dev', '--config', '.output/server/wrangler.json', '--port', String(port), '--ip', '127.0.0.1'], {
+  : spawn(process.execPath, [resolve('node_modules/wrangler/bin/wrangler.js'), 'dev', '--config', 'wrangler.jsonc', '--port', String(port), '--ip', '127.0.0.1'], {
       env: { ...process.env, WRANGLER_SEND_METRICS: 'false' },
       stdio: ['ignore', 'pipe', 'pipe'],
     })
-worker?.stdout.on('data', chunk => logs += chunk)
-worker?.stderr.on('data', chunk => logs += chunk)
+server?.stdout.on('data', chunk => logs += chunk)
+server?.stderr.on('data', chunk => logs += chunk)
+server?.on('error', error => startupError = error)
 
 async function request(path) {
   return fetch(new URL(path, baseUrl), { redirect: 'manual', signal: AbortSignal.timeout(10000) })
@@ -75,21 +122,34 @@ try {
       }
     }
     catch {
-      // Wrangler may still be starting.
+      // Wrangler can refuse connections until its asset server is ready.
     }
-    if (worker && worker.exitCode !== null)
+    if (startupError || (server && (server.exitCode !== null || server.signalCode !== null)))
       break
     await setTimeout(500)
   }
-  assert.ok(ready, `Worker did not start:\n${logs}`)
+  assert.ok(ready, `Static asset server did not become ready: ${startupError || ''}\n${logs}`)
+
+  for (const path of expected) {
+    const response = await request(path)
+    assert.equal(response.status, 200, `static page at ${path}`)
+    assertCanonical(await response.text(), `${origin}${path}`)
+  }
+
+  for (const file of ['feed.xml', 'feed.atom', 'feed.json', 'robots.txt', 'sitemap.xml']) {
+    const response = await request(`/${file}`)
+    assert.equal(response.status, 200, `static artifact at /${file}`)
+    assert.equal(await response.text(), await readFile(resolve(output, file), 'utf8'), `served static artifact: ${file}`)
+  }
 
   for (const [path, target] of Object.entries(legacyRedirects)) {
-    // Percent escape casing must not change redirect matching.
-    const encoded = encodeURI(path)
-    for (const variant of new Set([encoded, encoded.replace(/%[\dA-F]{2}/g, escape => escape.toLowerCase())])) {
+    assert.ok(expected.includes(target), `redirect target is a content route: ${target}`)
+    for (const variant of redirectVariants(path)) {
       const response = await request(`${variant}?utm_source=seo-check`)
       assert.equal(response.status, 301, `permanent redirect for ${variant}`)
+      assert.ok(response.headers.has('location'), `redirect location for ${variant}`)
       const location = new URL(response.headers.get('location'), baseUrl)
+      assert.equal(location.origin, new URL(baseUrl).origin, `same-origin redirect for ${variant}`)
       assert.equal(location.pathname, target)
       assert.equal(location.searchParams.get('utm_source'), 'seo-check')
       await response.arrayBuffer()
@@ -102,11 +162,23 @@ try {
   const filtered = await request('/posts?tags=Vue')
   assert.equal(filtered.status, 200)
   assertCanonical(await filtered.text(), `${origin}/posts`)
-  console.log(`SEO checks passed: ${expected.length} canonical pages and ${Object.keys(legacyRedirects).length} permanent redirects.`)
+  for (const path of ['/posts', Object.values(legacyRedirects)[0]]) {
+    const response = await request(`${path}/`)
+    assert.equal(response.status, 307, `drop trailing slash for ${path}`)
+    assert.equal(new URL(response.headers.get('location'), baseUrl).pathname, path)
+    await response.arrayBuffer()
+  }
+  for (const path of ['/__seo-check-missing-page', '/posts/__seo-check-missing-post']) {
+    const response = await request(path)
+    assert.equal(response.status, 404, `not found: ${path}`)
+    await response.arrayBuffer()
+  }
+  console.log(`SEO checks passed: static artifacts, ${expected.length} canonical pages, ${Object.keys(legacyRedirects).length} permanent redirects, and 404 responses.`)
 }
 finally {
-  if (worker && worker.exitCode === null) {
-    worker.kill('SIGTERM')
-    await once(worker, 'exit')
+  if (server?.pid && server.exitCode === null && server.signalCode === null) {
+    const exited = once(server, 'exit')
+    server.kill('SIGTERM')
+    await exited
   }
 }

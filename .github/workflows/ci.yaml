@@ -45,9 +45,9 @@ jobs:
         run: pnpm test
 
       - name: Test build
-        run: pnpm build
+        run: pnpm generate
 
-      - name: Check sitemap, canonicals, and Worker redirects
+      - name: Check static artifacts, canonicals, and redirects
         run: pnpm test:seo
 
   lint:
