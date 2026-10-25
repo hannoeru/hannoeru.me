@@ -32,7 +32,6 @@
     "@unocss/transformer-directives": "^66.11.0",
     "@unocss/transformer-variant-group": "^66.11.0",
     "@vueuse/nuxt": "^15.0.0",
-    "cf": "1.0.0-beta.21",
     "dayjs": "^1.11.23",
     "eslint": "^10.13.0",
     "feed": "^6.0.0",

@@ -98,7 +98,7 @@ let logs = ''
 let startupError
 const server = process.env.SEO_BASE_URL
   ? undefined
-  : spawn(process.execPath, [resolve('node_modules/wrangler/bin/wrangler.js'), 'dev', '--experimental-new-config', '--port', String(port), '--ip', '127.0.0.1'], {
+  : spawn(process.execPath, [resolve('node_modules/wrangler/bin/wrangler.js'), 'dev', '--config', 'wrangler.jsonc', '--port', String(port), '--ip', '127.0.0.1'], {
       env: { ...process.env, WRANGLER_SEND_METRICS: 'false' },
       stdio: ['ignore', 'pipe', 'pipe'],
     })

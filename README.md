@@ -3,10 +3,8 @@
 my personal website powered by [Nuxt v4](https://nuxt.com/)
 
 `pnpm generate` or `pnpm build` (the Nuxt `static` preset) creates the static site in `.output/public`.
-`pnpm exec wrangler dev --experimental-new-config` serves these assets locally with Cloudflare's redirect and 404 rules.
-The Worker is configured in `cloudflare.config.ts` and `wrangler.config.ts`.
-Cloudflare Workers Builds builds with `pnpm build && pnpm exec cf-wrangler build` and deploys with `pnpm exec cf deploy --prebuilt`.
-Non-production branches set `CLOUDFLARE_PREVIEW_BUILD=true` for the build and deploy with `pnpm exec cf previews deploy --prebuilt`.
+`pnpm exec wrangler dev` serves these assets locally with Cloudflare's redirect and 404 rules.
+Cloudflare Workers Builds runs `pnpm build` and deploys the assets to `blog` with the root `wrangler.jsonc`, which also has the empty `previews` block that `wrangler preview` needs for non-production branches.
 
 <br>
 
