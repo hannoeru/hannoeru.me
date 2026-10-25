@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "devframe": {
+      "command": "pnpm",
+      "args": ["exec", "devframe", "connect"]
+    }
+  }
+}

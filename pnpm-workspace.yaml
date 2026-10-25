@@ -6,8 +6,9 @@ allowBuilds:
   unrs-resolver: true
   vue-demi: true
   workerd: true
-# These releases are younger than pnpm's 24-hour minimumReleaseAge.
+minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
+  - '@nuxt/devtools-nightly'
   - "@nuxtjs/robots@7.0.2"
   - "@nuxtjs/seo@6.0.1"
   - "@nuxtjs/sitemap@9.1.0"
@@ -41,3 +42,16 @@ minimumReleaseAgeExclude:
   - mdream@2.0.3
   - nuxt-site-config-kit@5.0.3
   - site-config-stack@5.0.3
+
+overrides:
+  '@nuxt/devtools': npm:@nuxt/devtools-nightly@latest
+  '@nuxt/devtools-nightly@4.0.0-beta.7-29878936.6ea436d>@nuxt/devtools-kit': 4.0.0-beta.7
+  '@nuxt/devtools-nightly@4.0.0-beta.7-29878936.6ea436d>@nuxt/devtools-assets': 4.0.0-beta.7
+
+permissions:
+  nuxt-skills@https://codeload.github.com/onmax/nuxt-skills/tar.gz/e504c9b90abd3c41ab1b10470363f6cd50b7a6f8:
+    skills: true
+
+skills:
+  dirs:
+    - .agents/skills
