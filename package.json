@@ -20,13 +20,13 @@
   },
   "devDependencies": {
     "@antfu/utils": "^9.3.0",
-    "@iconify/json": "^2.2.544",
+    "@iconify/json": "^2.2.547",
     "@nuxt/content": "3.16.2",
     "@nuxt/eslint": "^1.17.0",
-    "@nuxt/image": "^2.1.0",
+    "@nuxt/image": "^2.2.0",
     "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/seo": "6.0.1",
-    "@takumi-rs/wasm": "^2.16.3",
+    "@takumi-rs/wasm": "^2.17.1",
     "@unocss/nuxt": "^66.11.0",
     "@unocss/preset-icons": "^66.11.0",
     "@unocss/transformer-directives": "^66.11.0",
@@ -40,7 +40,7 @@
     "remark-breaks": "^4.0.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.13",
-    "wrangler": "^4.151.1",
+    "wrangler": "^4.152.0",
     "zod": "^4.6.7"
   }
 }
