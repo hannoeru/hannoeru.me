@@ -123,6 +123,8 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: { devtools: { mcp: true } },
+
   // https://eslint.nuxt.com
   eslint: {
     config: {
