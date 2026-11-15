@@ -3,8 +3,14 @@ const domain = useRuntimeConfig().public.domain
 const router = useRouter()
 const route = useRoute()
 const { page } = await useContent()
+const minTocSections = 4
 
 const isHome = computed(() => route.path === '/')
+const isPost = computed(() => page.value?.type === 'post')
+const tocLinks = computed(() => {
+  const links = page.value?.body.toc?.links ?? []
+  return isPost.value && links.length >= minTocSections ? links : []
+})
 
 function searchTag(tag: string) {
   router.push({
@@ -17,6 +23,7 @@ function searchTag(tag: string) {
 
 useHead({
   title: page.value?.title || 'Han',
+  ...(isHome.value ? { titleTemplate: '%s' } : {}),
   meta: [
     { property: 'og:title', content: page.value?.title || 'Han' },
     ...(page.value?.description
@@ -40,7 +47,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <article v-if="page" class="page-content">
+  <article v-if="page" :lang="page.lang" class="page-content relative">
     <header v-if="page.title" class="page-heading">
       <time v-if="page.date" class="page-date" :datetime="new Date(page.date).toISOString()">
         {{ formatDate(page.date) }}
@@ -51,8 +58,8 @@ if (!page.value) {
         </h1>
         <TagSelectList v-if="$route.path === '/posts'" />
       </div>
-      <ShareButtons :page="page" />
     </header>
+    <ArticleToc v-if="tocLinks.length" :links="tocLinks" />
     <div v-if="page.image">
       <NuxtPicture
         format="webp"
@@ -64,8 +71,8 @@ if (!page.value) {
       />
     </div>
     <ContentRenderer :value="page" />
-    <div v-if="page.tags" class="mt-12">
-      <div class="flex flex-wrap items-center gap-2">
+    <footer v-if="isPost || page.tags" class="flex flex-wrap items-center justify-between gap-x-6 gap-y-4 mt-12 pt-6 border-t line-color">
+      <div v-if="page.tags" class="flex flex-wrap items-center gap-2">
         <span class="font-mono opacity-50">Tags:</span>
         <TagLabel
           v-for="tag in page.tags"
@@ -75,6 +82,8 @@ if (!page.value) {
           <span>{{ tag }}</span>
         </TagLabel>
       </div>
-    </div>
+      <ShareButtons :page="page" />
+    </footer>
+    <PostSurround v-if="isPost" :path="page.path" />
   </article>
 </template>

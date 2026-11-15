@@ -52,3 +52,24 @@ test('filename labels survive the Markdown renderer', async () => {
   const gateway = await readRoute('/posts/unifi-usg-vlan-openvpn')
   assert.match(gateway, /class="code-label">config.gateway.json<\/span>/)
 })
+
+test('page titles name the site once', async () => {
+  assert.match(await readRoute('/'), /<title>Han<\/title>/)
+  assert.match(await readRoute('/posts/install-cloudflared-opnsense'), /<title>Install Cloudflared on OPNsense \| Han<\/title>/)
+})
+
+test('long posts render a section index, linkable headings, and end-of-article navigation', async () => {
+  const html = await readRoute('/posts/install-cloudflared-opnsense')
+  assert.equal(html.match(/<nav aria-label="On this page"/g)?.length, 2)
+  assert.match(html, /<details[^>]*>\s*<summary/)
+  assert.match(html, /<h2 id="overview"[^>]*>[\s\S]*?<a href="#overview"[^>]*>[\s\S]*?Link to this section/)
+  assert.match(html, /<nav aria-label="More posts"[^>]*>[\s\S]*?rel="prev"[\s\S]*?rel="next"/)
+  assert.ok(html.indexOf('Share to Facebook') > html.indexOf('id="references"'), 'share buttons follow the article body')
+})
+
+test('short posts omit the section index and posts carry their language', async () => {
+  assert.doesNotMatch(await readRoute('/posts/macos-recommended-app-istat-mini'), /aria-label="On this page"/)
+  const chinese = await readRoute('/posts/chinese-diamond-princess-covid-19')
+  assert.match(chinese, /<article lang="zh-TW"/)
+  assert.match(chinese, /<a href="#前言"/)
+})

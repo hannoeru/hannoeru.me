@@ -1,18 +1,9 @@
-<template>
-  <h4 :id="id" class="heading-color font-semibold mt-1.5em mb-0.5em next:mt-0">
-    <a v-if="generate" :href="`#${id}`">
-      <slot />
-    </a>
-    <slot v-else />
-  </h4>
-</template>
-
 <script setup lang="ts">
-import { useRuntimeConfig } from '#imports'
-
 defineProps<{ id: string }>()
-const heading = 4
-// @ts-expect-error missing type
-const { anchorLinks } = useRuntimeConfig().public.content
-const generate = anchorLinks?.depth >= heading && !anchorLinks?.exclude.includes(heading)
 </script>
+
+<template>
+  <ContentHeading :id="id" :level="4" class="heading-color font-semibold mt-1.5em mb-0.5em next:mt-0">
+    <slot />
+  </ContentHeading>
+</template>
