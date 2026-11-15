@@ -14,6 +14,8 @@ Recently, I've been exploring how LLMs and agentic systems can work with large, 
 
 Outside of work, I like building and self-hosting things. My interests include Kubernetes, Linux, networking, virtualization, smart home automation, IoT, 3D printing, diving, snowboarding, climbing, and music.
 
+:RecentPosts
+
 ***
 
 Connect with me on [GitHub](https://github.com/hannoeru) or [X](https://x.com/hannoeru).

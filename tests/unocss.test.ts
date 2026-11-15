@@ -88,12 +88,18 @@ test('generic generated media rules have zero element specificity and preserve i
   assert.doesNotMatch(css, /\.page-content (?:img|video)\{/)
 })
 
+test('post rows keep text in the thumbnail-sized second column with or without an image', () => {
+  assert.match(rule('.post-row'), /grid-template-columns:7rem minmax\(0,1fr\)/)
+  assert.match(rule('.post-row-content'), /grid-column-start:2/)
+})
+
 test('generated media rules preserve the 560px boundary and compact controls', () => {
   assert.match(rule('.post-thumbnail'), /width:calc\(var\(--spacing\) \* 28\);height:calc\(var\(--spacing\) \* 18\)/)
   const mobileStart = css.indexOf('@media(max-width:560px){')
   assert.notEqual(mobileStart, -1)
   const mobile = css.slice(mobileStart, css.indexOf('@supports', mobileStart))
   assert.match(mobile, /\.post-thumbnail\{[^}]*width:calc\(var\(--spacing\) \* 20\);height:calc\(var\(--spacing\) \* 13\)/)
+  assert.match(mobile, /\.post-row\{[^}]*grid-template-columns:5rem minmax\(0,1fr\)/)
   assert.match(mobile, /\.code-copy\{[^}]*min-height:calc\(var\(--spacing\) \* 11\)/)
   assert.match(mobile, /\.code-body \.line\{padding-inline:calc\(var\(--spacing\) \* 4\)/)
   assert.match(mobile, /\.site-shell\{width:calc\(100% - 2\.5rem\)/)
