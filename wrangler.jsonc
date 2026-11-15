@@ -1,11 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "blog",
+  "main": "./worker/index.ts",
   "compatibility_date": "2026-05-26",
   "assets": {
     "directory": "./.output/public",
+    "binding": "ASSETS",
     "html_handling": "drop-trailing-slash",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/", "/posts", "/posts/*", "/bookmarks"]
   },
   "previews": {}
 }

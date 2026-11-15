@@ -44,7 +44,7 @@ minimumReleaseAgeExclude:
   - site-config-stack@5.0.3
 
 overrides:
-  '@nuxt/devtools': npm:@nuxt/devtools-nightly@latest
+  '@nuxt/devtools': npm:@nuxt/devtools-nightly@4.0.0-beta.7-29878936.6ea436d
   '@nuxt/devtools-nightly@4.0.0-beta.7-29878936.6ea436d>@nuxt/devtools-kit': 4.0.0-beta.7
   '@nuxt/devtools-nightly@4.0.0-beta.7-29878936.6ea436d>@nuxt/devtools-assets': 4.0.0-beta.7
 

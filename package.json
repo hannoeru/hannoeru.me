@@ -16,6 +16,7 @@
     "lint:fix": "eslint . --fix",
     "test": "node --test tests/*.test.ts",
     "test:seo": "node scripts/check-seo.mjs",
+    "test:agent": "node --test scripts/check-agent-ready.mjs",
     "typecheck": "nuxt prepare && vue-tsc -b --noEmit"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/seo": "6.0.1",
     "@takumi-rs/wasm": "^2.16.3",
+    "@types/negotiator": "0.6.5",
     "@unocss/nuxt": "^66.11.0",
     "@unocss/preset-icons": "^66.11.0",
     "@unocss/transformer-directives": "^66.11.0",
@@ -38,10 +40,12 @@
     "devframe": "1.2.6",
     "eslint": "^10.13.0",
     "feed": "^6.0.0",
+    "negotiator": "1.0.0",
     "nuxt": "^4.6.2",
     "nuxt-skills": "github:onmax/nuxt-skills#e504c9b90abd3c41ab1b10470363f6cd50b7a6f8",
     "reka-ui": "^2.11.0",
     "remark-breaks": "^4.0.0",
+    "remark-mdc": "3.11.1",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.13",
     "wrangler": "^4.151.1",
