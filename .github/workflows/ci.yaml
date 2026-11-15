@@ -50,6 +50,9 @@ jobs:
       - name: Check static artifacts, canonicals, and redirects
         run: pnpm test:seo
 
+      - name: Check Markdown negotiation through the Worker
+        run: pnpm test:agent
+
   lint:
     runs-on: ubuntu-latest
     name: Lint

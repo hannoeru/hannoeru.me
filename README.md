@@ -4,7 +4,8 @@ my personal website powered by [Nuxt v4](https://nuxt.com/)
 
 `pnpm generate` or `pnpm build` (the Nuxt `static` preset) creates the static site in `.output/public`.
 `pnpm exec wrangler dev` serves these assets locally with Cloudflare's redirect and 404 rules.
-Cloudflare Workers Builds runs `pnpm build` and deploys the assets to `blog` with the root `wrangler.jsonc`, which also has the empty `previews` block that `wrangler preview` needs for non-production branches.
+The build also writes a Markdown copy of each page next to its HTML, for example `/posts/<slug>.md`. A small Worker in `worker/` runs before the assets only on page routes. When a request's `Accept` header prefers `text/markdown`, it returns the Markdown copy; otherwise it returns the static asset unchanged. `pnpm test:agent` checks this behavior against the built site.
+Cloudflare Workers Builds runs `pnpm build` and deploys the assets and the Worker to `blog` with the root `wrangler.jsonc`, which also has the empty `previews` block that `wrangler preview` needs for non-production branches.
 
 ## Notes
 
