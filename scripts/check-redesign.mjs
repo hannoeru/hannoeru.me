@@ -34,6 +34,17 @@ test('built home preserves identity and accessible navigation', async () => {
   assert.doesNotMatch(html, /Open navigation/)
 })
 
+test('built home lists the five newest posts before the contact line and links to the archive', async () => {
+  const html = await readOutput('index.html')
+  const feed = JSON.parse(await readRoute('/feed.json'))
+  const section = html.match(/<section aria-labelledby="recent-posts"[\s\S]*?<\/section>/)?.[0]
+  assert.ok(section, 'home has a recent posts section')
+  assert.match(section, /<a href="\/posts" class="section-link">\s*All posts/)
+  const paths = [...section.matchAll(/<a href="([^"]+)"[^>]*class="post-row/g)].map(match => match[1])
+  assert.deepEqual(paths, feed.items.slice(0, 5).map(post => new URL(post.url).pathname))
+  assert.ok(html.indexOf('recent-posts') < html.indexOf('Connect with me'))
+})
+
 test('built archive links to every feed post and retains article metadata', async () => {
   const archive = await readOutput('posts.html')
   const feed = JSON.parse(await readRoute('/feed.json'))
@@ -42,6 +53,14 @@ test('built archive links to every feed post and retains article metadata', asyn
   const rows = [...archive.matchAll(/<a[^>]*href="([^"]+)"[^>]*class="(?:[^"]*\s)?post-row(?:\s[^"]*)?"[^>]*>([\s\S]*?)<\/a>/g)]
   assert.equal(rows.length, feed.items.length)
   assert.doesNotMatch(archive, /grid-cols-2|group-hover/)
+  assert.match(archive, /class="archive-status" role="status">\s*35 posts/)
+  assert.match(archive, /<h2 id="posts-2019" class="section-heading section-label"><span>2019<\/span><span class="muted">23 posts<\/span>/)
+  const redundant = rows.find(match => match[1] === '/posts/my-macos-app-list')?.[2]
+  assert.doesNotMatch(redundant, /post-description/, 'description equal to the title is hidden')
+  const prefixed = rows.find(match => match[1] === '/posts/javascript-dungeon-4f-timezone')?.[2]
+  assert.doesNotMatch(prefixed, /post-description/, 'description contained in the title is hidden')
+  const distinct = rows.find(match => match[1] === '/posts/replace-docker-desktop-with-multipass')?.[2]
+  assert.match(distinct, /class="post-description"/)
   for (const post of feed.items) {
     const path = new URL(post.url).pathname
     const row = rows.find(match => match[1] === path)?.[2]
@@ -53,7 +72,7 @@ test('built archive links to every feed post and retains article metadata', asyn
     else {
       assert.doesNotMatch(row, /post-thumbnail|<img/)
     }
-    assert.match(row, /class="post-row-title"/)
+    assert.match(row, /class="post-row-title" lang="[\w-]+"/)
     assert.match(row, /<time/)
     const html = await readOutput(`${path.slice(1)}.html`)
     assert.match(html, /property="og:type" content="article"/)
